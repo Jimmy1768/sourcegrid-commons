@@ -4,7 +4,7 @@
 artifact:
   id: commons-linked-accounts-feature
   owner: Commons Planning
-  status: reviewed__for_the_directors_word
+  status: authorized
   date: 2026-10-12
   base_branch: main
   base_commit: the commit that lands this plan, stated in the assignment
@@ -15,7 +15,7 @@ artifact:
     joins a user to one, the screens to list, add, view, edit and leave
     them, a caretaker added by email, a user reaching only their own, a
     dependent going with its last link, seeds and tests.
-  implementation_authorized: false
+  implementation_authorized: true
 ```
 
 ## Why
