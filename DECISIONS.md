@@ -85,6 +85,8 @@ Decision: the five Skills in the Operator Blueprint move here when the
 kernel reads Skills from the commons; nothing moves before that.
 Reason: today the kernel reads Skills from the Blueprint's manifest, and a
 Skill in two places is read from the wrong one.
+Superseded 2026-10-12 by 14: the manifest was reverted, so nothing read
+the Skills anywhere.
 
 ## 8. Infrastructure is Planning's
 
@@ -150,3 +152,30 @@ checkouts on this machine by reading them, writes only in its own worktree,
 and never fetches their history into this repository.
 Reason: decision 3's rule that nothing points to another repository; an
 imported history would.
+
+## 14. The Skills received from the Operator Blueprint
+
+Date: 2026-10-12
+Who: the Director, "manage it" to Workspace Strategy on SourceGrid
+Planning's handoff of the transfer; in Planning's session: "go"
+Decision: the eight files of `blueprints/operator/skills/` at sourcegrid-labs
+`915eda26` are received into `skills/`, content-identical, at the same
+paths: `THIRD_PARTY_NOTICES.md`; `aide/interview/SKILL.md`;
+`aide/spec/SKILL.md`; `builder/diagnose/SKILL.md`;
+`builder/test-first/SKILL.md`, `mocking.md`, `tests.md`;
+`reviewer/review/SKILL.md`. The layout is `skills/<role>/<name>/`, the role
+folder being how the kernel knows which role loads a Skill (OperatorKit
+Planning, from his decision of 2026-10-09: "which role loads which Skill is
+the kernel's part, which no SKILL.md says"); a folder named for no role of
+the kernel's is refused. Strategy sequences the transfer: the labs copy is
+removed by SourceGrid Planning on Strategy's word after Strategy verifies
+this copy; the kernel's reader is planned after OperatorKit's ASSIGNMENT
+150 lands (Strategy, relaying his word in OperatorKit Planning's session;
+no record here holds it), and until then nothing reads either copy. Provenance:
+sourcegrid-labs `915eda26`, where they were adapted from mattpocock/skills
+`b0618bc436ad893b3c5e84e55fba86586d34a404` (MIT); the notice travels with
+them.
+Reason: the manifest that made the kernel read Skills from the Blueprint
+was reverted (sourcegrid-labs `57bd3166`), so decision 7's reason has no
+premise, and one copy received before the reader lands is as inert as the
+one it replaces.

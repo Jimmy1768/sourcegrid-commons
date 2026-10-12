@@ -65,11 +65,15 @@ users and linked accounts; then spreadsheet import.
 ## skills/
 
 A Skill is how a role does its work (test-first, diagnose, review,
-interview, spec), in the industry's SKILL.md form unchanged: a folder named
-for the Skill, a `name` and a one-line `description`, then its
-instructions. The five adapted from mattpocock/skills (MIT) move here from
-the Operator Blueprint when the kernel reads Skills from this library;
-nothing moves before that.
+interview, spec), in the industry's SKILL.md form unchanged: a `name` and a
+one-line `description`, then its instructions, with supporting files beside
+it. Each sits at `skills/<role>/<name>/SKILL.md`. The role folder, one of
+the kernel's (aide, builder, reviewer, scribe, triager), is how the kernel
+knows which role loads it; a folder named for no role is refused. The five
+adapted from mattpocock/skills (MIT) were received from the Operator
+Blueprint on 2026-10-12, content-identical, with `THIRD_PARTY_NOTICES.md`
+beside them; the kernel reads them from here once its commons reader lands
+(`DECISIONS.md` 14).
 
 ## Layout
 
@@ -85,7 +89,8 @@ these are infra questions." Each choice and its reason is in
 - `recipes/README.md` and `recipes/check`: what a Recipe is, how one is
   made and proven, and the assembly check that lays a feature on its base
   and runs the tests there.
-- `skills/`: empty but for a README until the kernel reads Skills here.
+- `skills/<role>/<name>/`: the Skills, each with supporting files beside
+  its `SKILL.md`; `skills/THIRD_PARTY_NOTICES.md` beside them.
 - `DECISIONS.md`: each decision with its date, who made it and its reason,
   the Director's words quoted. Where a Recipe's code was taken from is
   recorded there, never in the Recipe.

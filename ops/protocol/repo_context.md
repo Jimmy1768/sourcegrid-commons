@@ -8,7 +8,7 @@ why, is in `README.md`; every decision and its reason is in `DECISIONS.md`.
 ## What this repository is
 
 Content, not a product. The commons every OperatorKit Delegate reads:
-Recipes and, later, Skills. Nothing here is served, deployed or installed as
+Recipes and Skills. Nothing here is served, deployed or installed as
 a package. The kernel will read it as a folder the deployment names beside
 the Blueprint's; that reading is OperatorKit Planning's and is not yet built.
 
