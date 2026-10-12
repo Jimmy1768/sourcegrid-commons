@@ -61,7 +61,8 @@ not direct-copy the code — it's a read, which is the boost."
 Date: 2026-10-12, following his decisions 23 and 24 of 2026-10-09 in
 sourcegrid-labs
 Who: the Director
-Decision: web app, Rails, server-rendered, Rails 8 on SQLite; API service,
+Decision: web app, Rails, server-rendered, Rails 8 on SQLite (corrected by
+22: PostgreSQL); API service,
 Rails without screens; mobile app, Expo; rich app-like screens, a capability,
 React on the Rails back end; browser extension, TypeScript; automation and
 data reports, Python; static site, a static site generator. The commons
@@ -340,4 +341,24 @@ Golden-Template's models and auth-core migration, read as sources.
 Planning's rough build on `linked-accounts-rough` (`9f7cbc5`) is deleted
 with this landing.
 Reason: every criterion of the plan is met and shown able to fail.
+
+## 22. The web app base is Rails 8 on PostgreSQL
+
+Date: 2026-10-12
+Who: a correction, relayed by Workspace Recovery (ADVICE 272) from the
+Director's session with it: "it's not my rule. all Principals building on
+my product, would hit a wall going to production, right? … is this really
+MY choice? or preference?"; infrastructure with one answer, so not his
+choice
+Decision: the web-app base's database is PostgreSQL in every environment,
+in place of SQLite; decision 5 is corrected on this point and its other
+defaults stand. The API service base, when built, follows the same answer.
+The check runs each PostgreSQL app against a server of its own for the
+run, never the Director's.
+Reason: an app built on the commons goes to production, a hosted server
+with its own database, backups and room to grow. SQLite is a file on one
+machine, opened by the app's own process: no second machine can use it,
+one writer at a time, and PostgreSQL's types, `jsonb` among them, are
+missing. Every Rails project of his on this machine runs on PostgreSQL, and
+his dependents design uses `jsonb`.
 

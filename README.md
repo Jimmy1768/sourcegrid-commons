@@ -61,7 +61,8 @@ The stack checkpoint each base follows is his decision of 2026-10-09: web
 app, Rails, server-rendered; API service, Rails without screens; mobile app,
 Expo; rich screens, React on the Rails back end; browser extension,
 TypeScript; automation and data reports, Python; static site, a static site
-generator; the web-app base Rails 8 on SQLite. The first Recipes are what
+generator; the web-app base Rails 8 on PostgreSQL (corrected on
+2026-10-12, `DECISIONS.md` 22). The first Recipes are what
 his first Workshop project needs: a Rails web app with sign-in, kinds of
 users and linked accounts; then spreadsheet import.
 
