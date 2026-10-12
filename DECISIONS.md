@@ -278,3 +278,31 @@ meets* is written for the aide and the builder: what the build must prove,
 and how the Recipe's tests model it. Nothing in the format changes.
 Reason: his, above.
 
+## 20. The user-kinds feature is landed, accepted
+
+Date: 2026-10-12
+Who: Planning, on the Director's "go" for ASSIGNMENT.3
+Decision: Commons Control A's result, branch `user-kinds` at `7060227`
+(tree `04a7fad6`), is accepted and landed on `main`: `recipes/user-kinds/`,
+kinds of user on the web-app base with sign-in beneath it. Planning
+verified in the tree: the commit and tree as stated; 16 paths, all added,
+all under `recipes/user-kinds/`, no schema dump; R1 to R9 re-run and
+passing, each Map phrase counted on its own; the check laying sign-in then
+user-kinds, the nine changed files named in *What to wire*, 24 tests,
+rubocop and brakeman clean, on Ruby 4.0.7; red with `config/routes.rb`
+unnamed; live, the seeded admin opens `/people`, sees every login with its
+kind and has the nav link, and the seeded member is sent home to "You may
+not open that page." with no link. Beyond the plan, kept: `allow_kinds`
+refuses an unknown kind, or none, when the controller loads, so a kind
+left unrenamed fails loudly instead of shutting everyone out; the README
+shows `only:` and `except:` in a line, proven by the Control in a throwaway
+test not carried. The plan doc is deleted with this landing; the merge
+commit names it.
+Provenance (decision 12): the former user-kinds module on sourcegrid-labs'
+branch `recipe-spreadsheet-import-module` (`44e6c817`), read as a source,
+its enum, guard, People page, seeds and tests adapted to the landed base
+and sign-in; the migration made by `bin/rails generate migration` in Rails
+8.1.4. Planning's rough build on `user-kinds-rough` (`c2d98ff`), reviewed by
+Workspace Recovery as ADVICE 266, is deleted with this landing.
+Reason: every criterion of the plan is met and shown able to fail.
+
