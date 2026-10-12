@@ -386,3 +386,36 @@ landing; the merge commit names it. Planning's rough build on
 `postgresql-rough` (`a52f5c1`) is deleted with it.
 Reason: every criterion of the plan is met and shown able to fail.
 
+## 24. The spreadsheet-import feature is landed, accepted
+
+Date: 2026-10-12
+Who: Planning, on Workspace Recovery's ADVICE 271 and the Director's word
+that the cycle runs without his "go" at each step
+Decision: Commons Control A's result, branch `spreadsheet-import` at
+`1652eb7` (tree `a43b6a5f`), is accepted and landed on `main`:
+`recipes/spreadsheet-import/`, the person's records read from CSV or Excel
+with one command and at first setup, on the web-app base alone. The last of
+the Director's first contents (decision 6). Planning verified in the tree:
+23 paths, all added, all under `recipes/spreadsheet-import/`; R1 to R9;
+the check passing on its own PostgreSQL with 23 runs; red with
+`db/seeds.rb` unnamed; live, the seeds import the person's file, the
+problems file sets two rows aside with their reasons into a file, a rerun
+adds nothing, the `.xlsx` imports, an unreadable CSV and a file that is no
+workbook are each refused in one line by name with nothing saved, and the
+originals are unchanged; the Director's databases and the gem cache
+identical before and after. Kept beyond the plan: a zip with no workbook
+inside, which raises `ArgumentError` in `roo`, is refused too, a test
+proving it; a date's reason shows an example date. Planning's choice on
+what the Control left open: a file the seeds cannot read at first setup is
+named and setup goes on, since the app still runs and the person sees
+which file was refused; the command, run by hand, exits 1. The plan doc is
+deleted with this landing; the merge commit names it.
+Provenance (decision 12): the former spreadsheet-import module on
+sourcegrid-labs' branch `recipe-spreadsheet-import-module` (`44e6c817`),
+read as a source, its `contacts.xlsx` taken byte for byte; the model and
+migration from Rails 8.1.4's generator; `csv` 3.3.5 and `roo` 3.0.0, MIT and
+Ruby's and BSD-2-Clause licences, already installed. Planning's rough
+builds `spreadsheet-import-rough` (`6c3f25b`) and
+`spreadsheet-import-rough-pg` (`8718a94`) are deleted with this landing.
+Reason: every criterion of the plan is met and shown able to fail.
+
