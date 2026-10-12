@@ -4,7 +4,7 @@
 artifact:
   id: commons-kinds-and-linked-accounts
   owner: Commons Planning
-  status: plan__for_recovery_review
+  status: authorized
   date: 2026-10-12
   base_branch: main
   base_commit: the commit that lands this plan, stated in the assignment
@@ -14,7 +14,7 @@ artifact:
     app. A feature Recipe that builds on user-kinds and linked-accounts and
     carries the five files both change, merged, with a test of the two
     together; every test of the four Recipes runs in the one app.
-  implementation_authorized: false
+  implementation_authorized: true
 ```
 
 ## Why
@@ -74,7 +74,10 @@ Observed 2026-10-12.
     has People and Dependents; a member's has Dependents and not People; a
     member reaches their own dependents and is turned away from People;
     removing a user of either kind removes the dependents only they cared
-    for.
+    for; and the seeds, loaded as development would (`Rails.env` set and
+    restored around `Rails.application.load_seed`), make the three logins
+    with their kinds and Rosa Ortega with her two caretakers and their
+    labels, so the merged seeds cannot drift unseen.
 - **No rule of either feature changes**: a kind's pages stay guarded by
   `allow_kinds`, a user reaches only their own dependents whatever their
   kind. An admin's reach over every dependent is a spec's rule, not this
@@ -94,7 +97,7 @@ Observed 2026-10-12.
 - **Q2** `recipes/check kinds-and-linked-accounts` exits 0: it lays
   sign-in, user-kinds and linked-accounts, prints the difference for each
   of the five changed files, finds each named in *What to wire*, and runs
-  54 tests in parallel on its own PostgreSQL with 0 failures.
+  55 tests in parallel on its own PostgreSQL with 0 failures.
 - **Q3** Without the five merged files, the same check fails, user-kinds'
   own tests among the failures.
 - **Q4** Live, from a `--keep` folder: the seeded admin's home page has both
@@ -134,7 +137,7 @@ From the checkout root, each with its expected exit code.
 - **R1** `git diff --name-only <base> | grep -vE '^recipes/kinds-and-linked-accounts/|^recipes/linked-accounts/README\.md$'`
   prints nothing, exit 1.
 - **R2** `recipes/check kinds-and-linked-accounts` exit 0, output reported
-  whole; it shows "Running 54 tests in parallel" and 0 failures.
+  whole; it shows "Running 55 tests in parallel" and 0 failures.
 - **R3** `grep -rniE "golden-template|sourcegrid-(labs|worktrees|commons)|/Users/|~/Projects" recipes/kinds-and-linked-accounts`
   prints nothing, exit 1.
 - **R4** `git ls-files recipes/kinds-and-linked-accounts/code | wc -l`
@@ -147,7 +150,9 @@ From the checkout root, each with its expected exit code.
   `config/routes.rb` removed from *What to wire*, the check naming it
   before setup; and every file of `code/` but the combined test removed,
   the check failing in `bin/rails test` with user-kinds' `PeoplePageTest`
-  among the failures. Report each output's stop line and failing tests.
+  among the failures; and a third, the second member's kind changed in
+  the merged `db/seeds.rb`, failing in the seeds test alone. Report each
+  output's stop line and failing tests.
 - **R8** Q4 as commands and output, with the `--keep` folder's printed
   `PGHOST`, `PGPORT` and `PGUSER` and a cookie jar per login, ending with
   the printed command that stops and deletes the check's server.
@@ -171,6 +176,18 @@ tests in a scratch app outside the check, which created ten `web_app`
 databases on the Director's own server; Planning dropped exactly those ten
 and confirmed the list back to its recorded 36. The forbidden line above
 exists for that.
+
+## Reviewed
+
+Workspace Recovery, ADVICE 274, 2026-10-12: rebuilt from scratch copies of
+the rough build; sound, no gap. A combining Recipe carrying only the five
+clashing files is the right shape, the parents' own tests guarding the
+merged model, routes and layout; the seeds test was its suggestion,
+added in the rough build at the next commit, 55 runs, red with a wrong
+kind. One more `allow_kinds` case is a spec's policy, left out. The
+seeds' logins fit his first project's shape. On Planning's slip: dropping
+the ten databases was an irreversible act on his server without his word;
+the right handling was to report them and wait. Recovery told him.
 
 ## Not here
 
