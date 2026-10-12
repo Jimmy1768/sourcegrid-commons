@@ -1,8 +1,10 @@
 # Web app
 
-A Rails 8 web app on SQLite, server-rendered, with sign-in.
+A Rails 8 web app on PostgreSQL, server-rendered, with sign-in.
 
 ## Run it
+
+It needs a PostgreSQL server running on this computer.
 
     bin/setup   # installs the gems, prepares the database with the test login, and starts the app
     bin/dev     # starts it again, at http://localhost:3000

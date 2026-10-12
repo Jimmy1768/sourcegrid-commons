@@ -50,20 +50,30 @@ sources a Control takes code from (`DECISIONS.md` 13). Nothing under
 
 ## Checks
 
-- `recipes/check <id>`, from the repository root: assembles a Recipe in a
-  folder outside the repository and runs its setup, tests, rubocop and
-  brakeman there. Exit 0 is the only pass. It needs `rsync` and the Ruby the
-  base's `.ruby-version` names; rbenv on this machine has 3.2.3 and 4.0.7.
+- `recipes/check <id> [--keep]`, from the repository root: assembles a
+  Recipe in a folder outside the repository and runs its setup, tests,
+  rubocop and brakeman there, against a PostgreSQL server of its own for the
+  run. Exit 0 is the only pass. It needs `rsync`, the Ruby the base's
+  `.ruby-version` names (rbenv on this machine has 3.2.3 and 4.0.7, and
+  `pg` 1.6.3 for 4.0.7), and PostgreSQL's `initdb` and `pg_ctl` (14.18 here).
+- No gem is downloaded or installed in this repository's work: gems resolve
+  from what is installed, and `bundle lock` reads the index's metadata only.
+  A full `rails new` without `--skip-bundle` downloads the newest gems.
 - Nothing under `recipes/` names another repository or a path on this
   machine: a grep that must print nothing, named exactly in each plan.
 - A green check counts only after it has been shown able to fail.
 
 ## Databases
 
-None but SQLite files inside the check's assembled folders, which live under
-the system temp directory, never in the repository. A check keeps its folder
-so the assembled app can be started; whoever ran it deletes the folder when
-its reason ends.
+None on the Director's own PostgreSQL server. Each run of `recipes/check`
+makes a server of its own with `initdb` in a folder under the system temp
+directory, on a free port on 127.0.0.1, and stops and deletes it when the
+run ends, passing, failing or interrupted (`DECISIONS.md` 22, 23); runs
+never meet. With `--keep` the server is left running and the check prints
+how to reach it and the command that stops and deletes it; whoever kept it
+runs that command when done. The check keeps the assembled app's folder;
+whoever ran it deletes the folder. A command that deletes a folder names it
+by its literal path.
 
 ## What is local and what is not
 

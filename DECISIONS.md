@@ -362,3 +362,27 @@ one writer at a time, and PostgreSQL's types, `jsonb` among them, are
 missing. Every Rails project of his on this machine runs on PostgreSQL, and
 his dependents design uses `jsonb`.
 
+## 23. The web-app base on PostgreSQL is landed, accepted
+
+Date: 2026-10-12
+Who: Planning, on decision 22 and Workspace Recovery's ADVICE 273, which
+found nothing in it that needs the Director
+Decision: Commons Control A's result, branch `web-app-on-postgresql` at
+`c4cb487` (tree `cd8d3e26`), is accepted and landed on `main`. The base's
+`Gemfile` is Rails' own for PostgreSQL, its lock `pg` 1.6.3 for seven
+platforms with checksums and no `sqlite3`, its `database.yml` Rails' own
+with `gssencmode: disable` in the default block: on macOS, libpq set up for
+GSS encryption in a parent crashes a process forked from it, as a server
+daemon is, and production on a hosted server needs no GSS either. Sign-in's
+`Gemfile` and lock follow the base, `bcrypt` alone added. `recipes/check`
+runs each PostgreSQL app against a server of its own per run and names its
+version. Planning verified in the tree: the eleven paths; R1 to R4 and R9b;
+web-app, sign-in, user-kinds and linked-accounts passing with 1, 16, 24 and
+42 runs; the Director's 36 databases and the Ruby 4.0.7 gem cache
+identical before and after; a run made to fail stopping and deleting its
+server; a kept sign-in app served as a daemon with `PGGSSENCMODE` unset
+answering 302 and 200 and staying up. The plan doc is deleted with this
+landing; the merge commit names it. Planning's rough build on
+`postgresql-rough` (`a52f5c1`) is deleted with it.
+Reason: every criterion of the plan is met and shown able to fail.
+
