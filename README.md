@@ -1,11 +1,46 @@
-# sourcegrid-recipes
+# sourcegrid-library
 
-The shared, read-only library of Recipes that OperatorKit Delegates read.
-Its own repository, beside sourcegrid-labs and never inside it (the
-Director, 2026-10-12: "don't nest it inside sourcegrid-labs, it's already
-doing a lot").
+The shared, read-only library every OperatorKit Delegate reads: general
+know-how, told to a model and enforced by nothing. Its own repository,
+beside sourcegrid-labs and never inside it (the Director, 2026-10-12:
+"don't nest it inside sourcegrid-labs, it's already doing a lot").
 
-## What a Recipe is
+## What belongs here, and what does not
+
+Two questions sort everything a kernel installs (the Director's design,
+2026-10-12, with Recovery's reading):
+
+1. Is it about this one job and its person, or general know-how any
+   Delegate uses?
+2. Does the kernel enforce it, or only tell it to a model?
+
+| | enforced by the kernel | told to a model |
+| --- | --- | --- |
+| general | the General Map and the Gate: the kernel itself (operator-kit) | **this library**: Recipes, Skills |
+| this job's | the Domain Map, versioned and pinned | Traits, DDP, the Map's rules — the Blueprint (sourcegrid-labs) |
+
+So this library holds what is general and told. The Blueprint keeps what is
+this job's: its Domain Maps, its Traits and its DDP. A Skill about one job
+(how a legal Delegate cites a statute) is a Trait and stays in its Blueprint.
+
+## The library's rules
+
+- Read-only, for every Delegate: one item serves many Delegates, each its
+  own way; one upgrade helps all of them.
+- Latest only. Nothing here has a version: "a Recipe is not a
+  versioned-blocker, it's a boost, using tested code." Enforcement needs a
+  fixed reference, so the Domain Map is versioned; a boost needs none. A
+  misfit is caught by the Domain Map's checks at the build.
+- Nothing here points to another repository. Golden-Template and other
+  repositories are read-only sources the code is taken from; the code lives
+  here.
+- The kernel reads this library as a folder the deployment names beside the
+  Blueprint's, tells each role its index (name and one-line description) at
+  every request, and a role loads an item whole only when its task needs it.
+- Proprietary. Nothing of it ships in the OperatorKit npm package or in
+  operatorkit-open.
+
+## recipes/
 
 The Director, 2026-10-12: "Recipes aren't links. they are tested, finished,
 code, that is read and copied by the builder. Recipes are BIG." And: "each
@@ -19,29 +54,23 @@ work's own version from it, inventing and debugging nothing the Recipe
 already solves. The aide reads it while writing the spec, and the spec
 names the Recipes a build uses, as many as it needs.
 
-## The library's rules
+The stack checkpoint each base follows is his decision of 2026-10-09: web
+app, Rails, server-rendered; API service, Rails without screens; mobile app,
+Expo; rich screens, React on the Rails back end; browser extension,
+TypeScript; automation and data reports, Python; static site, a static site
+generator; the web-app base Rails 8 on SQLite. The first Recipes are what
+his first Workshop project needs: a Rails web app with sign-in, kinds of
+users and linked accounts; then spreadsheet import.
 
-- Read-only, for every Delegate: one Recipe serves many Delegates, each its
-  own way; one upgrade helps all of them.
-- Latest only. A Recipe has no version: "a Recipe is not a versioned-blocker,
-  it's a boost, using tested code." A misfit is caught by the Domain Map's
-  checks at the build.
-- Nothing in a Recipe points to another repository. Golden-Template and
-  other repositories are read-only sources the code is taken from; the code
-  lives here.
-- Not part of any Blueprint. A Blueprint is Traits, Skills, Domain Maps and
-  DDP; the kernel reads this library as a folder the deployment names beside
-  the Blueprint's.
-- Proprietary. Nothing of it ships in the OperatorKit npm package or in
-  operatorkit-open.
+## skills/
 
-## Layout and first contents
+A Skill is how a role does its work (test-first, diagnose, review,
+interview, spec), in the industry's SKILL.md form unchanged: a folder named
+for the Skill, a `name` and a one-line `description`, then its
+instructions. The five adapted from mattpocock/skills (MIT) move here from
+the Operator Blueprint when the kernel reads Skills from this library;
+nothing moves before that.
 
-Set by this repository's Planning when the Director names it. The stack
-checkpoint each base follows is his decision of 2026-10-09: web app, Rails,
-server-rendered; API service, Rails without screens; mobile app, Expo;
-rich screens, React on the Rails back end; browser extension, TypeScript;
-automation and data reports, Python; static site, a static site generator;
-the web-app base Rails 8 on SQLite. The first Recipes are what his first
-Workshop project needs: a Rails web app with sign-in, kinds of users and
-linked accounts; then spreadsheet import.
+## Layout beyond this
+
+Set by this repository's Planning when the Director names it.
