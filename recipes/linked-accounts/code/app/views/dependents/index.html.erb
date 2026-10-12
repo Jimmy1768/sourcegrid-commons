@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Dependents" %>
+
+<h1>Dependents</h1>
+
+<p>The people you act for, who do not sign in themselves.</p>
+
+<% if @dependents.any? %>
+  <ul id="dependents">
+    <% @dependents.each do |dependent| %>
+      <li><%= link_to dependent.name, dependent %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No dependents yet.</p>
+<% end %>
+
+<%= link_to "New dependent", new_dependent_path %>

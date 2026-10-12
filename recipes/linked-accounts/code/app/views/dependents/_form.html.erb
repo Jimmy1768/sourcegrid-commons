@@ -1,0 +1,32 @@
+<%= form_with(model: dependent) do |form| %>
+  <% if dependent.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(dependent.errors.count, "error") %> prohibited this dependent from being saved:</h2>
+
+      <ul>
+        <% dependent.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :birthdate, style: "display: block" %>
+    <%= form.date_field :birthdate %>
+  </div>
+
+  <div>
+    <%= label_tag :relationship_label, "What they are to you, such as daughter or father (optional)", style: "display: block" %>
+    <%= text_field_tag :relationship_label, @relationship_label %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
