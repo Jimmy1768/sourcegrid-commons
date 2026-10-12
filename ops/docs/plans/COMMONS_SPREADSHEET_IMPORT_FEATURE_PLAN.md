@@ -4,7 +4,7 @@
 artifact:
   id: commons-spreadsheet-import-feature
   owner: Commons Planning
-  status: plan__for_recovery_review
+  status: reviewed__for_the_directors_word
   date: 2026-10-12
   base_branch: main
   base_commit: the commit that lands this plan, stated in the assignment
@@ -64,7 +64,9 @@ Observed 2026-10-12.
   - Reads a `.csv` in UTF-8, in UTF-8 with a byte-order mark, or, when not
     valid UTF-8, in Windows-1252; and an `.xlsx` file's first sheet, its
     date cells as dates. Any other file is refused with a message and
-    nothing saved.
+    nothing saved; so is a CSV that cannot be read, such as one with an
+    unclosed quote, and an `.xlsx` that is not a workbook, each by the
+    file's name and never with a Ruby trace.
   - Matches the first row's headers to fields regardless of case and of
     spaces around them; an unknown column is ignored and named in the
     report; a missing required column stops the import before anything is
@@ -99,11 +101,13 @@ Observed 2026-10-12.
     an unknown column; a CSV with a byte-order mark and one in
     Windows-1252, with accented names; a CSV with a blank row, a row
     missing its name, a date in no accepted format and a repeated email; a
-    CSV missing the `name` column; and a small `.xlsx` with a date cell and
+    CSV missing the `name` column; a CSV with an unclosed quote; an
+    `.xlsx` that is not a workbook; and a small `.xlsx` with a date cell and
     a second sheet not read. `test/models/contact_test.rb`,
     `test/models/contact_import_test.rb`, `test/tasks/import_task_test.rb`.
-  - Changed, whole, each named in *What to wire*: `Gemfile`, `csv` and
-    `roo`; `Gemfile.lock`, the two resolved with their checksums;
+  - Changed, whole, each named in *What to wire*: `Gemfile`, the base's at
+    the commit the assignment names, plus `csv` and `roo`; `Gemfile.lock`,
+    the base's plus the two, with their checksums;
     `db/seeds.rb`, the import from `db/import/` in development; `README.md`,
     the app's own, saying where the person's file goes and how to import it
     again.
@@ -112,7 +116,12 @@ Observed 2026-10-12.
   three columns, renamed to the person's record, made as the spec's
   things-tracked say; and the importer's five settings, set from the
   person's file, one importer and one command for each kind of record the
-  file holds. *Checks it meets*, for the aide and the builder, by the Map's
+  file holds; and two cases a spec may bring and where they go, in
+  `import_row`: a row that fills two records and the link between them,
+  each found by its own key; and a column that names another record, found
+  by that record's key, the row set aside when none matches. The libraries'
+  licences once: `roo` MIT, `csv` Ruby's and BSD-2-Clause, `rubyzip`
+  BSD-2-Clause. *Checks it meets*, for the aide and the builder, by the Map's
   names: `new-software/web-app/starting-data` "The person's records are
   imported, or realistic sample data is loaded";
   `new-software/web-app/things-tracked` "Required details are enforced";
@@ -132,8 +141,10 @@ Observed 2026-10-12.
   the report; `bin/rails import:contacts` on the problems file prints the
   added, updated, skipped and set-aside counts with each set-aside row's
   number and reason, and the path of the set-aside file, which lists them;
-  running the good file again adds nothing; the original files are
-  byte-identical afterwards; reported with the commands and output.
+  running the good file again adds nothing; the CSV with an unclosed quote
+  and the `.xlsx` that is not a workbook are each refused by name with no
+  trace and nothing saved; the original files are byte-identical
+  afterwards; reported with the commands and output.
 - **Q4** Nothing under `recipes/spreadsheet-import/` names another
   repository or a path on this machine.
 - **Q5** Nothing generated, no database and no schema dump is tracked; the
@@ -191,6 +202,21 @@ From the checkout root, each with its expected exit code.
   `grep -c 'records are imported, or realistic sample data is loaded' recipes/spreadsheet-import/README.md`;
   `grep -c 'Required details are enforced' recipes/spreadsheet-import/README.md`;
   `grep -c 'One command starts it with its data' recipes/spreadsheet-import/README.md`.
+
+## Reviewed
+
+Workspace Recovery, ADVICE 271, 2026-10-12: rebuilt from a scratch copy of
+the rough build; sound, with two refusals missing, a CSV with an unclosed
+quote and a corrupt `.xlsx` crashing with a trace. Added in the design and
+in the rough build at `6c3f25b`: 19 tests, two new, each refusal by name.
+Whole by the size test for one kind of record per file; a command and the
+seeds with no page is the right shape, an upload page being a spec's ask
+under web-app's file-uploads capability. The checksums' limit: the lock's
+`csv` and `roo` values are the sha256 of the cached `.gem` files, equal to
+the former lock's; the authority is rubygems.org's own checksum, which the
+first networked `bundle install` verifies and fails loudly on a mismatch.
+The Gemfile and lock are re-cut from the PostgreSQL base once it lands, so
+they cannot lay SQLite back.
 
 ## Not here
 
