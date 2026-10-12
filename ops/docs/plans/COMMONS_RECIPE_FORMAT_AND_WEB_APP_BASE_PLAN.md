@@ -70,8 +70,11 @@ keys.
 ### The check, `recipes/check <id>`
 
 A Ruby script, run from the repository root; needs `rsync` and a Ruby,
-and the assembled app runs on the Ruby its own `.ruby-version` names. Never
-writes inside the repository. In order:
+and the assembled app runs on the Ruby its own `.ruby-version` names: the
+check restores the caller's original `PATH` and drops rbenv's exported
+selection for every step, since the shim that ran the script would
+otherwise hand every child its own Ruby, and it prints `ruby -v` from the
+assembled folder as evidence. Never writes inside the repository. In order:
 
 1. Reads `recipe.yml`. Stops, naming the cause, when the folder, the
    `README.md`, the `recipe.yml` or `code/` is missing; `id` differs from the
@@ -212,10 +215,12 @@ From the repository root, each with its expected exit code.
 ## The rough build
 
 Planning's rough build, for Recovery's review and never to land as is, is
-branch `web-app-rough` at `081e411` (tree `68f31e41`), on `main` `7ca5555`:
+branch `web-app-rough` at `bcabeb0` (tree `591dbb77`), on `main` `7ca5555`:
 `recipes/README.md`, `recipes/check` and `recipes/web-app/` as this plan
 says. Observed 2026-10-12: `recipes/check web-app` exits 0 in 29 seconds,
-brakeman reporting no warnings; run against `main`, which has no
+the assembled app on Ruby 4.0.7, brakeman reporting no warnings; its
+first version ran every step under the caller's Ruby 3.2.3, which the
+check now prevents; run against `main`, which has no
 `recipes/`, it exits 1; seven breaks in scratch copies each exit 1 at the
 claim they break (a heading as first line; a second line that is not
 blank; `id` differing from the folder; an unknown `kind`; a failing test;
