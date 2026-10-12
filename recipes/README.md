@@ -47,6 +47,8 @@ first.
 Nothing generated is kept. What the stack's own `.gitignore` excludes stays
 out of a Recipe: temporary files, logs, stored files, installed packages,
 databases and credential keys.
+A Recipe never carries a schema dump: the check's `bin/setup` writes it
+from the migrations, and so does the person's app.
 
 ## The index
 

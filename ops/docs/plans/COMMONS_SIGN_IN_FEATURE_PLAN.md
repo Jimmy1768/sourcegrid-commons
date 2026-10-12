@@ -4,7 +4,7 @@
 artifact:
   id: commons-sign-in-feature
   owner: Commons Planning
-  status: plan__for_recovery_review
+  status: reviewed__for_the_directors_word
   date: 2026-10-12
   base_branch: main
   base_commit: the commit that lands this plan, stated in the assignment
@@ -97,12 +97,16 @@ Observed 2026-10-12.
     app gets its own.
 - **`README.md`** in the format, with: *What it is*; *The files*, each
   added and each changed; *Generic names*: `User` and `Session` as the
-  models' names, and the test login's email address and password;
+  models' names, and the test login's email address and password, saying
+  that the fixtures' two users and their password are the tests' own and
+  not the person's;
   *What to wire*, the ten changed files above with what each change does;
   *The tests*; *Checks it meets*, by the Map's names:
   `new-software/web-app/sign-in`, "Each kind of user has a test login,
   listed for the person", "Signing out works", "Password-reset emails go
-  to a local inbox", each with how; and, stated as not this feature's,
+  to a local inbox", each with how, the last saying that the reviewer's
+  test reads the email's file under `tmp/mails/`, so the builder knows
+  what proves it; and, stated as not this feature's,
   "Each kind of user sees and does only what that kind may", which is
   `user-kinds`.
 - **Left out, said in the README**: kinds of user and permissions
@@ -170,6 +174,15 @@ From the checkout root, each with its expected exit code.
   prints a number of at least 1, exit 0; and
   `grep -cE 'test login, listed for the person|Signing out works|local inbox|only what that kind may' recipes/sign-in/README.md`
   prints a number of at least 4, exit 0.
+
+## Reviewed
+
+Workspace Recovery, ADVICE 263, 2026-10-12: rebuilt from a scratch copy of
+the rough build, branch `sign-in-rough` at `a49047b`; sound, no gap. Whole
+by the size test for sign-in alone; files under `tmp/mails/` meet the
+local-inbox check as a reviewer's test observes them; the app's README is
+the Map's "note" that lists the test login. The two README notes above
+and the schema-dump rule in `recipes/README.md` came from that review.
 
 ## Not here
 
