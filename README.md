@@ -71,6 +71,28 @@ instructions. The five adapted from mattpocock/skills (MIT) move here from
 the Operator Blueprint when the kernel reads Skills from this library;
 nothing moves before that.
 
-## Layout beyond this
+## Layout
 
-Set by this repository's Planning when the Director names it. Named a commons, not a library, on 2026-10-12: "library" already means a code dependency in the documents and the registry; a commons is shared know-how owned by none.
+Set by Commons Planning on 2026-10-12, on the Director's "i don't know.
+these are infra questions." Each choice and its reason is in
+`DECISIONS.md`.
+
+- `recipes/<id>/`: one folder per Recipe, flat, its kind stated inside.
+  `README.md`, whose first line is the one line the kernel's index tells;
+  `recipe.yml`, with `id`, `kind` (`base` or `feature`) and, for a feature,
+  `fits` and `builds_on`; `code/`, the whole app for a base, or every file
+  a feature adds or changes, whole, at its path inside its base.
+- `recipes/README.md` and `recipes/check`: what a Recipe is, how one is
+  made and proven, and the assembly check that lays a feature on its base
+  and runs the tests there.
+- `skills/`: empty but for a README until the kernel reads Skills here.
+- `DECISIONS.md`: each decision with its date, who made it and its reason,
+  the Director's words quoted. Where a Recipe's code was taken from is
+  recorded there, never in the Recipe.
+- `ops/protocol/`: the session protocol and work mode, received from the
+  workspace; `repo_context.md`, this repository's own.
+- `ops/docs/plans/`: plan docs, deleted when their work lands.
+
+Named a commons, not a library, on 2026-10-12: "library" already means a
+code dependency in the documents and the registry; a commons is shared
+know-how owned by none.
