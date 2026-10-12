@@ -180,3 +180,17 @@ Reason: the manifest that made the kernel read Skills from the Blueprint
 was reverted (sourcegrid-labs `57bd3166`), so decision 7's reason has no
 premise, and one copy received before the reader lands is as inert as the
 one it replaces.
+
+## 15. Controls work in the one checkout
+
+Date: 2026-10-12
+Who: the Director, as Commons Control A relayed his words to it ("this is
+wrong. you should be inside sourcegrid-commons, not in your own project");
+his to confirm in Planning's session
+Decision: a Control works in `~/Projects/sourcegrid-commons`, on its own
+branch, not in a worktree; the two worktrees Planning made this day are
+removed. One assignment is open at a time, Planning stays off the checkout
+while it is, and the Control leaves it on its branch, clean, when done.
+Reason: his own. Planning's reading: a worktree folder is another project
+to the app, so a Control there is outside the repository's session.
+

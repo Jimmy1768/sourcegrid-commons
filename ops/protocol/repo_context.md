@@ -21,18 +21,25 @@ made.
 - `main` is the only long-lived branch. There is no production branch and no
   server: the registry says deploy none, and the commons' rule is latest
   only, so `main` is what a deployment names.
-- Each task gets its own branch, cut from `main` at a named commit, in a
-  Control's own worktree. A Control never touches `main`.
+- Each task gets its own branch, cut from `main` at the commit its
+  `ASSIGNMENT` names, in the one checkout. A Control never commits to
+  `main`.
 - Planning verifies a `TERMINAL` as `claude_work_mode.md` §7 says, then
   lands accepted work on `main` in the primary checkout, recording
   `accepted` in that commit. Work that turns out wrong is deleted, not
   reverted.
 
-## Checkouts and worktrees
+## One checkout
 
-- Primary checkout: `~/Projects/sourcegrid-commons`, Planning's.
-- Controls: `~/Projects/sourcegrid-commons-worktrees/commons-control-a` and
-  `commons-control-b`.
+`~/Projects/sourcegrid-commons`, shared by Planning and the Controls on the
+Director's word of 2026-10-12 (`DECISIONS.md` 15). No worktrees. So:
+
+- One open assignment at a time.
+- While one is open, Planning switches no branch and reads `main` with
+  `git show main:<path>`.
+- A Control leaves the checkout on its branch, clean, at the commit its
+  `TERMINAL` names, and touches nothing after.
+- Planning verifies there, then lands accepted work on `main` there.
 
 ## Sources
 
