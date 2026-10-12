@@ -1,0 +1,213 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# recipes/check <id>
+#
+# Assembles a Recipe in a new folder under the system temp directory and
+# checks it there. Run from the repository root. Needs rsync and a Ruby; the
+# assembled app runs on the Ruby its own .ruby-version names, and the check
+# stops unless it does. Never writes inside the repository. Keeps the folder
+# it assembled, so the app can be started there, and prints its path. Exits
+# 0 only when every step passed.
+
+require "yaml"
+require "fileutils"
+require "tmpdir"
+require "open3"
+
+$stdout.sync = true
+
+ROOT = Dir.pwd
+RECIPES = File.join(ROOT, "recipes")
+
+# Left out of every copy: what a Rails app's own .gitignore keeps out of a
+# repository. A leading slash ties a name to the top of the Recipe's code/.
+EXCLUDES = %w[
+  /tmp/ /log/ /storage/ node_modules/ .git/ *.sqlite3*
+  /config/master.key /config/credentials/*.key
+].freeze
+
+STEPS = [
+  %w[bin/setup --skip-server],
+  %w[bin/rails test],
+  %w[bin/rubocop],
+  %w[bin/brakeman --no-pager]
+].freeze
+
+# The environment every step runs in. rbenv's shim, which started this
+# script, put its own Ruby first on the PATH and exported its choice, so a
+# child would inherit the caller's Ruby rather than the app's. Restore the
+# caller's PATH and drop the choice, and drop anything Bundler exported, so
+# the assembled folder alone decides which Ruby and which gems run.
+CHILD_ENV = {
+  "PATH" => ENV["RBENV_ORIG_PATH"] || ENV.fetch("PATH"),
+  "RBENV_VERSION" => nil,
+  "RBENV_DIR" => nil,
+  "BUNDLE_GEMFILE" => nil,
+  "BUNDLE_BIN_PATH" => nil,
+  "RUBYOPT" => nil,
+  "RUBYLIB" => nil
+}.freeze
+
+def stop(message)
+  warn "check: #{message}"
+  exit 1
+end
+
+def say(message)
+  puts "check: #{message}"
+end
+
+# Step 1: the manifest.
+def load_recipe(id)
+  dir = File.join(RECIPES, id)
+  stop "recipes/#{id} is missing" unless Dir.exist?(dir)
+  %w[README.md recipe.yml].each do |name|
+    stop "recipes/#{id}/#{name} is missing" unless File.file?(File.join(dir, name))
+  end
+  stop "recipes/#{id}/code is missing" unless Dir.exist?(File.join(dir, "code"))
+  manifest = begin
+    YAML.safe_load(File.read(File.join(dir, "recipe.yml")))
+  rescue StandardError => e
+    stop "recipes/#{id}/recipe.yml does not parse: #{e.message}"
+  end
+  stop "recipes/#{id}/recipe.yml is not a map of fields" unless manifest.is_a?(Hash)
+  unless manifest["id"] == id
+    stop "recipes/#{id}/recipe.yml: id #{manifest['id'].inspect} differs from the folder's name"
+  end
+  unless %w[base feature].include?(manifest["kind"])
+    stop "recipes/#{id}/recipe.yml: kind #{manifest['kind'].inspect} is neither base nor feature"
+  end
+  if manifest["kind"] == "feature"
+    manifest["fits"] = Array(manifest["fits"])
+    manifest["builds_on"] = Array(manifest["builds_on"])
+    stop "recipes/#{id}/recipe.yml: a feature names no base in fits" if manifest["fits"].empty?
+  end
+  manifest
+end
+
+# Step 2: the index line.
+def check_readme(id)
+  lines = File.read(File.join(RECIPES, id, "README.md")).lines.map(&:chomp)
+  first = lines[0].to_s
+  stop "recipes/#{id}/README.md: the first line is empty" if first.strip.empty?
+  if first.start_with?("#")
+    stop "recipes/#{id}/README.md: the first line is a heading, not the one-line description"
+  end
+  if first.length > 120
+    stop "recipes/#{id}/README.md: the first line runs past 120 characters (#{first.length})"
+  end
+  return if lines[1].to_s.strip.empty?
+
+  stop "recipes/#{id}/README.md: the second line is not blank, so the first line runs on"
+end
+
+def wire_section(id)
+  lines = File.read(File.join(RECIPES, id, "README.md")).lines
+  start = lines.index { |l| l.strip == "## What to wire" }
+  stop "recipes/#{id}/README.md: a feature needs a '## What to wire' section" unless start
+  rest = lines[(start + 1)..]
+  finish = rest.index { |l| l.start_with?("## ") } || rest.length
+  rest[0...finish].join
+end
+
+# Whether the text names the path whole, not as part of a longer path.
+def names?(text, path)
+  text.match?(%r{(?<![\w./-])#{Regexp.escape(path)}(?![\w./-])})
+end
+
+# Every feature laid beneath `id`, each with its own builds_on first, once each.
+def beneath(id, recipes, seen = [])
+  stop "builds_on loops at #{id}" if seen.include?(id)
+  recipe = (recipes[id] ||= load_recipe(id))
+  stop "#{seen.last} builds on #{id}, which is a base, not a feature" if recipe["kind"] == "base"
+  recipe["builds_on"].flat_map { |d| beneath(d, recipes, seen + [id]) + [d] }.uniq
+end
+
+# Step 3: the copy.
+def rsync(source, target)
+  args = ["rsync", "-a", *EXCLUDES.flat_map { |e| ["--exclude", e] }, "#{source}/", "#{target}/"]
+  system(*args) || stop("rsync failed: #{args.join(' ')}")
+end
+
+def lay_feature(id, dir)
+  code = File.join(RECIPES, id, "code")
+  wire = wire_section(id)
+  Dir.glob("**/*", File::FNM_DOTMATCH, base: code).sort.each do |rel|
+    source = File.join(code, rel)
+    target = File.join(dir, rel)
+    next unless File.file?(source) && File.file?(target)
+    next if FileUtils.compare_file(source, target)
+
+    diff, = Open3.capture2("diff", "-u", "--label", "a/#{rel}", "--label", "b/#{rel}", target, source)
+    puts diff
+    stop "#{id} changes #{rel}, which the README's What to wire section does not name" unless names?(wire, rel)
+  end
+  say "laying #{id}"
+  rsync(code, dir)
+end
+
+# Step 4: the app's own Ruby, then the app's own checks.
+def check_ruby(dir)
+  file = File.join(dir, ".ruby-version")
+  stop "the assembled app has no .ruby-version, so it names no Ruby to run on" unless File.file?(file)
+  wanted = File.read(file).strip.delete_prefix("ruby-")
+  say "ruby -v  (in #{dir}; .ruby-version names #{wanted})"
+  out, status = begin
+    Open3.capture2e(CHILD_ENV, "ruby", "-v", chdir: dir)
+  rescue SystemCallError => e
+    stop "ruby -v could not run in the assembled app: #{e.message}"
+  end
+  puts out
+  got = out[/\Aruby (\S+)/, 1]
+  stop "ruby -v exited #{status.exitstatus} in the assembled app, which names Ruby #{wanted}" unless status.success? && got
+  stop "the assembled app runs on Ruby #{got}, but its .ruby-version names #{wanted}" unless got == wanted
+end
+
+def run(dir, command)
+  say "#{command.join(' ')}  (in #{dir})"
+  return if system(CHILD_ENV, *command, chdir: dir)
+
+  stop "#{command.join(' ')} exited #{$?.exitstatus.inspect}"
+end
+
+id = ARGV[0] || stop("usage: recipes/check <id>")
+stop "#{id.inspect} is not a Recipe's id: letters, digits, - and _ only" unless id.match?(/\A[\w-]+\z/)
+stop "no recipes/ folder here; run from the repository root" unless Dir.exist?(RECIPES)
+temp = File.realpath(Dir.tmpdir)
+if "#{temp}/".start_with?("#{File.realpath(ROOT)}/")
+  stop "the system temp directory #{temp} is inside the repository"
+end
+
+recipes = {}
+recipe = (recipes[id] = load_recipe(id))
+
+bases = recipe["kind"] == "base" ? [id] : recipe["fits"]
+bases.each do |base|
+  b = (recipes[base] ||= load_recipe(base))
+  stop "recipes/#{id}/recipe.yml: fits names #{base}, which is not a base" unless b["kind"] == "base"
+end
+
+below = recipe["kind"] == "feature" ? beneath(id, recipes) : []
+below.each do |d|
+  unfit = bases - recipes[d]["fits"]
+  stop "#{id} builds on #{d}, which does not fit #{unfit.join(', ')}" unless unfit.empty?
+end
+
+check_readme(id)
+
+bases.each do |base|
+  dir = Dir.mktmpdir("commons-#{id}-on-#{base}-")
+  say "assembling #{base} in #{dir}"
+  rsync(File.join(RECIPES, base, "code"), dir)
+  below.each do |d|
+    say "laying #{d}"
+    rsync(File.join(RECIPES, d, "code"), dir)
+  end
+  lay_feature(id, dir) if recipe["kind"] == "feature"
+
+  check_ruby(dir)
+  STEPS.each { |command| run(dir, command) }
+  # Step 5: keep the folder and say where it is.
+  say "#{id} on #{base}: every step passed; the app is at #{dir} (bin/dev starts it there)"
+end
