@@ -4,7 +4,7 @@
 artifact:
   id: commons-linked-accounts-feature
   owner: Commons Planning
-  status: plan__for_recovery_review
+  status: reviewed__for_the_directors_word
   date: 2026-10-12
   base_branch: main
   base_commit: the commit that lands this plan, stated in the assignment
@@ -71,10 +71,15 @@ Observed 2026-10-12.
   several dependents. **Left out**, each added when a spec asks:
   `native_name`; `national_id`, a government identifier no v1 output calls
   for and the riskiest field to hold; `metadata`; and the dependent's own
-  `relationship_label`, since it is kept on the link. **Changed**:
+  `relationship_label`, since it is kept on the link: with several
+  caretakers, what the dependent is differs for each, which one label on
+  the dependent cannot say. **Changed**:
   `english_name` is `name`. **Added**, which his design does not have: the
   screens, a user reaching only their own dependents, and a dependent going
-  with its last link.
+  with its last link. The first two follow from the Map's "by those allowed
+  to". The third is the one product rule added, for a reason: a dependent
+  left alone is unreachable, since a user reaches only their own; a spec in
+  which some kind of user reaches every dependent may keep them.
 - **`code/`**, every file the feature adds or changes, whole, at its path
   inside the base's `code/` with sign-in laid on it:
   - Added: `app/models/dependent.rb`, `user_dependent.rb`;
@@ -94,6 +99,11 @@ Observed 2026-10-12.
     beside sign-in's and one dependent the two care for; `README.md`, the
     app's own, listing both logins and the Dependents page.
   - Not carried: `db/schema.rb`.
+- **Each caretaker's own label**, each with its test: the add-caretaker
+  form takes what the dependent is to the new caretaker, optional; the edit
+  screen shows the signed-in caretaker's own label and saves a change to it
+  with the dependent's details, together or not at all, never touching
+  another caretaker's.
 - **The rules**, each with its test: a signed-in user reaches only their
   own dependents, so another's is not found for every action, adding a
   caretaker among them; a pair is linked once; leaving keeps a dependent
@@ -130,8 +140,11 @@ Observed 2026-10-12.
   jar: the first seeded login's `GET /dependents` is 200 and lists the
   seeded dependent; its page shows both caretakers with what the dependent
   is to each; the second login's list shows it too; a dependent the second
-  login adds is not found, 404, for the first; reported with the commands
-  and output.
+  login adds is not found, 404, for the first; the second login adds the
+  first as that dependent's caretaker with a label, after which the first
+  reaches it and its page shows the label; the first changes their own
+  label on the edit screen and the page shows the new one beside the
+  second's unchanged; reported with the commands and output.
 - **Q4** Nothing under `recipes/linked-accounts/` names another repository
   or a path on this machine.
 - **Q5** Nothing generated, no database and no schema dump is tracked; no
@@ -189,7 +202,26 @@ From the checkout root, each with its expected exit code.
   `grep -c 'The connections between them can be followed' recipes/linked-accounts/README.md`;
   `grep -c 'the forbidden case blocked' recipes/linked-accounts/README.md`.
 
+## Reviewed
+
+Workspace Recovery, ADVICE 269, 2026-10-12: rebuilt from a scratch copy of
+the rough build, branch `linked-accounts-rough`; sound, with one gap: a
+caretaker's label could be set only once, by whoever added the dependent.
+Closed in the design above and in the rough build at `9f7cbc5`: 40 tests,
+two new. Leaving `national_id` out is right and not his question; building
+on sign-in alone, with the combining section, is the right shape; citing
+the Map's things-tracked, rules and sign-in checks is fine while main's Map
+has no linked-accounts capability. The two reasons above came from that
+review.
+
 ## Not here
+
+Recovery's suggestion, new and not this plan's: before the Director's first
+Workshop project, prove sign-in, user-kinds and linked-accounts assembled
+together once, since the check lays one feature's chain and nothing yet
+proves the three combined. Planning's to plan after this lands, on his
+word.
+
 
 `spreadsheet-import`, its own plan after this one lands; the dependent's
 other fields from his design, added when a spec asks; the second proof on
