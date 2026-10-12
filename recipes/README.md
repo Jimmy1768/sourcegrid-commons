@@ -70,10 +70,11 @@ the kernel reads the commons.
 ## The check
 
 ```bash
-recipes/check <id>
+recipes/check <id> [--keep]
 ```
 
-Run from the repository root. It needs `rsync` and a Ruby. The assembled
+Run from the repository root. It needs `rsync` and a Ruby, and for an app
+on PostgreSQL, PostgreSQL's `initdb`, `pg_ctl` and `psql`. The assembled
 app runs on the Ruby its own `.ruby-version` names, not on the Ruby that
 started the check. It never writes inside the repository. In order:
 
@@ -93,12 +94,33 @@ started the check. It never writes inside the repository. In order:
    difference for each file the feature changes, and stops when the
    README's *What to wire* section does not name that file.
 4. In the assembled folder, `ruby -v` must report the version that
-   `.ruby-version` names; any other, or none, stops the check. Then it
-   runs, in order, `bin/setup --skip-server`, `bin/rails test`,
-   `bin/rubocop` and `bin/brakeman --no-pager`. Each must exit 0.
+   `.ruby-version` names; any other, or none, stops the check. When the
+   app's `config/database.yml` names the `postgresql` adapter, the check
+   then makes a PostgreSQL server of its own for the run: `initdb` in a
+   new folder under the system temp directory, started with `pg_ctl` on a
+   free port on 127.0.0.1 with no socket file, and a line naming its
+   version, so a run's record says what it tested against. Every step
+   runs with `PGHOST`, `PGPORT` and `PGUSER` set to that server,
+   `PGGSSENCMODE=disable`, and `DATABASE_URL`, `PGDATABASE` and
+   `PGPASSWORD` cleared, so no run reaches any other server. It runs, in
+   order, `bin/setup --skip-server`, `bin/rails test`, `bin/rubocop` and
+   `bin/brakeman --no-pager`. Each must exit 0.
 5. It prints the folder's path and keeps the folder, so the assembled app
    can be started there with `bin/dev`. It exits 0 only when every step
    passed. Whoever ran it deletes the folder when done with it.
+
+When the check ends, however it ends, passing, failing, or interrupted
+with Ctrl-C or a TERM signal, it stops its PostgreSQL server, deletes
+that server's folder, and says so. With `--keep` it leaves the server
+running instead, and prints the `PGHOST`, `PGPORT` and `PGUSER` that reach
+it from the app's folder and the command that stops and deletes it; that
+is how the assembled app is started there.
+
+The run's server is made with `initdb --no-locale`, so it sorts text
+with the C collation, byte by byte: names with accents or in other
+scripts may sort differently than on a production server set up with a
+language's collation. A test that depends on that order says so, or
+sorts in Ruby.
 
 ## Proven twice
 

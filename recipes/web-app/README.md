@@ -1,4 +1,4 @@
-A web app that runs: Rails 8 on SQLite, server-rendered, with a home page, its test, and one command to set it up.
+A web app that runs: Rails 8 on PostgreSQL, server-rendered, with a home page, its test, and one command to set it up.
 
 # Web app
 
@@ -6,7 +6,7 @@ A web app that runs: Rails 8 on SQLite, server-rendered, with a home page, its t
 
 The base every web-app feature is laid on: a Rails 8.1 app as `rails new`
 makes it on the field's defaults, less deployment tooling and secrets, plus
-a home page. SQLite in every environment. Propshaft and import maps, so
+a home page. PostgreSQL in every environment. Propshaft and import maps, so
 there is no Node and no JavaScript build step. Hotwire's Turbo and
 Stimulus. Server-rendered ERB views. Minitest. Action Mailer, Active Job
 and Active Storage. Solid Queue, Solid Cache and Solid Cable, which Rails
@@ -20,6 +20,15 @@ person's app is for.
 `bin/setup --skip-server` stops before starting it; `bin/dev` starts it at
 http://localhost:3000. It runs on the Ruby `.ruby-version` names.
 
+It needs a PostgreSQL server running on the same computer. As Rails sets
+it up, the app connects to that server as the computer's own user, and
+`bin/setup` creates `web_app_development` and `web_app_test` there;
+`PGHOST`, `PGPORT` and `PGUSER` point it at another. The app is on
+PostgreSQL in every environment because it goes to production on a hosted
+database server, which many machines and processes share and which keeps
+its own backups; with the same database here, what passes here passes
+there, `jsonb` among the types.
+
 There are no credentials and no master key: a key no one else holds is no
 use to the builder. Development and test need none. Before production, the
 app needs its own, made with `bin/rails credentials:edit`, or a
@@ -27,7 +36,7 @@ app needs its own, made with `bin/rails credentials:edit`, or a
 
 ## The files
 
-- `Gemfile`, `Gemfile.lock`: Rails 8.1, `sqlite3`, `puma`, `propshaft`,
+- `Gemfile`, `Gemfile.lock`: Rails 8.1, `pg`, `puma`, `propshaft`,
   `importmap-rails`, `turbo-rails`, `stimulus-rails`, the three Solid gems,
   `bootsnap`, `image_processing` and `tzinfo-data`. For development and
   test, `debug`, `bundler-audit`, `brakeman` and `rubocop-rails-omakase`;
@@ -68,8 +77,13 @@ app needs its own, made with `bin/rails credentials:edit`, or a
     `environment.rb`; `environments/`, for development, test and
     production; `initializers/`; `locales/en.yml`.
   - `routes.rb`: `root "home#index"`, and the `/up` health check.
-  - `database.yml`: SQLite files under `storage/`, and in production one
-    each for the cache, the queue and cable.
+  - `database.yml`: Rails' own for PostgreSQL. `web_app_development` and
+    `web_app_test`; in production `web_app_production`, and one database
+    each for the cache, the queue and cable, with the password from
+    `WEB_APP_DATABASE_PASSWORD`. Its `default` block, which every
+    environment inherits, sets `gssencmode: disable`: on macOS, libpq set
+    up for GSS encryption in a parent process crashes a process forked
+    from it, as a server daemon is, and no connection here needs GSS.
   - `importmap.rb`: the JavaScript the import map serves.
   - `puma.rb`: the web server.
   - `cache.yml`, `queue.yml`, `recurring.yml`, `cable.yml`: the Solid
@@ -90,8 +104,11 @@ app needs its own, made with `bin/rails credentials:edit`, or a
 - `WebApp`, the app's module in `config/application.rb` and the name and
   description in `app/views/pwa/manifest.json.erb`: the spec's name for the
   app, in that spelling.
-- `web_app`, the name the app was generated with; it does not appear in
-  the code.
+- `web_app`, the name the app was generated with: in `database.yml`, the
+  databases `web_app_development`, `web_app_test` and `web_app_production`
+  with its cache, queue and cable, the production user `web_app`, and
+  `WEB_APP_DATABASE_PASSWORD`. The spec's name for the app, in that
+  spelling.
 - `Web app`, the title and the `application-name` in the layout, the `h1`
   on the home page, and what the home page's test looks for: the name the
   person sees.
@@ -109,7 +126,7 @@ app needs its own, made with `bin/rails credentials:edit`, or a
 By the New software Map's names:
 
 - `new-software/web-app/how-to-run`, "One command starts it with its
-  data": `bin/setup` installs, prepares the database and starts the app,
-  and `bin/dev` starts it again.
+  data": with the PostgreSQL server running, `bin/setup` installs,
+  prepares the database and starts the app, and `bin/dev` starts it again.
 - `new-software/web-app/screens`, "No screen shows an error": the home
   page, its only screen, and the test that it is served.

@@ -1,19 +1,22 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# recipes/check <id>
+# recipes/check <id> [--keep]
 #
 # Assembles a Recipe in a new folder under the system temp directory and
 # checks it there. Run from the repository root. Needs rsync and a Ruby; the
 # assembled app runs on the Ruby its own .ruby-version names, and the check
-# stops unless it does. Never writes inside the repository. Keeps the folder
-# it assembled, so the app can be started there, and prints its path. Exits
-# 0 only when every step passed.
+# stops unless it does. An app on PostgreSQL runs against a PostgreSQL server
+# of the check's own, made for the run and deleted when the check ends,
+# however it ends; with --keep the server is left running. Never writes
+# inside the repository. Keeps the folder it assembled, so the app can be
+# started there, and prints its path. Exits 0 only when every step passed.
 
 require "yaml"
 require "fileutils"
 require "tmpdir"
 require "open3"
+require "socket"
 
 $stdout.sync = true
 
@@ -164,14 +167,82 @@ def check_ruby(dir)
   stop "the assembled app runs on Ruby #{got}, but its .ruby-version names #{wanted}" unless got == wanted
 end
 
-def run(dir, command)
+def run(dir, command, env)
   say "#{command.join(' ')}  (in #{dir})"
-  return if system(CHILD_ENV, *command, chdir: dir)
+  return if system(env, *command, chdir: dir)
 
   stop "#{command.join(' ')} exited #{$?.exitstatus.inspect}"
 end
 
-id = ARGV[0] || stop("usage: recipes/check <id>")
+# A PostgreSQL server of the check's own, for one run: made with initdb in a
+# new folder under the system temp directory, started with pg_ctl on a free
+# port on 127.0.0.1 with no socket file, so nothing reaches any other server.
+# It sorts with the C collation (initdb --no-locale).
+def postgresql?(dir)
+  File.read(File.join(dir, "config/database.yml")).match?(/^\s*adapter:\s*postgresql\b/)
+rescue Errno::ENOENT
+  false
+end
+
+def on_path?(tool)
+  ENV.fetch("PATH").split(File::PATH_SEPARATOR).any? { |d| File.executable?(File.join(d, tool)) }
+end
+
+def free_port
+  server = TCPServer.new("127.0.0.1", 0)
+  server.addr[1]
+ensure
+  server&.close
+end
+
+POSTGRES_USER = "postgres"
+
+def start_postgresql(server)
+  %w[initdb pg_ctl psql].each { |tool| stop "the app is on PostgreSQL, and #{tool} is not on the PATH" unless on_path?(tool) }
+  out, status = Open3.capture2e("initdb", "-D", server[:data], "-U", POSTGRES_USER, "-A", "trust", "--no-locale", "-E", "UTF8")
+  stop "initdb failed:\n#{out}" unless status.success?
+
+  server[:port] = free_port
+  options = "-p #{server[:port]} -c listen_addresses=127.0.0.1 -c unix_socket_directories=''"
+  out, status = Open3.capture2e("pg_ctl", "-D", server[:data], "-l", File.join(server[:home], "server.log"), "-o", options, "-w", "start")
+  stop "pg_ctl could not start the check's PostgreSQL:\n#{out}" unless status.success?
+
+  version, status = Open3.capture2e(postgresql_env(server), "psql", "-d", "postgres", "-Atc", "show server_version")
+  stop "the check's PostgreSQL does not answer:\n#{version}" unless status.success?
+  say "PostgreSQL of its own: PostgreSQL #{version.strip}, at 127.0.0.1:#{server[:port]} as #{POSTGRES_USER}, in #{server[:home]}"
+end
+
+# What every step runs with: the check's server, and nothing pointing at any other.
+def postgresql_env(server)
+  {
+    "PGHOST" => "127.0.0.1", "PGPORT" => server[:port].to_s, "PGUSER" => POSTGRES_USER,
+    "PGGSSENCMODE" => "disable", "DATABASE_URL" => nil, "PGDATABASE" => nil, "PGPASSWORD" => nil
+  }
+end
+
+def stop_postgresql(server)
+  if File.exist?(File.join(server[:data], "postmaster.pid"))
+    _, status = Open3.capture2e("pg_ctl", "-D", server[:data], "-m", "fast", "-w", "stop")
+    Open3.capture2e("pg_ctl", "-D", server[:data], "-m", "immediate", "-w", "stop") unless status.success?
+  end
+  FileUtils.rm_rf(server[:home])
+  if Dir.exist?(server[:home])
+    warn "check: could not delete its PostgreSQL in #{server[:home]}"
+  else
+    say "stopped and deleted its PostgreSQL in #{server[:home]}"
+  end
+end
+
+def keep_postgresql(server)
+  say "--keep: its PostgreSQL is still running, in #{server[:home]}"
+  say "  to reach it from the app's folder: export PGHOST=127.0.0.1 PGPORT=#{server[:port]} PGUSER=#{POSTGRES_USER}"
+  say "  to stop and delete it: pg_ctl -D #{server[:data]} -m fast -w stop && rm -rf #{server[:home]}"
+end
+
+arguments = ARGV.dup
+keep = !arguments.delete("--keep").nil?
+id = arguments.shift || stop("usage: recipes/check <id> [--keep]")
+stop "unexpected arguments: #{arguments.join(' ')}; usage: recipes/check <id> [--keep]" unless arguments.empty?
 stop "#{id.inspect} is not a Recipe's id: letters, digits, - and _ only" unless id.match?(/\A[\w-]+\z/)
 stop "no recipes/ folder here; run from the repository root" unless Dir.exist?(RECIPES)
 temp = File.realpath(Dir.tmpdir)
@@ -207,7 +278,26 @@ bases.each do |base|
   lay_feature(id, dir) if recipe["kind"] == "feature"
 
   check_ruby(dir)
-  STEPS.each { |command| run(dir, command) }
-  # Step 5: keep the folder and say where it is.
-  say "#{id} on #{base}: every step passed; the app is at #{dir} (bin/dev starts it there)"
+  server = nil
+  begin
+    env = CHILD_ENV
+    if postgresql?(dir)
+      home = Dir.mktmpdir("commons-postgres-#{id}-on-#{base}-")
+      server = { home: home, data: File.join(home, "data") }
+      start_postgresql(server)
+      env = CHILD_ENV.merge(postgresql_env(server))
+    end
+    STEPS.each { |command| run(dir, command, env) }
+    # Step 5: keep the folder and say where it is.
+    if server && !keep
+      say "#{id} on #{base}: every step passed; the app is at #{dir} (its PostgreSQL goes with this run; with --keep, bin/dev starts it there)"
+    else
+      say "#{id} on #{base}: every step passed; the app is at #{dir} (bin/dev starts it there)"
+    end
+  ensure
+    if server
+      running = File.exist?(File.join(server[:data], "postmaster.pid"))
+      keep && running ? keep_postgresql(server) : stop_postgresql(server)
+    end
+  end
 end
