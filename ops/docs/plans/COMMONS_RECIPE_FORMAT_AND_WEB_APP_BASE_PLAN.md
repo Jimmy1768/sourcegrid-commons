@@ -4,7 +4,7 @@
 artifact:
   id: commons-recipe-format-and-web-app-base
   owner: Commons Planning
-  status: plan__for_recovery_review
+  status: reviewed__for_the_directors_word
   date: 2026-10-12
   base_branch: main
   base_commit: the commit that lands this plan, stated in the assignment
@@ -73,8 +73,9 @@ A Ruby script, run from the repository root; needs `rsync` and a Ruby,
 and the assembled app runs on the Ruby its own `.ruby-version` names: the
 check restores the caller's original `PATH` and drops rbenv's exported
 selection for every step, since the shim that ran the script would
-otherwise hand every child its own Ruby, and it prints `ruby -v` from the
-assembled folder as evidence. Never writes inside the repository. In order:
+otherwise hand every child its own Ruby, and it fails unless `ruby -v` in
+the assembled folder matches its `.ruby-version`. Never writes inside the
+repository. In order:
 
 1. Reads `recipe.yml`. Stops, naming the cause, when the folder, the
    `README.md`, the `recipe.yml` or `code/` is missing; `id` differs from the
@@ -93,9 +94,10 @@ assembled folder as evidence. Never writes inside the repository. In order:
    already exists beneath, prints a unified diff from the file beneath to the
    feature's, and stops when the README's *What to wire* section does not
    name that file.
-4. In the assembled folder, in order: `bin/setup --skip-server`,
-   `bin/rails test`, `bin/rubocop`, `bin/brakeman --no-pager`. Each must exit
-   0.
+4. In the assembled folder, `ruby -v` must report the version the folder's
+   `.ruby-version` names; any other, or none, stops the check. Then, in
+   order: `bin/setup --skip-server`, `bin/rails test`, `bin/rubocop`,
+   `bin/brakeman --no-pager`. Each must exit 0.
 5. Prints the folder's path and keeps it, so the assembled app can be started
    there with `bin/dev`. Exits 0 only when every step passed.
 
@@ -104,7 +106,12 @@ assembled folder as evidence. Never writes inside the repository. In order:
 What a Recipe is, in the Director's words of `DECISIONS.md` 4; the folder
 format and the check as above; the index rule; that a feature is proven on
 its base by the check, and later by a real Mandate whose spec names it.
-Names no other repository.
+That a Skill's index line is the industry's `name` and `description`,
+while a Recipe has no industry format, so this format is the commons' own;
+and that the index may also carry a Recipe's `kind`, `fits` and
+`builds_on`, so the aide naming one Recipe knows what it builds on, which
+is OperatorKit Planning's to settle when it plans the commons root. Names
+no other repository.
 
 ### The web-app base, `recipes/web-app/`
 
@@ -124,7 +131,10 @@ Names no other repository.
   the app's generic name. `db/seeds.rb` present. Nothing else: the base is
   the skeleton every feature is laid on.
 - `README.md` in the format above. Generic names: the app's module name and
-  its shown title. Checks it meets: the Map's, by name, or `none`.
+  its shown title. Checks it meets, by the New software Map's names:
+  `new-software/web-app/how-to-run`, "One command starts it with its
+  data", by `bin/setup` and `bin/dev`; `new-software/web-app/screens`, "No
+  screen shows an error", by the home page and its test.
 - `recipe.yml`: `id: web-app`, `kind: base`.
 
 The former base on SourceGrid Control B's branch may be read to compare; what
@@ -211,6 +221,17 @@ From the repository root, each with its expected exit code.
   heading in a scratch copy of the Recipe outside the repository, or
   reported by the Control in another way that shows a non-zero exit. Exit
   non-zero, reported.
+- **R8** The check refuses the wrong Ruby: in a scratch copy, with
+  `code/.ruby-version` set to a version this machine does not have, the
+  check exits non-zero before `bin/setup`. Reported.
+- **R9** The README's *Checks it meets* section names exactly
+  `new-software/web-app/how-to-run` and `new-software/web-app/screens`:
+
+  ```bash
+  grep -cE 'new-software/web-app/(how-to-run|screens)' recipes/web-app/README.md
+  ```
+
+  prints 2, exit 0.
 
 ## The rough build
 
@@ -225,7 +246,11 @@ check now prevents; run against `main`, which has no
 claim they break (a heading as first line; a second line that is not
 blank; `id` differing from the folder; an unknown `kind`; a failing test;
 a rubocop offence; `code/` missing). R1, R3, R4 as amended, R5 and R6 pass
-on it.
+on it. Reviewed by Workspace Recovery (ADVICE 260, 2026-10-12): rebuilt
+from a scratch copy, sound, no gap. The Ruby assertion of step 4, the
+format note in `recipes/README.md` and the two Map checks in the base's
+README came from that review and are not in the rough build; the Control
+builds to this plan, not to the branch.
 
 ## Not here
 

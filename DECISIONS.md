@@ -91,10 +91,11 @@ the Skills anywhere.
 ## 8. Infrastructure is Planning's
 
 Date: 2026-10-12
-Who: the Director
+Who: Planning, under the Director's standing rule that engineering with one
+answer is never his decision (Workspace Recovery's ADVICE 259)
 Decision: the layout, the Recipe format and the tooling are Planning's to
-set and show him before they land. Asked the layout questions of this day,
-he answered: "i don't know. these are infra questions."
+set and show him before they land. The occasion: asked the layout questions
+of this day, he answered "i don't know. these are infra questions."
 Reason: his rule of 2026-10-09, "don't invent things without telling me",
 is met by showing, not by asking. Decisions 9 to 13 are Planning's under
 this one.
