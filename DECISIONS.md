@@ -306,3 +306,38 @@ and sign-in; the migration made by `bin/rails generate migration` in Rails
 Workspace Recovery as ADVICE 266, is deleted with this landing.
 Reason: every criterion of the plan is met and shown able to fail.
 
+## 21. The linked-accounts feature is landed, accepted
+
+Date: 2026-10-12
+Who: Planning, on the Director's "go" for ASSIGNMENT.4
+Decision: Commons Control A's result, branch `linked-accounts` at
+`eb0811d` (tree `3f774816`), is accepted and landed on `main`:
+`recipes/linked-accounts/`, the Director's dependents design on the
+web-app base with sign-in beneath it. Planning verified in the tree: the
+commit and tree as stated; 25 paths, all added, all under
+`recipes/linked-accounts/`, no schema dump, no `national_id`; R1 to R9
+re-run and passing, each Map phrase counted on its own; the check laying
+sign-in then linked-accounts, the five changed files named in *What to
+wire*, 42 tests, rubocop and brakeman clean, on Ruby 4.0.7; red with
+`config/routes.rb` unnamed while the first line passes; live, both seeded
+logins share Rosa with their own labels, a dependent the carer adds is
+404 for the other login until added as its caretaker with a label, and
+that caretaker changes their own label with the other's unchanged.
+Of his design (Golden-Template `595031a`): kept, a dependent who does not
+sign in, a link with a role defaulting to caretaker and what the dependent
+is to that user, linked once, several either way; left out, the native
+name, the national identity number, metadata and the dependent's own
+label, each added when a spec asks; changed, `english_name` to `name`, and
+the label kept on the link because it differs per caretaker; added, the
+screens, a user reaching only their own, and a dependent going with its
+last link, since one left alone is unreachable. Each caretaker sets and
+changes their own label (Workspace Recovery, ADVICE 269 and 270). The plan
+doc is deleted with this landing; the merge commit names it.
+Provenance (decision 12): Rails 8.1.4's scaffold and model generators for
+`Dependent` and `UserDependent`; the former linked-accounts module on
+sourcegrid-labs' branch `recipe-spreadsheet-import-module` (`44e6c817`) and
+Golden-Template's models and auth-core migration, read as sources.
+Planning's rough build on `linked-accounts-rough` (`9f7cbc5`) is deleted
+with this landing.
+Reason: every criterion of the plan is met and shown able to fail.
+

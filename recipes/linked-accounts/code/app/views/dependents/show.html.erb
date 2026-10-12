@@ -1,0 +1,37 @@
+<p style="color: green"><%= notice %></p>
+<p style="color: red"><%= alert %></p>
+
+<% content_for :title, @dependent.name %>
+
+<%= render @dependent %>
+
+<h2>Caretakers</h2>
+
+<ul id="caretakers">
+  <% @links.each do |link| %>
+    <li><%= link.user.email_address %><% if link.relationship_label.present? %> (<%= link.relationship_label %>)<% end %></li>
+  <% end %>
+</ul>
+
+<%= form_with url: dependent_caretakers_path(@dependent) do |form| %>
+  <div>
+    <%= form.label :email_address, "Add a caretaker: the email address of someone who can sign in", style: "display: block" %>
+    <%= form.email_field :email_address, required: true %>
+  </div>
+
+  <div>
+    <%= form.label :relationship_label, "What #{@dependent.name} is to them, such as neighbour or son (optional)", style: "display: block" %>
+    <%= form.text_field :relationship_label %>
+  </div>
+
+  <div>
+    <%= form.submit "Add caretaker" %>
+  </div>
+<% end %>
+
+<div>
+  <%= link_to "Edit this dependent", edit_dependent_path(@dependent) %> |
+  <%= link_to "Back to dependents", dependents_path %>
+
+  <%= button_to "Stop caring for #{@dependent.name}", leave_dependent_path(@dependent), method: :delete %>
+</div>
