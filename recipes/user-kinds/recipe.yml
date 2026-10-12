@@ -1,0 +1,4 @@
+id: user-kinds
+kind: feature
+fits: [web-app]
+builds_on: [sign-in]
