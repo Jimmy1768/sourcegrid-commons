@@ -4,7 +4,7 @@
 artifact:
   id: commons-spreadsheet-import-feature
   owner: Commons Planning
-  status: reviewed__for_the_directors_word
+  status: authorized
   date: 2026-10-12
   base_branch: main
   base_commit: the commit that lands this plan, stated in the assignment
@@ -15,7 +15,7 @@ artifact:
     with its settings at its top, a report, rows that fail set aside with
     their reasons while the rest import, a second run adding no duplicates,
     and the tests. On the web-app base alone.
-  implementation_authorized: false
+  implementation_authorized: true
 ```
 
 ## Why
@@ -33,7 +33,9 @@ realistic sample data is loaded."
 
 Observed 2026-10-12.
 
-- `recipes/web-app/` and its three features on `main`.
+- `recipes/web-app/` on PostgreSQL (`DECISIONS.md` 22, 23) and its three
+  features on `main`; `recipes/check` runs each app against a PostgreSQL of
+  its own per run, `--keep` leaving it up for a live walk.
 - The former spreadsheet-import module on sourcegrid-labs' branch
   `recipe-spreadsheet-import-module` (`44e6c817`), read-only, never landed:
   the importer, the example record, the command, the seeds, six test files
@@ -42,8 +44,10 @@ Observed 2026-10-12.
   whole, adapted to the landed base.
 - On this machine, for Ruby 4.0.7: `csv` 3.3.5, `roo` 3.0.0, `rubyzip`
   3.7.0 and `nokogiri` 1.19.4 installed, and the two `.gem` files cached.
-  The base's lock already carries `rubyzip` and `nokogiri`. So the gems
-  resolve locally with `bundle install --local`, and nothing is downloaded.
+  The base's lock already carries `rubyzip` and `nokogiri`. `bundle lock`
+  from the index's metadata would choose `csv` 3.3.6, which is not
+  installed; pinned to 3.3.5 for the lock, then the plain line restored, it
+  keeps 3.3.5, and nothing is downloaded.
 
 ## The design
 
@@ -107,9 +111,10 @@ Observed 2026-10-12.
     `test/models/contact_import_test.rb`, `test/tasks/import_task_test.rb`.
   - Changed, whole, each named in *What to wire*: `Gemfile`, the base's at
     the commit the assignment names, plus `csv` and `roo`; `Gemfile.lock`,
-    the base's plus the two, with their checksums;
-    `db/seeds.rb`, the import from `db/import/` in development; `README.md`,
-    the app's own, saying where the person's file goes and how to import it
+    the base's plus the two, with their checksums, `csv` at the installed
+    3.3.5; `db/seeds.rb`, the import from `db/import/` in development;
+    `README.md`, the app's own, on PostgreSQL, saying it needs a PostgreSQL
+    server running, where the person's file goes and how to import it
     again.
   - Not carried: `db/schema.rb`.
 - **`README.md`** in the format, with *Generic names*: `Contact` and its
@@ -136,7 +141,8 @@ Observed 2026-10-12.
   spreadsheet-import on web-app, prints the difference for each changed
   file, finds each named in *What to wire*, and every step passes on Ruby
   4.0.7.
-- **Q3** From the check's kept folder: with the good CSV copied to
+- **Q3** From the folder `recipes/check spreadsheet-import --keep` kept, with
+  the printed `PGHOST`, `PGPORT` and `PGUSER`: with the good CSV copied to
   `db/import/contacts.csv`, `bin/rails db:seed` imports its rows and prints
   the report; `bin/rails import:contacts` on the problems file prints the
   added, updated, skipped and set-aside counts with each set-aside row's
@@ -160,12 +166,15 @@ Observed 2026-10-12.
 `recipes/check`, `recipes/README.md`, `README.md`, `DECISIONS.md`,
 `ops/**`, `skills/**`; committing to `main`; merging; pushing; deploying,
 ssh, any provider or server this work would act on or send to; writing in
-any other repository; installing a gem that is not already installed.
+any other repository; downloading a gem file, or installing or
+uninstalling a gem; creating, changing or dropping a database on the
+Director's own PostgreSQL server.
 Reads of public package indexes that Rails' own tools make are allowed.
 
 **Allowed locally:** a copy of the base in a scratch folder outside the
 repository to build the feature in, resolving gems with
-`bundle install --local`; the check's folders; reading, read-only,
+`bundle install --local`; `bundle lock` in a scratch folder, `csv` pinned
+to 3.3.5 for it and the plain line restored; the check's folders; reading, read-only,
 `~/Projects/sourcegrid-worktrees/sourcegrid-control-b/blueprints/operator/recipes/modules/spreadsheet-import/`
 as a source, its test files among it.
 
@@ -194,7 +203,11 @@ From the checkout root, each with its expected exit code.
   section and the first line still passing, `recipes/check
   spreadsheet-import` exits non-zero naming that file, before `bin/setup`.
   Reported.
-- **R8** Q3 as commands and output, from the check's kept folder.
+- **R8** Q3 as commands and output, from the folder
+  `recipes/check spreadsheet-import --keep` kept, with its printed
+  `PGHOST`, `PGPORT` and `PGUSER`; then the printed command that stops and
+  deletes its PostgreSQL, after which `pgrep -f 'postgres.*commons-'`
+  prints nothing.
 - **R9** Each phrase on its own, each printing at least 1, exit 0:
   `grep -c 'new-software/web-app/starting-data' recipes/spreadsheet-import/README.md`;
   `grep -c 'new-software/web-app/things-tracked' recipes/spreadsheet-import/README.md`;
@@ -215,8 +228,10 @@ under web-app's file-uploads capability. The checksums' limit: the lock's
 `csv` and `roo` values are the sha256 of the cached `.gem` files, equal to
 the former lock's; the authority is rubygems.org's own checksum, which the
 first networked `bundle install` verifies and fails loudly on a mismatch.
-The Gemfile and lock are re-cut from the PostgreSQL base once it lands, so
-they cannot lay SQLite back.
+The Gemfile and lock re-cut from the PostgreSQL base once it landed, in
+Planning's rough build `spreadsheet-import-rough-pg` at `8718a94`: 19 runs
+on the check's own PostgreSQL, the live walk and both refusals as before,
+nothing downloaded.
 
 ## Not here
 
