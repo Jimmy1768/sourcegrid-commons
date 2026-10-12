@@ -133,6 +133,10 @@ builder combines the two:
   both: the kind and the links on `User`, both nav links, both routes, a
   test login for each kind, and the dependents the spec needs.
 
+The Recipe `kinds-and-linked-accounts` is that combination, built and
+tested: it builds on user-kinds and linked-accounts, carries those five
+files merged, and runs every test of both beside its own in one app.
+
 ## The tests
 
 - `test/models/dependent_test.rb`: a name is required and a birthdate is
