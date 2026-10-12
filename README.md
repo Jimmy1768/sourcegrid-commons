@@ -1,7 +1,7 @@
-# sourcegrid-library
+# sourcegrid-commons
 
-The shared, read-only library every OperatorKit Delegate reads: general
-know-how, told to a model and enforced by nothing. Its own repository,
+The commons every OperatorKit Delegate reads: shared, read-only general
+know-how, told to a model and enforced by nothing, owned by no Delegate. Its own repository,
 beside sourcegrid-labs and never inside it (the Director, 2026-10-12:
 "don't nest it inside sourcegrid-labs, it's already doing a lot").
 
@@ -16,14 +16,14 @@ Two questions sort everything a kernel installs (the Director's design,
 
 | | enforced by the kernel | told to a model |
 | --- | --- | --- |
-| general | the General Map and the Gate: the kernel itself (operator-kit) | **this library**: Recipes, Skills |
+| general | the General Map and the Gate: the kernel itself (operator-kit) | **this commons**: Recipes, Skills |
 | this job's | the Domain Map, versioned and pinned | Traits, DDP, the Map's rules — the Blueprint (sourcegrid-labs) |
 
-So this library holds what is general and told. The Blueprint keeps what is
+So this commons holds what is general and told. The Blueprint keeps what is
 this job's: its Domain Maps, its Traits and its DDP. A Skill about one job
 (how a legal Delegate cites a statute) is a Trait and stays in its Blueprint.
 
-## The library's rules
+## The commons' rules
 
 - Read-only, for every Delegate: one item serves many Delegates, each its
   own way; one upgrade helps all of them.
@@ -34,7 +34,7 @@ this job's: its Domain Maps, its Traits and its DDP. A Skill about one job
 - Nothing here points to another repository. Golden-Template and other
   repositories are read-only sources the code is taken from; the code lives
   here.
-- The kernel reads this library as a folder the deployment names beside the
+- The kernel reads this commons as a folder the deployment names beside the
   Blueprint's, tells each role its index (name and one-line description) at
   every request, and a role loads an item whole only when its task needs it.
 - Proprietary. Nothing of it ships in the OperatorKit npm package or in
@@ -73,4 +73,4 @@ nothing moves before that.
 
 ## Layout beyond this
 
-Set by this repository's Planning when the Director names it.
+Set by this repository's Planning when the Director names it. Named a commons, not a library, on 2026-10-12: "library" already means a code dependency in the documents and the registry; a commons is shared know-how owned by none.
