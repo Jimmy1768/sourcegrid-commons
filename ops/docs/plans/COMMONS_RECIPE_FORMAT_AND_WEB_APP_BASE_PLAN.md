@@ -69,8 +69,9 @@ keys.
 
 ### The check, `recipes/check <id>`
 
-Run from the repository root; needs only `bash`, `rsync` and the Ruby the
-base's `.ruby-version` names. Never writes inside the repository. In order:
+A Ruby script, run from the repository root; needs `rsync` and a Ruby,
+and the assembled app runs on the Ruby its own `.ruby-version` names. Never
+writes inside the repository. In order:
 
 1. Reads `recipe.yml`. Stops, naming the cause, when the folder, the
    `README.md`, the `recipe.yml` or `code/` is missing; `id` differs from the
@@ -104,13 +105,21 @@ Names no other repository.
 
 ### The web-app base, `recipes/web-app/`
 
-- `code/`: a Rails 8 app made by `rails new` on the field's defaults: SQLite,
-  Propshaft, import maps, Turbo and Stimulus, Minitest, server-rendered ERB.
-  No API-only, no JavaScript bundler, no CSS framework. `.ruby-version` names
-  a Ruby rbenv has on this machine. Beyond `rails new`: a home page at `/`
-  (one controller, one view, its test) and a layout that shows the app's
-  generic name. `db/seeds.rb` present. Nothing else: the base is the
-  skeleton every feature is laid on.
+- `code/`: a Rails 8 app made by `rails new code --name=web_app` on the
+  field's defaults, less deployment tooling and secrets: `--skip-git`
+  (no nested repository), `--skip-docker`, `--skip-kamal`, `--skip-thruster`,
+  `--skip-jbuilder`, `--skip-ci`, `--skip-devcontainer`. So SQLite,
+  Propshaft, import maps, Turbo and Stimulus, Minitest, server-rendered ERB;
+  no API-only, no JavaScript bundler, no CSS framework. Skipping git also
+  skips Rails' `.gitignore` and `.gitattributes`: take both from a
+  generation made with git, in a scratch folder, so what Rails ignores stays
+  ignored. Remove `config/credentials.yml.enc` and `config/master.key`: a
+  key no one else holds is no use to the builder. `.ruby-version` names the
+  Ruby the generator ran on, one rbenv has on this machine; Ruby 3.2 is past
+  its end of life, so 4.0.7. Beyond `rails new`: a home page at `/` (one
+  controller, one view, its test) and a layout whose title is the page's or
+  the app's generic name. `db/seeds.rb` present. Nothing else: the base is
+  the skeleton every feature is laid on.
 - `README.md` in the format above. Generic names: the app's module name and
   its shown title. Checks it meets: the Map's, by name, or `none`.
 - `recipe.yml`: `id: web-app`, `kind: base`.
@@ -126,8 +135,9 @@ report, not to carry over.
 - **Q2** `recipes/check` exists, does the five steps above, and
   `recipes/check web-app` exits 0 on this machine.
 - **Q3** `recipes/web-app/` holds `README.md`, `recipe.yml` and `code/` as
-  above; from the check's assembled folder, `bin/dev` serves the home page at
-  `/` with status 200, reported with the command and its output.
+  above; from the check's assembled folder, `bin/rails server` serves the
+  home page at `/` with status 200 and the app's generic name in its `h1`,
+  reported with the command and its output.
 - **Q4** Nothing under `recipes/` names another repository or a path on
   this machine.
 - **Q5** Nothing the stack's `.gitignore` excludes is tracked.
@@ -175,10 +185,11 @@ From the repository root, each with its expected exit code.
 - **R4** Nothing generated is tracked:
 
   ```bash
-  git ls-files recipes/web-app/code | grep -E "^recipes/web-app/code/(tmp|log|storage|node_modules)/|\.sqlite3|master\.key|credentials/.*\.key"
+  git ls-files recipes/web-app/code | grep -E "^recipes/web-app/code/(tmp|log|storage|node_modules)/|\.sqlite3|master\.key|credentials" | grep -vE '/\.keep$'
   ```
 
-  prints nothing, exit 1.
+  prints nothing, exit 1. Rails' own `.keep` files under `tmp/`, `log/` and
+  `storage/` are kept on purpose, by its `.gitignore`.
 - **R5** The index line:
 
   ```bash
@@ -197,6 +208,19 @@ From the repository root, each with its expected exit code.
   heading in a scratch copy of the Recipe outside the repository, or
   reported by the Control in another way that shows a non-zero exit. Exit
   non-zero, reported.
+
+## The rough build
+
+Planning's rough build, for Recovery's review and never to land as is, is
+branch `web-app-rough` at `081e411` (tree `68f31e41`), on `main` `7ca5555`:
+`recipes/README.md`, `recipes/check` and `recipes/web-app/` as this plan
+says. Observed 2026-10-12: `recipes/check web-app` exits 0 in 29 seconds,
+brakeman reporting no warnings; run against `main`, which has no
+`recipes/`, it exits 1; seven breaks in scratch copies each exit 1 at the
+claim they break (a heading as first line; a second line that is not
+blank; `id` differing from the folder; an unknown `kind`; a failing test;
+a rubocop offence; `code/` missing). R1, R3, R4 as amended, R5 and R6 pass
+on it.
 
 ## Not here
 
