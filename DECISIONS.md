@@ -194,3 +194,28 @@ while it is, and the Control leaves it on its branch, clean, when done.
 Reason: his own. Planning's reading: a worktree folder is another project
 to the app, so a Control there is outside the repository's session.
 
+## 16. The web-app base is landed, accepted
+
+Date: 2026-10-12
+Who: Planning, on the Director's "go" for ASSIGNMENT.1
+Decision: Commons Control A's result, branch `web-app-base` at `8424dd2`
+(tree `bd0929ca`), is accepted and landed on `main`: `recipes/README.md`,
+the commons' Recipe format; `recipes/check`; and `recipes/web-app/`, the
+base. Planning verified in the tree: the commit and tree as stated; 94
+paths, all added, all under `recipes/`; R1 to R9 re-run and passing, the
+assembled app on Ruby 4.0.7, its home page served with status 200; the
+check red at a heading first line and at a Ruby the machine lacks. The
+plan doc that specified it is deleted with this landing, as the work mode
+says; the merge commit names it.
+Provenance (decision 12): `rails new code --name=web_app` with Rails
+8.1.4 on Ruby 4.0.7, git, docker, kamal, thruster, jbuilder, ci and
+devcontainer skipped, Rails' own `.gitignore` and `.gitattributes` taken
+from a generation made with git, credentials and master key removed; the
+home page, its test and the layout title added. Nothing was carried over
+from the former base on sourcegrid-labs' branch `recipe-spreadsheet-import-module`
+(`44e6c817`) or from Golden-Template; the Control read the former base and
+reported how it differed. `rails new` and the generated `bin/brakeman`
+read rubygems.org; the check needs the network for the brakeman step as the
+binstub stands.
+Reason: every criterion of the plan is met and shown able to fail.
+
