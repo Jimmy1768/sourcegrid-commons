@@ -219,3 +219,30 @@ read rubygems.org; the check needs the network for the brakeman step as the
 binstub stands.
 Reason: every criterion of the plan is met and shown able to fail.
 
+## 17. The sign-in feature is landed, accepted
+
+Date: 2026-10-12
+Who: Planning, on the Director's "go" for ASSIGNMENT.2
+Decision: Commons Control A's result, branch `sign-in` at `733087a` (tree
+`7b572446`), is accepted and landed on `main`: `recipes/sign-in/`, the
+first feature Recipe, on the web-app base. Planning verified in the tree:
+the commit and tree as stated; 34 paths, all added, all under
+`recipes/sign-in/`, no schema dump; R1 to R9 re-run and passing, the check
+laying the feature on the base and finding each of its ten changed files
+named in *What to wire*, 16 tests, rubocop and brakeman clean, on Ruby
+4.0.7; the check red when `config/routes.rb` is left unnamed; live, `/`
+redirects to sign-in when signed out and, signed in with the seeded test
+login, shows the email address and a sign-out button. The plan doc that
+specified it is deleted with this landing; the merge commit names it.
+Provenance (decision 12): `bin/rails generate authentication` in Rails
+8.1.4 on Ruby 4.0.7, run on a copy of the landed base, for the models,
+controllers, screens, mailer, migrations, fixtures and tests; the signed-in
+nav, mail to files under `tmp/mails/`, the seeded test login, the app's
+README and the extended tests written by the Control for this Recipe.
+Nothing was carried over from the former sign-in module on sourcegrid-labs'
+branch `recipe-spreadsheet-import-module` (`44e6c817`), which was read as
+a source; Planning's rough build on `sign-in-rough` (`a49047b`), reviewed by
+Workspace Recovery as ADVICE 263, was the plan's evidence and is deleted
+with this landing, as is `web-app-rough` (`bcabeb0`), decision 16's.
+Reason: every criterion of the plan is met and shown able to fail.
+
