@@ -4,7 +4,7 @@
 artifact:
   id: commons-web-app-on-postgresql
   owner: Commons Planning
-  status: plan__for_recovery_review
+  status: authorized
   date: 2026-10-12
   base_branch: main
   base_commit: the commit that lands this plan, stated in the assignment
@@ -15,7 +15,7 @@ artifact:
     app READMEs say PostgreSQL; recipes/check runs each PostgreSQL app
     against a server of its own for the run. The four landed Recipes keep
     every test they have.
-  implementation_authorized: false
+  implementation_authorized: true
 ```
 
 ## Why
@@ -41,8 +41,10 @@ Observed 2026-10-12.
   gem file cached under Ruby 3.2.3, its build covering Ruby 4.0. Nothing is
   to be downloaded: the lock resolves from the gem index's metadata alone.
 - On macOS, libpq set up for GSS encryption in a parent process crashes a
-  child forked from it: a `bin/rails server -d` dies on its first request.
-  With `PGGSSENCMODE=disable` it does not.
+  child forked from it: a `bin/rails server -d` dies on its first request
+  with no log line. With `PGGSSENCMODE=disable`, or `gssencmode: disable` in
+  `database.yml`, it does not. Parallel test workers, forked too, do not
+  crash (Recovery, ADVICE 273).
 
 ## The design
 
@@ -52,7 +54,11 @@ Observed 2026-10-12.
   `sqlite3`; `config/database.yml`, Rails' own for PostgreSQL:
   `web_app_development` and `web_app_test`, and in production
   `web_app_production` with one database each for the cache, the queue and
-  cable, the password from `WEB_APP_DATABASE_PASSWORD`. The base's README
+  cable, the password from `WEB_APP_DATABASE_PASSWORD`; and in its
+  `default` block, which development and test inherit, `gssencmode: disable`
+  under a two-line comment: on macOS, libpq set up for GSS encryption in a
+  parent crashes a process forked from it, as a server daemon is; this
+  server needs no GSS. The base's README
   says PostgreSQL, the server it needs running on the same computer, and
   why.
 - **Sign-in**: its `Gemfile` is the new base's with `bcrypt` uncommented,
@@ -64,12 +70,15 @@ Observed 2026-10-12.
   `postgresql` adapter, after the Ruby check the check makes a PostgreSQL
   server of its own for the run with `initdb`, in a new folder under the
   system temp directory, and starts it with `pg_ctl` on a free port on
-  127.0.0.1 with no socket file. Every step then runs with `PGHOST`,
+  127.0.0.1 with no socket file, its line naming the server's version, so
+  a run's record says what it tested against. Every step then runs with `PGHOST`,
   `PGPORT` and `PGUSER` set to it, `PGGSSENCMODE=disable`, and
   `DATABASE_URL`, `PGDATABASE` and `PGPASSWORD` cleared. When the check
   ends, however it ends, it stops that server and deletes its folder. With
   `--keep` it leaves the server running and prints how to reach it and the
-  command that stops and deletes it. `recipes/README.md` says so. No run
+  command that stops and deletes it. `recipes/README.md` says so, and that
+  the run's server sorts with the C collation, `initdb --no-locale`, so
+  sorting of accented names may differ from a production server's. No run
   reaches the Director's own server.
 - **Records**: `DECISIONS.md` 5 and 22, and the README's line, are
   corrected with this plan; `ops/protocol/repo_context.md`'s Databases and
@@ -80,7 +89,7 @@ Observed 2026-10-12.
 - **Q1** The base's `Gemfile` names `pg` and not `sqlite3`; its lock names
   `pg` 1.6.3 for each of its seven platforms with a checksum, and no
   `sqlite3`; its `database.yml` uses the `postgresql` adapter in every
-  environment.
+  environment, its `default` block with `gssencmode: disable`.
 - **Q2** Sign-in's `Gemfile` differs from the base's by the `bcrypt` line
   alone, and its lock from the base's by `bcrypt` alone.
 - **Q3** `recipes/check` passes for web-app, sign-in, user-kinds and
@@ -91,7 +100,8 @@ Observed 2026-10-12.
   the check's PostgreSQL is left after them; a run made to fail still stops
   and deletes it.
 - **Q5** `recipes/check <id> --keep` leaves a server from which the kept
-  app, served as a daemon, answers.
+  app, served as a daemon with `PGGSSENCMODE` unset, answers: the
+  `database.yml` line alone cures the fork crash.
 - **Q6** No gem file is downloaded and no gem installed.
 - **Q7** Only the eleven paths named in *Who does what* change.
 
@@ -146,10 +156,13 @@ From the checkout root, each with its expected exit code.
   one test's expectation changed: exit 1, and its output says it stopped
   and deleted its PostgreSQL; `pgrep` as in R6 prints nothing after.
 - **R8** `recipes/check sign-in --keep`; from the kept folder, with the
-  printed `PGHOST`, `PGPORT` and `PGGSSENCMODE`,
+  printed `PGHOST` and `PGPORT` and `PGGSSENCMODE` unset,
   `bin/rails server -p <port> -d`, then `GET /` is a 302 to
   `/session/new` and `GET /session/new` is 200; the server stopped, then
   the printed command run, after which `pgrep` as in R6 prints nothing.
+- **R9b** `grep -cx '  gssencmode: disable' recipes/web-app/code/config/database.yml`
+  prints 1, exit 0; and the check's "PostgreSQL of its own" line in R5's
+  output names a version.
 - **R9** The gem cache for Ruby 4.0.7 lists the same files before and after
   the work, and `gem list '^pg$'` prints `pg (1.6.3 arm64-darwin)` alone.
 
@@ -165,10 +178,18 @@ the gem cache unchanged. Making it, `rails new` without `--skip-bundle`
 downloaded `pg` 1.7.0, which was uninstalled with its cached file on the
 Director's word; so the assignment forbids that generation.
 
+## Reviewed
+
+Workspace Recovery, ADVICE 273, 2026-10-12: rebuilt from scratch copies of
+the rough build; sound. The check's own server per run is the right answer
+to both questions, proven on pass, failure and SIGTERM, with overlapping
+runs that never met. Added from that review, not in the rough build:
+`gssencmode: disable` in the base's `database.yml`, the premise corrected
+(the daemon crashes, parallel tests do not); the server's version in the
+check's line; the C collation in the README. `pg` 1.6.3 locked under
+Rails' `~> 1.1` is sound. Nothing in it needs the Director.
+
 ## Not here
 
 `spreadsheet-import`, whose plan is with Recovery: its `Gemfile` and lock
-are regenerated on this base before its assignment. Whether the base's
-`database.yml` should turn GSS encryption off for development and test, so
-that parallel tests on macOS cannot hit the fork crash: Recovery's to
-weigh, not in this plan.
+are regenerated on this base before its assignment.
