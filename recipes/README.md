@@ -12,6 +12,8 @@ while writing the spec, and the spec names the Recipes a build uses, as many
 as it needs. The builder adapts what it reads; it does not paste it in: "each
 Delegate will use excel-sheet differently, that's why they do not
 direct-copy the code — it's a read, which is the boost."
+The reviewer reads none: its standard stays the Map's checks and the spec
+(`DECISIONS.md` 19).
 
 The size test: if the builder would have to write code rather than adapt
 it, the Recipe is too small.
@@ -32,7 +34,8 @@ first.
   - *What to wire*, feature only: each file beneath it that it changes, and
     what the change does.
   - *The tests*: which tests come along, and what each proves.
-  - *Checks it meets*: the Map's checks by the Map's own names, or `none`.
+  - *Checks it meets*: the Map's checks by the Map's own names, or `none`,
+    and how the Recipe's tests model each, for the aide and the builder.
 
   Plain words for the builder. No name of another repository, no path on
   any machine.

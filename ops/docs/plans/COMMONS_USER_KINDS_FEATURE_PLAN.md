@@ -4,7 +4,7 @@
 artifact:
   id: commons-user-kinds-feature
   owner: Commons Planning
-  status: plan__for_recovery_review
+  status: reviewed__for_the_directors_word
   date: 2026-10-12
   base_branch: main
   base_commit: the commit that lands this plan, stated in the assignment
@@ -85,13 +85,16 @@ Observed 2026-10-12.
   `allow_kinds`, the seeds, the fixtures and the tests, keeping one test
   login per kind; the test logins' addresses and passwords; the People
   page as the one page only one kind may open, which the person's app
-  replaces with its own; and the fixtures' users as the tests' own;
+  replaces with its own, with a line showing `allow_kinds` with `only:`
+  and `except:` for a page some of whose actions are open to more kinds;
+  and the fixtures' users as the tests' own;
   *What to wire*, the nine changed files with what each change does; *The
   tests*; *Checks it meets*, by the Map's names:
   `new-software/web-app/sign-in`, "Each kind of user sees and does only
   what that kind may" and "Each kind of user has a test login, listed for
   the person", and `new-software/web-app/screens`, "Navigation suits each
-  kind of user", each with how and which test proves it.
+  kind of user", each with how and which test proves it, written for the
+  aide and the builder: the reviewer reads no Recipe.
 
 ## Acceptance criteria
 
@@ -158,6 +161,16 @@ From the checkout root, each with its expected exit code.
   `grep -c 'only what that kind may' recipes/user-kinds/README.md`;
   `grep -c 'test login, listed for the person' recipes/user-kinds/README.md`;
   `grep -c 'Navigation suits each kind of user' recipes/user-kinds/README.md`.
+
+## Reviewed
+
+Workspace Recovery, ADVICE 266, 2026-10-12: rebuilt from a scratch copy of
+the rough build, branch `user-kinds-rough` at `c2d98ff`; sound, no gap.
+Whole by the size test for kinds alone; one guarded page is enough, with
+`only:` and `except:` shown in a line; page-level is the right reading of
+the Map's v1 check, record-level being a spec's own rule; the seeds' one
+login per kind is right. The `only:`/`except:` line and the reader of
+*Checks it meets* came from that review.
 
 ## Not here
 

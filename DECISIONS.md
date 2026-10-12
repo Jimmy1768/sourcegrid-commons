@@ -266,3 +266,15 @@ checkout of it. Decision 3's "proprietary" is corrected; nothing of the
 format or the mechanism changes.
 Reason: his, above.
 
+## 19. The reviewer reads no Recipe
+
+Date: 2026-10-12
+Who: the Director, in Workspace Recovery's session, as Recovery relayed
+(ADVICE 266): "narrow read, reviewer reads none"
+Decision: in the kernel the aide reads Recipes while writing the spec, the
+builder reads the ones its spec names, and the reviewer reads none; its
+standard stays the Map's checks and the spec. A Recipe README's *Checks it
+meets* is written for the aide and the builder: what the build must prove,
+and how the Recipe's tests model it. Nothing in the format changes.
+Reason: his, above.
+
