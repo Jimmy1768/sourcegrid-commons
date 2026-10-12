@@ -1,0 +1,4 @@
+id: kinds-and-linked-accounts
+kind: feature
+fits: [web-app]
+builds_on: [user-kinds, linked-accounts]

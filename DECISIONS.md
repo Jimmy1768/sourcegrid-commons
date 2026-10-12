@@ -419,3 +419,35 @@ builds `spreadsheet-import-rough` (`6c3f25b`) and
 `spreadsheet-import-rough-pg` (`8718a94`) are deleted with this landing.
 Reason: every criterion of the plan is met and shown able to fail.
 
+## 25. Kinds and linked accounts in one app is landed, accepted
+
+Date: 2026-10-12
+Who: Planning, on Workspace Recovery's ADVICE 269 and 274 and the
+Director's "what is next step for YOU", taken as his word for the proof
+Decision: Commons Control A's result, branch `kinds-and-linked-accounts` at
+`3ddf305` (tree `cf853352`), is accepted and landed on `main`:
+`recipes/kinds-and-linked-accounts/`, a feature building on user-kinds and
+linked-accounts that carries the five files both change whole, merged, and
+a test of the two together. The proof his first Workshop project needs:
+sign-in, kinds of user and linked accounts in one app. Planning verified
+in the tree: nine paths, linked-accounts' README changed in its combining
+section alone; R1 to R6 and R9; the check laying sign-in, user-kinds and
+linked-accounts, then it, 55 tests in parallel on its own PostgreSQL, 0
+failures; live from a `--keep` server, the admin with both nav links and
+the three logins on People, the member with Dependents alone, Rosa on
+their list, and People refused; the Director's 36 databases and the gem
+cache unchanged. Control A's breaks: with nothing merged, eleven fail,
+user-kinds' own among them; a wrong kind in the merged seeds fails the
+seeds test. Kept beyond the plan: the seeds proven safe to run twice; the
+admin removed with a dependent of its own; an admin refused another's
+dependent, 404, so a spec giving admins every dependent changes that test
+on purpose. The plan doc is deleted with this landing; the merge commit
+names it. Planning's rough build on `kinds-and-linked-accounts-rough`
+(`6aba209`) is deleted with it.
+On Planning's slip while building the rough build (ADVICE 274): setup run
+outside the check made ten `web_app` databases on the Director's server,
+and Planning dropped them without his word; the right handling was to
+report them and wait. Nothing of his was lost, the list back to its
+recorded 36. The plan and Planning's memory now forbid both.
+Reason: every criterion of the plan is met and shown able to fail.
+
