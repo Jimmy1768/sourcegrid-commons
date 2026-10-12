@@ -37,6 +37,7 @@ another repository; proprietary, shipping in neither the OperatorKit npm
 package nor operatorkit-open.
 Reason: one item serves many Delegates, each its own way; a misfit against
 a versioned Map is caught by the Map's checks at the build.
+Corrected 2026-10-12 by 18: not proprietary; open when he says.
 
 ## 4. What a Recipe is
 
@@ -245,4 +246,23 @@ a source; Planning's rough build on `sign-in-rough` (`a49047b`), reviewed by
 Workspace Recovery as ADVICE 263, was the plan's evidence and is deleted
 with this landing, as is `web-app-rough` (`bcabeb0`), decision 16's.
 Reason: every criterion of the plan is met and shown able to fail.
+
+## 18. The commons can be open; the proprietary innovations stay in sourcegrid-labs
+
+Date: 2026-10-12
+Who: the Director, in Workspace Recovery's session, as Recovery relayed
+(ADVICE 264): "i think Recipes and Skills put in commons is correct. i
+didn't create them out of thin air, i'm reading open source repos. so this
+can be open, and later, people can help make it better. but Traits, DDP,
+should be proprietary innovations." And: "Domain Map also belongs next to
+Traits and DDP."
+Decision: the commons' contents, Recipes and Skills, derive from open
+sources and may be opened for others to improve; whether and when is his
+to say, and nothing is opened before. What stays proprietary is
+SourceGrid's own, in sourcegrid-labs beside the Blueprints: the Domain
+Maps, DDP and the Traits master list. Nothing of the commons ships inside
+the OperatorKit npm package or operatorkit-open; a deployment points at a
+checkout of it. Decision 3's "proprietary" is corrected; nothing of the
+format or the mechanism changes.
+Reason: his, above.
 

@@ -12,9 +12,10 @@ Recipes and Skills. Nothing here is served, deployed or installed as
 a package. The kernel will read it as a folder the deployment names beside
 the Blueprint's; that reading is OperatorKit Planning's and is not yet built.
 
-Proprietary. Nothing here ships in the OperatorKit npm package or in
-operatorkit-open. There is no remote today; the Director decides if one is
-made.
+Open when the Director says, not before (`DECISIONS.md` 18): its contents
+derive from open sources. Nothing here ships inside the OperatorKit npm
+package or operatorkit-open; a deployment points at a checkout. There is no
+remote today; the Director decides if one is made.
 
 ## Branches
 

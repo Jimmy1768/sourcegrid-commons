@@ -37,8 +37,11 @@ this job's: its Domain Maps, its Traits and its DDP. A Skill about one job
 - The kernel reads this commons as a folder the deployment names beside the
   Blueprint's, tells each role its index (name and one-line description) at
   every request, and a role loads an item whole only when its task needs it.
-- Proprietary. Nothing of it ships in the OperatorKit npm package or in
-  operatorkit-open.
+- Open, when the Director says: its Recipes and Skills derive from open
+  sources and may be improved by others later. What stays proprietary is
+  SourceGrid's own, in sourcegrid-labs: the Domain Maps, DDP and the Traits
+  master list. Nothing of this commons ships inside the OperatorKit npm
+  package or operatorkit-open; a deployment points at a checkout of it.
 
 ## recipes/
 
