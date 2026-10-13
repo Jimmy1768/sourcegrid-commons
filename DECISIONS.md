@@ -465,3 +465,16 @@ no other Blueprint's content, nothing for later Delegates.
 Reason: his, above; the first project is the test of what the commons
 holds.
 
+## 27. The commons is public, on GitHub
+
+Date: 2026-10-13
+Who: the Director, in Planning's session: "i created a github repo, let's
+initialize it. git@github.com:Jimmy1768/sourcegrid-commons.git"; asked
+whether to push to the public repo or make it private first: "Push public".
+Decision: the commons' remote is `origin` at that address, public, and
+`main` is pushed there with its whole history. The commons is open, as
+decision 18 allows on his word. Nothing is pushed without his word in the
+session that pushes; one word is one push.
+Reason: his; decision 18's reason holds, its Recipes and Skills deriving
+from open sources that others may improve.
+

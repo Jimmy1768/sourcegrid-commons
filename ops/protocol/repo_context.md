@@ -14,8 +14,10 @@ the Blueprint's; that reading is OperatorKit Planning's and is not yet built.
 
 Open when the Director says, not before (`DECISIONS.md` 18): its contents
 derive from open sources. Nothing here ships inside the OperatorKit npm
-package or operatorkit-open; a deployment points at a checkout. There is no
-remote today; the Director decides if one is made.
+package or operatorkit-open; a deployment points at a checkout. The remote
+is `origin`, git@github.com:Jimmy1768/sourcegrid-commons.git, public
+(`DECISIONS.md` 27). Nothing is pushed without the Director's word in the
+session that pushes; one word is one push.
 
 ## Branches
 
