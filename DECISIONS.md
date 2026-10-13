@@ -451,3 +451,17 @@ report them and wait. Nothing of his was lost, the list back to its
 recorded 36. The plan and Planning's memory now forbid both.
 Reason: every criterion of the plan is met and shown able to fail.
 
+## 26. The commons' next contents follow the first project's needs
+
+Date: 2026-10-13
+Who: the Director, in Workspace Recovery's session, as Recovery relayed
+(ADVICE 282): "i agree with all this, but don't need to rush - we still
+build Workshop first, and use it as the test for the first Delegate. we're
+still inventing."
+Decision: Workshop, and the Software Developer Delegate's first real
+project on it, come first. The commons adds a Recipe or a Skill when that
+project shows it needs one, and plans nothing ahead of it: no other base,
+no other Blueprint's content, nothing for later Delegates.
+Reason: his, above; the first project is the test of what the commons
+holds.
+
