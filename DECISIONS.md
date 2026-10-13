@@ -478,3 +478,18 @@ session that pushes; one word is one push.
 Reason: his; decision 18's reason holds, its Recipes and Skills deriving
 from open sources that others may improve.
 
+## 28. Public history holds the library's changes, one commit each
+
+Date: 2026-10-13
+Who: Planning, on the Director's "now that history will be public, let's
+be careful not to make it messy. this repo is not convoluted anyway, it is
+a library of files that everyone can use."
+Decision: plans, Recovery's amendments and rough builds live on branches
+of their own on this machine, never on `main` and never pushed; each
+accepted piece lands on `main` as one squashed commit saying what the
+library gains, with its decision; pushed history is never rewritten.
+`ops/protocol/repo_context.md` says how.
+Reason: of the first 40 commits on `main`, 25 touched plan docs and 7 were
+merges; a reader of a public library needs what changed in it, and the
+reasoning stays here in this file.
+

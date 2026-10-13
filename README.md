@@ -102,7 +102,10 @@ these are infra questions." Each choice and its reason is in
   recorded there, never in the Recipe.
 - `ops/protocol/`: the session protocol and work mode, received from the
   workspace; `repo_context.md`, this repository's own.
-- `ops/docs/plans/`: plan docs, deleted when their work lands.
+- `CLAUDE.md`: the session rules every lane reads before anything else.
+- Plans are not kept here. Each lives on a branch of its own on the
+  Director's machine until its work lands as one commit (`DECISIONS.md`
+  28).
 
 Named a commons, not a library, on 2026-10-12: "library" already means a
 code dependency in the documents and the registry; a commons is shared
