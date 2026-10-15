@@ -7,6 +7,7 @@ metadata:
   source_repo: mattpocock/skills
   source_commit: b0618bc436ad893b3c5e84e55fba86586d34a404
   source_paths: skills/productivity/grilling skills/productivity/grill-me
+  adapted: the Rounds section asks one question of the frontier at a time
 ---
 
 # Interview
@@ -26,15 +27,17 @@ to a later round, not this one.
 
 ## Rounds
 
-Ask the whole frontier at once, then wait for the answers before asking more.
+Ask one question of the frontier at a time: the one the next step waits on,
+then wait for the answer before asking another.
 
-- Number each question and give it a short title.
-- Under each question, give the answer you recommend, and word the question
-  so that "yes" accepts your recommendation.
-- Where there are several options, lay them out.
+- Give the question a short title.
+- Give the answer you recommend, and word the question so that "yes" accepts
+  your recommendation.
+- Where there are several options, lay them out as a list, one to a line, the
+  recommended one first and marked "(recommended)".
 
-Each round of answers reshapes the tree. Settled decisions open the questions
-that waited on them: work out the new frontier and ask the next round.
+Each answer reshapes the tree. Settled decisions open the questions that waited
+on them: work out the new frontier and ask its next question.
 
 ## Facts are yours to find; decisions are theirs
 
