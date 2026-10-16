@@ -1,9 +1,9 @@
 # Recipes
 
-A Recipe is finished, tested code for a kind of artifact or one piece of
+A Recipe is scaffolding for a kind of artifact or one piece of
 it: a whole app that runs, or a whole feature with its screens, tests and
 seeds, such as a spreadsheet import. The Director, 2026-10-12: "Recipes
-aren't links. they are tested, finished, code, that is read and copied by
+aren't links. they are scaffolding — not novel or invented code on the spot — read and copied by
 the builder. Recipes are BIG."
 
 The builder reads a Recipe whole and builds the work's own version from it,

@@ -43,8 +43,8 @@ Corrected 2026-10-12 by 18: not proprietary; open when he says.
 
 Date: 2026-10-12
 Who: the Director
-Decision: "Recipes aren't links. they are tested, finished, code, that is
-read and copied by the builder. Recipes are BIG." Finished, tested code with
+Decision: "Recipes aren't links. they are scaffolding — not novel or invented code on the spot — that is
+read and copied by the builder. Recipes are BIG." Scaffolding with
 generic names: a whole app that runs, a whole feature with its screens, tests
 and seeds, a spreadsheet import. The builder reads it whole and builds the
 work's own version from it; the aide reads it while writing the spec, and the
