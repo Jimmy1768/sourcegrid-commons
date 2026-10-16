@@ -1,4 +1,4 @@
-Notify: one event tells its account holder by console message, then email, then push, with the console showing the message in full.
+Notify: one event tells its account holder by console message, then email, then push, the message shown in full.
 
 # Notify
 

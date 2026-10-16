@@ -1,0 +1,20 @@
+<h1>Notifications</h1>
+
+<ul>
+  <% @notifications.each do |notification| %>
+    <li>
+      <h2><%= notification.event %></h2>
+      <p><%= notification.message %></p>
+      <ul>
+        <% notification.deliveries.each do |delivery| %>
+          <li>
+            <%= delivery.channel %>: <%= delivery.status %>
+            <% if delivery.failure_reason.present? %>
+              - <%= delivery.failure_reason %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
+</ul>
