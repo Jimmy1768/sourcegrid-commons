@@ -538,3 +538,16 @@ measure again with a check the builder may not edit, keep what improved,
 record what failed. Sent by Workspace Strategy on his "send the row to
 Commons Planning". 14 rows, 5 built; two sources assessed.
 Reason: his.
+
+## 31. The commons names Ruby 4.0.7 at its root
+
+Date: 2026-10-23
+Who: the Director, in the Workshop; Workspace Recovery's ADVICE 428 of
+2026-10-23 reached the same answer
+Decision: the root of the commons names Ruby 4.0.7, in `.ruby-version` and in
+the root `Gemfile`, in place of the 3.2.3 set in `d4d2e36`. OperatorKit's box
+provides the Ruby the root names, so the box provides 4.0.7, which is the Ruby
+every Recipe's app names and the only one `recipes/check` will run an app on.
+One Ruby for the commons, its Recipes' own, and no kernel change.
+Reason: with 3.2.3 at the root the box provided 3.2.3, so every Recipe check
+stopped at its first step; naming 4.0.7 fixes that with nothing else changed.
