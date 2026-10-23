@@ -551,3 +551,23 @@ every Recipe's app names and the only one `recipes/check` will run an app on.
 One Ruby for the commons, its Recipes' own, and no kernel change.
 Reason: with 3.2.3 at the root the box provided 3.2.3, so every Recipe check
 stopped at its first step; naming 4.0.7 fixes that with nothing else changed.
+
+## 32. Tools are the commons' third category; REA is the first
+
+Date: 2026-10-23
+Who: the Director, "approve all 4", in this session.
+Decision: the commons gains a third category beside Recipes and Skills:
+tools, something a model calls. MCP is one way a tool arrives; the category
+is the tool, not MCP. The entry's shape is set by Commons Planning: one
+document per tool at `tools/<id>/README.md`, never the tool's code, and
+`tools/REGISTRY.md` indexes them as the other two registries do. The
+kernel's side, what a tool may reach, is not the commons'. The first entry
+is REA: an MCP server and CLI, MIT, source github.com/morluto/rea, npm
+package rea-agents, its version read when the tool is first used. A Skill
+for reading its evidence joins the Skill registry as a row, not yet built:
+inspect-without-source, builder. No tool's code is copied in, so the entry
+names the licence, and no `THIRD_PARTY_NOTICES.md` line is needed until a
+Skill copies the source's text.
+Reason: his words, 2026-10-23: "commons is public on purpose. i didn't
+invent the things in there, they are all open source. we just need to be
+careful not to reveal how our blueprints are built."

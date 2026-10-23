@@ -16,7 +16,7 @@ Two questions sort everything a kernel installs (the Director's design,
 
 | | enforced by the kernel | told to a model |
 | --- | --- | --- |
-| general | the General Map and the Gate: the kernel itself (operator-kit) | **this commons**: Recipes, Skills |
+| general | the General Map and the Gate: the kernel itself (operator-kit) | **this commons**: Recipes, Skills, tools |
 | this job's | the Domain Map, versioned and pinned | Traits, DDP, the Map's rules — the Blueprint (sourcegrid-labs) |
 
 So this commons holds what is general and told. The Blueprint keeps what is
@@ -81,6 +81,13 @@ Blueprint on 2026-10-12, content-identical, with `THIRD_PARTY_NOTICES.md`
 beside them; the kernel reads them from here once its commons reader lands
 (`DECISIONS.md` 14).
 
+## tools/
+
+A tool is something a model calls; MCP is one way a tool arrives, not the
+category. Each entry is one document per tool at `tools/<id>/README.md`,
+never the tool's code; what a tool may reach is held by the kernel, not by
+the commons. The first entry is REA.
+
 ## Layout
 
 Set by Commons Planning on 2026-10-12, on the Director's "i don't know.
@@ -97,8 +104,11 @@ these are infra questions." Each choice and its reason is in
   and runs the tests there.
 - `skills/<role>/<name>/`: the Skills, each with supporting files beside
   its `SKILL.md`; `skills/THIRD_PARTY_NOTICES.md` beside them.
-- `recipes/REGISTRY.md` and `skills/REGISTRY.md`: the index of every
-  Recipe and every Skill that should exist, built or not, by family.
+- `recipes/REGISTRY.md`, `skills/REGISTRY.md` and `tools/REGISTRY.md`: the
+  index of every Recipe, every Skill and every tool that should exist,
+  built or not.
+- `tools/<id>/README.md`: one entry per tool, a document, never the tool's
+  code.
 - `DECISIONS.md`: each decision with its date, who made it and its reason,
   the Director's words quoted. Where a Recipe's code was taken from is
   recorded there, never in the Recipe.

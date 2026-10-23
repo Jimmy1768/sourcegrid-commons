@@ -110,6 +110,7 @@ No source yet.
 | codebase-design | builder | — | mattpocock/skills codebase-design | deep modules, clean seams |
 | prototype | builder | — | mattpocock/skills prototype | a throwaway build to answer one design question — his spike |
 | pr | reviewer | — | mattpocock/skills pr | the evidence a change must show and the merge-danger call; the pull-request body falls away |
+| inspect-without-source | builder | — | morluto/rea .agents/skills/reverse-engineer-anything | reading a tool's evidence: observation, inference and unknown kept apart, each piece cited, static analysis never claimed as execution, the target asked for and never chosen |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -520,9 +521,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 14 (5 built, 9 not) |
+| rows | 15 (5 built, 10 not) |
 | families with a row | 2 of 99 (general; 15-1200 Computer Occupations) |
-| sources assessed | 2 (mattpocock/skills, karpathy/autoresearch; 2026-10-23) |
+| sources assessed | 3 (mattpocock/skills, karpathy/autoresearch, morluto/rea; 2026-10-23) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.
