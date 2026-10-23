@@ -7,8 +7,9 @@ his, 2026-10-23: *"there are 98 profession categories and 867 blueprints
 planned, to be built, by another blueprint, called Foundry. i aim to cover
 all of these jobs."* A source is judged once against this registry, never
 once per Blueprint. Nothing here is built by being listed: a Skill is built
-in the Workshop, as a Mandate on the commons, when a Blueprint being built
-needs it, never by a Control session (his rule, 2026-10-23). This file was
+in the Workshop, as a Mandate on the commons, on his word or when a
+Blueprint being built needs it, never by a Control session (his rule,
+2026-10-23). This file was
 drafted by Workspace Strategy on his "write the registry frame" and entered
 here by Commons Planning (`DECISIONS.md` 29).
 
@@ -30,12 +31,10 @@ here by Commons Planning (`DECISIONS.md` 29).
 - **Source** names where it is taken from: open source first, with its
   licence in `THIRD_PARTY_NOTICES.md`. The Skill's own frontmatter records
   the source commit and paths; the registry only points.
-- **A row enters on an observed need or an observed failure from a real
-  session**, never a hypothetical (the source's own bar, SCOPE.md of
-  mattpocock/skills). Behaviour that composes from existing Skills gets no
-  new row.
-- **A row is built when a Blueprint being built needs it**, never because
-  the row exists (his logic for Recipes, 2026-10-17).
+- **A row enters on the Director's word**, 2026-10-23: "i can build what i want, this is my repo."
+  Behaviour that composes from existing Skills gets no new row.
+- **A row is built on his word, or when a Blueprint being built needs it**,
+  never only because the row exists.
 
 ## Kernel consequence, for OperatorKit
 
@@ -60,6 +59,12 @@ first non-software family is built.
 | wait-what | aide | — | mattpocock/skills wait-what | a message that did not land, re-pitched in plain words |
 | handoff | scribe | — | mattpocock/skills handoff | what another agent continues from; check overlap with HAL before adapting |
 | research | researcher (later) | — | mattpocock/skills research | cited answers from primary sources; with the Researcher role and web reads, last in the queue |
+| experiment | builder | — | karpathy/autoresearch (MIT; the loop and program.md) | measure first, change one thing, measure again with a check the builder may not edit, keep only what improved, record each failed try, prefer the simpler change when results tie, never weaken the check to get a pass |
+
+Experiment is general because the loop holds wherever success can be
+measured: a slow page, an email's open rate, a quiz's pass rate. It is told
+to the builder on a Mandate whose spec names a measurable target and a
+check that can be run again and again, not on every build.
 
 Note: grill-with-docs (interview that builds the domain model as it goes)
 is a composition of interview and domain-modeling; no row, by the rule
@@ -515,9 +520,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 13 (5 built, 8 not) |
+| rows | 14 (5 built, 9 not) |
 | families with a row | 2 of 99 (general; 15-1200 Computer Occupations) |
-| sources assessed | 1 (mattpocock/skills, 2026-10-23) |
+| sources assessed | 2 (mattpocock/skills, karpathy/autoresearch; 2026-10-23) |
 
-Which rows are built, and in what order, follows the Blueprints being
-built; the registry only says what exists and what does not.
+Which rows are built, and in what order, follows his word and the
+Blueprints being built; the registry only says what exists and what does not.

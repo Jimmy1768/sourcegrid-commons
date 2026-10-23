@@ -18,8 +18,9 @@ the copy under ops/docs/advice/operator-kit is Recovery's record of it.
   boilerplate ships — the reference set named under *Prior art*. Words and
   shapes are used unchanged (R26).
 - **Status** is `built` (in the commons today), `draft` (a prompt exists,
-  not entered) or `—` (none). A Recipe is built when a Workshop user's
-  project needs it, never because the row exists (his logic, 2026-10-17).
+  not entered) or `—` (none). A Recipe is built on his word, or when a
+  Workshop user's project needs it, never only because the row exists (his
+  logic, 2026-10-17; his word, 2026-10-23: "i can build what i want, this is my repo.").
 - **Source** names where the code is taken from: open source first, his own
   apps where they already hold it. The Recipe's README records the source;
   the registry only points.
@@ -251,5 +252,5 @@ enforcement landscape is.
 ## Counts
 
 Built: 7 of 108 rows (one base, six features). Draft: 1. None: 100. By tier: 16, 38, 54; of the seven built, three are tier 1 and four tier 2. Which
-rows are built, and in what order, follows the Workshop's users' projects;
+rows are built, and in what order, follows his word and the Workshop's users' projects;
 the registry only says what exists and what does not.

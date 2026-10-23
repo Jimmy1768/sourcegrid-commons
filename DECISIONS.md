@@ -521,3 +521,20 @@ docs. but no more Control to build." A source is judged once against the
 registry, never once per Blueprint; his decision of 2026-10-17 for
 Recipes, organize a complete registry first and build on need, holds for
 Skills.
+
+## 30. What enters and what is built is the Director's to say
+
+Date: 2026-10-23
+Who: the Director, answering Planning's note that the Skill registry's
+rule admitted a row only on an observed need: "rejected. i can build what
+i want, this is my repo."
+Decision: a row enters either registry on his word, and is built on his
+word or when a project being built needs it, never only because the row
+exists. The Skill registry's rule of an observed need or failure from a
+real session is struck; composing from existing Skills still adds no row.
+On that word the Skill registry gains experiment, under general, for the
+builder, from karpathy/autoresearch (MIT): measure, change one thing,
+measure again with a check the builder may not edit, keep what improved,
+record what failed. Sent by Workspace Strategy on his "send the row to
+Commons Planning". 14 rows, 5 built; two sources assessed.
+Reason: his.
