@@ -97,6 +97,8 @@ these are infra questions." Each choice and its reason is in
   and runs the tests there.
 - `skills/<role>/<name>/`: the Skills, each with supporting files beside
   its `SKILL.md`; `skills/THIRD_PARTY_NOTICES.md` beside them.
+- `recipes/REGISTRY.md` and `skills/REGISTRY.md`: the index of every
+  Recipe and every Skill that should exist, built or not, by family.
 - `DECISIONS.md`: each decision with its date, who made it and its reason,
   the Director's words quoted. Where a Recipe's code was taken from is
   recorded there, never in the Recipe.

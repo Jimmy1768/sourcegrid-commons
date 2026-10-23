@@ -493,3 +493,31 @@ Reason: of the first 40 commits on `main`, 25 touched plan docs and 7 were
 merges; a reader of a public library needs what changed in it, and the
 reasoning stays here in this file.
 
+## 29. The Skill registry: every Skill that should exist, by occupation
+
+Date: 2026-10-23
+Who: Planning entered it, on the Director's "go" in this session; Workspace
+Strategy drafted it on his "write the registry frame" and sent it on his
+"send the frame to Commons Planning".
+Decision: `skills/REGISTRY.md` indexes every Skill that should exist, built
+or not, as `recipes/REGISTRY.md` does for Recipes. Its families are SOC
+2018's 23 major and 98 minor groups, with one family, general, above them
+for the Skills every Delegate uses. Thirteen rows from one source,
+mattpocock/skills: seven general, two built (interview, spec); six under
+15-1200 Computer Occupations, three built (test-first, diagnose, review).
+The other 97 groups have no source yet. A Skill is built in the Workshop,
+as a Mandate on the commons, when a Blueprint being built needs it; no
+task goes to a Control session. Where the family is recorded for the
+kernel is OperatorKit's to settle, and the registry keeps it as a note.
+Entered as Strategy wrote it, with two changes: its count said six built
+and seven not, where its rows show five and eight; and the three built
+Computer Occupations rows say what each Skill does, as every other row
+does, in place of its path.
+Reason: his words, 2026-10-23: "there are 98 profession categories and
+867 blueprints planned, to be built, by another blueprint, called
+Foundry. i aim to cover all of these jobs"; and "besides OperatorKit, we
+now build using Workshop ... we can use Planning to enter the needed
+docs. but no more Control to build." A source is judged once against the
+registry, never once per Blueprint; his decision of 2026-10-17 for
+Recipes, organize a complete registry first and build on need, holds for
+Skills.
