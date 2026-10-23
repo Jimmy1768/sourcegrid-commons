@@ -27,19 +27,11 @@ history holds the library's changes and nothing of how they were made.
 - `main` is the only long-lived branch and the only one pushed, to
   `origin`, only on the Director's word in the session that pushes. Pushed
   history is never rewritten.
-- Each piece of work has a branch of its own, cut from `main`. Its plan is
-  that branch's first commit, and Recovery's amendments are further commits
-  there; a rough build is a second branch cut from it. A Control's
-  `ASSIGNMENT` names the plan branch's tip as its base. Plan and rough
-  branches stay on this machine, never pushed, and are deleted when the
-  work lands.
+- Work is built in the Workshop, never by a Control session (the Director, 2026-10-23). Commons Planning writes the handoff the Workshop's aide reads, in `operatorkit/handoff/`, which git ignores. The kernel builds on `operatorkit-main`, and writes only that branch and its own `operatorkit-<id>` branches, never `main`.
 - This departs from `work_mode_config.md`'s "a plan for work not yet
   started belongs on `main`": here `main` is what the public reads.
-- Planning verifies a `TERMINAL` as `claude_work_mode.md` §7 says, then
-  lands the work with `git merge --squash` as one commit on `main`: a
-  subject saying what the library gains, in plain words; a body with what
-  was verified and "accepted"; the `DECISIONS.md` entry in the same commit;
-  no plan doc. Work that turns out wrong is deleted, not reverted.
+- Commons Planning lands Workshop work. It reads what is new on `operatorkit-main` since the last landing, and runs `recipes/check` on every Recipe the work touches. Then it lands the work's files as one commit on `main`: a subject saying what the library gains, in plain words; a body naming `Lands operatorkit-main <sha>`, what was verified, and "accepted"; and the `DECISIONS.md` entry in the same commit, placed after the last entry on `main`. A Mandate's own test files under `tests/` stay on `operatorkit-main`: they test one Mandate's change and pin the tree as it stood. Work that turns out wrong is not landed.
+- After each landing, and before the next Mandate starts, `operatorkit-main` is moved to `main`'s new tip, so the next Mandate builds on what is public. The kernel refuses a landing only when its branch moved while a Mandate ran.
 - A record that is not a library change, such as a decision with no files,
   is one commit of its own, saying what it decides.
 

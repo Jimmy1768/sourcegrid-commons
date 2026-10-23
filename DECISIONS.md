@@ -571,3 +571,23 @@ Skill copies the source's text.
 Reason: his words, 2026-10-23: "commons is public on purpose. i didn't
 invent the things in there, they are all open source. we just need to be
 careful not to reveal how our blueprints are built."
+
+## 33. Workshop work lands on main as one commit per Mandate
+
+Date: 2026-10-23
+Who: Commons Planning, under the Director's rules that the Workshop builds
+and Planning writes only handoffs
+Decision: the Workshop builds the commons, never a Control session. Planning
+writes the handoff the Workshop's aide reads, in `operatorkit/handoff/`; the
+kernel builds on `operatorkit-main`, writing only that branch and its own
+`operatorkit-<id>` branches, never `main`. Planning lands Workshop work: it
+reads what is new on `operatorkit-main` since the last landing, runs
+`recipes/check` on every Recipe the work touches, and lands the work's files as
+one commit on `main` with a subject saying what the library gains, a body
+naming `Lands operatorkit-main <sha>`, what was verified and "accepted", and the
+`DECISIONS.md` entry in the same commit; a Mandate's own test files under
+`tests/` stay on `operatorkit-main`. After each landing, and before the next
+Mandate starts, `operatorkit-main` is moved to `main`'s new tip.
+Reason: `main` is public and holds one commit per change (`DECISIONS.md` 28).
+The kernel fast-forwards its own branch, keep commits included, so its branch
+is never merged into `main`.
