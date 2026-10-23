@@ -8,7 +8,7 @@ class Delivery < ApplicationRecord
   STATUSES = %w[delivered failed skipped].freeze
 
   validates :channel, inclusion: { in: CHANNELS }
-  validates :status, inclusion: { in: STATUSES + ["pending"] }, allow_nil: true
+  validates :status, inclusion: { in: STATUSES + [ "pending" ] }, allow_nil: true
 
   # Performs this delivery's own channel. A channel that fails does not stop
   # the one after it: the failure is recorded on this delivery, and the
