@@ -37,7 +37,7 @@ own apps confirm.
   web-app, sign-in, user-kinds, profile-settings, email-verification, transactional-email, file-uploads, admin, observability, backups, dev-environment, ci, deployment, system-tests, security-hardening, ui-kit.
 - **Tier 2 (38 rows)** — what most products with customers need:
   api-service, social-sign-in, two-factor, account-export-delete, api-sign-in, impersonation, linked-accounts, kinds-and-linked-accounts, teams, invitations, permissions, audit-log, plan-limits, payments, subscriptions, invoices, billing-portal, notify, in-app-notifications, rich-text, spreadsheet-import, export, marketing-pages, search, filters-tables, field-encryption, api-keys, webhooks-in, scheduling, rate-limiting, timezones, health-status, consent-privacy, analytics, seo, llm-call, lint-format, caching.
-- **Tier 3 (54 rows)** — by kind of project or domain, when the first of
+- **Tier 3 (55 rows)** — by kind of project or domain, when the first of
   its kind comes: the other bases and every row not named above.
 
 ## Prior art (the reference set the categories come from)
@@ -233,6 +233,12 @@ of a Recipe, never copied as a list.
 | caching | fragment and query caching with a store | 2 | — | Rails caching guide; Solid Cache |
 | ui-kit | a component set, theme and dark mode on Tailwind | 1 | — | every starter names it |
 
+### B15. Animation (fits static-site)
+
+| id | one line | tier | status | source |
+| --- | --- | --- | --- | --- |
+| animation-video | animation written as code (Canvas, Three.js, HTML, or a Remotion or HyperFrames composition), the page recorded to video: motion graphics, explainers, 3D product scenes | 3 | — | Remotion; HyperFrames |
+
 ## Coverage check, 2026-10-17
 
 Checked against the named sources' own pages, each fetched and listed by
@@ -251,6 +257,6 @@ enforcement landscape is.
 
 ## Counts
 
-Built: 7 of 108 rows (one base, six features). Draft: 1. None: 100. By tier: 16, 38, 54; of the seven built, three are tier 1 and four tier 2. Which
+Built: 7 of 109 rows (one base, six features). Draft: 1. None: 101. By tier: 16, 38, 55; of the seven built, three are tier 1 and four tier 2. Which
 rows are built, and in what order, follows his word and the Workshop's users' projects;
 the registry only says what exists and what does not.

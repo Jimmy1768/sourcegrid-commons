@@ -591,3 +591,14 @@ Mandate starts, `operatorkit-main` is moved to `main`'s new tip.
 Reason: `main` is public and holds one commit per change (`DECISIONS.md` 28).
 The kernel fast-forwards its own branch, keep commits included, so its branch
 is never merged into `main`.
+
+## 34. Animation recorded to video joins the Recipe registry as a row
+
+Date: 2026-10-30
+Who: the Director, in Workspace Strategy's session ("record, save the recipe").
+Decision:
+- animation-video is a Recipe row in a new family, B15 Animation, fitting the static-site base, tier 3. It is built when the Marketing Delegate needs its first explainer. Its code will be taken from Remotion or HyperFrames, and its README records where.
+- The evidence that the technique gives publishable results is github.com/yihui-dev/awesome-opus5-5-videos: 703 prompts whose videos were made this way. It is cited only; its creators own their videos and prompts, and nothing of it is copied.
+- The checks a Map would carry: the video's duration and resolution as specified; a clean render, with no console errors and no missing assets; and a file ffprobe can play.
+- Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
+Reason: his word.
