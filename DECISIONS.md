@@ -592,6 +592,17 @@ Reason: `main` is public and holds one commit per change (`DECISIONS.md` 28).
 The kernel fast-forwards its own branch, keep commits included, so its branch
 is never merged into `main`.
 
+## 34. Rows from OpenMuse and headcount join the registries
+
+Date: 2026-10-23
+Who: the Director, in Workspace Strategy's session.
+Decision:
+- the two tool rows, and the source column;
+- the 172 skill rows, with their count by SOC group: 7 in 11-1000, 31 in 11-2000, 3 in 11-3000, 39 in 13-1000, 13 in 13-2000, 52 in 15-1200, 2 in 15-2000, 8 in 23-1000, 10 in 41-3000, and 7 in 43-4000;
+- headcount's sources catalog and department structure stay out;
+- nothing is copied, so no THIRD_PARTY_NOTICES line is added.
+Reason: his words, 2026-10-23: "our harness is a 'control-layer' over Paradigm A. we call it Paradigm B. but that doesn't mean we can't assimilate Paradigm A tools, surfaces, etc. it just has to run THROUGH our Gate." And: "we don't want blueprint design to be public. it is not to hide open sourced code."
+
 ## 34. Animation recorded to video joins the Recipe registry as a row
 
 Date: 2026-10-30

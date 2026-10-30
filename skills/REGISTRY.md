@@ -74,15 +74,59 @@ above.
 
 ### 11-1000 Top Executives
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| agent-hierarchy | builder | — | cbrock84/headcount plugins/executive/skills/agent-hierarchy | splits a repo's agents by write surface and pairs each producer with a checker |
+| ai-research-analyst | aide | — | cbrock84/headcount plugins/executive/skills/ai-research-analyst | cited executive research on markets, competitors and trends |
+| business-growth-consultant | aide | — | cbrock84/headcount plugins/executive/skills/business-growth-consultant | finds the one constraint holding growth and the best moves against it |
+| ceo-advisor | aide | — | cbrock84/headcount plugins/executive/skills/ceo-advisor | stresses a decision against its assumptions and the case against it |
+| chief-executive | aide | — | cbrock84/headcount plugins/executive/skills/chief-executive | sets direction and makes the calls no one else can |
+| fundraising-and-investor-relations | builder | — | cbrock84/headcount plugins/executive/skills/fundraising-and-investor-relations | raises capital and keeps investors informed afterward |
+| saas-idea-validator | reviewer | — | cbrock84/headcount plugins/executive/skills/saas-idea-validator | checks a software idea against problem, market and economics and gives a verdict |
 
 ### 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| behavioral-marketing | aide | — | cbrock84/headcount plugins/marketing/skills/behavioral-marketing | uses how people actually choose to sharpen marketing decisions |
+| brand-voice | builder | — | cbrock84/headcount plugins/marketing/skills/brand-voice | captures how a person or brand writes as reusable voice rules |
+| chief-content-officer | aide | — | cbrock84/headcount plugins/marketing/skills/chief-content-officer | runs content production, calendar and reuse from one place |
+| chief-marketing-officer | aide | — | cbrock84/headcount plugins/marketing/skills/chief-marketing-officer | owns brand, demand, content and communications |
+| content-strategy | aide | — | cbrock84/headcount plugins/marketing/skills/content-strategy | decides what content to make and ties it to a business outcome |
+| customer-research | aide | — | cbrock84/headcount plugins/marketing/skills/customer-research | plans and reads interviews and surveys into findings |
+| events-and-field-marketing | builder | — | cbrock84/headcount plugins/marketing/skills/events-and-field-marketing | runs conferences and field programs that produce pipeline |
+| marketing-campaign-planner | builder | — | cbrock84/headcount plugins/marketing/skills/marketing-campaign-planner | designs a multi-channel launch around one story |
+| marketing-copywriting | builder | — | cbrock84/headcount plugins/marketing/skills/marketing-copywriting | writes copy for any marketing surface and sharpens existing copy |
+| marketing-planning | aide | — | cbrock84/headcount plugins/marketing/skills/marketing-planning | builds the plan of record with channel mix, budget and measures |
+| newsletter-writer | builder | — | cbrock84/headcount plugins/marketing/skills/newsletter-writer | writes emails and newsletters people open and act on |
+| partnership-marketing | builder | — | cbrock84/headcount plugins/marketing/skills/partnership-marketing | grows reach through co-marketing and creators |
+| positioning-and-messaging | builder | — | cbrock84/headcount plugins/marketing/skills/positioning-and-messaging | sets what a product is and turns it into shared wording |
+| product-launch | builder | — | cbrock84/headcount plugins/marketing/skills/product-launch | takes a finished thing to market in steps matched to its worth |
+| public-relations | builder | — | cbrock84/headcount plugins/marketing/skills/public-relations | plans press outreach and crisis response |
+| social-post-craft | builder | — | cbrock84/headcount plugins/marketing/skills/social-post-craft | writes and checks social posts end to end |
+| video-content | builder | — | cbrock84/headcount plugins/marketing/skills/video-content | plans and scripts video and designs its packaging |
+| visual-content | builder | — | cbrock84/headcount plugins/marketing/skills/visual-content | designs carousels, infographics and social imagery |
+| youtube-producer | builder | — | cbrock84/headcount plugins/marketing/skills/youtube-producer | picks, packages and scripts long-form video for growth |
+| account-based-marketing | builder | — | cbrock84/headcount plugins/demand-generation/skills/account-based-marketing | puts sales effort on a named account list with fitting economics |
+| ai-search-optimization | builder | — | cbrock84/headcount plugins/demand-generation/skills/ai-search-optimization | makes a brand findable and cited accurately by AI answers |
+| app-store-optimization | builder | — | cbrock84/headcount plugins/demand-generation/skills/app-store-optimization | improves store visibility and conversion through metadata and assets |
+| experimentation | builder | — | cbrock84/headcount plugins/demand-generation/skills/experimentation | designs honest A/B tests with sample size and duration |
+| landing-page-cro-expert | builder | — | cbrock84/headcount plugins/demand-generation/skills/landing-page-cro-expert | finds why a page does not convert and rewrites it |
+| lead-capture | builder | — | cbrock84/headcount plugins/demand-generation/skills/lead-capture | turns anonymous traffic into known contacts through offers |
+| lifecycle-messaging | builder | — | cbrock84/headcount plugins/demand-generation/skills/lifecycle-messaging | designs automated email and SMS by where a person is in the journey |
+| listing-distribution | builder | — | cbrock84/headcount plugins/demand-generation/skills/listing-distribution | gets a product listed where buyers and crawlers look |
+| marketing-analytics | builder | — | cbrock84/headcount plugins/demand-generation/skills/marketing-analytics | sets up tracking and attribution that shows what marketing did |
+| paid-advertising | builder | — | cbrock84/headcount plugins/demand-generation/skills/paid-advertising | plans and runs paid ads across search, social and display |
+| programmatic-seo | builder | — | cbrock84/headcount plugins/demand-generation/skills/programmatic-seo | builds many search-targeted pages from templates and data |
+| seo-strategy | aide | — | cbrock84/headcount plugins/demand-generation/skills/seo-strategy | audits and improves organic search across site and content |
 
 ### 11-3000 Operations Specialties Managers
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| chief-product-officer | aide | — | cbrock84/headcount plugins/product/skills/chief-product-officer | owns what gets built and why, from strategy to the measure of success |
+| product-discovery | aide | — | cbrock84/headcount plugins/product/skills/product-discovery | finds whether a problem is real and a solution would work before building |
+| product-requirements | aide | — | cbrock84/headcount plugins/product/skills/product-requirements | writes what is being built so a team can build it and know when done |
 
 ### 11-9000 Other Management Occupations
 
@@ -92,11 +136,65 @@ No source yet.
 
 ### 13-1000 Business Operations Specialists
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| chief-strategy-officer | aide | — | cbrock84/headcount plugins/corporate-strategy/skills/chief-strategy-officer | decides where to play and how to win across portfolios and partnerships |
+| market-entry | aide | — | cbrock84/headcount plugins/corporate-strategy/skills/market-entry | sizes a new market from the bottom up and tests the advantage before deciding to enter |
+| mergers-and-acquisitions | builder | — | cbrock84/headcount plugins/corporate-strategy/skills/mergers-and-acquisitions | runs a deal from thesis and screening through diligence to integration |
+| portfolio-strategy | aide | — | cbrock84/headcount plugins/corporate-strategy/skills/portfolio-strategy | decides what to fund, hold, harvest or exit across business lines on evidence |
+| scenario-planning | aide | — | cbrock84/headcount plugins/corporate-strategy/skills/scenario-planning | builds load-bearing scenarios with early-warning indicators under uncertainty |
+| strategic-alliances | builder | — | cbrock84/headcount plugins/corporate-strategy/skills/strategic-alliances | structures partnerships, channels and ventures that change what the business can do |
+| benefits-and-leave | builder | — | cbrock84/headcount plugins/people/skills/benefits-and-leave | designs and runs benefits and leave so they stay right and affordable |
+| chief-human-resources-officer | aide | — | cbrock84/headcount plugins/people/skills/chief-human-resources-officer | owns org design, hiring, performance, pay, development and employee relations |
+| compensation-and-leveling | builder | — | cbrock84/headcount plugins/people/skills/compensation-and-leveling | builds levels, bands and pay equity so raises and promotions stay fair |
+| employee-relations | aide | — | cbrock84/headcount plugins/people/skills/employee-relations | handles grievances, complaints, investigations and separations properly |
+| employment-compliance | reviewer | — | cbrock84/headcount plugins/people/skills/employment-compliance | checks classification, overtime and hiring rules that carry real penalties |
+| hiring-and-interviewing | builder | — | cbrock84/headcount plugins/people/skills/hiring-and-interviewing | runs hiring from role definition and sourcing to a structured, decided loop |
+| learning-and-development | builder | — | cbrock84/headcount plugins/people/skills/learning-and-development | builds capability with gaps, frameworks and training that transfers |
+| onboarding-and-offboarding | builder | — | cbrock84/headcount plugins/people/skills/onboarding-and-offboarding | designs joining and leaving from first day to clean exit and kept knowledge |
+| org-design | aide | — | cbrock84/headcount plugins/people/skills/org-design | designs structure, teams, spans and layers against the work and workforce |
+| payroll-operations | builder | — | cbrock84/headcount plugins/people/skills/payroll-operations | runs the pay cycle right, on time and provable from HRIS to net pay |
+| performance-management | builder | — | cbrock84/headcount plugins/people/skills/performance-management | runs expectations, reviews, calibration and underperformance so they change behavior |
+| workforce-planning | aide | — | cbrock84/headcount plugins/people/skills/workforce-planning | plans role demand, build-versus-buy and attrition against budget and needs |
+| business-continuity-and-resilience | builder | — | cbrock84/headcount plugins/operations/skills/business-continuity-and-resilience | plans impact, recovery objectives and exercises for operating through disruption |
+| capacity-and-demand-planning | aide | — | cbrock84/headcount plugins/operations/skills/capacity-and-demand-planning | matches capacity to expected demand and decides when to add |
+| chief-operating-officer | aide | — | cbrock84/headcount plugins/operations/skills/chief-operating-officer | owns how work gets done: process, programs, capacity, vendors and supply |
+| facilities-and-workplace | builder | — | cbrock84/headcount plugins/operations/skills/facilities-and-workplace | runs the physical and hybrid workplace, space, safety and office services |
+| incident-management | builder | — | cbrock84/headcount plugins/operations/skills/incident-management | runs an incident from declaration to closed actions with a named commander |
+| operating-cadence | builder | — | cbrock84/headcount plugins/operations/skills/operating-cadence | designs which reviews run when, what each decides and who owns its numbers |
+| process-design | builder | — | cbrock84/headcount plugins/operations/skills/process-design | maps where work stalls, redesigns the flow and documents the process |
+| procurement-and-sourcing | builder | — | cbrock84/headcount plugins/operations/skills/procurement-and-sourcing | specifies need, runs competitive sourcing and negotiates before contracts |
+| quality-management | builder | — | cbrock84/headcount plugins/operations/skills/quality-management | builds quality in with standards, early defect capture and root cause |
+| service-level-management | builder | — | cbrock84/headcount plugins/operations/skills/service-level-management | sets honest service targets and handles breaches |
+| supply-chain-and-logistics | builder | — | cbrock84/headcount plugins/operations/skills/supply-chain-and-logistics | manages sourcing, inventory, lead times and supply risk |
+| vendor-management | builder | — | cbrock84/headcount plugins/operations/skills/vendor-management | selects, contracts and manages suppliers from need to exit |
+| benefits-realization | reviewer | — | cbrock84/headcount plugins/pmo/skills/benefits-realization | checks delivered projects against the value they were approved on |
+| change-and-adoption | builder | — | cbrock84/headcount plugins/pmo/skills/change-and-adoption | gets people to use what was delivered with stakeholders and training |
+| dependency-and-risk-management | aide | — | cbrock84/headcount plugins/pmo/skills/dependency-and-risk-management | identifies and sizes what could stop the work and escalates it |
+| estimating-and-contingency | builder | — | cbrock84/headcount plugins/pmo/skills/estimating-and-contingency | produces defensible cost and effort estimates by decomposing the work |
+| head-of-pmo | aide | — | cbrock84/headcount plugins/pmo/skills/head-of-pmo | sets what the PMO governs and how it earns standing, not compliance |
+| portfolio-governance | reviewer | — | cbrock84/headcount plugins/pmo/skills/portfolio-governance | prioritizes intake, stage gates and stopping things across the portfolio |
+| program-management | builder | — | cbrock84/headcount plugins/pmo/skills/program-management | drives cross-functional programs through scope, dependencies and escalations |
+| project-delivery | builder | — | cbrock84/headcount plugins/pmo/skills/project-delivery | plans and delivers one project through schedule, critical path and recovery |
+| schedule-development-and-analysis | builder | — | cbrock84/headcount plugins/pmo/skills/schedule-development-and-analysis | builds and checks logic-driven schedules with float and critical path |
 
 ### 13-2000 Financial Specialists
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| budgeting-and-forecasting | builder | — | cbrock84/headcount plugins/finance/skills/budgeting-and-forecasting | runs the annual budget, rolling forecast and the variance checks against actuals |
+| capital-allocation | aide | — | cbrock84/headcount plugins/finance/skills/capital-allocation | judges competing uses of limited capital with hurdle rates and payback |
+| capital-structure-and-covenants | aide | — | cbrock84/headcount plugins/finance/skills/capital-structure-and-covenants | decides debt versus equity and what that financing then requires |
+| chief-financial-officer | aide | — | cbrock84/headcount plugins/finance/skills/chief-financial-officer | owns planning, cash, unit economics and the numbers the business runs on |
+| cost-accounting | builder | — | cbrock84/headcount plugins/finance/skills/cost-accounting | says what something actually costs across fixed, variable and activity |
+| financial-modeling | builder | — | cbrock84/headcount plugins/finance/skills/financial-modeling | builds and stress-tests revenue, cost and driver models for decisions |
+| financial-reporting-and-close | builder | — | cbrock84/headcount plugins/finance/skills/financial-reporting-and-close | runs the period-end close, reconciliations and reporting people read |
+| financial-statement-analysis | reviewer | — | cbrock84/headcount plugins/finance/skills/financial-statement-analysis | reads statements and says what changed and why, against period and budget |
+| internal-controls-and-audit | reviewer | — | cbrock84/headcount plugins/finance/skills/internal-controls-and-audit | designs and tests segregation, limits and evidence over financial reporting |
+| revenue-recognition | reviewer | — | cbrock84/headcount plugins/finance/skills/revenue-recognition | decides when and how revenue is recognized across contract terms |
+| tax | aide | — | cbrock84/headcount plugins/finance/skills/tax | works the tax obligations a growing business faces, from income to payroll |
+| treasury-and-liquidity | builder | — | cbrock84/headcount plugins/finance/skills/treasury-and-liquidity | manages cash, runway, working capital and currency exposure |
+| unit-economics | builder | — | cbrock84/headcount plugins/finance/skills/unit-economics | says whether the business makes money on each customer or unit |
 
 ## 15-0000 Computer and Mathematical Occupations
 
@@ -111,10 +209,65 @@ No source yet.
 | prototype | builder | — | mattpocock/skills prototype | a throwaway build to answer one design question — his spike |
 | pr | reviewer | — | mattpocock/skills pr | the evidence a change must show and the merge-danger call; the pull-request body falls away |
 | inspect-without-source | builder | — | morluto/rea .agents/skills/reverse-engineer-anything | reading a tool's evidence: observation, inference and unknown kept apart, each piece cited, static analysis never claimed as execution, the target asked for and never chosen |
+| ai-workflow-architect | builder | — | cbrock84/headcount plugins/technology/skills/ai-workflow-architect | designs automations and agent workflows for work worth automating |
+| api-design | builder | — | cbrock84/headcount plugins/technology/skills/api-design | designs interfaces that survive their consumers |
+| branch-and-worktree-workflow | builder | — | cbrock84/headcount plugins/technology/skills/branch-and-worktree-workflow | isolates work in its own branch or worktree and integrates cleanly |
+| chief-technology-officer | aide | — | cbrock84/headcount plugins/technology/skills/chief-technology-officer | owns architecture, delivery, infrastructure and data platform |
+| cloud-infrastructure | builder | — | cbrock84/headcount plugins/technology/skills/cloud-infrastructure | designs and runs cloud infrastructure as code with isolation and cost in view |
+| code-review | reviewer | — | cbrock84/headcount plugins/technology/skills/code-review | reviews a change for correctness, design and risk, and answers feedback |
+| completion-verification | reviewer | — | cbrock84/headcount plugins/technology/skills/completion-verification | verifies work is complete by running its checks and reading the output |
+| data-migration | builder | — | cbrock84/headcount plugins/technology/skills/data-migration | moves data between systems without loss or corruption |
+| implementation-planning | aide | — | cbrock84/headcount plugins/technology/skills/implementation-planning | turns a spec into an executable plan and drives it through review |
+| observability-and-reliability | builder | — | cbrock84/headcount plugins/technology/skills/observability-and-reliability | makes systems debuggable with instrumenting and honest alerting |
+| parallel-agent-delivery | builder | — | cbrock84/headcount plugins/technology/skills/parallel-agent-delivery | splits work across agents with disjoint surfaces that merge cleanly |
+| prompt-optimizer | builder | — | cbrock84/headcount plugins/technology/skills/prompt-optimizer | turns rough intent into reliable prompts by fixing inconsistency |
+| release-and-deployment | builder | — | cbrock84/headcount plugins/technology/skills/release-and-deployment | ships changes with pipelines, flags, rollback and database steps |
+| skill-authoring | builder | — | cbrock84/headcount plugins/technology/skills/skill-authoring | writes agent skills that trigger at the right moments |
+| solution-architecture | aide | — | cbrock84/headcount plugins/technology/skills/solution-architecture | designs system boundaries and records why the trade-offs hold |
+| solution-exploration | aide | — | cbrock84/headcount plugins/technology/skills/solution-exploration | explores the problem and its approaches before code is written |
+| systematic-debugging | builder | — | cbrock84/headcount plugins/technology/skills/systematic-debugging | finds the root cause before proposing a fix |
+| technical-debt-management | aide | — | cbrock84/headcount plugins/technology/skills/technical-debt-management | makes debt visible, quantified and decidable in business terms |
+| test-driven-development | builder | — | cbrock84/headcount plugins/technology/skills/test-driven-development | writes the failing test first, then the smallest passing code |
+| access-and-identity | reviewer | — | cbrock84/headcount plugins/security/skills/access-and-identity | audits who can reach what, from authentication to credentials |
+| chief-information-security-officer | aide | — | cbrock84/headcount plugins/security/skills/chief-information-security-officer | owns the security posture and the authority to stop work at risk |
+| data-protection-and-encryption | reviewer | — | cbrock84/headcount plugins/security/skills/data-protection-and-encryption | reviews how data is classified, encrypted in transit and at rest |
+| detection-and-monitoring | builder | — | cbrock84/headcount plugins/security/skills/detection-and-monitoring | builds logging and detections that notice an attack in progress |
+| incident-response | builder | — | cbrock84/headcount plugins/security/skills/incident-response | runs a security incident from triage through closure and review |
+| security-architecture-review | reviewer | — | cbrock84/headcount plugins/security/skills/security-architecture-review | reviews a design for security before it ships |
+| threat-modeling | reviewer | — | cbrock84/headcount plugins/security/skills/threat-modeling | finds the assets, entry points and trust boundaries worth attacking |
+| vulnerability-management | reviewer | — | cbrock84/headcount plugins/security/skills/vulnerability-management | tracks weaknesses from discovery to confirmed fix by exploitability |
+| backup-and-recovery | builder | — | cbrock84/headcount plugins/it-operations/skills/backup-and-recovery | protects and proves restores with coverage, retention and tests |
+| chief-information-officer | aide | — | cbrock84/headcount plugins/it-operations/skills/chief-information-officer | runs the technology the company works on, its quality and spend |
+| cloud-administration | builder | — | cbrock84/headcount plugins/it-operations/skills/cloud-administration | administers tenants, the SaaS estate and who owns each app |
+| collaboration-platform-administration | builder | — | cbrock84/headcount plugins/it-operations/skills/collaboration-platform-administration | administers email, chat, meeting and file platforms with mail authentication |
+| endpoint-management | builder | — | cbrock84/headcount plugins/it-operations/skills/endpoint-management | manages devices through enrollment, patching and lost-device handling |
+| identity-lifecycle-administration | builder | — | cbrock84/headcount plugins/it-operations/skills/identity-lifecycle-administration | runs joiner, mover and leaver provisioning to full deprovisioning |
+| it-asset-management | builder | — | cbrock84/headcount plugins/it-operations/skills/it-asset-management | tracks hardware and software from procurement to disposal |
+| network-administration | builder | — | cbrock84/headcount plugins/it-operations/skills/network-administration | designs and runs segmentation, remote access and DNS |
+| service-desk | builder | — | cbrock84/headcount plugins/it-operations/skills/service-desk | runs intake, triage and escalation with metrics that improve service |
+| systems-administration | builder | — | cbrock84/headcount plugins/it-operations/skills/systems-administration | runs servers with patching, baselines, change control and capacity |
+| telephony-and-conferencing | builder | — | cbrock84/headcount plugins/it-operations/skills/telephony-and-conferencing | runs voice, meetings and emergency calling obligations |
+| virtualization-operations | builder | — | cbrock84/headcount plugins/it-operations/skills/virtualization-operations | runs the hypervisor layer with capacity, snapshots and resilience |
+| brand-identity | builder | — | cbrock84/headcount plugins/product/skills/brand-identity | defines logo, palette and type with guidelines that keep expression consistent |
+| design-styles | builder | — | cbrock84/headcount plugins/product/skills/design-styles | applies a deliberate visual direction to an interface |
+| design-system | builder | — | cbrock84/headcount plugins/product/skills/design-system | builds the tokens, component contracts and rules a product is assembled from |
+| interface-craft | builder | — | cbrock84/headcount plugins/product/skills/interface-craft | raises an interface's layout, hierarchy, type and density |
+| interface-redesign | builder | — | cbrock84/headcount plugins/product/skills/interface-redesign | upgrades an existing interface to a higher standard in place |
+| presentation-design | builder | — | cbrock84/headcount plugins/product/skills/presentation-design | designs decks and one-pagers that carry an argument |
+| ux-product-auditor | reviewer | — | cbrock84/headcount plugins/product/skills/ux-product-auditor | ties usability and conversion findings to outcomes and fixes |
+| visual-reference-generation | builder | — | cbrock84/headcount plugins/product/skills/visual-reference-generation | makes screen concepts and flows from a brief before implementation |
+| ai-ml-governance | reviewer | — | cbrock84/headcount plugins/data-analytics/skills/ai-ml-governance | governs models in production with intended use, evaluation, monitoring and oversight |
+| business-intelligence | builder | — | cbrock84/headcount plugins/data-analytics/skills/business-intelligence | builds reporting and self-serve analytics people actually use |
+| chief-data-officer | aide | — | cbrock84/headcount plugins/data-analytics/skills/chief-data-officer | owns data as an asset: governance, quality, warehouse and model oversight |
+| data-engineering | builder | — | cbrock84/headcount plugins/data-analytics/skills/data-engineering | builds and runs reliable data pipelines |
+| data-governance | reviewer | — | cbrock84/headcount plugins/data-analytics/skills/data-governance | sets ownership, definitions, quality, access and lineage for data |
 
 ### 15-2000 Mathematical Science Occupations
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| data-modeling | builder | — | cbrock84/headcount plugins/data-analytics/skills/data-modeling | designs the warehouse and semantic layer with dimensional models and metrics |
+| quantitative-analysis | builder | — | cbrock84/headcount plugins/data-analytics/skills/quantitative-analysis | answers a business question with data honestly framed |
 
 ## 17-0000 Architecture and Engineering Occupations
 
@@ -166,7 +319,16 @@ No source yet.
 
 ### 23-1000 Lawyers, Judges, and Related Workers
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| chief-legal-and-risk-officer | aide | — | cbrock84/headcount plugins/legal-risk/skills/chief-legal-and-risk-officer | owns legal, contracts, IP, compliance, privacy, security governance and audit readiness |
+| contract-review | reviewer | — | cbrock84/headcount plugins/legal-risk/skills/contract-review | reviews and negotiates commercial agreements to flag and fix material risk |
+| corporate-governance | builder | — | cbrock84/headcount plugins/legal-risk/skills/corporate-governance | keeps entity records, board support, resolutions and delegations in order |
+| disputes-and-legal-holds | builder | — | cbrock84/headcount plugins/legal-risk/skills/disputes-and-legal-holds | handles a dispute from first signs: sees when holds apply and scopes them |
+| enterprise-risk | reviewer | — | cbrock84/headcount plugins/legal-risk/skills/enterprise-risk | scores and tracks risk on a register with owners and treatments |
+| intellectual-property | reviewer | — | cbrock84/headcount plugins/legal-risk/skills/intellectual-property | checks what the org owns and borrows: marks, copyright, patents, secrets |
+| privacy-and-data-protection | reviewer | — | cbrock84/headcount plugins/legal-risk/skills/privacy-and-data-protection | assesses how personal data is collected, used, shared and kept |
+| regulatory-compliance | reviewer | — | cbrock84/headcount plugins/legal-risk/skills/regulatory-compliance | maps the rules that apply and keeps controls and monitoring inside them |
 
 ### 23-2000 Legal Support Workers
 
@@ -336,7 +498,18 @@ No source yet.
 
 ### 41-3000 Sales Representatives, Services
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| activation | builder | — | cbrock84/headcount plugins/revenue/skills/activation | gets new users from signup to their first real value |
+| chief-revenue-officer | aide | — | cbrock84/headcount plugins/revenue/skills/chief-revenue-officer | owns the revenue engine end to end: sales, pricing, success, retention |
+| deal-negotiation | builder | — | cbrock84/headcount plugins/revenue/skills/deal-negotiation | negotiates a deal without giving away the terms that matter |
+| outbound-prospecting | builder | — | cbrock84/headcount plugins/revenue/skills/outbound-prospecting | finds and qualifies prospects through cold, multi-channel outreach |
+| pricing-and-packaging | builder | — | cbrock84/headcount plugins/revenue/skills/pricing-and-packaging | sets price, packages and tiers with upgrade paths and paywalls |
+| referral-programs | builder | — | cbrock84/headcount plugins/revenue/skills/referral-programs | designs referral and affiliate programs with incentives and fraud control |
+| retention | builder | — | cbrock84/headcount plugins/revenue/skills/retention | diagnoses and reduces churn across cancellation, recovery and at-risk detection |
+| revenue-operations | builder | — | cbrock84/headcount plugins/revenue/skills/revenue-operations | runs lead routing, CRM hygiene and forecasting mechanics |
+| sales-compensation-and-territory | builder | — | cbrock84/headcount plugins/revenue/skills/sales-compensation-and-territory | designs quotas, territories and commission plans that drive the behavior needed |
+| sales-enablement | builder | — | cbrock84/headcount plugins/revenue/skills/sales-enablement | builds pitch decks, battlecards, objections and demo scripts for sales |
 
 ### 41-4000 Sales Representatives, Wholesale and Manufacturing
 
@@ -362,7 +535,15 @@ No source yet.
 
 ### 43-4000 Information and Record Clerks
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| chief-customer-officer | aide | — | cbrock84/headcount plugins/customer-experience/skills/chief-customer-officer | owns the customer's experience after the sale and the feedback loop into product |
+| customer-onboarding-and-implementation | builder | — | cbrock84/headcount plugins/customer-experience/skills/customer-onboarding-and-implementation | takes a new customer from signature to working against an agreed definition of live |
+| customer-success-management | builder | — | cbrock84/headcount plugins/customer-experience/skills/customer-success-management | runs ongoing accounts with coverage, health scores and renewal risk |
+| escalation-management | builder | — | cbrock84/headcount plugins/customer-experience/skills/escalation-management | handles exceeded situations with severity, incident talk and recovery |
+| self-service-and-knowledge | builder | — | cbrock84/headcount plugins/customer-experience/skills/self-service-and-knowledge | builds help center, in-product guidance and knowledge base |
+| support-operations | builder | — | cbrock84/headcount plugins/customer-experience/skills/support-operations | designs and runs support with channels, queues, levels and honest metrics |
+| voice-of-customer | builder | — | cbrock84/headcount plugins/customer-experience/skills/voice-of-customer | builds the loop from what customers say to what gets changed |
 
 ### 43-5000 Material Recording, Scheduling, Dispatching, and Distributing Workers
 
@@ -521,9 +702,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 15 (5 built, 10 not) |
-| families with a row | 2 of 99 (general; 15-1200 Computer Occupations) |
-| sources assessed | 3 (mattpocock/skills, karpathy/autoresearch, morluto/rea; 2026-10-23) |
+| rows | 187 (5 built, 182 not) |
+| families with a row | 11 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 23-1000 Lawyers, Judges, and Related Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
+| sources assessed | 4 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount; 2026-10-23) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.
