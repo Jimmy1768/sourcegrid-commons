@@ -191,6 +191,30 @@ No source yet.
 | production-scheduling | builder | — | affaan-m/ECC skills/production-scheduling | production laid out so machines and people meet their dates |
 | quality-nonconformance | reviewer | — | affaan-m/ECC skills/quality-nonconformance | work that fell short of quality found, named and traced to its cause |
 | returns-reverse-logistics | builder | — | affaan-m/ECC skills/returns-reverse-logistics | returns moved backward through the chain without losing value |
+| seo-agentic | reviewer | — | AgriciDaniel/claude-seo skills/seo-agentic | checks a site for what AI agents need and fixes what blocks them |
+| seo-audit | reviewer | — | AgriciDaniel/claude-seo skills/seo-audit | a scored whole-site search audit, its findings ranked by what to fix first |
+| seo-backlinks | reviewer | — | AgriciDaniel/claude-seo skills/seo-backlinks | reads a site's backlinks for toxic links, gaps and disavow candidates |
+| seo-cluster | aide | — | AgriciDaniel/claude-seo skills/seo-cluster | groups keywords by search overlap and plans hub pages with internal links |
+| seo-competitor-pages | builder | — | AgriciDaniel/claude-seo skills/seo-competitor-pages | writes comparison and alternatives pages aimed at search |
+| seo-content-brief | builder | — | AgriciDaniel/claude-seo skills/seo-content-brief | writes a brief for a page: word counts, keywords, section order |
+| seo-content | reviewer | — | AgriciDaniel/claude-seo skills/seo-content | judges page content for usefulness, readability, thinness and AI citability |
+| seo-dataforseo | builder | — | AgriciDaniel/claude-seo skills/seo-dataforseo | pulls live search, keyword and backlink data from DataForSEO |
+| seo-drift | reviewer | — | AgriciDaniel/claude-seo skills/seo-drift | watches a site's search-critical elements and reports what changed |
+| seo-ecommerce | reviewer | — | AgriciDaniel/claude-seo skills/seo-ecommerce | audits a shop's product pages, schema and marketplace visibility |
+| seo-geo | reviewer | — | AgriciDaniel/claude-seo skills/seo-geo | audits content for AI answer engines: citability, entities, crawler access |
+| seo-google | builder | — | AgriciDaniel/claude-seo skills/seo-google | pulls Search Console, PageSpeed and real-user speed data from Google's APIs |
+| seo-hreflang | reviewer | — | AgriciDaniel/claude-seo skills/seo-hreflang | audits and checks the language and region tags on a multilingual site |
+| seo-image-gen | builder | — | AgriciDaniel/claude-seo skills/seo-image-gen | makes social, hero and schema images for search |
+| seo-images | reviewer | — | AgriciDaniel/claude-seo skills/seo-images | checks images for weight, format and alt text |
+| seo-local | reviewer | — | AgriciDaniel/claude-seo skills/seo-local | audits local listings, citations, reviews and location pages |
+| seo-maps | reviewer | — | AgriciDaniel/claude-seo skills/seo-maps | tracks local search ranks across a map grid and audits listings and reviews |
+| seo-page | reviewer | — | AgriciDaniel/claude-seo skills/seo-page | audits one page: content, metadata, schema, images and speed |
+| seo-plan | aide | — | AgriciDaniel/claude-seo skills/seo-plan | plans a search strategy with the person for a new or an existing site |
+| seo-programmatic | aide | — | AgriciDaniel/claude-seo skills/seo-programmatic | plans pages generated at scale from data sources |
+| seo-schema | builder | — | AgriciDaniel/claude-seo skills/seo-schema | writes and checks a page's Schema.org structured data |
+| seo-sitemap | builder | — | AgriciDaniel/claude-seo skills/seo-sitemap | makes an XML sitemap, or checks the one a site already has |
+| seo-sxo | reviewer | — | AgriciDaniel/claude-seo skills/seo-sxo | diagnoses mismatches between what searchers mean and what a site shows |
+| seo-technical | reviewer | — | AgriciDaniel/claude-seo skills/seo-technical | audits crawlability, indexability, speed, security and structured data |
 
 ### 13-2000 Financial Specialists
 
@@ -983,9 +1007,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 464 (5 built, 459 not) |
+| rows | 488 (5 built, 483 not) |
 | families with a row | 14 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 23-1000 Lawyers, Judges, and Related Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
-| sources assessed | 8 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use; 2026-10-30) |
+| sources assessed | 9 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo; 2026-10-30) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.

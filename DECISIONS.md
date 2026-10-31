@@ -657,3 +657,14 @@ Decision:
 - When edit-video is adapted, its process falls away: sub-agents, its folder layout, its tool paths, and its "confirm before editing", which the Mandate holds.
 - Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
 Reason: his word.
+
+## 39. Skills from claude-seo join the Skill registry as rows
+
+Date: 2026-10-30
+Who: the Director, in Workspace Strategy's session ("save").
+Decision:
+- 24 rows enter under 13-1000 Business Operations Specialists.
+- Left out because they compose from rows already there: seo-flow (composes from seo-plan and seo-audit), seo (composes from seo-plan and the audit rows).
+- Left out as one job only: none.
+- Sub-agents and hooks are not taken: they are harness machinery the kernel replaces. The nine live-data extensions under extensions/ wait for the Marketing Delegate's Map as tool rows.
+Reason: his word. Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
