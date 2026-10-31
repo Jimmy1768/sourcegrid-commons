@@ -634,3 +634,14 @@ Decision:
 - The checks a Map would carry: the figure renders in the headless check, the SVG is valid, and its size is as specified.
 - Nothing is copied now, so no THIRD_PARTY_NOTICES line is added.
 Reason: his word.
+
+## 37. Skills from ECC join the Skill registry as rows
+
+Date: 2026-10-30
+Who: the Director, in Workspace Strategy's session ("save both").
+Decision:
+- 274 rows enter, by group: 14 under 13-1000 Business Operations Specialists; 3 under 13-2000 Financial Specialists; 242 under 15-1200 Computer Occupations; 6 under 27-1000 Art and Design Workers; 9 under 27-3000 Media and Communication Workers. The registry's Counts go from 189 to 463 rows, built still 5; families with a row from 12 to 13, 27-3000 Media and Communication Workers the new one; sources assessed from 6 to 7, adding affaan-m/ECC.
+- Left out because rows already there cover them, each named with the row it composes from: agent-introspection-debugging (diagnose); api-design (api-design); blueprint (implementation-planning); brand-voice (brand-voice); competitive-report-structure (competitive-platform-analysis); conventional-commit-review (review); deep-research (research); design-system (design-system); django-tdd (test-first); django-verification (review); flutter-dart-code-review (review); issue-review (review); laravel-tdd (test-first); laravel-verification (review); marketing-campaign (marketing-campaign-planner); master-agreement-generator (contract-review); mcp-dependency-review (review); prediction-market-risk-review (review); prompt-optimizer (prompt-optimizer); quarkus-tdd (test-first); quarkus-verification (review); security-review (security-architecture-review); seo (seo-strategy); springboot-tdd (test-first); springboot-verification (review); tdd-workflow (test-first); verification-loop (completion-verification).
+- Left out as one job only, a Trait, not a Skill: ios-icon-gen.
+- ECC's harness machinery is not taken — its agents, commands, instincts, memory vault, hooks and AgentShield, which the kernel, the record and the Gate replace — so no row enters for the listed skills that are that machinery: agent-harness-construction, agent-runtime-gateway-smoke-test, autonomous-agent-harness, ck, configure-ecc, deepseek-harness-setup, ecc-guide, ecc-recipes, ecc-tools-cost-audit, gateguard, hookify-rules, unified-memory.
+Reason: his word. Nothing is copied, so no THIRD_PARTY_NOTICES line is added.

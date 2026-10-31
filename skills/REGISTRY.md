@@ -177,6 +177,20 @@ No source yet.
 | program-management | builder | — | cbrock84/headcount plugins/pmo/skills/program-management | drives cross-functional programs through scope, dependencies and escalations |
 | project-delivery | builder | — | cbrock84/headcount plugins/pmo/skills/project-delivery | plans and delivers one project through schedule, critical path and recovery |
 | schedule-development-and-analysis | builder | — | cbrock84/headcount plugins/pmo/skills/schedule-development-and-analysis | builds and checks logic-driven schedules with float and critical path |
+| brand-discovery | aide | — | affaan-m/ECC skills/brand-discovery | what a brand stands for and how it is heard, found by asking and listening |
+| carrier-relationship-management | builder | — | affaan-m/ECC skills/carrier-relationship-management | carriers kept in a working relationship, from rates to performance |
+| competitive-platform-analysis | aide | — | affaan-m/ECC skills/competitive-platform-analysis | rival platforms sized up against each other, on evidence |
+| customer-billing-ops | builder | — | affaan-m/ECC skills/customer-billing-ops | customer billing run right, from invoice to clean payment |
+| customs-trade-compliance | reviewer | — | affaan-m/ECC skills/customs-trade-compliance | goods moving across borders held to customs rules |
+| energy-procurement | builder | — | affaan-m/ECC skills/energy-procurement | energy bought well: rates, contracts and the market read |
+| finance-billing-ops | builder | — | affaan-m/ECC skills/finance-billing-ops | financial billing run right, invoices through to cash |
+| inventory-demand-planning | aide | — | affaan-m/ECC skills/inventory-demand-planning | what will be needed and when, planned against demand |
+| lead-intelligence | aide | — | affaan-m/ECC skills/lead-intelligence | leads known before the call: who they are and what they want |
+| logistics-exception-management | builder | — | affaan-m/ECC skills/logistics-exception-management | shipments gone wrong found, fixed and watched |
+| market-research | aide | — | affaan-m/ECC skills/market-research | a market read honestly: who buys, who sells and why |
+| production-scheduling | builder | — | affaan-m/ECC skills/production-scheduling | production laid out so machines and people meet their dates |
+| quality-nonconformance | reviewer | — | affaan-m/ECC skills/quality-nonconformance | work that fell short of quality found, named and traced to its cause |
+| returns-reverse-logistics | builder | — | affaan-m/ECC skills/returns-reverse-logistics | returns moved backward through the chain without losing value |
 
 ### 13-2000 Financial Specialists
 
@@ -196,6 +210,9 @@ No source yet.
 | treasury-and-liquidity | builder | — | cbrock84/headcount plugins/finance/skills/treasury-and-liquidity | manages cash, runway, working capital and currency exposure |
 | unit-economics | builder | — | cbrock84/headcount plugins/finance/skills/unit-economics | says whether the business makes money on each customer or unit |
 | trade-pipeline | builder | — | The-Swarm-Corporation/AutoHedge | a trading decision as separate steps with structured output between them: a thesis, its quantitative test, position sizing under a risk limit, then an order; execution is the step the Gate holds, never the agent |
+| counterparty-channel-discipline | builder | — | affaan-m/ECC skills/counterparty-channel-discipline | counterparty channels kept disciplined: who may speak, on what terms, recorded |
+| investor-materials | builder | — | affaan-m/ECC skills/investor-materials | the deck, memo and data room investors read before a decision |
+| investor-outreach | builder | — | affaan-m/ECC skills/investor-outreach | investors found and asked, in the order that works |
 
 ## 15-0000 Computer and Mathematical Occupations
 
@@ -262,6 +279,248 @@ No source yet.
 | chief-data-officer | aide | — | cbrock84/headcount plugins/data-analytics/skills/chief-data-officer | owns data as an asset: governance, quality, warehouse and model oversight |
 | data-engineering | builder | — | cbrock84/headcount plugins/data-analytics/skills/data-engineering | builds and runs reliable data pipelines |
 | data-governance | reviewer | — | cbrock84/headcount plugins/data-analytics/skills/data-governance | sets ownership, definitions, quality, access and lineage for data |
+| accessibility | builder | — | affaan-m/ECC skills/accessibility | software made usable by people with disabilities, held to standards |
+| agent-eval | builder | — | affaan-m/ECC skills/agent-eval | builds and runs the measurements that show how an agent performs |
+| agent-payment-x402 | builder | — | affaan-m/ECC skills/agent-payment-x402 | works the x402 payment flow for agents |
+| agent-security-hardening | builder | — | affaan-m/ECC skills/agent-security-hardening | hardens an agent against attack and misuse |
+| agent-self-evaluation | aide | — | affaan-m/ECC skills/agent-self-evaluation | questions its own work before it is handed over |
+| agent-sort | builder | — | affaan-m/ECC skills/agent-sort | sorts and ranks what agents take on next |
+| agentic-engineering | builder | — | affaan-m/ECC skills/agentic-engineering | builds systems that act through agents |
+| agentic-os | builder | — | affaan-m/ECC skills/agentic-os | an operating layer for running many agents |
+| ai-first-engineering | builder | — | affaan-m/ECC skills/ai-first-engineering | engineering where the model is the first part, not an add-on |
+| ai-regression-testing | builder | — | affaan-m/ECC skills/ai-regression-testing | tests that a model's answers hold across changes |
+| android-clean-architecture | builder | — | affaan-m/ECC skills/android-clean-architecture | clean architecture applied to Android apps |
+| angular-developer | builder | — | affaan-m/ECC skills/angular-developer | Angular apps built to its own patterns |
+| api-connector-builder | builder | — | affaan-m/ECC skills/api-connector-builder | connectors that talk to an outside API |
+| architecture-decision-records | builder | — | affaan-m/ECC skills/architecture-decision-records | keeps the records of why a design was chosen |
+| automation-audit-ops | reviewer | — | affaan-m/ECC skills/automation-audit-ops | audits running automations for safety, cost and effect |
+| backend-patterns | builder | — | affaan-m/ECC skills/backend-patterns | the shared patterns a back end is built on |
+| benchmark-methodology | aide | — | affaan-m/ECC skills/benchmark-methodology | the method of a fair benchmark, before it is run |
+| benchmark-optimization-loop | builder | — | affaan-m/ECC skills/benchmark-optimization-loop | turns benchmark runs into a loop that improves the system |
+| benchmark | builder | — | affaan-m/ECC skills/benchmark | measures a system against a fixed yardstick |
+| bengali-nlp | builder | — | affaan-m/ECC skills/bengali-nlp | language work on Bengali text |
+| brownfield-retrospective | aide | — | affaan-m/ECC skills/brownfield-retrospective | reads a live codebase and plans the changes it can take |
+| browser-qa | builder | — | affaan-m/ECC skills/browser-qa | checks software in the browser, the way a user meets it |
+| bun-runtime | builder | — | affaan-m/ECC skills/bun-runtime | the Bun runtime and its tooling |
+| canary-watch | builder | — | affaan-m/ECC skills/canary-watch | watches a canary release and catches its regressions |
+| change-impact | aide | — | affaan-m/ECC skills/change-impact | names the parts of a system a change will touch |
+| cisco-ios-patterns | builder | — | affaan-m/ECC skills/cisco-ios-patterns | the patterns for configuring Cisco IOS gear |
+| click-path-audit | reviewer | — | affaan-m/ECC skills/click-path-audit | walks the paths users click and finds where they stall |
+| clickhouse-io | builder | — | affaan-m/ECC skills/clickhouse-io | ClickHouse, the columnar database, put to work |
+| code-tour | builder | — | affaan-m/ECC skills/code-tour | leads a walk through unfamiliar code and explains it |
+| codebase-onboarding | builder | — | affaan-m/ECC skills/codebase-onboarding | the path a newcomer into a codebase takes |
+| coding-standards | aide | — | affaan-m/ECC skills/coding-standards | sets and guards the standards a codebase is held to |
+| compose-multiplatform-patterns | builder | — | affaan-m/ECC skills/compose-multiplatform-patterns | Compose UI across the platforms that share it |
+| config-gc | builder | — | affaan-m/ECC skills/config-gc | clears out configuration that is no longer used |
+| connections-optimizer | builder | — | affaan-m/ECC skills/connections-optimizer | trims connections and pooling to their least cost |
+| content-hash-cache-pattern | builder | — | affaan-m/ECC skills/content-hash-cache-pattern | a cache keyed by content hash so stale never serves |
+| context-and-decisions | aide | — | affaan-m/ECC skills/context-and-decisions | the context and decisions a piece of work carries |
+| context-budget | builder | — | affaan-m/ECC skills/context-budget | spends a model's context on what earns its place |
+| contract-first | builder | — | affaan-m/ECC skills/contract-first | the contract written and agreed before the code |
+| cost-aware-llm-pipeline | builder | — | affaan-m/ECC skills/cost-aware-llm-pipeline | a model pipeline that knows what each call costs |
+| cost-tracking | builder | — | affaan-m/ECC skills/cost-tracking | follows what a system costs as it runs |
+| council-multi-model | builder | — | affaan-m/ECC skills/council-multi-model | several models weighed together on one decision |
+| council | builder | — | affaan-m/ECC skills/council | models in council, challenged before a decision |
+| cpp-coding-standards | aide | — | affaan-m/ECC skills/cpp-coding-standards | the standards a C++ codebase is held to |
+| cpp-testing | builder | — | affaan-m/ECC skills/cpp-testing | tests for C++ code, written and run |
+| csharp-testing | builder | — | affaan-m/ECC skills/csharp-testing | tests for C# code, written and run |
+| dart-flutter-patterns | builder | — | affaan-m/ECC skills/dart-flutter-patterns | the patterns Dart and Flutter share |
+| dashboard-builder | builder | — | affaan-m/ECC skills/dashboard-builder | a dashboard that shows the numbers that matter |
+| data-scraper-agent | builder | — | affaan-m/ECC skills/data-scraper-agent | an agent that pulls data from its sources |
+| data-throughput-accelerator | builder | — | affaan-m/ECC skills/data-throughput-accelerator | finds where data slows and widens the pipe |
+| database-migrations | builder | — | affaan-m/ECC skills/database-migrations | schema changes written, ordered and rolled forward |
+| defi-amm-security | builder | — | affaan-m/ECC skills/defi-amm-security | the risks of DeFi's automated markets, found first |
+| deployment-patterns | builder | — | affaan-m/ECC skills/deployment-patterns | the patterns software is shipped under |
+| django-celery | builder | — | affaan-m/ECC skills/django-celery | Celery's queued work inside a Django app |
+| django-patterns | builder | — | affaan-m/ECC skills/django-patterns | the patterns a Django app is built on |
+| django-security | builder | — | affaan-m/ECC skills/django-security | Django's security held unbroken |
+| dmux-workflows | builder | — | affaan-m/ECC skills/dmux-workflows | multiplexed terminal sessions as a workflow |
+| docker-patterns | builder | — | affaan-m/ECC skills/docker-patterns | images and containers built to the patterns that hold |
+| docs-governance | aide | — | affaan-m/ECC skills/docs-governance | keeps the docs truthful, current and owned |
+| documentation-lookup | builder | — | affaan-m/ECC skills/documentation-lookup | finds the doc that answers, fast |
+| dotnet-patterns | builder | — | affaan-m/ECC skills/dotnet-patterns | the patterns .NET applications share |
+| e2e-testing | builder | — | affaan-m/ECC skills/e2e-testing | the whole flow tested as a user walks it |
+| email-ops | builder | — | affaan-m/ECC skills/email-ops | email sent, routed and observed |
+| enterprise-agent-ops | builder | — | affaan-m/ECC skills/enterprise-agent-ops | agents run at the scale of a whole company |
+| error-handling | builder | — | affaan-m/ECC skills/error-handling | errors caught, named and dealt with the same way everywhere |
+| esign-field-placement | builder | — | affaan-m/ECC skills/esign-field-placement | signature fields placed where they hold |
+| evm-token-decimals | builder | — | affaan-m/ECC skills/evm-token-decimals | token decimals on EVM chains, got right |
+| exa-search | builder | — | affaan-m/ECC skills/exa-search | Exa's semantic search put to work |
+| fal-ai-media | builder | — | affaan-m/ECC skills/fal-ai-media | fal.ai's models for generated media |
+| fastapi-patterns | builder | — | affaan-m/ECC skills/fastapi-patterns | the patterns a FastAPI service is built on |
+| flox-environments | builder | — | affaan-m/ECC skills/flox-environments | Flox environments, reproducible as built |
+| foundation-models-on-device | builder | — | affaan-m/ECC skills/foundation-models-on-device | foundation models run on the device itself |
+| frontend-a11y | builder | — | affaan-m/ECC skills/frontend-a11y | the front end made accessible |
+| frontend-patterns | builder | — | affaan-m/ECC skills/frontend-patterns | the patterns a front end is built on |
+| fsharp-testing | builder | — | affaan-m/ECC skills/fsharp-testing | tests for F# code, written and run |
+| generating-python-installer | builder | — | affaan-m/ECC skills/generating-python-installer | a Python app turned into an installer |
+| git-workflow | builder | — | affaan-m/ECC skills/git-workflow | the git habits a team works under |
+| github-ops | builder | — | affaan-m/ECC skills/github-ops | GitHub repos and workflows operated |
+| golang-patterns | builder | — | affaan-m/ECC skills/golang-patterns | the patterns Go code is built on |
+| golang-testing | builder | — | affaan-m/ECC skills/golang-testing | tests for Go code, written and run |
+| google-workspace-ops | builder | — | affaan-m/ECC skills/google-workspace-ops | Google Workspace administered |
+| growth-log | builder | — | affaan-m/ECC skills/growth-log | the growth log kept and read back |
+| healthcare-cdss-patterns | builder | — | affaan-m/ECC skills/healthcare-cdss-patterns | clinical decision support built to its patterns |
+| healthcare-emr-patterns | builder | — | affaan-m/ECC skills/healthcare-emr-patterns | electronic medical records built to their patterns |
+| healthcare-phi-compliance | reviewer | — | affaan-m/ECC skills/healthcare-phi-compliance | protected health information kept guarded |
+| hermes-imports | builder | — | affaan-m/ECC skills/hermes-imports | Hermes imports worked through |
+| hexagonal-architecture | builder | — | affaan-m/ECC skills/hexagonal-architecture | the core kept apart from its ports and adapters |
+| hipaa-compliance | reviewer | — | affaan-m/ECC skills/hipaa-compliance | software held to HIPAA's rules |
+| homelab-network-readiness | builder | — | affaan-m/ECC skills/homelab-network-readiness | a homelab network made ready |
+| homelab-network-setup | builder | — | affaan-m/ECC skills/homelab-network-setup | a homelab network set up from bare metal |
+| homelab-pihole-dns | builder | — | affaan-m/ECC skills/homelab-pihole-dns | Pi-hole DNS run at home |
+| homelab-vlan-segmentation | builder | — | affaan-m/ECC skills/homelab-vlan-segmentation | a home network segmented with VLANs |
+| homelab-wireguard-vpn | builder | — | affaan-m/ECC skills/homelab-wireguard-vpn | WireGuard VPN run from home |
+| i18n-sync | builder | — | affaan-m/ECC skills/i18n-sync | translations kept in step across locales |
+| inherit-legacy-style | builder | — | affaan-m/ECC skills/inherit-legacy-style | new code that matches the old code's style |
+| intent-driven-development | builder | — | affaan-m/ECC skills/intent-driven-development | work driven from intent, not a full spec |
+| iterative-retrieval | builder | — | affaan-m/ECC skills/iterative-retrieval | retrieval that comes back better each round |
+| java-coding-standards | aide | — | affaan-m/ECC skills/java-coding-standards | the standards a Java codebase is held to |
+| jira-integration | builder | — | affaan-m/ECC skills/jira-integration | Jira wired into the work |
+| jpa-patterns | builder | — | affaan-m/ECC skills/jpa-patterns | the patterns JPA persistence is built on |
+| knowledge-ops | builder | — | affaan-m/ECC skills/knowledge-ops | knowledge kept, found and current |
+| kotlin-coroutines-flows | builder | — | affaan-m/ECC skills/kotlin-coroutines-flows | coroutines and flows done the Kotlin way |
+| kotlin-exposed-patterns | builder | — | affaan-m/ECC skills/kotlin-exposed-patterns | the patterns Kotlin Exposed is built on |
+| kotlin-ktor-patterns | builder | — | affaan-m/ECC skills/kotlin-ktor-patterns | the patterns a Ktor service is built on |
+| kotlin-patterns | builder | — | affaan-m/ECC skills/kotlin-patterns | the patterns Kotlin code is built on |
+| kotlin-testing | builder | — | affaan-m/ECC skills/kotlin-testing | tests for Kotlin code, written and run |
+| kubernetes-patterns | builder | — | affaan-m/ECC skills/kubernetes-patterns | the patterns Kubernetes workloads run under |
+| laravel-patterns | builder | — | affaan-m/ECC skills/laravel-patterns | the patterns a Laravel app is built on |
+| laravel-plugin-discovery | builder | — | affaan-m/ECC skills/laravel-plugin-discovery | Laravel plugins discovered, not declared |
+| laravel-security | builder | — | affaan-m/ECC skills/laravel-security | Laravel's security held unbroken |
+| latency-critical-systems | builder | — | affaan-m/ECC skills/latency-critical-systems | systems built where the deadline is the spec |
+| living-docs-governance | aide | — | affaan-m/ECC skills/living-docs-governance | docs that change as the system changes |
+| llm-trading-agent-security | builder | — | affaan-m/ECC skills/llm-trading-agent-security | the risks of a trading agent that thinks, closed |
+| loop-design-check | reviewer | — | affaan-m/ECC skills/loop-design-check | an agent loop's design checked before it runs |
+| mailtrap-email-integration | builder | — | affaan-m/ECC skills/mailtrap-email-integration | Mailtrap wired in for email under test |
+| mcp-server-patterns | builder | — | affaan-m/ECC skills/mcp-server-patterns | the patterns an MCP server is built on |
+| messages-ops | builder | — | affaan-m/ECC skills/messages-ops | messages routed and observed |
+| ml-adoption-playbook | aide | — | affaan-m/ECC skills/ml-adoption-playbook | the playbook a team adopts machine learning under |
+| mle-workflow | builder | — | affaan-m/ECC skills/mle-workflow | the machine learning engineer's loop, end to end |
+| module-governance | aide | — | affaan-m/ECC skills/module-governance | modules owned, bounded and depended on |
+| module-regression | builder | — | affaan-m/ECC skills/module-regression | a module tested alone against regressions |
+| mybatis-patterns | builder | — | affaan-m/ECC skills/mybatis-patterns | the patterns MyBatis persistence is built on |
+| mysql-patterns | builder | — | affaan-m/ECC skills/mysql-patterns | the patterns a MySQL database is run under |
+| nestjs-patterns | builder | — | affaan-m/ECC skills/nestjs-patterns | the patterns a NestJS app is built on |
+| netmiko-ssh-automation | builder | — | affaan-m/ECC skills/netmiko-ssh-automation | network gear driven over SSH with Netmiko |
+| network-bgp-diagnostics | builder | — | affaan-m/ECC skills/network-bgp-diagnostics | BGP trouble found and named |
+| network-config-validation | builder | — | affaan-m/ECC skills/network-config-validation | network configuration validated before it ships |
+| network-interface-health | builder | — | affaan-m/ECC skills/network-interface-health | interfaces watched and their troubles named |
+| nextjs-turbopack | builder | — | affaan-m/ECC skills/nextjs-turbopack | Next.js on Turbopack's fast build |
+| nodejs-keccak256 | builder | — | affaan-m/ECC skills/nodejs-keccak256 | keccak256 in Node.js, got right |
+| nutrient-document-processing | builder | — | affaan-m/ECC skills/nutrient-document-processing | documents processed with Nutrient's SDK |
+| nuxt4-patterns | builder | — | affaan-m/ECC skills/nuxt4-patterns | the patterns a Nuxt 4 app is built on |
+| opensource-pipeline | builder | — | affaan-m/ECC skills/opensource-pipeline | open source contributions moved through one pipeline |
+| osint-investigation | builder | — | affaan-m/ECC skills/osint-investigation | an investigation built from open sources |
+| parallel-execution-optimizer | builder | — | affaan-m/ECC skills/parallel-execution-optimizer | work parallelized where it pays |
+| perl-patterns | builder | — | affaan-m/ECC skills/perl-patterns | the patterns Perl code is built on |
+| perl-security | builder | — | affaan-m/ECC skills/perl-security | Perl's security held unbroken |
+| perl-testing | builder | — | affaan-m/ECC skills/perl-testing | tests for Perl code, written and run |
+| plan-canvas | aide | — | affaan-m/ECC skills/plan-canvas | a plan laid out on one canvas before work starts |
+| plan-orchestrate | builder | — | affaan-m/ECC skills/plan-orchestrate | a plan carried across the steps that depend on each other |
+| plankton-code-quality | builder | — | affaan-m/ECC skills/plankton-code-quality | code quality measured on the little things |
+| postgres-patterns | builder | — | affaan-m/ECC skills/postgres-patterns | the patterns a PostgreSQL database is run under |
+| prediction-market-oracle-research | builder | — | affaan-m/ECC skills/prediction-market-oracle-research | oracles for prediction markets, researched |
+| prisma-patterns | builder | — | affaan-m/ECC skills/prisma-patterns | the patterns Prisma is built on |
+| product-capability | builder | — | affaan-m/ECC skills/product-capability | a product capability built out in the software |
+| product-lens | aide | — | affaan-m/ECC skills/product-lens | work seen through what the product needs |
+| production-audit | reviewer | — | affaan-m/ECC skills/production-audit | production audited for what will fail next |
+| project-flow-ops | builder | — | affaan-m/ECC skills/project-flow-ops | the project's flow kept moving |
+| prompt-caching-strategy | builder | — | affaan-m/ECC skills/prompt-caching-strategy | prompts cached to save the cost of asking twice |
+| python-patterns | builder | — | affaan-m/ECC skills/python-patterns | the patterns Python code is built on |
+| python-testing | builder | — | affaan-m/ECC skills/python-testing | tests for Python code, written and run |
+| pytorch-patterns | builder | — | affaan-m/ECC skills/pytorch-patterns | the patterns PyTorch models are built on |
+| quarkus-patterns | builder | — | affaan-m/ECC skills/quarkus-patterns | the patterns a Quarkus app is built on |
+| quarkus-security | builder | — | affaan-m/ECC skills/quarkus-security | Quarkus's security held unbroken |
+| rails-patterns | builder | — | affaan-m/ECC skills/rails-patterns | the patterns a Rails app is built on |
+| react-native-patterns | builder | — | affaan-m/ECC skills/react-native-patterns | the patterns React Native apps are built on |
+| react-patterns | builder | — | affaan-m/ECC skills/react-patterns | the patterns React is built on |
+| react-performance | builder | — | affaan-m/ECC skills/react-performance | React kept fast where renders are costly |
+| react-testing | builder | — | affaan-m/ECC skills/react-testing | tests for React code, written and run |
+| recsys-pipeline-architect | builder | — | affaan-m/ECC skills/recsys-pipeline-architect | recommendation pipelines architected end to end |
+| recursive-decision-ledger | builder | — | affaan-m/ECC skills/recursive-decision-ledger | decisions kept in a ledger that reads itself |
+| redis-patterns | builder | — | affaan-m/ECC skills/redis-patterns | the patterns Redis is run under |
+| regex-vs-llm-structured-text | builder | — | affaan-m/ECC skills/regex-vs-llm-structured-text | knows when the regex and when the model reads the text |
+| repo-scan | reviewer | — | affaan-m/ECC skills/repo-scan | a repository scanned for what is wrong or secret |
+| research-ops | builder | — | affaan-m/ECC skills/research-ops | the research workflow operated |
+| rules-distill | builder | — | affaan-m/ECC skills/rules-distill | rules distilled from what has worked |
+| rust-patterns | builder | — | affaan-m/ECC skills/rust-patterns | the patterns Rust code is built on |
+| rust-testing | builder | — | affaan-m/ECC skills/rust-testing | tests for Rust code, written and run |
+| safety-guard | reviewer | — | affaan-m/ECC skills/safety-guard | unsafe behaviour caught before it acts |
+| santa-method | builder | — | affaan-m/ECC skills/santa-method | work delivered the Santa method's way |
+| scientific-db-pubmed-database | builder | — | affaan-m/ECC skills/scientific-db-pubmed-database | PubMed built and queried |
+| scientific-db-uspto-database | builder | — | affaan-m/ECC skills/scientific-db-uspto-database | USPTO built and queried |
+| scientific-pkg-gget | builder | — | affaan-m/ECC skills/scientific-pkg-gget | gget's scientific data retrieval at work |
+| scientific-thinking-literature-review | builder | — | affaan-m/ECC skills/scientific-thinking-literature-review | a literature review done like a scientist |
+| scientific-thinking-scholar-evaluation | reviewer | — | affaan-m/ECC skills/scientific-thinking-scholar-evaluation | scholars judged by their record, not their noise |
+| search-first | builder | — | affaan-m/ECC skills/search-first | the existing answer found before a new one is built |
+| security-bounty-hunter | reviewer | — | affaan-m/ECC skills/security-bounty-hunter | the bounty hunter's hunt for what is broken |
+| security-scan | reviewer | — | affaan-m/ECC skills/security-scan | a system scanned for security weaknesses |
+| social-graph-ranker | builder | — | affaan-m/ECC skills/social-graph-ranker | a social graph turned into a ranking |
+| springboot-patterns | builder | — | affaan-m/ECC skills/springboot-patterns | the patterns a Spring Boot app is built on |
+| springboot-security | builder | — | affaan-m/ECC skills/springboot-security | Spring Boot's security held unbroken |
+| story-lifecycle | builder | — | affaan-m/ECC skills/story-lifecycle | a user story carried through its whole life |
+| strategic-compact | aide | — | affaan-m/ECC skills/strategic-compact | strategy compressed to its load-bearing points |
+| swift-actor-persistence | builder | — | affaan-m/ECC skills/swift-actor-persistence | Swift actors and what their state keeps |
+| swift-concurrency-6-2 | builder | — | affaan-m/ECC skills/swift-concurrency-6-2 | Swift 6.2 concurrency used squarely |
+| swift-protocol-di-testing | builder | — | affaan-m/ECC skills/swift-protocol-di-testing | dependency injection tested through Swift protocols |
+| swiftui-patterns | builder | — | affaan-m/ECC skills/swiftui-patterns | the patterns SwiftUI is built on |
+| taste-application | builder | — | affaan-m/ECC skills/taste-application | taste applied, not just talked about |
+| taste-distillation | builder | — | affaan-m/ECC skills/taste-distillation | taste distilled into reusable judgment |
+| taste | builder | — | affaan-m/ECC skills/taste | the judgment that knows good when it sees it |
+| terminal-opener | builder | — | affaan-m/ECC skills/terminal-opener | the right terminal opened in the right place |
+| terminal-ops | builder | — | affaan-m/ECC skills/terminal-ops | terminal sessions operated |
+| test-collaboration | builder | — | affaan-m/ECC skills/test-collaboration | tests worked on together, without collision |
+| tinystruct-patterns | builder | — | affaan-m/ECC skills/tinystruct-patterns | the patterns Tinystruct is built on |
+| token-budget-advisor | aide | — | affaan-m/ECC skills/token-budget-advisor | advises how many tokens a call can afford |
+| typescript-patterns | builder | — | affaan-m/ECC skills/typescript-patterns | the patterns TypeScript is built on |
+| ui-demo | builder | — | affaan-m/ECC skills/ui-demo | a demo that shows the interface it promises |
+| ui-to-vue | builder | — | affaan-m/ECC skills/ui-to-vue | a design carried into Vue components |
+| unified-notifications-ops | builder | — | affaan-m/ECC skills/unified-notifications-ops | notifications from many channels, one flow |
+| vite-patterns | builder | — | affaan-m/ECC skills/vite-patterns | the patterns Vite builds under |
+| vue-patterns | builder | — | affaan-m/ECC skills/vue-patterns | the patterns Vue.js is built on |
+| windows-desktop-e2e | builder | — | affaan-m/ECC skills/windows-desktop-e2e | the Windows desktop app tested end to end |
+| workspace-surface-audit | reviewer | — | affaan-m/ECC skills/workspace-surface-audit | the workspace's outer surface audited for risks |
+| agent-architecture-audit | reviewer | — | affaan-m/ECC skills/agent-architecture-audit | an agent system's architecture checked for risks and gaps |
+| autonomous-loops | builder | — | affaan-m/ECC skills/autonomous-loops | loops that let agents run without a person in each step |
+| claude-devfleet | builder | — | affaan-m/ECC skills/claude-devfleet | a fleet of Claude coding agents, run together |
+| codehealth-mcp | builder | — | affaan-m/ECC skills/codehealth-mcp | code health reported through an MCP server |
+| continuous-agent-loop | builder | — | affaan-m/ECC skills/continuous-agent-loop | an agent loop that keeps going |
+| continuous-learning-v2 | builder | — | affaan-m/ECC skills/continuous-learning-v2 | the second cut of learning that never stops |
+| continuous-learning | builder | — | affaan-m/ECC skills/continuous-learning | a model that keeps learning from new data |
+| delivery-gate | builder | — | affaan-m/ECC skills/delivery-gate | release gated on the checks that matter |
+| dev-team | builder | — | affaan-m/ECC skills/dev-team | a team of developer agents, organized |
+| dynamic-workflow-mode | builder | — | affaan-m/ECC skills/dynamic-workflow-mode | the workflow mode that fits the moment, chosen as it runs |
+| eval-harness | builder | — | affaan-m/ECC skills/eval-harness | the harness that evaluates a model |
+| ito-baskets | builder | — | affaan-m/ECC skills/ito-baskets | IT operations work, bundled into baskets |
+| ito-compute | builder | — | affaan-m/ECC skills/ito-compute | IT operations compute, run well |
+| ito-inference | builder | — | affaan-m/ECC skills/ito-inference | IT operations inference, served |
+| ito-training | builder | — | affaan-m/ECC skills/ito-training | IT operations models, trained |
+| make-interfaces-feel-better | builder | — | affaan-m/ECC skills/make-interfaces-feel-better | interfaces made to feel right, not just look right |
+| nanoclaw-repl | builder | — | affaan-m/ECC skills/nanoclaw-repl | the Nanoclaw REPL, at work |
+| nasiko-control-plane | builder | — | affaan-m/ECC skills/nasiko-control-plane | the control plane Nasiko runs on |
+| openclaw-persona-forge | builder | — | affaan-m/ECC skills/openclaw-persona-forge | personas forged with OpenClaw |
+| operator-approval-loop | builder | — | affaan-m/ECC skills/operator-approval-loop | the loop where an operator approves an agent's act |
+| orch-add-feature | builder | — | affaan-m/ECC skills/orch-add-feature | the orchestration step that adds a feature |
+| orch-build-mvp | builder | — | affaan-m/ECC skills/orch-build-mvp | the orchestration step that builds an MVP |
+| orch-change-feature | builder | — | affaan-m/ECC skills/orch-change-feature | the orchestration step that changes a feature |
+| orch-fix-defect | builder | — | affaan-m/ECC skills/orch-fix-defect | the orchestration step that fixes a defect |
+| orch-pipeline | builder | — | affaan-m/ECC skills/orch-pipeline | the orchestration pipeline, whole |
+| orch-refine-code | builder | — | affaan-m/ECC skills/orch-refine-code | the orchestration step that refines code |
+| ralphinho-rfc-pipeline | builder | — | affaan-m/ECC skills/ralphinho-rfc-pipeline | RFCs moved through a pipeline |
+| skill-comply | reviewer | — | affaan-m/ECC skills/skill-comply | a skill checked against the standard it must meet |
+| skill-host-compat | builder | — | affaan-m/ECC skills/skill-host-compat | a skill made to work on different hosts |
+| skill-scout | builder | — | affaan-m/ECC skills/skill-scout | new skills found and judged |
+| skill-stocktake | builder | — | affaan-m/ECC skills/skill-stocktake | the skills in hand, counted and known |
+| team-agent-orchestration | builder | — | affaan-m/ECC skills/team-agent-orchestration | many agents, one piece of work, orchestrated |
+| team-builder | builder | — | affaan-m/ECC skills/team-builder | a team of agents built with each role defined |
+| token-card | builder | — | affaan-m/ECC skills/token-card | token cards managed for payment |
+| uncloud | builder | — | affaan-m/ECC skills/uncloud | cloud resources not in use, found and handled |
+| videodb | builder | — | affaan-m/ECC skills/videodb | video data stored and queried |
+| x-api | builder | — | affaan-m/ECC skills/x-api | the X API, integrated |
+| blender-motion-state-inspection | builder | — | affaan-m/ECC skills/blender-motion-state-inspection | motion state inside Blender inspected and understood |
+| gan-style-harness | builder | — | affaan-m/ECC skills/gan-style-harness | a GAN-style model trained and checked inside its harness |
+| healthcare-eval-harness | builder | — | affaan-m/ECC skills/healthcare-eval-harness | healthcare models evaluated against the measures that matter |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -365,6 +624,12 @@ No source yet.
 | --- | --- | --- | --- | --- |
 
 | isometric-figure | builder | — | wheresryan22/anatomy SKILL.md and references/ | explaining a thing as an isometric figure: what to draw, what to leave out, the kit's conventions |
+| frontend-design-direction | aide | — | affaan-m/ECC skills/frontend-design-direction | the visual direction of a front end, set and held |
+| frontend-slides | builder | — | affaan-m/ECC skills/frontend-slides | slides that present front-end work |
+| liquid-glass-design | builder | — | affaan-m/ECC skills/liquid-glass-design | the liquid-glass look applied to interface design |
+| motion-advanced | builder | — | affaan-m/ECC skills/motion-advanced | the hard parts of motion, mastered |
+| motion-foundations | builder | — | affaan-m/ECC skills/motion-foundations | motion's basics, solid |
+| motion-patterns | builder | — | affaan-m/ECC skills/motion-patterns | the patterns motion repeats |
 
 ### 27-2000 Entertainers and Performers, Sports and Related Workers
 
@@ -372,7 +637,17 @@ No source yet.
 
 ### 27-3000 Media and Communication Workers
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| content-engine | builder | — | affaan-m/ECC skills/content-engine | the engine that turns a source into content |
+| article-writing | builder | — | affaan-m/ECC skills/article-writing | an article written from its sources, ready to publish |
+| crosspost | builder | — | affaan-m/ECC skills/crosspost | one piece posted across the channels |
+| manim-video | builder | — | affaan-m/ECC skills/manim-video | math explained as a Manim video |
+| remotion-video-creation | builder | — | affaan-m/ECC skills/remotion-video-creation | a video built with Remotion, frame by frame |
+| social-publisher | builder | — | affaan-m/ECC skills/social-publisher | social posts written and published |
+| tasteforge-video | builder | — | affaan-m/ECC skills/tasteforge-video | video made with TasteForge's tooling |
+| video-editing | builder | — | affaan-m/ECC skills/video-editing | raw footage cut into a finished video |
+| visa-doc-translate | builder | — | affaan-m/ECC skills/visa-doc-translate | visa documents translated for submission |
 
 ### 27-4000 Media and Communication Equipment Workers
 
@@ -706,9 +981,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 189 (5 built, 184 not) |
-| families with a row | 12 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 23-1000 Lawyers, Judges, and Related Workers; 27-1000 Art and Design Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
-| sources assessed | 6 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy; 2026-10-23) |
+| rows | 463 (5 built, 458 not) |
+| families with a row | 13 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 23-1000 Lawyers, Judges, and Related Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
+| sources assessed | 7 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC; 2026-10-30) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.
