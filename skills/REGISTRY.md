@@ -195,6 +195,7 @@ No source yet.
 | tax | aide | — | cbrock84/headcount plugins/finance/skills/tax | works the tax obligations a growing business faces, from income to payroll |
 | treasury-and-liquidity | builder | — | cbrock84/headcount plugins/finance/skills/treasury-and-liquidity | manages cash, runway, working capital and currency exposure |
 | unit-economics | builder | — | cbrock84/headcount plugins/finance/skills/unit-economics | says whether the business makes money on each customer or unit |
+| trade-pipeline | builder | — | The-Swarm-Corporation/AutoHedge | a trading decision as separate steps with structured output between them: a thesis, its quantitative test, position sizing under a risk limit, then an order; execution is the step the Gate holds, never the agent |
 
 ## 15-0000 Computer and Mathematical Occupations
 
@@ -702,9 +703,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 187 (5 built, 182 not) |
+| rows | 188 (5 built, 183 not) |
 | families with a row | 11 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 23-1000 Lawyers, Judges, and Related Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
-| sources assessed | 4 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount; 2026-10-23) |
+| sources assessed | 5 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge; 2026-10-23) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.

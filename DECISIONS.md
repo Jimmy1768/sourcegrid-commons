@@ -613,3 +613,13 @@ Decision:
 - The checks a Map would carry: the video's duration and resolution as specified; a clean render, with no console errors and no missing assets; and a file ffprobe can play.
 - Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
 Reason: his word.
+
+## 35. A trading pipeline joins the Skill registry as a row
+
+Date: 2026-10-23
+Who: the Director, in Workspace Strategy's session ("add it").
+Decision:
+- trade-pipeline is a Skill row under 13-2000.
+- Not taken from AutoHedge: its autonomous execution, since a model moving the person's assets is not a governed artifact; and its risk limits, which are prompts. When the 13-2000 Blueprint is built, its Map carries the risk limit and the execution gate as checks.
+- Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
+Reason: his word, and his rule for a group with no Blueprint yet: an empty group is never a reason to skip a source, "i will eventually create the Blueprint."
