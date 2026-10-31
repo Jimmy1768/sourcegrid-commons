@@ -623,3 +623,14 @@ Decision:
 - Not taken from AutoHedge: its autonomous execution, since a model moving the person's assets is not a governed artifact; and its risk limits, which are prompts. When the 13-2000 Blueprint is built, its Map carries the risk limit and the execution gate as checks.
 - Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
 Reason: his word, and his rule for a group with no Blueprint yet: an empty group is never a reason to skip a source, "i will eventually create the Blueprint."
+
+## 36. Isometric figures join both registries as rows
+
+Date: 2026-10-30
+Who: the Director, in Workspace Strategy's session ("save both").
+Decision:
+- isometric-figure is a Skill row under 27-1000 Art and Design Workers.
+- isometric-figures is a Recipe row in a new family, B16 Figures, fitting the static-site base, tier 3. Its code is copied from anatomy's kit/ and scripts/ when it is built. It is weak on people and maps.
+- The checks a Map would carry: the figure renders in the headless check, the SVG is valid, and its size is as specified.
+- Nothing is copied now, so no THIRD_PARTY_NOTICES line is added.
+Reason: his word.

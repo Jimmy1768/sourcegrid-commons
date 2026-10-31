@@ -361,7 +361,10 @@ No source yet.
 
 ### 27-1000 Art and Design Workers
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+
+| isometric-figure | builder | — | wheresryan22/anatomy SKILL.md and references/ | explaining a thing as an isometric figure: what to draw, what to leave out, the kit's conventions |
 
 ### 27-2000 Entertainers and Performers, Sports and Related Workers
 
@@ -703,9 +706,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 188 (5 built, 183 not) |
-| families with a row | 11 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 23-1000 Lawyers, Judges, and Related Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
-| sources assessed | 5 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge; 2026-10-23) |
+| rows | 189 (5 built, 184 not) |
+| families with a row | 12 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 23-1000 Lawyers, Judges, and Related Workers; 27-1000 Art and Design Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
+| sources assessed | 6 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy; 2026-10-23) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.
