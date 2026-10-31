@@ -1,0 +1,4 @@
+# Files Mandates may each append to; their appends are joined at the landing.
+skills/REGISTRY.md
+recipes/REGISTRY.md
+tools/REGISTRY.md

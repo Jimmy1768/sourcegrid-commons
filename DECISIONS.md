@@ -668,3 +668,13 @@ Decision:
 - Left out as one job only: none.
 - Sub-agents and hooks are not taken: they are harness machinery the kernel replaces. The nine live-data extensions under extensions/ wait for the Marketing Delegate's Map as tool rows.
 Reason: his word. Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
+
+## 40. The three registries are named shared files
+
+Date: 2026-10-31
+Who: the Director's list, sent by Workspace Recovery; placed by Commons Planning.
+Decision:
+- `.operatorkit-shared` names skills/REGISTRY.md, recipes/REGISTRY.md and tools/REGISTRY.md.
+- DECISIONS.md joins the list once a new entry is written "## Next." and numbered at the landing.
+- A file that two Mandates both rewrite in place stays unnamed.
+Reason: Mandates that only append rows to the same registry no longer wait on each other.
