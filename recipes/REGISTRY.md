@@ -37,7 +37,7 @@ own apps confirm.
   web-app, sign-in, user-kinds, profile-settings, email-verification, transactional-email, file-uploads, admin, observability, backups, dev-environment, ci, deployment, system-tests, security-hardening, ui-kit.
 - **Tier 2 (38 rows)** — what most products with customers need:
   api-service, social-sign-in, two-factor, account-export-delete, api-sign-in, impersonation, linked-accounts, kinds-and-linked-accounts, teams, invitations, permissions, audit-log, plan-limits, payments, subscriptions, invoices, billing-portal, notify, in-app-notifications, rich-text, spreadsheet-import, export, marketing-pages, search, filters-tables, field-encryption, api-keys, webhooks-in, scheduling, rate-limiting, timezones, health-status, consent-privacy, analytics, seo, llm-call, lint-format, caching.
-- **Tier 3 (56 rows)** — by kind of project or domain, when the first of
+- **Tier 3 (57 rows)** — by kind of project or domain, when the first of
   its kind comes: the other bases and every row not named above.
 
 ## Prior art (the reference set the categories come from)
@@ -233,6 +233,12 @@ of a Recipe, never copied as a list.
 | caching | fragment and query caching with a store | 2 | — | Rails caching guide; Solid Cache |
 | ui-kit | a component set, theme and dark mode on Tailwind | 1 | — | every starter names it |
 
+### B14. Media (fits automation)
+
+| id | one line | tier | status | source |
+| --- | --- | --- | --- | --- |
+| video-edit | footage to finished video: ffprobe inventory, word-level transcript (Scribe, paid and keyed, or Whisper, open), edit list, ffmpeg render, grade, subtitles, 30ms fades at cuts | 3 | — | browser-use/video-use helpers/ |
+
 ### B15. Animation (fits static-site)
 
 | id | one line | tier | status | source |
@@ -263,6 +269,6 @@ enforcement landscape is.
 
 ## Counts
 
-Built: 7 of 110 rows (one base, six features). Draft: 1. None: 102. By tier: 16, 38, 56; of the seven built, three are tier 1 and four tier 2. Which
+Built: 7 of 111 rows (one base, six features). Draft: 1. None: 103. By tier: 16, 38, 57; of the seven built, three are tier 1 and four tier 2. Which
 rows are built, and in what order, follows his word and the Workshop's users' projects;
 the registry only says what exists and what does not.

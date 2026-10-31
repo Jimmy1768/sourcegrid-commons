@@ -645,3 +645,15 @@ Decision:
 - Left out as one job only, a Trait, not a Skill: ios-icon-gen.
 - ECC's harness machinery is not taken — its agents, commands, instincts, memory vault, hooks and AgentShield, which the kernel, the record and the Gate replace — so no row enters for the listed skills that are that machinery: agent-harness-construction, agent-runtime-gateway-smoke-test, autonomous-agent-harness, ck, configure-ecc, deepseek-harness-setup, ecc-guide, ecc-recipes, ecc-tools-cost-audit, gateguard, hookify-rules, unified-memory.
 Reason: his word. Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
+
+## 38. Video editing and XERJ join the registries
+
+Date: 2026-10-23
+Who: the Director, in Workspace Strategy's session ("send both rows to Commons Planning"; "send the XERJ tools row to Commons Planning").
+Decision:
+- edit-video is a Skill row under 27-4000.
+- video-edit is a Recipe row in a new family, B14 Media, fitting the automation base (Python), tier 3. Transcription is chosen when it is built: Scribe (paid, needs a key) or Whisper (open).
+- XERJ is a tool, entered, with its document at tools/xerj/README.md: local only, reads only, its index inside the target.
+- When edit-video is adapted, its process falls away: sub-agents, its folder layout, its tool paths, and its "confirm before editing", which the Mandate holds.
+- Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
+Reason: his word.

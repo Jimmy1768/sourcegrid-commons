@@ -13,3 +13,4 @@ entered on the Director's word of 2026-10-23 (`DECISIONS.md` 32). Status is `ent
 | rea | MCP server and CLI | MIT | entered | morluto/rea | routes a target to the right reverse-engineering tool and returns evidence with its limits. |
 | browser-worker | browser service (Playwright) | MIT | — | CopilotKit/openmuse apps/worker (alpha) | a browser that keeps a Chromium profile per person and hands control to the person on takeover; which sites, which profile and the takeover are held by the kernel |
 | agent-computer | Linux container | MIT | — | CopilotKit/openmuse apps/computer (alpha) | a nonroot workspace kept between runs, with no host mounts, no credentials, no network from its terminal and a thirty-second limit per command |
+| xerj | MCP server (stdio) and REST API | Apache-2.0 | entered | xerj-org/xerj | searches the person's files on their own machine (code by symbol, documents, logs, mail), so a role reads results, not whole files |
