@@ -1,0 +1,6 @@
+id: mobile-app
+kind: base
+# An Expo base: it holds a package.json, so the house check runs it through
+# its four Node steps. A feature for the phone app names this base in its fits
+# field. This base itself signs in against api-service with api-sign-in laid
+# on it.

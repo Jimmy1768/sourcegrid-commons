@@ -44,8 +44,12 @@ first.
   `builds_on`, the features laid beneath it first, in order, or leaves
   `builds_on` out.
 - **`code/`.** For a base, the whole app, runnable: `bin/setup`, then
-  `bin/dev`. For a feature, every file it adds or changes, whole, at its
-  path inside its base's `code/`.
+  `bin/dev`. A base can also be an Expo app, a phone app: it holds a
+  `package.json`, and is started with `npm ci`, then `expo start`. The
+  check runs such a base through `npm ci`, `npx jest --ci`, `npx expo lint`
+  and `npm audit`, and its record of the run says the Node version and the
+  Expo SDK it tested against. For a feature, every file it adds or changes,
+  whole, at its path inside its base's `code/`.
 
 Nothing generated is kept. What the stack's own `.gitignore` excludes stays
 out of a Recipe: temporary files, logs, stored files, installed packages,

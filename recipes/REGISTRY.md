@@ -58,8 +58,8 @@ of a Recipe, never copied as a list.
 | id | one line | tier | status | source |
 | --- | --- | --- | --- | --- |
 | web-app | Rails 8 on PostgreSQL, server-rendered, as `rails new` makes it; a home page, its test, one setup command | 1 | built | Rails |
-| api-service | Rails without screens: JSON API, token auth, versioned routes, pagination, error shape | 2 | — | Rails API generator; Combatives-Rails' JWT auth |
-| mobile-app | Expo: router navigation, sign-in against api-service, settings screen, one test | 3 | — | Expo templates; DojoMate-Expo |
+| api-service | Rails without screens: JSON API, token auth, versioned routes, pagination, error shape | 2 | built | Rails API generator; Combatives-Rails' JWT auth |
+| mobile-app | Expo: router navigation, sign-in against api-service, settings screen, one test | 3 | built | Expo templates; DojoMate-Expo |
 | rich-screens | React screens on the Rails back end, where server-rendered is not enough | 3 | — | vite_rails or inertia_rails on web-app |
 | browser-extension | TypeScript, manifest v3: popup, options, content script, a build | 3 | — | open source extension starters |
 | automation | Python: a scheduled job runner, config, logging, one report | 3 | — | open source (APScheduler, pandas) |
@@ -78,7 +78,7 @@ of a Recipe, never copied as a list.
 | user-kinds | kinds of users with what each may see | 1 | built | his |
 | profile-settings | profile, email change with confirmation, password change, sessions and devices | 1 | — | Rails; Jumpstart's shape |
 | account-export-delete | export my data; delete my account (GDPR) | 2 | — | open source |
-| api-sign-in | token sign-in for mobile-app and callers (fits api-service) | 2 | — | Rails; Combatives-Rails |
+| api-sign-in | token sign-in for mobile-app and callers (fits api-service) | 2 | built | Rails; Combatives-Rails |
 | email-verification | confirm the address at sign-up and on change, resend | 1 | — | Rails; Pegasus and Jumpstart name it |
 | impersonation | an admin signs in as a user, logged and reversible | 2 | — | Jumpstart and Pegasus name it |
 
@@ -269,6 +269,6 @@ enforcement landscape is.
 
 ## Counts
 
-Built: 7 of 111 rows (one base, six features). Draft: 1. None: 103. By tier: 16, 38, 57; of the seven built, three are tier 1 and four tier 2. Which
+Built: 10 of 111 rows (three bases, seven features). Draft: 1. None: 100. By tier: 16, 38, 57; of the ten built, three are tier 1, six tier 2 and one tier 3. Which
 rows are built, and in what order, follows his word and the Workshop's users' projects;
 the registry only says what exists and what does not.

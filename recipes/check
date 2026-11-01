@@ -6,13 +6,19 @@
 # Assembles a Recipe in a new folder under the system temp directory and
 # checks it there. Run from the repository root. Needs rsync and a Ruby; the
 # assembled app runs on the Ruby its own .ruby-version names, and the check
-# stops unless it does. An app on PostgreSQL runs against a PostgreSQL server
+# stops unless it does. A base that holds a package.json is an Expo app: it
+# needs Node and npm, not a Ruby, and runs four Node steps in place of the
+# four Rails ones (npm ci, jest, expo lint, npm audit); where the base carries
+# no package-lock.json yet, npm install runs once first to make it, then npm ci;
+# its record of the run
+# says the Node version and the Expo SDK it tested against. An app on PostgreSQL runs against a PostgreSQL server
 # of the check's own, made for the run and deleted when the check ends,
 # however it ends; with --keep the server is left running. Never writes
 # inside the repository. Keeps the folder it assembled, so the app can be
 # started there, and prints its path. Exits 0 only when every step passed.
 
 require "yaml"
+require "json"
 require "fileutils"
 require "tmpdir"
 require "open3"
@@ -35,6 +41,19 @@ STEPS = [
   %w[bin/rails test],
   %w[bin/rubocop],
   %w[bin/brakeman --no-pager]
+].freeze
+
+# What a base that holds a package.json, an Expo app, runs in place of STEPS:
+# install from the lock file, Jest with Expo's own jest-expo preset, Expo's own
+# lint, and the security audit.
+NODE_CI = %w[npm ci].freeze
+NODE_INSTALL = %w[npm install].freeze
+
+NODE_STEPS = [
+  NODE_CI,
+  %w[npx jest --ci],
+  %w[npx expo lint],
+  %w[npm audit]
 ].freeze
 
 # The environment every step runs in. rbenv's shim, which started this
@@ -167,6 +186,62 @@ def check_ruby(dir)
   stop "the assembled app runs on Ruby #{got}, but its .ruby-version names #{wanted}" unless got == wanted
 end
 
+# Step 4, for an Expo app, in place of the app's own Ruby: its Node and npm,
+# and the Expo SDK its package.json asks for, said up front so a run's record
+# names what it tested against, as the Rails run names its Ruby. An Expo app
+# is a base that holds a package.json.
+def node_app?(dir)
+  File.file?(File.join(dir, "package.json"))
+end
+
+# What the Node steps run with: CI set, so neither Jest nor Expo prompts or
+# waits for input, and no telemetry sent.
+NODE_ENV = CHILD_ENV.merge("CI" => "1", "EXPO_NO_TELEMETRY" => "1").freeze
+
+def read_package(path)
+  JSON.parse(File.read(path))
+rescue JSON::ParserError, SystemCallError => e
+  stop "#{path} does not read: #{e.message}"
+end
+
+def tool_version(dir, tool, *args)
+  out, status = begin
+    Open3.capture2e(NODE_ENV, tool, *args, chdir: dir)
+  rescue SystemCallError => e
+    stop "#{tool} #{args.join(' ')} could not run in the assembled app: #{e.message}"
+  end
+  stop "#{tool} #{args.join(' ')} exited #{status.exitstatus} in the assembled app: #{out}" unless status.success?
+  out.strip
+end
+
+# Expo's SDK number is the major version of its expo package.
+def sdk_of(version)
+  version[/\d+/] || stop("the expo version #{version.inspect} names no Expo SDK")
+end
+
+def check_node(dir)
+  say "node -v and npm -v  (in #{dir})"
+  node = tool_version(dir, "node", "-v").delete_prefix("v")
+  npm = tool_version(dir, "npm", "-v")
+  package = read_package(File.join(dir, "package.json"))
+  range = package.dig("dependencies", "expo") || package.dig("devDependencies", "expo")
+  unless range.is_a?(String)
+    stop "package.json names no expo dependency, so the check cannot say which Expo SDK it tested"
+  end
+  sdk = sdk_of(range)
+  say "Node #{node}, npm #{npm}; package.json asks for expo #{range}, Expo SDK #{sdk}"
+  { node: node, npm: npm, sdk: sdk }
+end
+
+# Once npm ci has installed, the SDK that was installed is the one tested.
+def installed_sdk(dir, facts)
+  file = File.join(dir, "node_modules", "expo", "package.json")
+  stop "npm ci left no node_modules/expo, so the check cannot say which Expo SDK it tested" unless File.file?(file)
+  version = read_package(file)["version"].to_s
+  facts[:sdk] = sdk_of(version)
+  say "Expo SDK #{facts[:sdk]} installed (expo #{version})"
+end
+
 def run(dir, command, env)
   say "#{command.join(' ')}  (in #{dir})"
   return if system(env, *command, chdir: dir)
@@ -276,6 +351,23 @@ bases.each do |base|
     rsync(File.join(RECIPES, d, "code"), dir)
   end
   lay_feature(id, dir) if recipe["kind"] == "feature"
+
+  # An Expo app: four Node steps in place of the four Rails ones, and a record
+  # that says the Node version and the Expo SDK it tested against.
+  if node_app?(dir)
+    facts = check_node(dir)
+    NODE_STEPS.each do |command|
+      # A base with no lockfile yet: npm install once makes it, then npm ci runs.
+      if command == NODE_CI && !File.file?(File.join(dir, "package-lock.json"))
+        say "no package-lock.json in the assembled app; npm install once to make it, then npm ci"
+        run(dir, NODE_INSTALL, NODE_ENV)
+      end
+      run(dir, command, NODE_ENV)
+      installed_sdk(dir, facts) if command == NODE_CI
+    end
+    say "#{id} on #{base}: every step passed; tested on Node #{facts[:node]} (npm #{facts[:npm]}) and Expo SDK #{facts[:sdk]}; the app is at #{dir} (npm ci, then expo start, starts it there)"
+    next
+  end
 
   check_ruby(dir)
   server = nil

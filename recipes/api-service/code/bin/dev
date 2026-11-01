@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+# Bound to every address on this computer, so a phone on the same network can
+# reach the API at http://<this computer's address>:3000. Pass -b to change it.
+exec "./bin/rails", "server", "-b", "0.0.0.0", *ARGV
