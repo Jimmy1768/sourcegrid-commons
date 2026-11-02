@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# recipes/check <id> [--keep]
+# recipes/check <id> [--keep] [--offline]
 #
 # Assembles a Recipe in a new folder under the system temp directory and
 # checks it there. Run from the repository root. Needs rsync and a Ruby; the
@@ -16,6 +16,14 @@
 # however it ends; with --keep the server is left running. Never writes
 # inside the repository. Keeps the folder it assembled, so the app can be
 # started there, and prints its path. Exits 0 only when every step passed.
+#
+# With --offline, for a place where nothing can be fetched: on an Expo app
+# every npm install and npm ci the check runs carries --offline, so npm
+# installs from its local cache only, and npm audit, which needs the network,
+# is not run; the check prints a line saying so. Where the cache lacks a
+# package the install fails and the check stops there. On a Rails app
+# --offline changes nothing, and the check says so. The flag may sit beside
+# --keep, in either order.
 
 require "yaml"
 require "json"
@@ -48,6 +56,12 @@ STEPS = [
 # lint, and the security audit.
 NODE_CI = %w[npm ci].freeze
 NODE_INSTALL = %w[npm install].freeze
+NODE_AUDIT = %w[npm audit].freeze
+
+# With --offline, the two steps that fetch packages carry this flag, so npm
+# installs from its local cache only. npm audit needs the network and is not
+# run at all.
+NODE_OFFLINE = %w[--offline].freeze
 
 NODE_STEPS = [
   NODE_CI,
@@ -316,8 +330,9 @@ end
 
 arguments = ARGV.dup
 keep = !arguments.delete("--keep").nil?
-id = arguments.shift || stop("usage: recipes/check <id> [--keep]")
-stop "unexpected arguments: #{arguments.join(' ')}; usage: recipes/check <id> [--keep]" unless arguments.empty?
+offline = !arguments.delete("--offline").nil?
+id = arguments.shift || stop("usage: recipes/check <id> [--keep] [--offline]")
+stop "unexpected arguments: #{arguments.join(' ')}; usage: recipes/check <id> [--keep] [--offline]" unless arguments.empty?
 stop "#{id.inspect} is not a Recipe's id: letters, digits, - and _ only" unless id.match?(/\A[\w-]+\z/)
 stop "no recipes/ folder here; run from the repository root" unless Dir.exist?(RECIPES)
 temp = File.realpath(Dir.tmpdir)
@@ -357,18 +372,24 @@ bases.each do |base|
   if node_app?(dir)
     facts = check_node(dir)
     NODE_STEPS.each do |command|
+      # --offline: npm audit needs the network, so it is not run, and the check says so.
+      if offline && command == NODE_AUDIT
+        say "npm audit skipped: --offline, and npm audit needs the network"
+        next
+      end
       # A base with no lockfile yet: npm install once makes it, then npm ci runs.
       if command == NODE_CI && !File.file?(File.join(dir, "package-lock.json"))
         say "no package-lock.json in the assembled app; npm install once to make it, then npm ci"
-        run(dir, NODE_INSTALL, NODE_ENV)
+        run(dir, offline ? NODE_INSTALL + NODE_OFFLINE : NODE_INSTALL, NODE_ENV)
       end
-      run(dir, command, NODE_ENV)
+      run(dir, offline && command == NODE_CI ? command + NODE_OFFLINE : command, NODE_ENV)
       installed_sdk(dir, facts) if command == NODE_CI
     end
     say "#{id} on #{base}: every step passed; tested on Node #{facts[:node]} (npm #{facts[:npm]}) and Expo SDK #{facts[:sdk]}; the app is at #{dir} (npm ci, then expo start, starts it there)"
     next
   end
 
+  say "--offline changes nothing for a Rails app; it runs as without the flag" if offline
   check_ruby(dir)
   server = nil
   begin

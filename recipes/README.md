@@ -74,7 +74,7 @@ the kernel reads the commons.
 ## The check
 
 ```bash
-recipes/check <id> [--keep]
+recipes/check <id> [--keep] [--offline]
 ```
 
 Run from the repository root. It needs `rsync` and a Ruby, and for an app
@@ -125,6 +125,19 @@ with the C collation, byte by byte: names with accents or in other
 scripts may sort differently than on a production server set up with a
 language's collation. A test that depends on that order says so, or
 sorts in Ruby.
+
+### Offline
+
+`--offline`, for a place where nothing can be fetched, may sit beside
+`--keep`, in either order. On an Expo app, every npm install the check
+runs, the lockfile bootstrap `npm install` and `npm ci`, carries
+`--offline`, so npm installs from its local npm cache only and nothing is
+fetched. `npm audit` needs the network, so it is not run, and the check
+prints one line saying it was skipped. Everything else runs as without the
+flag. Where the cache lacks a package, the install fails and the check stops,
+naming it: that is the right answer, not a fault. On a Rails app the flag
+changes nothing, and the check says so. Without the flag the steps and
+their order are as before, audit included.
 
 ## Proven twice
 

@@ -61,6 +61,14 @@ sources a Control takes code from (`DECISIONS.md` 13). Nothing under
   run. Exit 0 is the only pass. It needs `rsync`, the Ruby the base's
   `.ruby-version` names (rbenv on this machine has 3.2.3 and 4.0.7, and
   `pg` 1.6.3 for 4.0.7), and PostgreSQL's `initdb` and `pg_ctl` (14.18 here).
+- The commons' reviewers run `recipes/check <id> --offline` as a Recipe's
+  check, since nothing can be fetched where they work. On an Expo app every
+  npm install and npm ci the check runs carries `--offline`, so npm installs
+  from the local npm cache only, and `npm audit`, which needs the network, is
+  skipped with a line saying so. Where the cache lacks a package the install
+  fails and the check stops naming it: that is the answer, not a fault. On a
+  Rails app the flag changes nothing, and the check says so. Exit 0 is still
+  the only pass.
 - No gem is downloaded or installed in this repository's work: gems resolve
   from what is installed, and `bundle lock` reads the index's metadata only.
   A full `rails new` without `--skip-bundle` downloads the newest gems.
