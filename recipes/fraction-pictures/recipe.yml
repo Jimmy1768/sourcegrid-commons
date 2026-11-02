@@ -1,0 +1,7 @@
+id: fraction-pictures
+kind: feature
+fits: [mobile-app]
+# A feature for the phone app, laid on the mobile-app base. One react-native-svg
+# component draws fraction circles and strips, so it serves a React Native app
+# and a plain React web app alike. It replaces the base's package.json with one
+# that adds react-native-svg; the README's What to wire names that file.

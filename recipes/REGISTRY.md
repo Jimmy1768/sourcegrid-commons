@@ -37,7 +37,7 @@ own apps confirm.
   web-app, sign-in, user-kinds, profile-settings, email-verification, transactional-email, file-uploads, admin, observability, backups, dev-environment, ci, deployment, system-tests, security-hardening, ui-kit.
 - **Tier 2 (38 rows)** — what most products with customers need:
   api-service, social-sign-in, two-factor, account-export-delete, api-sign-in, impersonation, linked-accounts, kinds-and-linked-accounts, teams, invitations, permissions, audit-log, plan-limits, payments, subscriptions, invoices, billing-portal, notify, in-app-notifications, rich-text, spreadsheet-import, export, marketing-pages, search, filters-tables, field-encryption, api-keys, webhooks-in, scheduling, rate-limiting, timezones, health-status, consent-privacy, analytics, seo, llm-call, lint-format, caching.
-- **Tier 3 (57 rows)** — by kind of project or domain, when the first of
+- **Tier 3 (58 rows)** — by kind of project or domain, when the first of
   its kind comes: the other bases and every row not named above.
 
 ## Prior art (the reference set the categories come from)
@@ -202,6 +202,7 @@ of a Recipe, never copied as a list.
 | ota-updates | over-the-air updates | 3 | — | expo-updates |
 | app-permissions | runtime permission prompts with fallbacks | 3 | — | Expo guides |
 | store-release | builds and store submission (EAS) | 3 | — | Expo guides |
+| fraction-pictures | fraction circles and strips drawn from a block in the Tutor's reply, with answer buttons and arrows to the shapes (react-native-svg) | 3 | built | react-native-svg; Khan Academy's Perseus label-image in spirit |
 
 ### B11. Automation and reports (fits automation)
 
@@ -269,6 +270,6 @@ enforcement landscape is.
 
 ## Counts
 
-Built: 10 of 111 rows (three bases, seven features). Draft: 1. None: 100. By tier: 16, 38, 57; of the ten built, three are tier 1, six tier 2 and one tier 3. Which
+Built: 11 of 112 rows (three bases, eight features). Draft: 1. None: 100. By tier: 16, 38, 58; of the eleven built, three are tier 1, six tier 2 and two tier 3. Which
 rows are built, and in what order, follows his word and the Workshop's users' projects;
 the registry only says what exists and what does not.
