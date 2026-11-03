@@ -8,7 +8,10 @@
 # assembled app runs on the Ruby its own .ruby-version names, and the check
 # stops unless it does. A base that holds a package.json is an Expo app: it
 # needs Node and npm, not a Ruby, and runs four Node steps in place of the
-# four Rails ones (npm ci, jest, expo lint, npm audit); where the base carries
+# four Rails ones (npm ci, jest, expo lint, audit-ci); the audit is the last
+# step, audit-ci at exactly version 7.1.0 run with the base's own
+# recipes/<base>/audit-ci.jsonc, which fails on moderate and above and allows
+# only the advisories it names, each with an expiry; where the base carries
 # no package-lock.json yet, npm install runs once first to make it, then npm ci;
 # its record of the run
 # says the Node version and the Expo SDK it tested against. An app on PostgreSQL runs against a PostgreSQL server
@@ -19,7 +22,7 @@
 #
 # With --offline, for a place where nothing can be fetched: on an Expo app
 # every npm install and npm ci the check runs carries --offline, so npm
-# installs from its local cache only, and npm audit, which needs the network,
+# installs from its local cache only, and audit-ci, which needs the network,
 # is not run; the check prints a line saying so. Where the cache lacks a
 # package the install fails and the check stops there. On a Rails app
 # --offline changes nothing, and the check says so. The flag may sit beside
@@ -56,10 +59,18 @@ STEPS = [
 # lint, and the security audit.
 NODE_CI = %w[npm ci].freeze
 NODE_INSTALL = %w[npm install].freeze
-NODE_AUDIT = %w[npm audit].freeze
+
+# The security audit is audit-ci at exactly this version, not a range, so a new
+# release cannot change what passes. It runs with the base's own config file,
+# recipes/<base>/audit-ci.jsonc, which the check adds when the step runs (see
+# audit_config_for): it fails on moderate and above, and allowlists the
+# advisories that come with the base's own dependencies, each with a note and
+# an expiry.
+NODE_AUDIT = %w[npx audit-ci@7.1.0].freeze
+NODE_AUDIT_CONFIG = "audit-ci.jsonc"
 
 # With --offline, the two steps that fetch packages carry this flag, so npm
-# installs from its local cache only. npm audit needs the network and is not
+# installs from its local cache only. audit-ci needs the network and is not
 # run at all.
 NODE_OFFLINE = %w[--offline].freeze
 
@@ -67,7 +78,7 @@ NODE_STEPS = [
   NODE_CI,
   %w[npx jest --ci],
   %w[npx expo lint],
-  %w[npm audit]
+  NODE_AUDIT
 ].freeze
 
 # The environment every step runs in. rbenv's shim, which started this
@@ -256,12 +267,27 @@ def installed_sdk(dir, facts)
   say "Expo SDK #{facts[:sdk]} installed (expo #{version})"
 end
 
-def run(dir, command, env)
+def run(dir, command, env, note = nil)
   say "#{command.join(' ')}  (in #{dir})"
   return if system(env, *command, chdir: dir)
 
-  stop "#{command.join(' ')} exited #{$?.exitstatus.inspect}"
+  stop "#{command.join(' ')} exited #{$?.exitstatus.inspect}#{note}"
 end
+
+# The audit's config file is the base's own: recipes/<base>/audit-ci.jsonc, so a
+# feature laid on a base is audited with that base's file, never one of its
+# own. A base with none stops the check, naming the file, rather than going
+# without an audit.
+def audit_config_for(base)
+  file = File.join(RECIPES, base, NODE_AUDIT_CONFIG)
+  return file if File.file?(file)
+
+  stop "recipes/#{base}/#{NODE_AUDIT_CONFIG} is missing, so the audit has no config to run with"
+end
+
+# Said when the audit fails: audit-ci's own output, printed above, names the
+# finding that the config does not allowlist.
+AUDIT_FAILED = "; audit-ci's own output above names the finding that is not allowlisted"
 
 # A PostgreSQL server of the check's own, for one run: made with initdb in a
 # new folder under the system temp directory, started with pg_ctl on a free
@@ -372,9 +398,16 @@ bases.each do |base|
   if node_app?(dir)
     facts = check_node(dir)
     NODE_STEPS.each do |command|
-      # --offline: npm audit needs the network, so it is not run, and the check says so.
+      # --offline: audit-ci needs the network, so it is not run, and the check says so.
       if offline && command == NODE_AUDIT
-        say "npm audit skipped: --offline, and npm audit needs the network"
+        say "audit-ci skipped: --offline, and audit-ci needs the network"
+        next
+      end
+      # The audit runs with the base's own config file, so a feature laid on a
+      # base is audited with that base's file. It is the last step; when it
+      # fails, audit-ci's own output above names the finding.
+      if command == NODE_AUDIT
+        run(dir, command + ["--config", audit_config_for(base)], NODE_ENV, AUDIT_FAILED)
         next
       end
       # A base with no lockfile yet: npm install once makes it, then npm ci runs.

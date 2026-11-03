@@ -1,0 +1,20 @@
+{
+  // The check's security audit for an Expo app: audit-ci fails on moderate and
+  // above. The advisories below come with Expo SDK 54 itself and cannot be fixed
+  // without changing SDK, so they are allowed until 2027-02-01; after that the
+  // check fails again and the IDs are reviewed. Nothing else is allowlisted.
+  "moderate": true,
+  "allowlist": [
+    { "GHSA-qr28-fpjm-wq7f": { "active": true, "notes": "Expo SDK 54's own dependency; no fix without changing SDK", "expiry": "2027-02-01" } },
+    { "GHSA-vcc3-ghjq-m6fr": { "active": true, "notes": "Expo SDK 54's own dependency; no fix without changing SDK", "expiry": "2027-02-01" } },
+    { "GHSA-gcqx-w48m-w2h4": { "active": true, "notes": "Expo SDK 54's own dependency; no fix without changing SDK", "expiry": "2027-02-01" } },
+    { "GHSA-3g3m-2fjr-6pw4": { "active": true, "notes": "Expo SDK 54's own dependency; no fix without changing SDK", "expiry": "2027-02-01" } },
+    { "GHSA-5p2g-fcmc-qvqq": { "active": true, "notes": "Expo SDK 54's own dependency; no fix without changing SDK", "expiry": "2027-02-01" } },
+    { "GHSA-w3rx-r6r6-pgpr": { "active": true, "notes": "Expo SDK 54's own dependency; no fix without changing SDK", "expiry": "2027-02-01" } },
+    { "GHSA-g3hv-75wg-m249": { "active": true, "notes": "Expo SDK 54's own dependency; no fix without changing SDK", "expiry": "2027-02-01" } },
+    { "GHSA-6g55-p6wh-862q": { "active": true, "notes": "Expo SDK 54's own dependency; no fix without changing SDK", "expiry": "2027-02-01" } },
+    { "GHSA-fxqj-rqcc-2cmp": { "active": true, "notes": "Expo SDK 54's own dependency; no fix without changing SDK", "expiry": "2027-02-01" } },
+    { "GHSA-qx2v-qp2m-jg93": { "active": true, "notes": "Expo SDK 54's own dependency; no fix without changing SDK", "expiry": "2027-02-01" } },
+    { "GHSA-r28c-9q8g-f849": { "active": true, "notes": "Expo SDK 54's own dependency; no fix without changing SDK", "expiry": "2027-02-01" } }
+  ]
+}
