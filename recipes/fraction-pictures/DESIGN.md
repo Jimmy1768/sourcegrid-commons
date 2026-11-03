@@ -58,7 +58,7 @@ The renderer and its format live in the commons as a Recipe: finished, tested co
 
 Finding the renderer is a lookup: a table from a block's first word to the renderer copied.
 
-Drawing is the Booth's, in its drawing of a reply's words, in plain SVG coloured from the Booth's theme variables. The Recipe draws with react-native-svg, so one component serves the Booth and the Expo app; no chart or fraction library is used.
+Drawing is the Booth's, in its drawing of a reply's words, in plain SVG coloured from the Booth's theme variables. The Recipe draws each platform's own way, in files side by side in one folder. The Expo phone app uses `FractionPicture.tsx` and `PictureWithAnswers.tsx`, which draw with react-native-svg and which Metro picks. A Next.js web app, the Booth, uses `FractionPicture.web.tsx` and `PictureWithAnswers.web.tsx`, which draw with the browser's own svg and button elements and import only react and the shared files, because under Next.js react-native-svg pulls in React Native's native code, which a web build cannot read. The two pairs take the same props and follow this design; `format.ts`, `geometry.ts`, `callouts.ts` and `renderers.ts` are shared by both. No chart or fraction library is used.
 
 Writing the format is the Delegate's own. A specialist role earns its place only when a format is too heavy to write reliably.
 

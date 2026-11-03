@@ -4,7 +4,7 @@ Fraction circles and strips drawn from a text block, with answer buttons and arr
 
 ## What it is
 
-A feature for the phone app: one react-native-svg component that draws fractions as pictures, circles or strips, from a small block of text, and lets the child answer by tapping buttons placed around the picture, each with an arrow to the shape it names. React Native draws it on the phone and, through react-native-web, plain React draws the same shapes on the web, so the web app and the phone app copy one component. Nothing is stored and nothing is fetched: the picture is drawn on the device from the block's text. No chart library and no fraction library is used.
+A feature for the phone app and the web app: components that draw fractions as pictures, circles or strips, from a small block of text, and let the child answer by tapping or clicking buttons placed around the picture, each with an arrow to the shape it names. Each platform has its own drawing files, side by side in one folder: the phone ones use react-native-svg, and the web ones, named `.web.tsx`, use the browser's own svg and button elements, because under Next.js react-native-svg pulls in React Native's native code, which a web build cannot read. The Expo phone app keeps the phone files and a Next.js web app copies the web ones. Nothing is stored and nothing is fetched: the picture is drawn on the device from the block's text. No chart library and no fraction library is used.
 
 A block is the text of a fenced block in the Tutor's reply:
 
@@ -59,7 +59,11 @@ Added, each under `code/src/pictures/`:
 - `callouts.ts`: pure code. The callout rule: which buttons match a drawn fraction (exact words, spaces ignored), the side each sits on, arrows that do not cross, and the buttons left for the row.
 - `FractionPicture.tsx`: draws the pictures in react-native-svg, one size for every whole, the fraction under each shape unless a button labels it, the accessibility label on each, and the theme with its plain defaults.
 - `PictureWithAnswers.tsx`: the pictures with buttons around them, arrows to their shapes, the row of unmatched buttons under the question, a tap sending the button's words, older questions faded and the picked button marked. `FractionBlock` in the same file reads a block's text and draws it, or shows the text when it does not read.
+- `FractionPicture.web.tsx`: the web version of `FractionPicture.tsx`, for a web app. It takes the same props and draws the same pictures with the browser's own `svg` elements, with the same text alternative on each. It imports only `react` and the shared files, never `react-native`, `react-native-svg` or a phone file, and keeps its own copy of the theme names and plain defaults.
+- `PictureWithAnswers.web.tsx`: the web version of `PictureWithAnswers.tsx`, for a web app. It takes the same props and draws the buttons as browser `button` elements and the arrows as `svg`, a click sending the button's words. `FractionBlock` in the same file takes the same props as the phone one. It imports only `react`, the shared files and `FractionPicture.web.tsx`.
 - `renderers.ts`: the table from a block's first word to its renderer, with `fraction` the first entry, and `rendererFor`, the lookup.
+
+Which file each platform uses: the Expo phone app uses `FractionPicture.tsx` and `PictureWithAnswers.tsx`, which Metro picks; a Next.js web app copies `FractionPicture.web.tsx` and `PictureWithAnswers.web.tsx` and a web build that resolves the `.web.tsx` extension picks those. `format.ts`, `geometry.ts`, `callouts.ts` and `renderers.ts` are shared by both.
 
 Changed:
 
@@ -70,7 +74,7 @@ The rest of `code/` is the base's and stays as it is. `__tests__/` is the review
 ## Generic names
 
 - `fraction`: the first word of a block, and the key of its entry in the table in `renderers.ts`. `circle` and `strip` are the two model words after it.
-- `src/pictures/`: the folder the files go in. A project that moves it moves all six files together; they import one another by relative paths.
+- `src/pictures/`: the folder the files go in. A project that moves it moves all the files it copies together; they import one another by relative paths.
 - `mobile-app`: the app's name in `package.json`, as the base has it. A project's own name replaces it there.
 - The theme's names in `PictureTheme`: `shaded`, `unshaded`, `outline`, `text`, `arrow`, `buttonBackground`, `buttonBorder`, `buttonText` and `pickedBackground`. Each stands for a colour the project's own theme gives; the defaults are plain colours that work with no theme.
 - The props `choices`, `onAnswer`, `active`, `picked` and `question`: the Tutor's list of answers, what a tap calls with the button's words, whether this is the newest question, the words the child picked, and the question's own words.
@@ -84,7 +88,7 @@ What a project connects to this feature, and where:
 - Where a reply's text is drawn: this Recipe changes no screen, because only the project knows where a Tutor reply is drawn. Wherever that is, for each fenced block call `rendererFor(blockText)`; when it gives a renderer, draw `<Renderer text={blockText} question={...} choices={...} onAnswer={...} active={...} picked={...} theme={...} />`, and when it gives `null`, draw the text as it is. `question` and `choices` are the reply's own question and list. `active` is true only for the newest question, and `picked` is the words the child picked once it is past.
 - The theme: pass the project's colours as `theme`, using the names in *Generic names*. Any value left out takes its default.
 - The answer: `onAnswer` receives the button's words, exactly as the Tutor wrote them, and the project sends them as the child's reply.
-- The web app: copy the six files under `src/pictures/` into it and draw through the same `renderers.ts` table. react-native-svg draws on the web through react-native-web, which the web app aliases `react-native` to; that is the web app's own wiring and a later piece of work, not this Recipe's.
+- The web app: copy `format.ts`, `geometry.ts`, `callouts.ts`, `renderers.ts`, `FractionPicture.web.tsx` and `PictureWithAnswers.web.tsx` from `src/pictures/` into it, and not the two phone files, which pull in React Native's native code that a Next.js build cannot read. Draw through the same `renderers.ts` table. The web files need no `react-native`, `react-native-svg` or `react-native-web`. `renderers.ts` imports `./PictureWithAnswers` by that name, so the web app's build must try the `.web.tsx` extension when it resolves an import; that is the web app's own wiring and a later piece of work, not this Recipe's. The Expo phone app copies the phone files and Metro picks them.
 
 ## The tests
 
