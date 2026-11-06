@@ -234,6 +234,11 @@ No source yet.
 | treasury-and-liquidity | builder | — | cbrock84/headcount plugins/finance/skills/treasury-and-liquidity | manages cash, runway, working capital and currency exposure |
 | unit-economics | builder | — | cbrock84/headcount plugins/finance/skills/unit-economics | says whether the business makes money on each customer or unit |
 | trade-pipeline | builder | — | The-Swarm-Corporation/AutoHedge | a trading decision as separate steps with structured output between them: a thesis, its quantitative test, position sizing under a risk limit, then an order; execution is the step the Gate holds, never the agent |
+| fundamental-analysis | reviewer | — | TauricResearch/TradingAgents | reads a company's financials and performance and says what they support |
+| technical-analysis | reviewer | — | TauricResearch/TradingAgents | reads price trends and indicators and says what they show |
+| news-analysis | reviewer | — | TauricResearch/TradingAgents | weighs news and market events and says what a decision should take in |
+| sentiment-analysis | reviewer | — | TauricResearch/TradingAgents | weighs the market's public mood from what people say and write |
+| risk-review | reviewer | — | TauricResearch/TradingAgents | checks a proposed decision against risk before it goes further |
 | counterparty-channel-discipline | builder | — | affaan-m/ECC skills/counterparty-channel-discipline | counterparty channels kept disciplined: who may speak, on what terms, recorded |
 | investor-materials | builder | — | affaan-m/ECC skills/investor-materials | the deck, memo and data room investors read before a decision |
 | investor-outreach | builder | — | affaan-m/ECC skills/investor-outreach | investors found and asked, in the order that works |
@@ -1007,9 +1012,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 488 (5 built, 483 not) |
+| rows | 493 (5 built, 488 not) |
 | families with a row | 14 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 23-1000 Lawyers, Judges, and Related Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
-| sources assessed | 9 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo; 2026-10-30) |
+| sources assessed | 10 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents; 2026-11-06) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.

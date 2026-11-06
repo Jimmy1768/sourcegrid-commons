@@ -678,3 +678,19 @@ Decision:
 - DECISIONS.md joins the list once a new entry is written "## Next." and numbered at the landing.
 - A file that two Mandates both rewrite in place stays unnamed.
 Reason: Mandates that only append rows to the same registry no longer wait on each other.
+
+## Next. Skills from TradingAgents join the Skill registry as rows
+
+Date: 2026-11-06
+Who: the Director, in this session; Commons Planning wrote it down.
+Decision: `skills/REGISTRY.md`'s 13-2000 Financial Specialists table gains five rows from
+TauricResearch/TradingAgents (Apache 2.0, github.com/TauricResearch/TradingAgents), all
+reviewer and all not yet built: fundamental-analysis, technical-analysis, news-analysis,
+sentiment-analysis and risk-review. Nothing is built or copied, so no
+`THIRD_PARTY_NOTICES.md` line is needed. Left out: bull-bear debate, which argues over the
+other four's findings rather than doing work of its own, and gets no row under the rule that
+behaviour composed from existing Skills gets none. Not taken: how TradingAgents arranges its
+team, and its backtesting; those are the Blueprint's, not the commons'.
+Reason: his words in this session, that the analysts' work be listed as Skills not yet built
+beside the trading pipeline already recorded, and that nothing of the source's arrangement or
+testing come with them.
