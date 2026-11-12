@@ -694,3 +694,58 @@ team, and its backtesting; those are the Blueprint's, not the commons'.
 Reason: his words in this session, that the analysts' work be listed as Skills not yet built
 beside the trading pipeline already recorded, and that nothing of the source's arrangement or
 testing come with them.
+
+## Next. Skills from agentic-awesome-skills join the Skill registry as rows
+
+Date: 2026-11-12
+Who: the Director, in this session's handoff; Commons Planning wrote it down.
+Decision: `skills/REGISTRY.md` gains rows from sickn33/agentic-awesome-skills (MIT at the
+catalog's top; each skill's own licence checked when it is built), all not yet built:
+
+- 13-1000 Business Operations Specialists (86): 360-feedback-system, access-matrix, alumni-re-hire-tracker, announcement-board, attendance, board-governance, buddy-program-manager, business-analyst, candidate-talent-pool, capacity-workload-planner, code-of-conduct, competency-matrix, competitive-landscape, competitor-alternatives, course-upskilling-requests, culture-retention, disciplinary-pip-tracker, employee-suggestion-hub, gamification-engine, harvey-specter, health-wellness, hr-pro, intern-program, issue-grievance-tracker, it-manager-pro, kpi-tracker, leave-management, market-sizing-analysis, mentorship-program, micro-saas-launcher, moatmri, monetization, offboarding-exit, offer-appointment, okr-system, onboarding-playbook, organization-design, people-directory, policy-acknowledgement, pre-boarding, pricing-strategy, pro-launch, probation-tracker, product-manager, product-manager-toolkit, product-marketing, product-marketing-context, project-based-performance, projects-work-management, promotion-upgrade-requests, recognition-rewards, recruit, recruitment-pipeline, remote-work-tracker, risk-manager, saas-mvp-launcher, saas-pricing-strategist, shark, skill-gap-analysis, startup-analyst, startup-business-analyst-business-case, startup-metrics-framework, team-composition-analysis, time-tracking, usage-based-pricing, find-complementary-founders, kotler-macro-analyzer, osterwalder-canvas-architect, healthcare-job-search, neverapply, web-project-brainstorming, blueprint, concise-planning, decision-navigator, not-a-vibe-coder, track-management, before-you-build, idea-autopsy, product-decision-agent, idea-os, project-brief, accint-commitments, progressive-estimation, project-skill-audit, resumable-implementation-contracts, understand-project-yylo.
+
+- 13-2000 Financial Specialists (49): audit-log, audit-preparation, backtesting-frameworks, budget-cash-flow, clients-accounts, credit-cycle-analysis, day-book, esop-equity-tracker, expense-accounting, expense-management, inventory-stock-reconciliation, invoices-billing, monthly-closing-statements, party-ledger-reconciliation, payment-accounting, payments-received, payroll-finance, petty-cash-management, purchase-accounting, receipt-accounting, risk-metrics-calculation, salary-benchmarking, salary-wage-accounting, sales-accounting, tds-booking-payment, quant-analyst, second-deposit-igaming, axonx, calibrate-first, equibles, fxmacrodata, krexa, longbridge, longbridge-content, longbridge-derivatives, longbridge-fundamentals, longbridge-market-data, longbridge-quant, nano-settlement-verify, options-flow-analyzer, traderspy-market-briefing, traderspy-market-screener, traderspy-position-check, traderspy-smart-money, traderspy-trading-signals, warren-buffett, xvary-stock-research, yield-intelligence, doom-pay.
+
+- 15-1200 Computer Occupations (63): accounting-software-selection, admin-access-register, advanced-analytics-dashboard, bamboohr-automation, business-website-setup, company-email-accounts, csv-manual-export, data-export-engine, data-privacy-controls, dei-dashboard, json-schema-manual, notion-manual-import, pipedrive-automation, reports-analytics, zoho-crm-automation, odoo-accounting-setup, odoo-automated-tests, odoo-backup-strategy, odoo-docker-deployment, odoo-ecommerce-configurator, odoo-edi-connector, odoo-hr-payroll-setup, odoo-inventory-optimizer, odoo-l10n-compliance, odoo-manufacturing-advisor, odoo-migration-helper, odoo-module-developer, odoo-orm-expert, odoo-performance-tuner, odoo-project-timesheet, odoo-purchase-workflow, odoo-qweb-templates, odoo-rpc-api, odoo-sales-crm-expert, odoo-security-rules, odoo-shopify-integration, odoo-upgrade-advisor, odoo-woocommerce-bridge, odoo-xml-views-builder, woo-guard, anti-sleep, it-manager-hospital, itil-expert, mailtrap-setting-up-sending-domain, pi-custom-model, powershell-windows, pre-release-review, vps-server-management, asana-automation, basecamp-automation, confluence-automation, freshservice-automation, github-issue-creator, jira-automation, linear-automation, linear-claude-skill, miro-automation, monday-automation, todoist-automation, trello-automation, wrike-automation, shopify-review-triage, monopoly/security-checklist.
+
+- 19-2000 Physical Scientists (3): nexrad-mosaic-construction, nexrad-radar-visualization, radar-satellite-analysis.
+
+- 23-1000 Lawyers, Judges, and Related Workers (9): advogado-especialista, employment-contract-templates, event-staffing-compliance, fda-food-safety-auditor, fda-medtech-compliance-auditor, legal-advisor, lex, leiloeiro-edital, leiloeiro-juridico.
+
+- 23-2000 Legal Support Workers (7): check-identity-pack, detect-ai-text, extract-document-data, find-matching-tenders, screen-adverse-media, verify-citations, verify-document.
+
+- 27-1000 Art and Design Workers (7): brand-kit-print-collateral, design-theme-guide, logo-image-design, presentation-deck, product-design, product-inventor, product-design-harness.
+
+224 rows in all. Left out: already rows in the registry, by that exact name:
+carrier-relationship-management, customs-trade-compliance, energy-procurement,
+inventory-demand-planning, logistics-exception-management, performance-management,
+production-scheduling, quality-nonconformance, returns-reverse-logistics, sales-enablement.
+Repeats: asset-it-management (repeats it-asset-management), vendor-contractor-management
+(repeats vendor-management), gbp-local-seo-intent (repeats seo-local), seo-directory-backlinks
+(repeats seo-backlinks), learning-career-development (repeats learning-and-development),
+startup-financial-modeling (repeats financial-modeling), tax-register (repeats tax),
+traderspy-technical-analysis (repeats technical-analysis), spec-driven-development (repeats the
+commons' aide/spec Skill). Routers over other Skills rather than Skills of their own:
+accounting-audit-system-builder, brand-growth-system-builder, crossframe-org. Several listed
+skills do the same work, and one row stands for them: plan-writing, writing-plans,
+planning-and-task-breakdown and planning-with-files repeat concise-planning; idea-refine and
+idea-to-blueprint repeat blueprint; startup-business-analyst-financial-projections and
+startup-business-analyst-market-opportunity repeat startup-business-analyst-business-case;
+to-issues and to-prd repeat progressive-estimation. One whole job rather than a Skill:
+business-email-template, contract-document-renewal, customer-support,
+document-management-system, event-staffing-ordering, events-activities, internal-communication,
+knowledge-base, kpi-dashboard-design, legal-compliance-vault, linktree-link-hub,
+notification-reminder-hub, notion-template-business, outreachgenie-list-audit, policy-library,
+revops, sales-automator, social-media-setup, sop-company-wiki, source-document-filing,
+spreadsheet-manual-build, stakeholder-investor-reports, team-calendar, template-library,
+buywhere-product-catalog, etsy-search-listings, etsy-shop-sales-history, advogado-criminal,
+leiloeiro-avaliacao, leiloeiro-ia, leiloeiro-mercado, leiloeiro-risco, monopoly/patterns,
+monopoly/scale-benchmarks, monopoly/tech-matrix, artifact-yylo, feature-tracking,
+ledger-tasks-yylo, plan-ledger-tasks-yylo, project-state-governor, sred-project-organizer,
+sred-work-summary, team-collaboration-issue, team-collaboration-standup-notes, wiki-yylo,
+workflow-yylo, movie-coupon, obtain-coupons-all-in-one, parcel-coupon, takeout-coupon,
+trip-coupon. Not taken: the catalog's search, skill picker, CLI, MCP server and plugins.
+Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
+Reason: his handoff of this session: list the catalog's business, finance, legal and operations
+skills as Skills not yet built, each under the job family its work belongs to, skipping what we
+already list, what is only a mix of what we have, and what is really one whole job.

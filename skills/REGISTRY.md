@@ -215,6 +215,92 @@ No source yet.
 | seo-sitemap | builder | — | AgriciDaniel/claude-seo skills/seo-sitemap | makes an XML sitemap, or checks the one a site already has |
 | seo-sxo | reviewer | — | AgriciDaniel/claude-seo skills/seo-sxo | diagnoses mismatches between what searchers mean and what a site shows |
 | seo-technical | reviewer | — | AgriciDaniel/claude-seo skills/seo-technical | audits crawlability, indexability, speed, security and structured data |
+| 360-feedback-system | builder | — | sickn33/agentic-awesome-skills business/360-feedback-system | sets up a 360-degree feedback cycle for staff reviews |
+| access-matrix | builder | — | sickn33/agentic-awesome-skills business/access-matrix | builds a matrix of who can access what |
+| alumni-re-hire-tracker | builder | — | sickn33/agentic-awesome-skills business/alumni-re-hire-tracker | tracks former staff and re-hire prospects |
+| announcement-board | builder | — | sickn33/agentic-awesome-skills business/announcement-board | runs an internal announcement board |
+| attendance | builder | — | sickn33/agentic-awesome-skills business/attendance | tracks attendance and time at work |
+| board-governance | builder | — | sickn33/agentic-awesome-skills business/board-governance | supports board meetings and governance records |
+| buddy-program-manager | builder | — | sickn33/agentic-awesome-skills business/buddy-program-manager | pairs new starters with buddies and tracks it |
+| business-analyst | aide | — | sickn33/agentic-awesome-skills business/business-analyst | turns business needs into clear requirements |
+| candidate-talent-pool | builder | — | sickn33/agentic-awesome-skills business/candidate-talent-pool | keeps a pool of candidates ready for openings |
+| capacity-workload-planner | aide | — | sickn33/agentic-awesome-skills business/capacity-workload-planner | plans team capacity against expected workload |
+| code-of-conduct | builder | — | sickn33/agentic-awesome-skills business/code-of-conduct | drafts and maintains the code of conduct |
+| competency-matrix | builder | — | sickn33/agentic-awesome-skills business/competency-matrix | maps skills and levels across a team |
+| competitive-landscape | aide | — | sickn33/agentic-awesome-skills business/competitive-landscape | maps competitors and how they differ |
+| competitor-alternatives | builder | — | sickn33/agentic-awesome-skills business/competitor-alternatives | writes comparison and alternative pages for search |
+| course-upskilling-requests | builder | — | sickn33/agentic-awesome-skills business/course-upskilling-requests | handles course and upskilling requests |
+| culture-retention | builder | — | sickn33/agentic-awesome-skills business/culture-retention | runs culture and retention programs |
+| disciplinary-pip-tracker | builder | — | sickn33/agentic-awesome-skills business/disciplinary-pip-tracker | tracks disciplinary cases and performance plans |
+| employee-suggestion-hub | builder | — | sickn33/agentic-awesome-skills business/employee-suggestion-hub | collects and routes staff suggestions |
+| gamification-engine | builder | — | sickn33/agentic-awesome-skills business/gamification-engine | adds points, levels and badges for staff |
+| harvey-specter | aide | — | sickn33/agentic-awesome-skills business/harvey-specter | prepares hard conversations with evidence and limits |
+| health-wellness | builder | — | sickn33/agentic-awesome-skills business/health-wellness | runs health and wellbeing initiatives |
+| hr-pro | builder | — | sickn33/agentic-awesome-skills business/hr-pro | handles broad HR work end to end |
+| intern-program | builder | — | sickn33/agentic-awesome-skills business/intern-program | runs an intern program from intake to review |
+| issue-grievance-tracker | builder | — | sickn33/agentic-awesome-skills business/issue-grievance-tracker | logs and tracks grievances and issues |
+| it-manager-pro | aide | — | sickn33/agentic-awesome-skills business/it-manager-pro | supports IT management decisions and oversight |
+| kpi-tracker | builder | — | sickn33/agentic-awesome-skills business/kpi-tracker | tracks key performance indicators |
+| leave-management | builder | — | sickn33/agentic-awesome-skills business/leave-management | handles leave requests, balances and approvals |
+| market-sizing-analysis | aide | — | sickn33/agentic-awesome-skills business/market-sizing-analysis | sizes a market from the bottom up |
+| mentorship-program | builder | — | sickn33/agentic-awesome-skills business/mentorship-program | matches mentors and mentees and tracks progress |
+| micro-saas-launcher | builder | — | sickn33/agentic-awesome-skills business/micro-saas-launcher | takes a small idea to a paying product |
+| moatmri | aide | — | sickn33/agentic-awesome-skills business/moatmri | maps AI disruption exposure and a defence plan |
+| monetization | aide | — | sickn33/agentic-awesome-skills business/monetization | designs pricing, subscriptions and experiments |
+| offboarding-exit | builder | — | sickn33/agentic-awesome-skills business/offboarding-exit | handles leaving staff and clean exits |
+| offer-appointment | builder | — | sickn33/agentic-awesome-skills business/offer-appointment | produces offer and appointment letters |
+| okr-system | builder | — | sickn33/agentic-awesome-skills business/okr-system | runs OKR setting and tracking |
+| onboarding-playbook | builder | — | sickn33/agentic-awesome-skills business/onboarding-playbook | builds a playbook for new starters |
+| organization-design | aide | — | sickn33/agentic-awesome-skills business/organization-design | designs structure, teams and layers |
+| people-directory | builder | — | sickn33/agentic-awesome-skills business/people-directory | keeps a directory of people and roles |
+| policy-acknowledgement | builder | — | sickn33/agentic-awesome-skills business/policy-acknowledgement | tracks policy reading and acknowledgement |
+| pre-boarding | builder | — | sickn33/agentic-awesome-skills business/pre-boarding | prepares new starters before day one |
+| pricing-strategy | aide | — | sickn33/agentic-awesome-skills business/pricing-strategy | sets price levels and packaging strategy |
+| pro-launch | builder | — | sickn33/agentic-awesome-skills business/pro-launch | takes an app from idea to launch with gates |
+| probation-tracker | builder | — | sickn33/agentic-awesome-skills business/probation-tracker | tracks probation periods and outcomes |
+| product-manager | aide | — | sickn33/agentic-awesome-skills business/product-manager | owns what to build and why |
+| product-manager-toolkit | builder | — | sickn33/agentic-awesome-skills business/product-manager-toolkit | gives product managers their working tools |
+| product-marketing | builder | — | sickn33/agentic-awesome-skills business/product-marketing | takes a product to market with messaging and launch |
+| product-marketing-context | builder | — | sickn33/agentic-awesome-skills business/product-marketing-context | gathers market and product context for messaging |
+| project-based-performance | builder | — | sickn33/agentic-awesome-skills business/project-based-performance | reviews performance against project work |
+| projects-work-management | builder | — | sickn33/agentic-awesome-skills business/projects-work-management | manages projects and work in one place |
+| promotion-upgrade-requests | builder | — | sickn33/agentic-awesome-skills business/promotion-upgrade-requests | handles promotion and upgrade requests |
+| recognition-rewards | builder | — | sickn33/agentic-awesome-skills business/recognition-rewards | runs recognition and rewards programs |
+| recruit | builder | — | sickn33/agentic-awesome-skills business/recruit | shortlists candidates from a job description |
+| recruitment-pipeline | builder | — | sickn33/agentic-awesome-skills business/recruitment-pipeline | runs the hiring pipeline from source to offer |
+| remote-work-tracker | builder | — | sickn33/agentic-awesome-skills business/remote-work-tracker | tracks remote work and availability |
+| risk-manager | aide | — | sickn33/agentic-awesome-skills business/risk-manager | identifies and sizes business risks |
+| saas-mvp-launcher | builder | — | sickn33/agentic-awesome-skills business/saas-mvp-launcher | launches a SaaS MVP |
+| saas-pricing-strategist | aide | — | sickn33/agentic-awesome-skills business/saas-pricing-strategist | sets SaaS pricing strategy |
+| shark | aide | — | sickn33/agentic-awesome-skills business/shark | pitches a business idea to investor agents for grilling |
+| skill-gap-analysis | aide | — | sickn33/agentic-awesome-skills business/skill-gap-analysis | finds skills missing against a goal |
+| startup-analyst | aide | — | sickn33/agentic-awesome-skills business/startup-analyst | analyses startup health and options |
+| startup-business-analyst-business-case | aide | — | sickn33/agentic-awesome-skills business/startup-business-analyst-business-case | builds one investor business case for a startup |
+| startup-metrics-framework | builder | — | sickn33/agentic-awesome-skills business/startup-metrics-framework | sets the metrics a startup runs on |
+| team-composition-analysis | aide | — | sickn33/agentic-awesome-skills business/team-composition-analysis | analyses team shape and gaps |
+| time-tracking | builder | — | sickn33/agentic-awesome-skills business/time-tracking | tracks time spent and reports it |
+| usage-based-pricing | aide | — | sickn33/agentic-awesome-skills business/usage-based-pricing | designs usage-based pricing |
+| find-complementary-founders | aide | — | sickn33/agentic-awesome-skills business-strategy/find-complementary-founders | finds a cofounder or project partner when asked |
+| kotler-macro-analyzer | aide | — | sickn33/agentic-awesome-skills business-strategy/kotler-macro-analyzer | PESTEL and SWOT audit in Kotler's method |
+| osterwalder-canvas-architect | builder | — | sickn33/agentic-awesome-skills business-strategy/osterwalder-canvas-architect | builds and tests a business model canvas |
+| healthcare-job-search | builder | — | sickn33/agentic-awesome-skills career-jobs/healthcare-job-search | finds open US healthcare jobs |
+| neverapply | builder | — | sickn33/agentic-awesome-skills career-jobs/neverapply | finds jobs, tailors a resume and applies with approval |
+| web-project-brainstorming | aide | — | sickn33/agentic-awesome-skills consulting/web-project-brainstorming | brainstorms a web project and its pages |
+| blueprint | aide | — | sickn33/agentic-awesome-skills planning/blueprint | turns an idea into a build plan |
+| concise-planning | aide | — | sickn33/agentic-awesome-skills planning/concise-planning | writes a plan concisely |
+| decision-navigator | aide | — | sickn33/agentic-awesome-skills planning/decision-navigator | helps make a decision through options and trade-offs |
+| not-a-vibe-coder | builder | — | sickn33/agentic-awesome-skills planning/not-a-vibe-coder | writes code from a plan, not vibes |
+| track-management | builder | — | sickn33/agentic-awesome-skills planning/track-management | works with Conductor tracks |
+| before-you-build | aide | — | sickn33/agentic-awesome-skills product/before-you-build | checks whether something is worth building first |
+| idea-autopsy | aide | — | sickn33/agentic-awesome-skills product/idea-autopsy | kills or saves an idea by examining it |
+| product-decision-agent | aide | — | sickn33/agentic-awesome-skills product/product-decision-agent | product decisions: priority, roadmap, retention in Chinese |
+| idea-os | builder | — | sickn33/agentic-awesome-skills product-management/idea-os | five phases from raw idea to four linked files |
+| project-brief | aide | — | sickn33/agentic-awesome-skills project management/project-brief | sharpens rough notes into a project brief |
+| accint-commitments | builder | — | sickn33/agentic-awesome-skills project-management/accint-commitments | closes a project's open promises with recorded verdicts |
+| progressive-estimation | builder | — | sickn33/agentic-awesome-skills project-management/progressive-estimation | estimates agent and hybrid work with assumptions |
+| project-skill-audit | reviewer | — | sickn33/agentic-awesome-skills project-management/project-skill-audit | names the skills a project would gain most from |
+| resumable-implementation-contracts | builder | — | sickn33/agentic-awesome-skills project-management/resumable-implementation-contracts | writes execution contracts that survive sessions |
+| understand-project-yylo | builder | — | sickn33/agentic-awesome-skills project-management/understand-project-yylo | reads a YYLO project's architecture before planning |
 
 ### 13-2000 Financial Specialists
 
@@ -242,6 +328,55 @@ No source yet.
 | counterparty-channel-discipline | builder | — | affaan-m/ECC skills/counterparty-channel-discipline | counterparty channels kept disciplined: who may speak, on what terms, recorded |
 | investor-materials | builder | — | affaan-m/ECC skills/investor-materials | the deck, memo and data room investors read before a decision |
 | investor-outreach | builder | — | affaan-m/ECC skills/investor-outreach | investors found and asked, in the order that works |
+| audit-log | builder | — | sickn33/agentic-awesome-skills business/audit-log | keeps a log of changes and who made them for audit |
+| audit-preparation | builder | — | sickn33/agentic-awesome-skills business/audit-preparation | gets books and evidence ready for an audit |
+| backtesting-frameworks | builder | — | sickn33/agentic-awesome-skills business/backtesting-frameworks | frameworks for backtesting trading rules |
+| budget-cash-flow | builder | — | sickn33/agentic-awesome-skills business/budget-cash-flow | plans budgets and cash flow |
+| clients-accounts | builder | — | sickn33/agentic-awesome-skills business/clients-accounts | keeps client accounts and what they owe |
+| credit-cycle-analysis | aide | — | sickn33/agentic-awesome-skills business/credit-cycle-analysis | analyses credit cycles and their turns |
+| day-book | builder | — | sickn33/agentic-awesome-skills business/day-book | keeps the day book of money in and out |
+| esop-equity-tracker | builder | — | sickn33/agentic-awesome-skills business/esop-equity-tracker | tracks equity and option plans |
+| expense-accounting | builder | — | sickn33/agentic-awesome-skills business/expense-accounting | records expenses and keeps them right |
+| expense-management | builder | — | sickn33/agentic-awesome-skills business/expense-management | runs expense claims and approvals |
+| inventory-stock-reconciliation | builder | — | sickn33/agentic-awesome-skills business/inventory-stock-reconciliation | matches stock records to actual stock |
+| invoices-billing | builder | — | sickn33/agentic-awesome-skills business/invoices-billing | raises invoices and chases payment |
+| monthly-closing-statements | builder | — | sickn33/agentic-awesome-skills business/monthly-closing-statements | produces month-end closing statements |
+| party-ledger-reconciliation | builder | — | sickn33/agentic-awesome-skills business/party-ledger-reconciliation | reconciles each party's ledger |
+| payment-accounting | builder | — | sickn33/agentic-awesome-skills business/payment-accounting | records payments and their entries |
+| payments-received | builder | — | sickn33/agentic-awesome-skills business/payments-received | tracks payments received and clears invoices |
+| payroll-finance | builder | — | sickn33/agentic-awesome-skills business/payroll-finance | works payroll amounts and finance entries |
+| petty-cash-management | builder | — | sickn33/agentic-awesome-skills business/petty-cash-management | manages petty cash and its records |
+| purchase-accounting | builder | — | sickn33/agentic-awesome-skills business/purchase-accounting | records purchases and their accounting |
+| receipt-accounting | builder | — | sickn33/agentic-awesome-skills business/receipt-accounting | records receipts and their accounting |
+| risk-metrics-calculation | builder | — | sickn33/agentic-awesome-skills business/risk-metrics-calculation | calculates risk metrics for decisions |
+| salary-benchmarking | aide | — | sickn33/agentic-awesome-skills business/salary-benchmarking | compares pay against market benchmarks |
+| salary-wage-accounting | builder | — | sickn33/agentic-awesome-skills business/salary-wage-accounting | records wages and salaries in the books |
+| sales-accounting | builder | — | sickn33/agentic-awesome-skills business/sales-accounting | records sales and their accounting |
+| tds-booking-payment | builder | — | sickn33/agentic-awesome-skills business/tds-booking-payment | books tax deducted at source payments |
+| quant-analyst | aide | — | sickn33/agentic-awesome-skills business/quant-analyst | analyses numbers to answer a business question |
+| second-deposit-igaming | builder | — | sickn33/agentic-awesome-skills business/second-deposit-igaming | explores iGaming deposit exports with care for player data |
+| axonx | builder | — | sickn33/agentic-awesome-skills finance/axonx | a research plugin and command interface for quantitative work |
+| calibrate-first | builder | — | sickn33/agentic-awesome-skills finance/calibrate-first | measures a dataset's detection floor before trusting a signal |
+| equibles | builder | — | sickn33/agentic-awesome-skills finance/equibles | queries SEC filings and market data |
+| fxmacrodata | builder | — | sickn33/agentic-awesome-skills finance/fxmacrodata | official macro indicators, policy rates and currency data |
+| krexa | builder | — | sickn33/agentic-awesome-skills finance/krexa | turns a trading idea into fixed rules and backtests them |
+| longbridge | builder | — | sickn33/agentic-awesome-skills finance/longbridge | guide to a separately installed broker integration |
+| longbridge-content | builder | — | sickn33/agentic-awesome-skills finance/longbridge-content | news, filings and discussion for listed stocks |
+| longbridge-derivatives | builder | — | sickn33/agentic-awesome-skills finance/longbridge-derivatives | derivatives data and work from Longbridge |
+| longbridge-fundamentals | builder | — | sickn33/agentic-awesome-skills finance/longbridge-fundamentals | fundamental data for listed companies |
+| longbridge-market-data | builder | — | sickn33/agentic-awesome-skills finance/longbridge-market-data | market data from Longbridge |
+| longbridge-quant | builder | — | sickn33/agentic-awesome-skills finance/longbridge-quant | quantitative work on Longbridge data |
+| nano-settlement-verify | reviewer | — | sickn33/agentic-awesome-skills finance/nano-settlement-verify | checks a Nano payment settled before serving a paid call |
+| options-flow-analyzer | builder | — | sickn33/agentic-awesome-skills finance/options-flow-analyzer | analyses options flow |
+| traderspy-market-briefing | aide | — | sickn33/agentic-awesome-skills finance/traderspy-market-briefing | briefs the market state |
+| traderspy-market-screener | builder | — | sickn33/agentic-awesome-skills finance/traderspy-market-screener | screens markets for what fits |
+| traderspy-position-check | reviewer | — | sickn33/agentic-awesome-skills finance/traderspy-position-check | checks a trading position |
+| traderspy-smart-money | builder | — | sickn33/agentic-awesome-skills finance/traderspy-smart-money | follows smart-money signals |
+| traderspy-trading-signals | builder | — | sickn33/agentic-awesome-skills finance/traderspy-trading-signals | works trading signals |
+| warren-buffett | aide | — | sickn33/agentic-awesome-skills finance/warren-buffett | investment judgement in Warren Buffett's manner |
+| xvary-stock-research | aide | — | sickn33/agentic-awesome-skills finance/xvary-stock-research | thesis-driven equity analysis from SEC EDGAR |
+| yield-intelligence | aide | — | sickn33/agentic-awesome-skills finance/yield-intelligence | dividend, Treasury and REIT income analysis |
+| doom-pay | builder | — | sickn33/agentic-awesome-skills payments/doom-pay | self-custodial checkout links and payment receipt checks |
 
 ## 15-0000 Computer and Mathematical Occupations
 
@@ -550,6 +685,69 @@ No source yet.
 | blender-motion-state-inspection | builder | — | affaan-m/ECC skills/blender-motion-state-inspection | motion state inside Blender inspected and understood |
 | gan-style-harness | builder | — | affaan-m/ECC skills/gan-style-harness | a GAN-style model trained and checked inside its harness |
 | healthcare-eval-harness | builder | — | affaan-m/ECC skills/healthcare-eval-harness | healthcare models evaluated against the measures that matter |
+| accounting-software-selection | aide | — | sickn33/agentic-awesome-skills business/accounting-software-selection | chooses accounting software against the business's needs |
+| admin-access-register | builder | — | sickn33/agentic-awesome-skills business/admin-access-register | keeps a register of admin access and who holds it |
+| advanced-analytics-dashboard | builder | — | sickn33/agentic-awesome-skills business/advanced-analytics-dashboard | builds advanced analytics dashboards |
+| bamboohr-automation | builder | — | sickn33/agentic-awesome-skills business/bamboohr-automation | runs BambooHR tasks through a hosted connector |
+| business-website-setup | builder | — | sickn33/agentic-awesome-skills business/business-website-setup | sets up a business website |
+| company-email-accounts | builder | — | sickn33/agentic-awesome-skills business/company-email-accounts | runs company email accounts |
+| csv-manual-export | builder | — | sickn33/agentic-awesome-skills business/csv-manual-export | builds an empty CSV from a confirmed field list |
+| data-export-engine | builder | — | sickn33/agentic-awesome-skills business/data-export-engine | exports data on a schedule or on demand |
+| data-privacy-controls | builder | — | sickn33/agentic-awesome-skills business/data-privacy-controls | sets and runs data privacy controls |
+| dei-dashboard | builder | — | sickn33/agentic-awesome-skills business/dei-dashboard | tracks diversity, equity and inclusion measures against targets |
+| json-schema-manual | builder | — | sickn33/agentic-awesome-skills business/json-schema-manual | builds a validation schema from a confirmed field list |
+| notion-manual-import | builder | — | sickn33/agentic-awesome-skills business/notion-manual-import | performs the Notion step of an import with mapping and check |
+| pipedrive-automation | builder | — | sickn33/agentic-awesome-skills business/pipedrive-automation | runs Pipedrive tasks through a hosted connector |
+| reports-analytics | builder | — | sickn33/agentic-awesome-skills business/reports-analytics | builds reports and analytics |
+| zoho-crm-automation | builder | — | sickn33/agentic-awesome-skills business/zoho-crm-automation | runs Zoho CRM tasks through a hosted connector |
+| odoo-accounting-setup | builder | — | sickn33/agentic-awesome-skills business/odoo-accounting-setup | sets up Odoo accounting |
+| odoo-automated-tests | builder | — | sickn33/agentic-awesome-skills business/odoo-automated-tests | writes automated tests for Odoo |
+| odoo-backup-strategy | builder | — | sickn33/agentic-awesome-skills business/odoo-backup-strategy | plans Odoo backups and restores |
+| odoo-docker-deployment | builder | — | sickn33/agentic-awesome-skills business/odoo-docker-deployment | deploys Odoo with Docker |
+| odoo-ecommerce-configurator | builder | — | sickn33/agentic-awesome-skills business/odoo-ecommerce-configurator | configures Odoo ecommerce |
+| odoo-edi-connector | builder | — | sickn33/agentic-awesome-skills business/odoo-edi-connector | builds Odoo EDI connectors |
+| odoo-hr-payroll-setup | builder | — | sickn33/agentic-awesome-skills business/odoo-hr-payroll-setup | sets up Odoo HR and payroll |
+| odoo-inventory-optimizer | builder | — | sickn33/agentic-awesome-skills business/odoo-inventory-optimizer | optimizes Odoo inventory |
+| odoo-l10n-compliance | builder | — | sickn33/agentic-awesome-skills business/odoo-l10n-compliance | holds Odoo localization and compliance |
+| odoo-manufacturing-advisor | builder | — | sickn33/agentic-awesome-skills business/odoo-manufacturing-advisor | advises Odoo manufacturing setup |
+| odoo-migration-helper | builder | — | sickn33/agentic-awesome-skills business/odoo-migration-helper | helps migrate Odoo |
+| odoo-module-developer | builder | — | sickn33/agentic-awesome-skills business/odoo-module-developer | develops Odoo modules |
+| odoo-orm-expert | builder | — | sickn33/agentic-awesome-skills business/odoo-orm-expert | works Odoo's ORM |
+| odoo-performance-tuner | builder | — | sickn33/agentic-awesome-skills business/odoo-performance-tuner | tunes Odoo performance |
+| odoo-project-timesheet | builder | — | sickn33/agentic-awesome-skills business/odoo-project-timesheet | runs Odoo project timesheets |
+| odoo-purchase-workflow | builder | — | sickn33/agentic-awesome-skills business/odoo-purchase-workflow | builds Odoo purchase workflows |
+| odoo-qweb-templates | builder | — | sickn33/agentic-awesome-skills business/odoo-qweb-templates | writes Odoo QWeb templates |
+| odoo-rpc-api | builder | — | sickn33/agentic-awesome-skills business/odoo-rpc-api | works Odoo's RPC API |
+| odoo-sales-crm-expert | builder | — | sickn33/agentic-awesome-skills business/odoo-sales-crm-expert | runs Odoo sales and CRM |
+| odoo-security-rules | builder | — | sickn33/agentic-awesome-skills business/odoo-security-rules | sets Odoo security rules |
+| odoo-shopify-integration | builder | — | sickn33/agentic-awesome-skills business/odoo-shopify-integration | integrates Odoo with Shopify |
+| odoo-upgrade-advisor | builder | — | sickn33/agentic-awesome-skills business/odoo-upgrade-advisor | advises Odoo upgrades |
+| odoo-woocommerce-bridge | builder | — | sickn33/agentic-awesome-skills business/odoo-woocommerce-bridge | bridges Odoo and WooCommerce |
+| odoo-xml-views-builder | builder | — | sickn33/agentic-awesome-skills business/odoo-xml-views-builder | builds Odoo XML views |
+| woo-guard | reviewer | — | sickn33/agentic-awesome-skills ecommerce/woo-guard | reviews WooCommerce code and checkout changes |
+| anti-sleep | builder | — | sickn33/agentic-awesome-skills operations/anti-sleep | keeps a Mac awake through a long run |
+| it-manager-hospital | builder | — | sickn33/agentic-awesome-skills operations/it-manager-hospital | manages IT in a hospital setting |
+| itil-expert | aide | — | sickn33/agentic-awesome-skills operations/itil-expert | advises IT service management with ITIL |
+| mailtrap-setting-up-sending-domain | builder | — | sickn33/agentic-awesome-skills operations/mailtrap-setting-up-sending-domain | sets up a sending domain with DNS records in Mailtrap |
+| pi-custom-model | builder | — | sickn33/agentic-awesome-skills operations/pi-custom-model | registers custom model names so saved variants resolve |
+| powershell-windows | builder | — | sickn33/agentic-awesome-skills operations/powershell-windows | writes PowerShell for Windows tasks |
+| pre-release-review | reviewer | — | sickn33/agentic-awesome-skills operations/pre-release-review | reviews a release before it ships |
+| vps-server-management | builder | — | sickn33/agentic-awesome-skills operations/vps-server-management | manages a VPS server |
+| asana-automation | builder | — | sickn33/agentic-awesome-skills project-management/asana-automation | runs Asana tasks through a hosted connector |
+| basecamp-automation | builder | — | sickn33/agentic-awesome-skills project-management/basecamp-automation | runs Basecamp tasks through a hosted connector |
+| confluence-automation | builder | — | sickn33/agentic-awesome-skills project-management/confluence-automation | runs Confluence pages through a hosted connector |
+| freshservice-automation | builder | — | sickn33/agentic-awesome-skills project-management/freshservice-automation | runs Freshservice tickets through a hosted connector |
+| github-issue-creator | builder | — | sickn33/agentic-awesome-skills project-management/github-issue-creator | turns rough reports into ready GitHub issues |
+| jira-automation | builder | — | sickn33/agentic-awesome-skills project-management/jira-automation | runs Jira work through a hosted connector |
+| linear-automation | builder | — | sickn33/agentic-awesome-skills project-management/linear-automation | runs Linear issues through a hosted connector |
+| linear-claude-skill | builder | — | sickn33/agentic-awesome-skills project-management/linear-claude-skill | manages Linear issues, projects and teams |
+| miro-automation | builder | — | sickn33/agentic-awesome-skills project-management/miro-automation | runs Miro boards through a hosted connector |
+| monday-automation | builder | — | sickn33/agentic-awesome-skills project-management/monday-automation | runs Monday boards through a hosted connector |
+| todoist-automation | builder | — | sickn33/agentic-awesome-skills project-management/todoist-automation | runs Todoist tasks through a hosted connector |
+| trello-automation | builder | — | sickn33/agentic-awesome-skills project-management/trello-automation | runs Trello boards through a hosted connector |
+| wrike-automation | builder | — | sickn33/agentic-awesome-skills project-management/wrike-automation | runs Wrike work through a hosted connector |
+| shopify-review-triage | reviewer | — | sickn33/agentic-awesome-skills product/shopify-review-triage | triages Shopify reviews for the right next step |
+| monopoly/security-checklist | reviewer | — | sickn33/agentic-awesome-skills monopoly/monopoly/security-checklist | reviews an architecture against a security checklist |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -580,7 +778,11 @@ No source yet.
 
 ### 19-2000 Physical Scientists
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| nexrad-mosaic-construction | builder | — | sickn33/agentic-awesome-skills analysis/nexrad-mosaic-construction | builds a usable weather mosaic from NEXRAD radar data |
+| nexrad-radar-visualization | builder | — | sickn33/agentic-awesome-skills analysis/nexrad-radar-visualization | turns NEXRAD radar data into readable visualizations |
+| radar-satellite-analysis | builder | — | sickn33/agentic-awesome-skills analysis/radar-satellite-analysis | combines radar and satellite observations into one analysis |
 
 ### 19-3000 Social Scientists and Related Workers
 
@@ -618,10 +820,27 @@ No source yet.
 | intellectual-property | reviewer | — | cbrock84/headcount plugins/legal-risk/skills/intellectual-property | checks what the org owns and borrows: marks, copyright, patents, secrets |
 | privacy-and-data-protection | reviewer | — | cbrock84/headcount plugins/legal-risk/skills/privacy-and-data-protection | assesses how personal data is collected, used, shared and kept |
 | regulatory-compliance | reviewer | — | cbrock84/headcount plugins/legal-risk/skills/regulatory-compliance | maps the rules that apply and keeps controls and monitoring inside them |
+| advogado-especialista | aide | — | sickn33/agentic-awesome-skills legal/advogado-especialista | supports Brazilian legal research and drafting |
+| employment-contract-templates | builder | — | sickn33/agentic-awesome-skills legal/employment-contract-templates | drafts employment contract templates |
+| event-staffing-compliance | reviewer | — | sickn33/agentic-awesome-skills legal/event-staffing-compliance | checks event staffing against legal rules |
+| fda-food-safety-auditor | reviewer | — | sickn33/agentic-awesome-skills legal/fda-food-safety-auditor | audits food safety records against FDA rules |
+| fda-medtech-compliance-auditor | reviewer | — | sickn33/agentic-awesome-skills legal/fda-medtech-compliance-auditor | audits medical device records against FDA rules |
+| legal-advisor | aide | — | sickn33/agentic-awesome-skills legal/legal-advisor | gives legal advice and drafts documents |
+| lex | aide | — | sickn33/agentic-awesome-skills legal/lex | cross-jurisdiction research aid and contract scaffolding |
+| leiloeiro-edital | reviewer | — | sickn33/agentic-awesome-skills leiloeiro/leiloeiro-edital | audits an auction notice for hidden risks and clauses |
+| leiloeiro-juridico | aide | — | sickn33/agentic-awesome-skills leiloeiro/leiloeiro-juridico | legal analysis of an auction's grounds |
 
 ### 23-2000 Legal Support Workers
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| check-identity-pack | reviewer | — | sickn33/agentic-awesome-skills document-verification/check-identity-pack | checks an identity pack against the required documents |
+| detect-ai-text | reviewer | — | sickn33/agentic-awesome-skills document-verification/detect-ai-text | detects likely AI-written text in a document |
+| extract-document-data | builder | — | sickn33/agentic-awesome-skills document-verification/extract-document-data | pulls data out of documents into a clean structure |
+| find-matching-tenders | builder | — | sickn33/agentic-awesome-skills document-verification/find-matching-tenders | finds tenders that match a profile or brief |
+| screen-adverse-media | reviewer | — | sickn33/agentic-awesome-skills document-verification/screen-adverse-media | screens adverse media on a person or company |
+| verify-citations | reviewer | — | sickn33/agentic-awesome-skills document-verification/verify-citations | checks citations support each claim they carry |
+| verify-document | reviewer | — | sickn33/agentic-awesome-skills document-verification/verify-document | checks a document against the standard it must meet |
 
 ## 25-0000 Educational Instruction and Library Occupations
 
@@ -659,6 +878,13 @@ No source yet.
 | motion-advanced | builder | — | affaan-m/ECC skills/motion-advanced | the hard parts of motion, mastered |
 | motion-foundations | builder | — | affaan-m/ECC skills/motion-foundations | motion's basics, solid |
 | motion-patterns | builder | — | affaan-m/ECC skills/motion-patterns | the patterns motion repeats |
+| brand-kit-print-collateral | builder | — | sickn33/agentic-awesome-skills business/brand-kit-print-collateral | designs brand print collateral from the brand kit |
+| design-theme-guide | builder | — | sickn33/agentic-awesome-skills business/design-theme-guide | writes a visual design theme guide |
+| logo-image-design | builder | — | sickn33/agentic-awesome-skills business/logo-image-design | designs logos and image assets |
+| presentation-deck | builder | — | sickn33/agentic-awesome-skills business/presentation-deck | builds presentation decks to a visual standard |
+| product-design | builder | — | sickn33/agentic-awesome-skills business/product-design | designs product visuals, user flows and accessibility |
+| product-inventor | builder | — | sickn33/agentic-awesome-skills business/product-inventor | invents a product across thinking and interface craft |
+| product-design-harness | builder | — | sickn33/agentic-awesome-skills product/product-design-harness | harnesses product design work end to end |
 
 ### 27-2000 Entertainers and Performers, Sports and Related Workers
 
@@ -1012,9 +1238,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 493 (5 built, 488 not) |
-| families with a row | 14 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 23-1000 Lawyers, Judges, and Related Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
-| sources assessed | 10 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents; 2026-11-06) |
+| rows | 717 (5 built, 712 not) |
+| families with a row | 16 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-2000 Physical Scientists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
+| sources assessed | 11 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills; 2026-11-12) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.
