@@ -603,7 +603,7 @@ Decision:
 - nothing is copied, so no THIRD_PARTY_NOTICES line is added.
 Reason: his words, 2026-10-23: "our harness is a 'control-layer' over Paradigm A. we call it Paradigm B. but that doesn't mean we can't assimilate Paradigm A tools, surfaces, etc. it just has to run THROUGH our Gate." And: "we don't want blueprint design to be public. it is not to hide open sourced code."
 
-## 34. Animation recorded to video joins the Recipe registry as a row
+## 35. Animation recorded to video joins the Recipe registry as a row
 
 Date: 2026-10-30
 Who: the Director, in Workspace Strategy's session ("record, save the recipe").
@@ -614,7 +614,7 @@ Decision:
 - Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
 Reason: his word.
 
-## 35. A trading pipeline joins the Skill registry as a row
+## 36. A trading pipeline joins the Skill registry as a row
 
 Date: 2026-10-23
 Who: the Director, in Workspace Strategy's session ("add it").
@@ -624,7 +624,7 @@ Decision:
 - Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
 Reason: his word, and his rule for a group with no Blueprint yet: an empty group is never a reason to skip a source, "i will eventually create the Blueprint."
 
-## 36. Isometric figures join both registries as rows
+## 37. Isometric figures join both registries as rows
 
 Date: 2026-10-30
 Who: the Director, in Workspace Strategy's session ("save both").
@@ -635,7 +635,7 @@ Decision:
 - Nothing is copied now, so no THIRD_PARTY_NOTICES line is added.
 Reason: his word.
 
-## 37. Skills from ECC join the Skill registry as rows
+## 38. Skills from ECC join the Skill registry as rows
 
 Date: 2026-10-30
 Who: the Director, in Workspace Strategy's session ("save both").
@@ -646,7 +646,7 @@ Decision:
 - ECC's harness machinery is not taken — its agents, commands, instincts, memory vault, hooks and AgentShield, which the kernel, the record and the Gate replace — so no row enters for the listed skills that are that machinery: agent-harness-construction, agent-runtime-gateway-smoke-test, autonomous-agent-harness, ck, configure-ecc, deepseek-harness-setup, ecc-guide, ecc-recipes, ecc-tools-cost-audit, gateguard, hookify-rules, unified-memory.
 Reason: his word. Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
 
-## 38. Video editing and XERJ join the registries
+## 39. Video editing and XERJ join the registries
 
 Date: 2026-10-23
 Who: the Director, in Workspace Strategy's session ("send both rows to Commons Planning"; "send the XERJ tools row to Commons Planning").
@@ -658,7 +658,7 @@ Decision:
 - Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
 Reason: his word.
 
-## 39. Skills from claude-seo join the Skill registry as rows
+## 40. Skills from claude-seo join the Skill registry as rows
 
 Date: 2026-10-30
 Who: the Director, in Workspace Strategy's session ("save").
@@ -669,7 +669,7 @@ Decision:
 - Sub-agents and hooks are not taken: they are harness machinery the kernel replaces. The nine live-data extensions under extensions/ wait for the Marketing Delegate's Map as tool rows.
 Reason: his word. Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
 
-## 40. The three registries are named shared files
+## 41. The three registries are named shared files
 
 Date: 2026-10-31
 Who: the Director's list, sent by Workspace Recovery; placed by Commons Planning.
@@ -679,7 +679,7 @@ Decision:
 - A file that two Mandates both rewrite in place stays unnamed.
 Reason: Mandates that only append rows to the same registry no longer wait on each other.
 
-## Next. Skills from TradingAgents join the Skill registry as rows
+## 42. Skills from TradingAgents join the Skill registry as rows
 
 Date: 2026-11-06
 Who: the Director, in this session; Commons Planning wrote it down.
