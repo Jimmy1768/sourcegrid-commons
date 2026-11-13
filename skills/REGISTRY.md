@@ -1941,6 +1941,7 @@ No source yet.
 | pdf-conversion-router | builder | — | sickn33/agentic-awesome-skills document-processing/pdf-conversion-router | sends a PDF down the right path to come out as Markdown, text, HTML or a document |
 | meeting-notes | builder | — | sickn33/agentic-awesome-skills productivity/meeting-notes | shapes rough meeting jottings into minutes that list decisions and follow-ups |
 | libreoffice/calc | builder | — | sickn33/agentic-awesome-skills spreadsheet-processing/libreoffice/calc | creates spreadsheets with formulas and handles unit or format conversions |
+| meeting-minutes | builder | — | video-db/call.md | turns a meeting transcript into minutes: a summary, the points discussed and action items each with an owner |
 
 ### 43-9000 Other Office and Administrative Support Workers
 
@@ -2091,9 +2092,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 1559 (5 built, 1554 not) |
+| rows | 1560 (5 built, 1555 not) |
 | families with a row | 27 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 17-2000 Engineers; 19-1000 Life Scientists; 19-2000 Physical Scientists; 19-3000 Social Scientists and Related Workers; 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 25-3000 Other Teachers and Instructors; 25-4000 Librarians, Curators, and Archivists; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 29-9000 Other Healthcare Practitioners and Technical Occupations; 33-3000 Law Enforcement Workers; 39-7000 Tour and Travel Guides; 39-9000 Other Personal Care and Service Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks; 43-6000 Secretaries and Administrative Assistants) |
-| sources assessed | 12 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios; 2026-11-13) |
+| sources assessed | 13 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios, video-db/call.md; 2026-11-13) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.
