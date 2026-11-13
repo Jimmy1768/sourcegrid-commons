@@ -955,3 +955,9 @@ Each model's own licence is checked before it serves a paying customer.
 
 Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
 Reason: the registry is the record of what the commons could use, and his handoff names two tools worth listing before they are run.
+
+## Next. Skills from agentic-awesome-skills' AI and agent half join the registry
+
+Date: 2026-11-12.
+Who: Commons Planning, on the Director's handoff of 2026-11-12.
+Decision: the names in the catalog's AI, machine-learning and agent list that survive the brief's exclusions become rows in `skills/REGISTRY.md` under `15-1200 Computer Occupations`, marked not built, sourced to sickn33/agentic-awesome-skills (MIT at the catalog's top, each skill's own licence checked when it is built), seventeen in all; no family gains its first table; the names listed under "What is left out, and why" in the spec are not rows, each for the reason given there — repeats of rows we hold, the same work as a row we hold or as another name in the list, a framework or library rather than a piece of work, a theory rather than a job, whole occupations, names that are a person's or a product's own and name no work, the catalog's own tooling, names that work only inside one vendor's account, and names that work only through one named installed program.

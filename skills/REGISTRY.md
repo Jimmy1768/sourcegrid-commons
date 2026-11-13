@@ -1185,6 +1185,23 @@ No source yet.
 | setup-help | aide | — | sickn33/agentic-awesome-skills productivity/setup-help | guides a person through an install one step at a time |
 | usage-engineer | aide | — | sickn33/agentic-awesome-skills productivity/usage-engineer | trims token waste and needless retries from coding-agent sessions |
 | entropy-box | builder | — | sickn33/agentic-awesome-skills research/entropy-box | grounds loose requirements for embodied AI into workable workflows |
+| agent-self-scheduling | builder | — | sickn33/agentic-awesome-skills | Schedules AI agent runs with cron, loops or external clocks, and keeps autonomous timers from running away. |
+| goal-instruction-writer | builder | — | sickn33/agentic-awesome-skills | Previews, drafts, refines and audits durable agent goals, with acceptance evidence, drift controls and proportional checks. |
+| agent-creator | builder | — | sickn33/agentic-awesome-skills | Creates custom AI subagents with a proper plugin structure, a generated persona and companion routing skills. |
+| computer-use-agents | builder | — | sickn33/agentic-awesome-skills | Builds agents that use a computer as a person does: viewing the screen, moving the cursor and clicking. |
+| agent-memory | builder | — | sickn33/agentic-awesome-skills | A hybrid memory system giving AI agents persistent, searchable knowledge. |
+| prompt-engineering | builder | — | sickn33/agentic-awesome-skills | Prompt engineering patterns, practices and optimisation techniques, and when each of them applies. |
+| tool-design | builder | — | sickn33/agentic-awesome-skills | Builds tools agents can use well, including the reduction patterns that keep a tool set small. |
+| llm-structured-output | builder | — | sickn33/agentic-awesome-skills | Gets reliable JSON, enums and typed objects out of a model through response formats, tool use and schema constraints. |
+| llm-security | builder | — | sickn33/agentic-awesome-skills | Assesses LLM applications and AI agents for prompt injection, tool abuse and retrieval exposure. |
+| llm-app-patterns | builder | — | sickn33/agentic-awesome-skills | Architecture and integration sketches for LLM applications, with explicit retrieval, tool, privacy and verification choices. |
+| embedding-strategies | builder | — | sickn33/agentic-awesome-skills | How to choose and tune embedding models for a vector search application. |
+| vector-index-tuning | builder | — | sickn33/agentic-awesome-skills | Tunes a vector index for latency, recall and memory, from its parameters to the choice of index. |
+| hybrid-search-implementation | builder | — | sickn33/agentic-awesome-skills | Combines vector and keyword search to improve retrieval in a RAG or search system. |
+| seek-and-analyze-video | builder | — | sickn33/agentic-awesome-skills | Seeks through and analyses video content, keeping a persistent visual memory of what was seen. |
+| audio-transcriber | builder | — | sickn33/agentic-awesome-skills | Turns audio recordings into Markdown documentation with summaries. |
+| voice-agents | builder | — | sickn33/agentic-awesome-skills | Builds voice agents in which a person speaks to a system and is answered in kind. |
+| ai-wrapper-product | builder | — | sickn33/agentic-awesome-skills | Builds a product that wraps a model's API into one focused tool. |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -1830,7 +1847,7 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 1300 (5 built, 1295 not) |
+| rows | 1317 (5 built, 1312 not) |
 | families with a row | 25 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-1000 Life Scientists; 19-2000 Physical Scientists; 19-3000 Social Scientists and Related Workers; 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 25-3000 Other Teachers and Instructors; 25-4000 Librarians, Curators, and Archivists; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 29-9000 Other Healthcare Practitioners and Technical Occupations; 39-7000 Tour and Travel Guides; 39-9000 Other Personal Care and Service Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks; 43-6000 Secretaries and Administrative Assistants) |
 | sources assessed | 11 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills; 2026-11-12) |
 
