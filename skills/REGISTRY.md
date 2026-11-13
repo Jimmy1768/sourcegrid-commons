@@ -1144,6 +1144,36 @@ No source yet.
 | using-git-worktrees | builder | — | sickn33/agentic-awesome-skills | git worktrees used for parallel work |
 | what-could-break | reviewer | — | sickn33/agentic-awesome-skills | what a change breaks outside its own diff, proven before it lands |
 | vibe-code-cleanup | builder | — | sickn33/agentic-awesome-skills | a vibe-coded app cleaned and hardened for production |
+| fixing-accessibility | builder | — | sickn33/agentic-awesome-skills | software made usable by people with disabilities, held to standards |
+| fixing-metadata | builder | — | sickn33/agentic-awesome-skills | metadata made accurate and complete where search and sharing read it |
+| web-performance-optimization | builder | — | sickn33/agentic-awesome-skills | a page made faster where it matters |
+| frontend-seo | builder | — | sickn33/agentic-awesome-skills | a front end held findable and readable by search engines |
+| ui-states | builder | — | sickn33/agentic-awesome-skills | the empty, loading, error and edge states of an interface designed fully |
+| design-token-contrast | builder | — | sickn33/agentic-awesome-skills | design tokens checked and fixed for the contrast people need |
+| scroll-experience | builder | — | sickn33/agentic-awesome-skills | the page's scrolling made smooth, readable and deliberate |
+| landing-page | builder | — | sickn33/agentic-awesome-skills | one page built to convert its one audience |
+| chat-widget | builder | — | sickn33/agentic-awesome-skills | a chat interface that streams answers and keeps them readable |
+| progressive-web-app | builder | — | sickn33/agentic-awesome-skills | a web app that installs, works offline and re-engages |
+| browser-extension-builder | builder | — | sickn33/agentic-awesome-skills | an extension built for a browser and kept working there |
+| interactive-portfolio | builder | — | sickn33/agentic-awesome-skills | a portfolio whose motion and interaction show the work |
+| frontend-architecture | builder | — | sickn33/agentic-awesome-skills | the structure a front end is built on, so change stays cheap |
+| frontend-api-integration-patterns | builder | — | sickn33/agentic-awesome-skills | the interface and its APIs kept in step, retry and cache included |
+| frontend-data-contracts | builder | — | sickn33/agentic-awesome-skills | the shape of data agreed between interface and API |
+| frontend-optimistic-mutations | builder | — | sickn33/agentic-awesome-skills | an interface that changes first and reconciles with its data |
+| fixing-motion-performance | builder | — | sickn33/agentic-awesome-skills | animation made fast enough for the device it runs on |
+| improve-animations | builder | — | sickn33/agentic-awesome-skills | animation made more useful, clearer and more controlled |
+| mobile-design | builder | — | sickn33/agentic-awesome-skills | the design of a phone interface across screens and sizes |
+| mobile-security-coder | builder | — | sickn33/agentic-awesome-skills | a mobile app's data, storage and traffic held secure |
+| building-native-ui | builder | — | sickn33/agentic-awesome-skills | the platform's own controls and idioms for a mobile interface |
+| add-app-clip | builder | — | sickn33/agentic-awesome-skills | an App Clip or instant piece built so a moment finds it fast |
+| ios-flows | builder | — | sickn33/agentic-awesome-skills | the iOS flows a user moves through, from one screen to the next |
+| ios-screens | builder | — | sickn33/agentic-awesome-skills | the iOS screens a flow is made of |
+| mobile-reverse | builder | — | sickn33/agentic-awesome-skills | a built mobile app read back to its design and intent |
+| game-design | builder | — | sickn33/agentic-awesome-skills | the rules, verbs and loops that make a game worth playing |
+| game-art | builder | — | sickn33/agentic-awesome-skills | the look of a game, built as usable art |
+| game-audio | builder | — | sickn33/agentic-awesome-skills | the sound of a game, built to its design |
+| multiplayer | builder | — | sickn33/agentic-awesome-skills | players connected and authorized in a shared game world |
+| shader-programming-glsl | builder | — | sickn33/agentic-awesome-skills | GPU-side effects and materials written in GLSL |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -1712,7 +1742,7 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 1191 (5 built, 1186 not) |
+| rows | 1221 (5 built, 1216 not) |
 | families with a row | 16 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-2000 Physical Scientists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
 | sources assessed | 11 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills; 2026-11-12) |
 

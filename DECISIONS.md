@@ -912,3 +912,10 @@ copied, so no `THIRD_PARTY_NOTICES.md` line is added.
 Reason: his handoff of this session: list the catalog's marketing and SEO skills as
 Skills not built yet, each under the job family its work belongs to, skipping what we
 already list, what is only a mix of what we have, and what is really one whole job.
+
+## Next. Skills from agentic-awesome-skills' frontend, mobile and game half join the registry
+
+Date: 2026-11-12.
+Who: Commons Planning, on the Director's handoff of 2026-11-12.
+Decision: the registry's 15-1200 Computer Occupations table gains the 30 rows in section 2, all not yet built, sourced to `sickn33/agentic-awesome-skills`. Nothing is built or copied, so no `THIRD_PARTY_NOTICES.md` line is needed. Left out, each with its reason written in the spec: the three rows already held word for word, the same work under other wording, the styles, the frameworks' own guides, the vendor-locked and installed-program names, the templates, the whole occupations and platforms, and the names that describe no work.
+Reason: the Director's handoff of the brief in this session, that the catalog's frontend, web, mobile and game skills be listed as Skills not yet built, with repeats and whole occupations and vendor-locked names left out.
