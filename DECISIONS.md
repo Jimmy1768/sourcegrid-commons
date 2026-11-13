@@ -749,3 +749,10 @@ Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
 Reason: his handoff of this session: list the catalog's business, finance, legal and operations
 skills as Skills not yet built, each under the job family its work belongs to, skipping what we
 already list, what is only a mix of what we have, and what is really one whole job.
+
+## Next. Skills from agentic-awesome-skills' cloud, DevOps and reliability half join the registry
+
+Date: 2026-11-12.
+Who: Commons Planning, on the Director's handoff of 2026-11-12.
+Decision: the names in the catalog's cloud, DevOps and reliability list that survive the brief's exclusions become rows in `skills/REGISTRY.md` under `15-1200 Computer Occupations`, marked not built, sourced to sickn33/agentic-awesome-skills (MIT at the catalog's top, each skill's own licence checked when it is built), seventy in all; no family gains its first table; the names listed under "What is left out, and why" in the spec are not rows, each for the reason given there — repeats of rows we hold, the same work as another name in the list, whole occupations, names that work only inside one vendor's account, names that are a reference for one named program, and templates.
+Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.

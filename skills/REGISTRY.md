@@ -748,6 +748,76 @@ No source yet.
 | wrike-automation | builder | — | sickn33/agentic-awesome-skills project-management/wrike-automation | runs Wrike work through a hosted connector |
 | shopify-review-triage | reviewer | — | sickn33/agentic-awesome-skills product/shopify-review-triage | triages Shopify reviews for the right next step |
 | monopoly/security-checklist | reviewer | — | sickn33/agentic-awesome-skills monopoly/monopoly/security-checklist | reviews an architecture against a security checklist |
+| agent-evals | builder | — | sickn33/agentic-awesome-skills | evaluates an agent's work against the measures that matter |
+| ai-pipeline-orchestration | builder | — | sickn33/agentic-awesome-skills | orchestrates an AI pipeline end to end |
+| alerting-oncall | builder | — | sickn33/agentic-awesome-skills | runs alerting and on-call handling |
+| application-performance-performance-optimization | builder | — | sickn33/agentic-awesome-skills | optimizes an application's performance |
+| backup-recovery | builder | — | sickn33/agentic-awesome-skills | backs up data and proves restores |
+| block-storage | builder | — | sickn33/agentic-awesome-skills | runs block storage |
+| blue-green-deploy | builder | — | sickn33/agentic-awesome-skills | deploys with blue-green cutover |
+| brendangregg-use-tsa | builder | — | sickn33/agentic-awesome-skills | applies Brendan Gregg's TSA method to a performance problem |
+| cdn-setup | builder | — | sickn33/agentic-awesome-skills | sets up a CDN |
+| ci-cd-and-automation | builder | — | sickn33/agentic-awesome-skills | builds CI/CD pipelines and automation |
+| cloud-penetration-testing | builder | — | sickn33/agentic-awesome-skills | penetration tests a cloud deployment |
+| container-registries | builder | — | sickn33/agentic-awesome-skills | runs container registries |
+| cost-optimization | builder | — | sickn33/agentic-awesome-skills | finds cost to cut safely |
+| deployment-procedures | builder | — | sickn33/agentic-awesome-skills | defines and runs deployment procedures |
+| deployment-validation-config-validate | reviewer | — | sickn33/agentic-awesome-skills | validates a deployment's configuration |
+| devcontainers-nix | builder | — | sickn33/agentic-awesome-skills | sets up devcontainers with Nix |
+| distributed-tracing | builder | — | sickn33/agentic-awesome-skills | traces a request across distributed systems |
+| dns-management | builder | — | sickn33/agentic-awesome-skills | runs DNS |
+| docker-management | builder | — | sickn33/agentic-awesome-skills | runs Docker hosts and images |
+| ebpf-observability | builder | — | sickn33/agentic-awesome-skills | observes a system with eBPF |
+| elk-stack | builder | — | sickn33/agentic-awesome-skills | runs the ELK stack for logs |
+| feature-flags | builder | — | sickn33/agentic-awesome-skills | manages feature flags |
+| frontend-observability | builder | — | sickn33/agentic-awesome-skills | observes frontend behaviour |
+| gitops-workflow | builder | — | sickn33/agentic-awesome-skills | runs a GitOps workflow |
+| gpu-kubernetes-operations | builder | — | sickn33/agentic-awesome-skills | runs GPU workloads on Kubernetes |
+| gpu-server-management | builder | — | sickn33/agentic-awesome-skills | runs GPU servers |
+| helm-charts | builder | — | sickn33/agentic-awesome-skills | writes and runs Helm charts |
+| hybrid-cloud-networking | builder | — | sickn33/agentic-awesome-skills | runs networking across hybrid cloud |
+| identity-access-management | builder | — | sickn33/agentic-awesome-skills | runs identity and access management |
+| k8s-manifest-generator | builder | — | sickn33/agentic-awesome-skills | generates Kubernetes manifests |
+| k8s-security-policies | builder | — | sickn33/agentic-awesome-skills | sets Kubernetes security policies |
+| kubernetes-ops | builder | — | sickn33/agentic-awesome-skills | runs Kubernetes operations |
+| linux-administration | builder | — | sickn33/agentic-awesome-skills | administers Linux systems |
+| llm-caching | builder | — | sickn33/agentic-awesome-skills | caches LLM calls where they repeat |
+| llm-cost-optimization | builder | — | sickn33/agentic-awesome-skills | cuts LLM cost without losing work |
+| llm-fine-tuning | builder | — | sickn33/agentic-awesome-skills | fine-tunes an LLM |
+| llm-gateway | builder | — | sickn33/agentic-awesome-skills | runs an LLM gateway |
+| load-balancing | builder | — | sickn33/agentic-awesome-skills | runs load balancing |
+| mdm-device-management | builder | — | sickn33/agentic-awesome-skills | manages devices through MDM |
+| model-registry-governance | builder | — | sickn33/agentic-awesome-skills | governs the model registry |
+| model-serving-kubernetes | builder | — | sickn33/agentic-awesome-skills | serves models on Kubernetes |
+| mongodb | builder | — | sickn33/agentic-awesome-skills | runs MongoDB |
+| multi-cloud-architecture | builder | — | sickn33/agentic-awesome-skills | designs architecture across clouds |
+| multi-tenant-llm-hosting | builder | — | sickn33/agentic-awesome-skills | hosts LLMs for many tenants |
+| mysql | builder | — | sickn33/agentic-awesome-skills | runs MySQL |
+| nfs-storage | builder | — | sickn33/agentic-awesome-skills | runs NFS storage |
+| object-storage | builder | — | sickn33/agentic-awesome-skills | runs object storage |
+| observability-and-instrumentation | builder | — | sickn33/agentic-awesome-skills | instruments and observes systems |
+| performance-tuning | builder | — | sickn33/agentic-awesome-skills | tunes performance |
+| platform-engineering | builder | — | sickn33/agentic-awesome-skills | builds and runs the internal platform |
+| postgresql-devsec | builder | — | sickn33/agentic-awesome-skills | runs PostgreSQL with development security |
+| postmortem-writing | builder | — | sickn33/agentic-awesome-skills | writes incident postmortems |
+| production-runtime-certification | reviewer | — | sickn33/agentic-awesome-skills | certifies production runtime readiness |
+| prometheus-grafana | builder | — | sickn33/agentic-awesome-skills | runs Prometheus and Grafana monitoring |
+| rag-infrastructure | builder | — | sickn33/agentic-awesome-skills | runs the RAG infrastructure |
+| redis | builder | — | sickn33/agentic-awesome-skills | runs Redis |
+| reverse-proxy | builder | — | sickn33/agentic-awesome-skills | runs a reverse proxy |
+| saas-security-posture | reviewer | — | sickn33/agentic-awesome-skills | reviews a SaaS security posture |
+| semantic-versioning | builder | — | sickn33/agentic-awesome-skills | applies semantic versioning to releases |
+| service-mesh | builder | — | sickn33/agentic-awesome-skills | runs a service mesh |
+| slo-implementation | builder | — | sickn33/agentic-awesome-skills | implements SLOs |
+| sre-dashboards | builder | — | sickn33/agentic-awesome-skills | builds SRE dashboards |
+| ssh-configuration | builder | — | sickn33/agentic-awesome-skills | configures SSH |
+| startup-it-troubleshooting | builder | — | sickn33/agentic-awesome-skills | troubleshoots IT in a startup |
+| systemd-services | builder | — | sickn33/agentic-awesome-skills | runs systemd services |
+| terraform-skill | builder | — | sickn33/agentic-awesome-skills | writes and applies Terraform |
+| tool-use-guardian | builder | — | sickn33/agentic-awesome-skills | guards tool use |
+| user-management | builder | — | sickn33/agentic-awesome-skills | runs user accounts and access |
+| vector-database-ops | builder | — | sickn33/agentic-awesome-skills | runs vector databases |
+| windows-server | builder | — | sickn33/agentic-awesome-skills | administers Windows Server |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -1238,7 +1308,7 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 717 (5 built, 712 not) |
+| rows | 787 (5 built, 782 not) |
 | families with a row | 16 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-2000 Physical Scientists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
 | sources assessed | 11 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills; 2026-11-12) |
 
