@@ -940,3 +940,18 @@ Left out because they work only through someone else's hosted service or account
 
 Left out because they work only through an installed program or one vendor's tooling: anywrite (a compiled CLI over one product's local API), codex-profiles (one agent product's isolated profiles), keepmacawake (a macOS binary for one machine's lid state), markdown-rendering (cmux panes of one terminal product), obsidian-cli (one note application's command line), obsidian-clipper-template-creator (templates for one browser extension), pi-web-search (an installed web-access package), speed (a launched reader program), context-kit (installing context artefacts into one vendor's agent), youtube-transcript (DeepAPI or local fallback tooling).
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
+
+## Next. ComfyUI and openjutsu join the tool registry
+
+Date: 2026-11-13.
+Who: the Director, in this branch's handoff ("Two tools for video and image work to list, each with its own entry like REA and XERJ, neither one built or used yet"); Commons Planning wrote it down.
+Decision: ComfyUI (Comfy-Org/ComfyUI, GPL-3.0) is a tool, entered, with its document at `tools/comfyui/README.md`: the standard open-source runner for image and video models, a node-graph workflow engine with an API, reading local weights and input media and writing its output to a folder the person names, nothing leaving the machine. Because it is GPL-3.0 it is only ever called as a separate program; none of its code goes into the commons or a Recipe.
+
+openjutsu (D3voz/openjutsu, MIT) is a tool, entered, with its document at `tools/openjutsu/README.md`: a Next.js front end over a ComfyUI workflow that swaps a character in a video on the person's own GPU with open-weight models, keeping the camera, cuts, motion and soundtrack; it needs ComfyUI. It is only ever used with the person's own likeness, or footage and characters they hold the rights to.
+
+Both are for the Marketing Delegate's video work, and neither is built or used yet: they wait for when models run on our own GPUs.
+
+Each model's own licence is checked before it serves a paying customer.
+
+Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
+Reason: the registry is the record of what the commons could use, and his handoff names two tools worth listing before they are run.
