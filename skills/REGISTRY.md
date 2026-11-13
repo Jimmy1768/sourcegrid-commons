@@ -929,6 +929,98 @@ No source yet.
 | ml-pipeline-workflow | builder | — | sickn33/agentic-awesome-skills | an end-to-end MLOps pipeline from data preparation to deployment |
 | repo-maintainer | builder | — | sickn33/agentic-awesome-skills | repository hygiene audited and repaired across artifacts, dependencies, CI, docs and Git state |
 | workflow-orchestration-patterns | builder | — | sickn33/agentic-awesome-skills | durable workflow design: Temporal and the patterns around it |
+| c-pro | builder | — | sickn33/agentic-awesome-skills | C systems code with explicit memory ownership, pointer bounds and error handling |
+| cpp-pro | builder | — | sickn33/agentic-awesome-skills | idiomatic C++ with RAII, smart pointers and the standard library |
+| csharp-pro | builder | — | sickn33/agentic-awesome-skills | modern C# with records, pattern matching and async |
+| elixir-pro | builder | — | sickn33/agentic-awesome-skills | Elixir with OTP supervision trees and Phoenix LiveView |
+| golang-pro | builder | — | sickn33/agentic-awesome-skills | Go with modern concurrency and production-ready structure |
+| haskell-pro | builder | — | sickn33/agentic-awesome-skills | Haskell types, pure domain logic and exception-safe concurrency |
+| java-pro | builder | — | sickn33/agentic-awesome-skills | Java with virtual threads, pattern matching and Spring Boot |
+| javascript-pro | builder | — | sickn33/agentic-awesome-skills | modern JavaScript with async patterns and the event loop |
+| julia-pro | builder | — | sickn33/agentic-awesome-skills | Julia with multiple dispatch and performance work |
+| php-pro | builder | — | sickn33/agentic-awesome-skills | idiomatic PHP with generators, iterators and SPL structures |
+| python-pro | builder | — | sickn33/agentic-awesome-skills | Python with async, typing and production-ready structure |
+| ruby-pro | builder | — | sickn33/agentic-awesome-skills | idiomatic Ruby with metaprogramming and Rails patterns |
+| rust-pro | builder | — | sickn33/agentic-awesome-skills | Rust with ownership, async patterns and systems work |
+| scala-pro | builder | — | sickn33/agentic-awesome-skills | Scala with functional programming and distributed data work |
+| typescript-pro | builder | — | sickn33/agentic-awesome-skills | TypeScript with advanced types and strict type safety |
+| vscode-extension-guide-en | builder | — | sickn33/agentic-awesome-skills | an editor extension from scaffolding to store publication |
+| mcp-tool-developer | builder | — | sickn33/agentic-awesome-skills | MCP servers and tools built from scratch |
+| agent-harness-fault-injection | builder | — | sickn33/agentic-awesome-skills | fault injection that proves an agent workflow recovers |
+| agents-md | builder | — | sickn33/agentic-awesome-skills | agent instruction files written and audited from repository evidence |
+| api-contract-testing | builder | — | sickn33/agentic-awesome-skills | contract tests that hold a provider and its consumers together |
+| api-endpoint-builder | builder | — | sickn33/agentic-awesome-skills | REST endpoint scaffolds with validation, authentication and docs |
+| api-rate-limit-handler | builder | — | sickn33/agentic-awesome-skills | idempotent throttling, backoff and retry for 429 and transient 5xx |
+| async-python-patterns | builder | — | sickn33/agentic-awesome-skills | asyncio and concurrent Python done properly |
+| bash-defensive-patterns | builder | — | sickn33/agentic-awesome-skills | shell scripts that fail safely |
+| browser-extension-launch | builder | — | sickn33/agentic-awesome-skills | a browser extension built, tested and packaged for a store |
+| code-audit | reviewer | — | sickn33/agentic-awesome-skills | security review and static analysis of a source tree |
+| code-documentation-code-explain | builder | — | sickn33/agentic-awesome-skills | a difficult piece of code explained in plain words |
+| code-documentation-doc-generate | builder | — | sickn33/agentic-awesome-skills | maintainable documentation written from the code |
+| code-polish | builder | — | sickn33/agentic-awesome-skills | comments and small untidiness cleaned without changing behaviour |
+| code-refactoring-context-restore | builder | — | sickn33/agentic-awesome-skills | interrupted work resumed from a handoff and the checkout |
+| code-refactoring-tech-debt | builder | — | sickn33/agentic-awesome-skills | technical debt found, sized and prioritised from real code |
+| code-review-and-quality | reviewer | — | sickn33/agentic-awesome-skills | a multi-axis review before a change is merged |
+| code-simplification | builder | — | sickn33/agentic-awesome-skills | code made simpler without changing what it does |
+| codebase-cleanup-deps-audit | reviewer | — | sickn33/agentic-awesome-skills | dependencies checked for vulnerabilities and licences |
+| cross-platform-contract-propagation-audit | reviewer | — | sickn33/agentic-awesome-skills | whether a contract reaches every layer that must carry it |
+| debugging-code | builder | — | sickn33/agentic-awesome-skills | live debugging with breakpoints and stepped execution |
+| dependency-upgrade | builder | — | sickn33/agentic-awesome-skills | a major dependency upgrade planned and staged |
+| devcontainer-setup | builder | — | sickn33/agentic-awesome-skills | a devcontainer with the tooling a project needs |
+| diagnosing-bugs | builder | — | sickn33/agentic-awesome-skills | a hard bug or slowdown driven to its cause |
+| distribute-skill-to-all-agents | builder | — | sickn33/agentic-awesome-skills | one skill distributed across the agent folders in use |
+| dx-optimizer | builder | — | sickn33/agentic-awesome-skills | the tooling and setup a developer works in made better |
+| effective-agent-skills | builder | — | sickn33/agentic-awesome-skills | agent skills authored and reviewed with triggers and safety notes |
+| electron-development | builder | — | sickn33/agentic-awesome-skills | a desktop app with secure inter-process boundaries |
+| environment-setup-guide | builder | — | sickn33/agentic-awesome-skills | a development environment set up and written down |
+| error-debugging-error-analysis | builder | — | sickn33/agentic-awesome-skills | errors across a distributed system analysed |
+| error-debugging-error-trace | builder | — | sickn33/agentic-awesome-skills | error tracking and monitoring put in place |
+| error-debugging-multi-agent-review | reviewer | — | sickn33/agentic-awesome-skills | a diff reviewed from several viewpoints at once |
+| error-detective | builder | — | sickn33/agentic-awesome-skills | error patterns and stack traces hunted across logs and code |
+| error-handling-patterns | builder | — | sickn33/agentic-awesome-skills | failures handled as part of the design |
+| framework-migration-code-migrate | builder | — | sickn33/agentic-awesome-skills | code moved from one framework to another |
+| git-commit-message | builder | — | sickn33/agentic-awesome-skills | a commit message in the conventional shape |
+| go-concurrency-patterns | builder | — | sickn33/agentic-awesome-skills | goroutines, channels and context used well |
+| go-rust-reverse | builder | — | sickn33/agentic-awesome-skills | stripped Go and Rust binaries taken apart |
+| graceful-shutdown | builder | — | sickn33/agentic-awesome-skills | servers and workers that drain and release cleanly |
+| grpc-golang | builder | — | sickn33/agentic-awesome-skills | gRPC services with streaming, mutual TLS and observability |
+| i18n-localization | builder | — | sickn33/agentic-awesome-skills | strings, locales and translations carried through an app |
+| implement | builder | — | sickn33/agentic-awesome-skills | a piece of work built from a brief or a set of issues |
+| improve-codebase-architecture | builder | — | sickn33/agentic-awesome-skills | places a codebase could be deepened, found and worked through |
+| incremental-implementation | builder | — | sickn33/agentic-awesome-skills | a change delivered in small steps that each stand |
+| javascript-testing-patterns | builder | — | sickn33/agentic-awesome-skills | JavaScript and TypeScript tests that hold |
+| kotlin-coroutines-expert | builder | — | sickn33/agentic-awesome-skills | coroutines and flows with structured concurrency |
+| laravel-development-workflow | builder | — | sickn33/agentic-awesome-skills | an existing Laravel app fixed from its cause |
+| legacy-modernizer | builder | — | sickn33/agentic-awesome-skills | a legacy codebase modernised a piece at a time |
+| linux-shell-scripting | builder | — | sickn33/agentic-awesome-skills | shell scripts for the usual system administration work |
+| memory-safety-patterns | builder | — | sickn33/agentic-awesome-skills | ownership and resource rules that keep memory safe |
+| monorepo-management | builder | — | sickn33/agentic-awesome-skills | a monorepo that stays cheap to build and change |
+| multi-platform-apps-multi-platform | builder | — | sickn33/agentic-awesome-skills | one feature delivered the same on web, mobile and desktop |
+| native-data-fetching | builder | — | sickn33/agentic-awesome-skills | network requests and data fetching done properly |
+| performance-optimization | builder | — | sickn33/agentic-awesome-skills | an application made faster where it matters |
+| performance-profiling | builder | — | sickn33/agentic-awesome-skills | where the time goes, measured before anything changes |
+| personal-tool-builder | builder | — | sickn33/agentic-awesome-skills | a small tool built for one's own problem |
+| poka-yoke | builder | — | sickn33/agentic-awesome-skills | the wrong action made impossible or self-announcing |
+| posix-shell-pro | builder | — | sickn33/agentic-awesome-skills | strict POSIX shell that runs anywhere |
+| python-development | builder | — | sickn33/agentic-awesome-skills | a Python application scaffolded and structured |
+| python-packaging | builder | — | sickn33/agentic-awesome-skills | a Python package built and distributed |
+| python-performance-optimization | builder | — | sickn33/agentic-awesome-skills | Python profiled and made faster |
+| python-testing-patterns | builder | — | sickn33/agentic-awesome-skills | pytest suites with fixtures, mocks and test-first work |
+| re-create | builder | — | sickn33/agentic-awesome-skills | a rotted module deleted and rewritten whole |
+| repo-foundation | builder | — | sickn33/agentic-awesome-skills | features and migrations landed while the user's edits survive |
+| resolving-merge-conflicts | builder | — | sickn33/agentic-awesome-skills | an in-progress merge or rebase resolved |
+| rust-async-patterns | builder | — | sickn33/agentic-awesome-skills | async Rust with Tokio, errors and concurrency |
+| show-the-change | builder | — | sickn33/agentic-awesome-skills | a change explained to people who do not read code |
+| skill-check | reviewer | — | sickn33/agentic-awesome-skills | a skill checked against the published skill specification |
+| spec-driven-loop | builder | — | sickn33/agentic-awesome-skills | requirements, design and acceptance frozen before a large change |
+| swift-concurrency-expert | builder | — | sickn33/agentic-awesome-skills | Swift concurrency isolation and sendability fixed |
+| systems-programming-rust-project | builder | — | sickn33/agentic-awesome-skills | a Rust systems project scaffolded and structured |
+| tdd | builder | — | sickn33/agentic-awesome-skills | a feature or fix built test first |
+| triage | builder | — | sickn33/agentic-awesome-skills | issues and outside pull requests moved through triage |
+| unship | builder | — | sickn33/agentic-awesome-skills | UI variants compared in a real app and one kept |
+| using-git-worktrees | builder | — | sickn33/agentic-awesome-skills | git worktrees used for parallel work |
+| what-could-break | reviewer | — | sickn33/agentic-awesome-skills | what a change breaks outside its own diff, proven before it lands |
+| vibe-code-cleanup | builder | — | sickn33/agentic-awesome-skills | a vibe-coded app cleaned and hardened for production |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -1456,7 +1548,7 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 935 (5 built, 930 not) |
+| rows | 1027 (5 built, 1022 not) |
 | families with a row | 16 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-2000 Physical Scientists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
 | sources assessed | 11 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills; 2026-11-12) |
 

@@ -777,3 +777,10 @@ Date: 2026-11-12.
 Who: Commons Planning, on the Director's handoff of 2026-11-12.
 Decision: the names in the catalog's testing, code-quality, architecture and workflow list that survive the brief's exclusions become rows in `skills/REGISTRY.md`, 79 under `15-1200 Computer Occupations`, marked not built, sourced to `sickn33/agentic-awesome-skills` (MIT at the catalog's top, each skill's own licence checked when it is built), seventy-nine in all; no family gains its first table; the names listed under "What is left out, and why" in the spec are not rows, each for the reason given there — repeats of rows we hold, the same work as another name in the list, mixes of them, whole occupations, names that work only inside one vendor's account or through one installed program, templates and scaffolds, reference material rather than a job, and house skills of one plugin suite.
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
+
+## Next. The commons lists the development catalog's surviving skills
+
+Date: 2026-11-12.
+Who: Commons Planning, on the Director's handoff of 2026-11-12.
+Decision: the catalog's 285 general development skills were read and listed as not-built rows in `skills/REGISTRY.md`, all under `15-1200 Computer Occupations`; 92 of its names became rows, and 193 are left out with the reason for each. The catalog is MIT at its top, with each skill's own licence checked when it is built.
+Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
