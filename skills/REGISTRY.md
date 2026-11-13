@@ -818,6 +818,38 @@ No source yet.
 | user-management | builder | — | sickn33/agentic-awesome-skills | runs user accounts and access |
 | vector-database-ops | builder | — | sickn33/agentic-awesome-skills | runs vector databases |
 | windows-server | builder | — | sickn33/agentic-awesome-skills | administers Windows Server |
+| analytics-tracking | builder | — | sickn33/agentic-awesome-skills | instruments a product and tracks its usage events |
+| api-analyzer | reviewer | — | sickn33/agentic-awesome-skills | reviews an API for design, security and consumer fit |
+| api-documentation-generator | builder | — | sickn33/agentic-awesome-skills | generates API reference documentation from code or a spec |
+| api-integration | builder | — | sickn33/agentic-awesome-skills | integrates an outside API into a product |
+| api-onboarding | builder | — | sickn33/agentic-awesome-skills | leads a developer through an API's first integration |
+| api-sdk-generator | builder | — | sickn33/agentic-awesome-skills | generates a typed SDK for an API |
+| api-security | reviewer | — | sickn33/agentic-awesome-skills | reviews an API for security weaknesses |
+| api-testing-observability-api-mock | builder | — | sickn33/agentic-awesome-skills | tests an API with mocks and observes its behaviour |
+| appdeploy | builder | — | sickn33/agentic-awesome-skills | deploys an application to its runtime |
+| arrowspace | builder | — | sickn33/agentic-awesome-skills | works Apache Arrow's in-memory columnar data and its tools |
+| backend-security-coder | builder | — | sickn33/agentic-awesome-skills | writes backend code with security built in |
+| data-quality-frameworks | builder | — | sickn33/agentic-awesome-skills | sets up the frameworks that measure and catch bad data |
+| database-cloud-optimization-cost-optimize | builder | — | sickn33/agentic-awesome-skills | optimizes a database's cloud spend |
+| database-design | builder | — | sickn33/agentic-awesome-skills | designs a database schema from the work it must support |
+| database-security | reviewer | — | sickn33/agentic-awesome-skills | reviews a database's access, encryption and configuration for risk |
+| dbt-transformation-patterns | builder | — | sickn33/agentic-awesome-skills | the patterns dbt transformations are built and tested under |
+| django-access-review | reviewer | — | sickn33/agentic-awesome-skills | reviews who can reach what in a Django app |
+| django-perf-review | reviewer | — | sickn33/agentic-awesome-skills | reviews a Django app's performance |
+| dotnet-backend | builder | — | sickn33/agentic-awesome-skills | a backend built on .NET's patterns |
+| graphql | builder | — | sickn33/agentic-awesome-skills | a GraphQL API designed, built and run |
+| lightning-architecture-review | reviewer | — | sickn33/agentic-awesome-skills | reviews a Lightning network's architecture and channel design |
+| nft-standards | builder | — | sickn33/agentic-awesome-skills | the token standards NFTs are built and traded under |
+| nodejs-backend-patterns | builder | — | sickn33/agentic-awesome-skills | the patterns a Node.js backend is built on |
+| nosql-expert | builder | — | sickn33/agentic-awesome-skills | NoSQL databases chosen, modelled and run |
+| openapi-spec-generation | builder | — | sickn33/agentic-awesome-skills | generates an OpenAPI specification from a live API |
+| payment-integration | builder | — | sickn33/agentic-awesome-skills | integrates payment providers into a product |
+| saas-multi-tenant | builder | — | sickn33/agentic-awesome-skills | a SaaS product built for many tenants with isolation and pricing |
+| spark-optimization | builder | — | sickn33/agentic-awesome-skills | optimizes Spark jobs and clusters |
+| sql-optimization-patterns | builder | — | sickn33/agentic-awesome-skills | the patterns SQL queries are optimized under |
+| weather-data-lifecycle-management | builder | — | sickn33/agentic-awesome-skills | manages weather data from ingest through retention |
+| weather-data-reproducibility | builder | — | sickn33/agentic-awesome-skills | keeps weather data work reproducible and auditable |
+| web3-testing | builder | — | sickn33/agentic-awesome-skills | tests Web3 applications and contracts |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -825,6 +857,8 @@ No source yet.
 | --- | --- | --- | --- | --- |
 | data-modeling | builder | — | cbrock84/headcount plugins/data-analytics/skills/data-modeling | designs the warehouse and semantic layer with dimensional models and metrics |
 | quantitative-analysis | builder | — | cbrock84/headcount plugins/data-analytics/skills/quantitative-analysis | answers a business question with data honestly framed |
+| data-storytelling | builder | — | sickn33/agentic-awesome-skills | turns data into a clear story that drives a decision |
+| warehouse | builder | — | sickn33/agentic-awesome-skills | runs a data warehouse as the governed source of truth for reporting |
 
 ## 17-0000 Architecture and Engineering Occupations
 
@@ -1308,7 +1342,7 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 787 (5 built, 782 not) |
+| rows | 821 (5 built, 816 not) |
 | families with a row | 16 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-2000 Physical Scientists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
 | sources assessed | 11 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills; 2026-11-12) |
 

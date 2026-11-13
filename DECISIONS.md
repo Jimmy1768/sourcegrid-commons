@@ -756,3 +756,10 @@ Date: 2026-11-12.
 Who: Commons Planning, on the Director's handoff of 2026-11-12.
 Decision: the names in the catalog's cloud, DevOps and reliability list that survive the brief's exclusions become rows in `skills/REGISTRY.md` under `15-1200 Computer Occupations`, marked not built, sourced to sickn33/agentic-awesome-skills (MIT at the catalog's top, each skill's own licence checked when it is built), seventy in all; no family gains its first table; the names listed under "What is left out, and why" in the spec are not rows, each for the reason given there — repeats of rows we hold, the same work as another name in the list, whole occupations, names that work only inside one vendor's account, names that are a reference for one named program, and templates.
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
+
+## Next. Skills from agentic-awesome-skills' backend, API, database and data half join the registry
+
+Date: 2026-11-12.
+Who: Commons Planning, on the Director's handoff of 2026-11-12.
+Decision: the names in the catalog's backend, API, database and data list that survive the brief's exclusions become rows in `skills/REGISTRY.md`, 32 under `15-1200 Computer Occupations` and 2 under `15-2000 Mathematical Science Occupations`, marked not built, sourced to `sickn33/agentic-awesome-skills` (MIT at the catalog's top, each skill's own licence checked when it is built), thirty-four in all; no family gains its first table; the names listed under "What is left out, and why" in the spec are not rows, each for the reason given there — repeats of rows we hold, the same work as another name in the list, mixes of them, whole occupations, names that work only inside one vendor's account or through one installed program, reference material rather than a job, templates and scaffolds.
+Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
