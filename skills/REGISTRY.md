@@ -424,6 +424,7 @@ No source yet.
 | visibility-index-calculator | reviewer | — | sickn33/agentic-awesome-skills seo performance/visibility-index-calculator | calculates a visibility index from rankings |
 | word-count-structure-checker | reviewer | — | sickn33/agentic-awesome-skills content seo/word-count-structure-checker | checks word count and structure for search fit |
 | xml-sitemap-visualizer | builder | — | sickn33/agentic-awesome-skills technical seo/xml-sitemap-visualizer | builds or shows an XML sitemap with status |
+| onboard | builder | — | sickn33/agentic-awesome-skills learning/onboard | takes a pile of varied project material and produces a cited summary plus a study route |
 
 ### 13-2000 Financial Specialists
 
@@ -500,6 +501,7 @@ No source yet.
 | xvary-stock-research | aide | — | sickn33/agentic-awesome-skills finance/xvary-stock-research | thesis-driven equity analysis from SEC EDGAR |
 | yield-intelligence | aide | — | sickn33/agentic-awesome-skills finance/yield-intelligence | dividend, Treasury and REIT income analysis |
 | doom-pay | builder | — | sickn33/agentic-awesome-skills payments/doom-pay | self-custodial checkout links and payment receipt checks |
+| trading-ledger | builder | — | sickn33/agentic-awesome-skills productivity/trading-ledger | keeps a journal of trades noting why each was made, the plan and the trader's mood |
 
 ## 15-0000 Computer and Mathematical Occupations
 
@@ -1174,6 +1176,15 @@ No source yet.
 | game-audio | builder | — | sickn33/agentic-awesome-skills | the sound of a game, built to its design |
 | multiplayer | builder | — | sickn33/agentic-awesome-skills | players connected and authorized in a shared game world |
 | shader-programming-glsl | builder | — | sickn33/agentic-awesome-skills | GPU-side effects and materials written in GLSL |
+| bdistill-knowledge-extraction | builder | — | sickn33/agentic-awesome-skills ai-research/bdistill-knowledge-extraction | pulls a clean set of facts out of a model's replies or a locally run model |
+| maintain-codex-wiki | builder | — | sickn33/agentic-awesome-skills knowledge-management/maintain-codex-wiki | runs an engineering wiki where each change is reviewed first and cites its sources |
+| faf-wizard | builder | — | sickn33/agentic-awesome-skills productivity/faf-wizard | writes a single context file telling an agent what a project is about |
+| json-canvas | builder | — | sickn33/agentic-awesome-skills productivity/json-canvas | draws canvas diagrams saved as plain files |
+| kernel-prompt | builder | — | sickn33/agentic-awesome-skills productivity/kernel-prompt | drafts and sharpens an instruction to give a model |
+| read-all-adrs | aide | — | sickn33/agentic-awesome-skills productivity/read-all-adrs | goes through every decision record, then sums up where the project stands |
+| setup-help | aide | — | sickn33/agentic-awesome-skills productivity/setup-help | guides a person through an install one step at a time |
+| usage-engineer | aide | — | sickn33/agentic-awesome-skills productivity/usage-engineer | trims token waste and needless retries from coding-agent sessions |
+| entropy-box | builder | — | sickn33/agentic-awesome-skills research/entropy-box | grounds loose requirements for embodied AI into workable workflows |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -1183,6 +1194,14 @@ No source yet.
 | quantitative-analysis | builder | — | cbrock84/headcount plugins/data-analytics/skills/quantitative-analysis | answers a business question with data honestly framed |
 | data-storytelling | builder | — | sickn33/agentic-awesome-skills | turns data into a clear story that drives a decision |
 | warehouse | builder | — | sickn33/agentic-awesome-skills | runs a data warehouse as the governed source of truth for reporting |
+| doc2math | builder | — | sickn33/agentic-awesome-skills science/doc2math | restates a technical document as a precisely worded math problem |
+| matematico-tao | reviewer | — | sickn33/agentic-awesome-skills science/matematico-tao | weighs code complexity, dependencies and invariants against the assumptions given |
+| mathguard | aide | — | sickn33/agentic-awesome-skills science/mathguard | picks a heavyweight method once a data set grows very large |
+| matplotlib | builder | — | sickn33/agentic-awesome-skills science/matplotlib | draws charts and figures from data and results |
+| networkx | builder | — | sickn33/agentic-awesome-skills science/networkx | constructs graphs and networks and studies their structure |
+| seaborn | builder | — | sickn33/agentic-awesome-skills science/seaborn | makes statistical charts from data |
+| statsmodels | builder | — | sickn33/agentic-awesome-skills science/statsmodels | fits statistical models and tests how well they hold |
+| sympy | builder | — | sickn33/agentic-awesome-skills science/sympy | works maths out exactly, with symbols instead of rounded numbers |
 
 ## 17-0000 Architecture and Engineering Occupations
 
@@ -1202,7 +1221,11 @@ No source yet.
 
 ### 19-1000 Life Scientists
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| biopython | builder | — | sickn33/agentic-awesome-skills science/biopython | runs calculations on DNA, protein and structure records |
+| scanpy | builder | — | sickn33/agentic-awesome-skills science/scanpy | explores RNA readings taken from individual cells |
+| scarf-single-cell | builder | — | sickn33/agentic-awesome-skills science/scarf-single-cell | explores single-cell data sets running to a million cells |
 
 ### 19-2000 Physical Scientists
 
@@ -1211,10 +1234,24 @@ No source yet.
 | nexrad-mosaic-construction | builder | — | sickn33/agentic-awesome-skills analysis/nexrad-mosaic-construction | builds a usable weather mosaic from NEXRAD radar data |
 | nexrad-radar-visualization | builder | — | sickn33/agentic-awesome-skills analysis/nexrad-radar-visualization | turns NEXRAD radar data into readable visualizations |
 | radar-satellite-analysis | builder | — | sickn33/agentic-awesome-skills analysis/radar-satellite-analysis | combines radar and satellite observations into one analysis |
+| astropy | builder | — | sickn33/agentic-awesome-skills science/astropy | works with astronomical data and the calculations on it |
+| cirq | builder | — | sickn33/agentic-awesome-skills science/cirq | lays out quantum circuits and runs them in simulation |
+| qiskit | builder | — | sickn33/agentic-awesome-skills science/qiskit | assembles quantum circuits, adapts them for hardware and simulates them |
 
 ### 19-3000 Social Scientists and Related Workers
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| viboscope | reviewer | — | sickn33/agentic-awesome-skills collaboration/viboscope | weighs whether two people would work or get along well together, only with their agreement |
+| deep-research-framework | builder | — | sickn33/agentic-awesome-skills research/deep-research-framework | lays out a research report around a question, ranked source tiers and cross-checks |
+| dsh-deepread | reviewer | — | sickn33/agentic-awesome-skills research/dsh-deepread | reads a paper, article or book closely, tying each claim to evidence and drawing a map of it |
+| efficient-web-research | reviewer | — | sickn33/agentic-awesome-skills research/efficient-web-research | reads web pages economically so research does not use up the context window |
+| fact-check-x-complete | reviewer | — | sickn33/agentic-awesome-skills research/fact-check-x-complete | tests a claim against the original sources behind it |
+| ii-commons | builder | — | sickn33/agentic-awesome-skills research/ii-commons | runs repeatable searches over scholarly and policy collections |
+| last30days | builder | — | sickn33/agentic-awesome-skills research/last30days | collects what people said about a topic over the past month and writes a briefing |
+| multi-source-search | builder | — | sickn33/agentic-awesome-skills research/multi-source-search | compares results from several web sources and records them in an evidence table |
+| research-prompt | aide | — | sickn33/agentic-awesome-skills research/research-prompt | sharpens a fuzzy research need into one exact brief |
+| survey-generator | builder | — | sickn33/agentic-awesome-skills research/survey-generator | writes a survey of a field in which every claim points to a source |
 
 ### 19-4000 Life, Physical, and Social Science Technicians
 
@@ -1228,7 +1265,10 @@ No source yet.
 
 ### 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| quit-sponsor | aide | — | sickn33/agentic-awesome-skills personal-development/quit-sponsor | stands by a person trying to stop smoking, kindly and only with their agreement |
+| satori | aide | — | sickn33/agentic-awesome-skills personal-development/satori | helps a person think a problem through gently, without diagnosing anything |
 
 ### 21-2000 Religious Workers
 
@@ -1282,11 +1322,22 @@ No source yet.
 
 ### 25-3000 Other Teachers and Instructors
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| examprep-ai | builder | — | sickn33/agentic-awesome-skills education/examprep-ai | builds a ranked revision plan from a syllabus or old exam papers |
+| learn | aide | — | sickn33/agentic-awesome-skills education/learn | teaches a topic step by step, with exercises and understanding checks |
+| lesson-generator | builder | — | sickn33/agentic-awesome-skills education/lesson-generator | creates a short course of several lessons, each with goals and a quiz |
+| puzzle-activity-planner | builder | — | sickn33/agentic-awesome-skills education/puzzle-activity-planner | arranges puzzle-based activities for a classroom or an event |
 
 ### 25-4000 Librarians, Curators, and Archivists
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| wiki-builder | builder | — | sickn33/agentic-awesome-skills knowledge-management/wiki-builder | sets up a research wiki with a clear structure and a source for each page |
+| compile-knowledge | builder | — | sickn33/agentic-awesome-skills productivity/compile-knowledge | gathers lasting findings into a store of notes that link to one another |
+| obsidian-markdown | builder | — | sickn33/agentic-awesome-skills productivity/obsidian-markdown | writes notes using links, callout boxes and property fields |
+| obsidian-bases | builder | — | sickn33/agentic-awesome-skills productivity/obsidian-bases | sets up table-style views across notes, kept as plain files |
+| unpaid-intern | builder | — | sickn33/agentic-awesome-skills productivity/unpaid-intern | feeds transcripts, documents and tickets into a second brain the user owns |
 
 ### 25-9000 Other Educational Instruction and Library Occupations
 
@@ -1332,6 +1383,7 @@ No source yet.
 | ad-creative | builder | — | sickn33/agentic-awesome-skills marketing/ad-creative | writes and designs ad creatives for campaigns |
 | post | builder | — | sickn33/agentic-awesome-skills marketing/post | writes and designs a social post or image |
 | screenshots | builder | — | sickn33/agentic-awesome-skills seo utility/screenshots | captures and prepares screenshots for search and social |
+| pptx-deck-creation | builder | — | sickn33/agentic-awesome-skills office-productivity/pptx-deck-creation | makes a slide deck that stays fully editable afterwards |
 
 ### 27-2000 Entertainers and Performers, Sports and Related Workers
 
@@ -1403,6 +1455,11 @@ No source yet.
 | why-did-this-post-flop | reviewer | — | sickn33/agentic-awesome-skills marketing/why-did-this-post-flop | reads a failed post and finds likely causes |
 | write-in-my-voice | builder | — | sickn33/agentic-awesome-skills marketing/write-in-my-voice | writes like the person by learning their voice |
 | xiaohongshu-content-strategist | aide | — | sickn33/agentic-awesome-skills marketing/xiaohongshu-content-strategist | plans content for Xiaohongshu |
+| doc-coauthoring | builder | — | sickn33/agentic-awesome-skills document-processing/doc-coauthoring | works alongside a person to draft a document, step by step |
+| latex-paper-conversion | builder | — | sickn33/agentic-awesome-skills document-processing/latex-paper-conversion | turns a LaTeX paper into some other document format |
+| i-have-adhd | builder | — | sickn33/agentic-awesome-skills productivity/i-have-adhd | shapes text for readers with ADHD: the next action first, in small steps |
+| mdpr-skill | reviewer | — | sickn33/agentic-awesome-skills productivity/mdpr-skill | proofreads a Markdown slide deck before it is shared |
+| news-sentiment-engine | builder | — | sickn33/agentic-awesome-skills research/news-sentiment-engine | sums up current news on a subject and the mood of the coverage |
 
 ### 27-4000 Media and Communication Equipment Workers
 
@@ -1422,7 +1479,25 @@ No source yet.
 
 ### 29-9000 Other Healthcare Practitioners and Technical Occupations
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| emergency-card | builder | — | sickn33/agentic-awesome-skills health/emergency-card | makes a wallet card listing allergies, medications and conditions for emergencies |
+| family-health-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/family-health-analyzer | goes through a family's medical history and flags what a doctor should look at |
+| fitness-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/fitness-analyzer | reads exercise history and says how training is going, with advice |
+| food-database-query | aide | — | sickn33/agentic-awesome-skills health/food-database-query | finds the nutrients and contents of a given food |
+| goal-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/goal-analyzer | checks how health goals are advancing and suggests what to do next |
+| health-trend-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/health-trend-analyzer | follows health measurements across time and points out changes that matter |
+| mental-health-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/mental-health-analyzer | looks through mental-health logs for patterns and ways to support the person |
+| nutrition-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/nutrition-analyzer | goes over food and nutrient logs and says what to adjust |
+| occupational-health-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/occupational-health-analyzer | goes over health records tied to a job and spots the hazards |
+| oral-health-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/oral-health-analyzer | goes over dental history and picks out recurring patterns |
+| rehabilitation-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/rehabilitation-analyzer | goes over recovery records and tracks how far the person has come |
+| sexual-health-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/sexual-health-analyzer | goes over sexual-health history and picks out recurring patterns |
+| skin-health-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/skin-health-analyzer | goes over skin records and picks out recurring patterns |
+| sleep-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/sleep-analyzer | goes over sleep logs for quality and suggests changes |
+| tcm-constitution-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/tcm-constitution-analyzer | judges a person's traditional-medicine body type and offers daily-life tips |
+| travel-health-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/travel-health-analyzer | assesses the health dangers of a destination and what to pack or arrange |
+| weightloss-analyzer | reviewer | — | sickn33/agentic-awesome-skills health/weightloss-analyzer | goes over weight logs for the pace of loss and the balance of energy |
 
 ## 31-0000 Healthcare Support Occupations
 
@@ -1516,11 +1591,15 @@ No source yet.
 
 ### 39-7000 Tour and Travel Guides
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| travel-planner | builder | — | sickn33/agentic-awesome-skills travel/travel-planner | lays out a trip one day at a time, with costs and reservations worked in |
 
 ### 39-9000 Other Personal Care and Service Workers
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| party-planning | builder | — | sickn33/agentic-awesome-skills lifestyle/party-planning | organises a gathering: what to serve, which games to play and when things happen |
 
 ## 41-0000 Sales and Related Occupations
 
@@ -1547,6 +1626,7 @@ No source yet.
 | sales-compensation-and-territory | builder | — | cbrock84/headcount plugins/revenue/skills/sales-compensation-and-territory | designs quotas, territories and commission plans that drive the behavior needed |
 | sales-enablement | builder | — | cbrock84/headcount plugins/revenue/skills/sales-enablement | builds pitch decks, battlecards, objections and demo scripts for sales |
 | cold-email | builder | — | sickn33/agentic-awesome-skills marketing/cold-email | writes cold outreach emails that get replies |
+| daily-gift | builder | — | sickn33/agentic-awesome-skills productivity/daily-gift | suggests a present suited to who it is for and what is being celebrated |
 
 ### 41-4000 Sales Representatives, Wholesale and Manufacturing
 
@@ -1584,6 +1664,9 @@ No source yet.
 | backlink-tracking-template-generator | builder | — | sickn33/agentic-awesome-skills backlink & link-building/backlink-tracking-template-generator | makes a template for tracking backlinks and their status |
 | local-seo-audit-checklist | builder | — | sickn33/agentic-awesome-skills local seo/local-seo-audit-checklist | makes a checklist for auditing local SEO |
 | seo-checklist-generator | builder | — | sickn33/agentic-awesome-skills seo utility/seo-checklist-generator | makes an SEO checklist from a site's needs |
+| file-organizer | builder | — | sickn33/agentic-awesome-skills productivity/file-organizer | suggests a tidier layout for a folder and hunts down duplicate files |
+| project-memory-log | builder | — | sickn33/agentic-awesome-skills productivity/project-memory-log | maintains a single log and a single index for a project that runs for a long time |
+| time-ledger | builder | — | sickn33/agentic-awesome-skills productivity/time-ledger | converts a person's account of their day into entries in a time record |
 
 ### 43-5000 Material Recording, Scheduling, Dispatching, and Distributing Workers
 
@@ -1591,7 +1674,12 @@ No source yet.
 
 ### 43-6000 Secretaries and Administrative Assistants
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| libreoffice/writer | builder | — | sickn33/agentic-awesome-skills document-processing/libreoffice/writer | creates word-processor documents, converts their format and runs mail merges |
+| pdf-conversion-router | builder | — | sickn33/agentic-awesome-skills document-processing/pdf-conversion-router | sends a PDF down the right path to come out as Markdown, text, HTML or a document |
+| meeting-notes | builder | — | sickn33/agentic-awesome-skills productivity/meeting-notes | shapes rough meeting jottings into minutes that list decisions and follow-ups |
+| libreoffice/calc | builder | — | sickn33/agentic-awesome-skills spreadsheet-processing/libreoffice/calc | creates spreadsheets with formulas and handles unit or format conversions |
 
 ### 43-9000 Other Office and Administrative Support Workers
 
@@ -1742,8 +1830,8 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 1221 (5 built, 1216 not) |
-| families with a row | 16 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-2000 Physical Scientists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
+| rows | 1300 (5 built, 1295 not) |
+| families with a row | 25 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-1000 Life Scientists; 19-2000 Physical Scientists; 19-3000 Social Scientists and Related Workers; 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 25-3000 Other Teachers and Instructors; 25-4000 Librarians, Curators, and Archivists; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 29-9000 Other Healthcare Practitioners and Technical Occupations; 39-7000 Tour and Travel Guides; 39-9000 Other Personal Care and Service Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks; 43-6000 Secretaries and Administrative Assistants) |
 | sources assessed | 11 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills; 2026-11-12) |
 
 Which rows are built, and in what order, follows his word and the
