@@ -695,7 +695,7 @@ Reason: his words in this session, that the analysts' work be listed as Skills n
 beside the trading pipeline already recorded, and that nothing of the source's arrangement or
 testing come with them.
 
-## Next. Skills from agentic-awesome-skills join the Skill registry as rows
+## 43. Skills from agentic-awesome-skills join the Skill registry as rows
 
 Date: 2026-11-12
 Who: the Director, in this session's handoff; Commons Planning wrote it down.
@@ -750,42 +750,42 @@ Reason: his handoff of this session: list the catalog's business, finance, legal
 skills as Skills not yet built, each under the job family its work belongs to, skipping what we
 already list, what is only a mix of what we have, and what is really one whole job.
 
-## Next. Skills from agentic-awesome-skills' cloud, DevOps and reliability half join the registry
+## 44. Skills from agentic-awesome-skills' cloud, DevOps and reliability half join the registry
 
 Date: 2026-11-12.
 Who: Commons Planning, on the Director's handoff of 2026-11-12.
 Decision: the names in the catalog's cloud, DevOps and reliability list that survive the brief's exclusions become rows in `skills/REGISTRY.md` under `15-1200 Computer Occupations`, marked not built, sourced to sickn33/agentic-awesome-skills (MIT at the catalog's top, each skill's own licence checked when it is built), seventy in all; no family gains its first table; the names listed under "What is left out, and why" in the spec are not rows, each for the reason given there — repeats of rows we hold, the same work as another name in the list, whole occupations, names that work only inside one vendor's account, names that are a reference for one named program, and templates.
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
 
-## Next. Skills from agentic-awesome-skills' backend, API, database and data half join the registry
+## 45. Skills from agentic-awesome-skills' backend, API, database and data half join the registry
 
 Date: 2026-11-12.
 Who: Commons Planning, on the Director's handoff of 2026-11-12.
 Decision: the names in the catalog's backend, API, database and data list that survive the brief's exclusions become rows in `skills/REGISTRY.md`, 32 under `15-1200 Computer Occupations` and 2 under `15-2000 Mathematical Science Occupations`, marked not built, sourced to `sickn33/agentic-awesome-skills` (MIT at the catalog's top, each skill's own licence checked when it is built), thirty-four in all; no family gains its first table; the names listed under "What is left out, and why" in the spec are not rows, each for the reason given there — repeats of rows we hold, the same work as another name in the list, mixes of them, whole occupations, names that work only inside one vendor's account or through one installed program, reference material rather than a job, templates and scaffolds.
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
 
-## Next. Skills from agentic-awesome-skills' content, writing, media and design half join the registry
+## 46. Skills from agentic-awesome-skills' content, writing, media and design half join the registry
 
 Date: 2026-11-12.
 Who: Commons Planning, on the Director's handoff of 2026-11-12.
 Decision: the names in the catalog's content, writing, media and design list that survive the brief's exclusions become rows in `skills/REGISTRY.md`, 16 under `27-1000 Art and Design Workers` and 19 under `27-3000 Media and Communication Workers`, marked not built, sourced to `sickn33/agentic-awesome-skills` (MIT at the catalog's top, each skill's own licence checked when it is built), thirty-five in all; no family gains its first table; the names listed under "What is left out, and why" in the spec are not rows, each for the reason given there — repeats of rows we hold, the same work as another name in the list, mixes of them, whole occupations, names that work only inside one vendor's account or through one installed program, reference material rather than a job, and templates and scaffolds.
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
 
-## Next. Skills from agentic-awesome-skills' testing, quality, architecture and workflow half join the registry
+## 47. Skills from agentic-awesome-skills' testing, quality, architecture and workflow half join the registry
 
 Date: 2026-11-12.
 Who: Commons Planning, on the Director's handoff of 2026-11-12.
 Decision: the names in the catalog's testing, code-quality, architecture and workflow list that survive the brief's exclusions become rows in `skills/REGISTRY.md`, 79 under `15-1200 Computer Occupations`, marked not built, sourced to `sickn33/agentic-awesome-skills` (MIT at the catalog's top, each skill's own licence checked when it is built), seventy-nine in all; no family gains its first table; the names listed under "What is left out, and why" in the spec are not rows, each for the reason given there — repeats of rows we hold, the same work as another name in the list, mixes of them, whole occupations, names that work only inside one vendor's account or through one installed program, templates and scaffolds, reference material rather than a job, and house skills of one plugin suite.
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
 
-## Next. The commons lists the development catalog's surviving skills
+## 48. The commons lists the development catalog's surviving skills
 
 Date: 2026-11-12.
 Who: Commons Planning, on the Director's handoff of 2026-11-12.
 Decision: the catalog's 285 general development skills were read and listed as not-built rows in `skills/REGISTRY.md`, all under `15-1200 Computer Occupations`; 92 of its names became rows, and 193 are left out with the reason for each. The catalog is MIT at its top, with each skill's own licence checked when it is built.
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
 
-## Next. Skills from agentic-awesome-skills' marketing and SEO half join the registry
+## 49. Skills from agentic-awesome-skills' marketing and SEO half join the registry
 
 Date: 2026-11-12
 Who: the Director, in this session's handoff; Commons Planning wrote it down.
@@ -913,14 +913,14 @@ Reason: his handoff of this session: list the catalog's marketing and SEO skills
 Skills not built yet, each under the job family its work belongs to, skipping what we
 already list, what is only a mix of what we have, and what is really one whole job.
 
-## Next. Skills from agentic-awesome-skills' frontend, mobile and game half join the registry
+## 50. Skills from agentic-awesome-skills' frontend, mobile and game half join the registry
 
 Date: 2026-11-12.
 Who: Commons Planning, on the Director's handoff of 2026-11-12.
 Decision: the registry's 15-1200 Computer Occupations table gains the 30 rows in section 2, all not yet built, sourced to `sickn33/agentic-awesome-skills`. Nothing is built or copied, so no `THIRD_PARTY_NOTICES.md` line is needed. Left out, each with its reason written in the spec: the three rows already held word for word, the same work under other wording, the styles, the frameworks' own guides, the vendor-locked and installed-program names, the templates, the whole occupations and platforms, and the names that describe no work.
 Reason: the Director's handoff of the brief in this session, that the catalog's frontend, web, mobile and game skills be listed as Skills not yet built, with repeats and whole occupations and vendor-locked names left out.
 
-## Next. Skills from agentic-awesome-skills' everyday-knowledge half join the registry
+## 51. Skills from agentic-awesome-skills' everyday-knowledge half join the registry
 
 Date: 2026-11-12.
 Who: Commons Planning, on the Director's handoff of 2026-11-12.
@@ -941,7 +941,7 @@ Left out because they work only through someone else's hosted service or account
 Left out because they work only through an installed program or one vendor's tooling: anywrite (a compiled CLI over one product's local API), codex-profiles (one agent product's isolated profiles), keepmacawake (a macOS binary for one machine's lid state), markdown-rendering (cmux panes of one terminal product), obsidian-cli (one note application's command line), obsidian-clipper-template-creator (templates for one browser extension), pi-web-search (an installed web-access package), speed (a launched reader program), context-kit (installing context artefacts into one vendor's agent), youtube-transcript (DeepAPI or local fallback tooling).
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
 
-## Next. ComfyUI and openjutsu join the tool registry
+## 52. ComfyUI and openjutsu join the tool registry
 
 Date: 2026-11-13.
 Who: the Director, in this branch's handoff ("Two tools for video and image work to list, each with its own entry like REA and XERJ, neither one built or used yet"); Commons Planning wrote it down.
@@ -956,20 +956,20 @@ Each model's own licence is checked before it serves a paying customer.
 Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
 Reason: the registry is the record of what the commons could use, and his handoff names two tools worth listing before they are run.
 
-## Next. Skills from agentic-awesome-skills' AI and agent half join the registry
+## 53. Skills from agentic-awesome-skills' AI and agent half join the registry
 
 Date: 2026-11-12.
 Who: Commons Planning, on the Director's handoff of 2026-11-12.
 Decision: the names in the catalog's AI, machine-learning and agent list that survive the brief's exclusions become rows in `skills/REGISTRY.md` under `15-1200 Computer Occupations`, marked not built, sourced to sickn33/agentic-awesome-skills (MIT at the catalog's top, each skill's own licence checked when it is built), seventeen in all; no family gains its first table; the names listed under "What is left out, and why" in the spec are not rows, each for the reason given there — repeats of rows we hold, the same work as a row we hold or as another name in the list, a framework or library rather than a piece of work, a theory rather than a job, whole occupations, names that are a person's or a product's own and name no work, the catalog's own tooling, names that work only inside one vendor's account, and names that work only through one named installed program.
 
-## Next. Game development Skills from Claude-Code-Game-Studios join the registry
+## 54. Game development Skills from Claude-Code-Game-Studios join the registry
 
 Date: 2026-11-13.
 Who: Commons Planning, on the Director's handoff of 2026-11-13.
 Decision: the registry's 15-1200 Computer Occupations table gains the 40 rows in section 2, and its 27-1000 Art and Design Workers table the 5 rows in section 3, all not yet built, sourced to `Donchitos/Claude-Code-Game-Studios`. 27-4000 keeps its one row: the catalog's only audio name orchestrates its own agents, which are not taken. Nothing is built or copied, so no `THIRD_PARTY_NOTICES.md` line is needed. Left out, each with its reason written in the spec: the two names the registry already holds word for word, the one whose name another job already holds (listed as `gdd-authoring`), the catalog's three old names, the same work under wording we already list, the two mixes, and the whole jobs and the catalog's own machinery.
 Reason: the Director's handoff of this session: list the catalog's 78 game-development skills as Skills not yet built, each under the job family its work belongs to, skipping repeats, mixes, whole jobs and old names, and taking none of its agents, event hooks or path rules.
 
-## Next. Skills from agentic-awesome-skills' security half join the registry
+## 55. Skills from agentic-awesome-skills' security half join the registry
 
 Date: 2026-11-12.
 Who: Commons Planning, on the Director's handoff of 2026-11-12.
