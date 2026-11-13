@@ -1202,6 +1202,46 @@ No source yet.
 | audio-transcriber | builder | — | sickn33/agentic-awesome-skills | Turns audio recordings into Markdown documentation with summaries. |
 | voice-agents | builder | — | sickn33/agentic-awesome-skills | Builds voice agents in which a person speaks to a system and is answered in kind. |
 | ai-wrapper-product | builder | — | sickn33/agentic-awesome-skills | Builds a product that wraps a model's API into one focused tool. |
+| adopt | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/adopt | whether a project's existing artifacts actually work: each read against what it must do |
+| architecture-review | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/architecture-review | every requirement in the design documents traced to the decision that covers it, and the gaps named |
+| create-architecture | builder | — | Donchitos/Claude-Code-Game-Studios skills/create-architecture | the architecture blueprint a game is built to, written before any code |
+| create-control-manifest | builder | — | Donchitos/Claude-Code-Game-Studios skills/create-control-manifest | the accepted decisions turned into a short must-do and never-do coding rules list per system |
+| create-epics | builder | — | Donchitos/Claude-Code-Game-Studios skills/create-epics | the design documents and the architecture turned into epics, one per module |
+| create-stories | builder | — | Donchitos/Claude-Code-Game-Studios skills/create-stories | one epic broken into stories a person can implement, each with its acceptance criteria |
+| consistency-check | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/consistency-check | the design documents scanned against the project's entity list for conflicts between them |
+| content-audit | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/content-audit | what the design documents say a game holds, set against what is built |
+| map-systems | builder | — | Donchitos/Claude-Code-Game-Studios skills/map-systems | a concept split into its systems, with what depends on what mapped and the design order set |
+| gate-check | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/gate-check | whether the work is ready to move on to the next development stage |
+| milestone-review | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/milestone-review | a milestone's completeness, quality, risk and the go or no-go call |
+| project-stage-detect | aide | — | Donchitos/Claude-Code-Game-Studios skills/project-stage-detect | the project's state read, its stage named, and what is missing before the next one |
+| cut | aide | — | Donchitos/Claude-Code-Game-Studios skills/cut | what to cut and what to polish to finish the game, proposed from the brief and what is built, each cut the person's to pick |
+| scope-check | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/scope-check | what is being built set against the plan it started from |
+| quick-design | builder | — | Donchitos/Claude-Code-Game-Studios skills/quick-design | a short spec for a small change: a tuning pass or a minor mechanic |
+| design-review | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/design-review | one design document read for completeness, consistency, implementability and the project's standards |
+| review-all-gdds | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/review-all-gdds | one review across all the design documents: contradictions, dominant strategies, imbalance, overload, drift from the pillars |
+| propagate-design-change | builder | — | Donchitos/Claude-Code-Game-Studios skills/propagate-design-change | the decisions a changed design document has made stale, found, and each walked through |
+| reverse-document | builder | — | Donchitos/Claude-Code-Game-Studios skills/reverse-document | the design or architecture documents, or a game's brief, written from the code a project already has |
+| balance-check | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/balance-check | outliers, broken progressions, degenerate strategies and economy imbalances found in the numbers and formulas |
+| playtest-report | builder | — | Donchitos/Claude-Code-Game-Studios skills/playtest-report | playtest notes turned into structured feedback, or the report laid out to fill |
+| qa-plan | builder | — | Donchitos/Claude-Code-Game-Studios skills/qa-plan | a sprint's test plan: which stories need logic, integration, visual or interface checks, and what is tested by hand |
+| test-setup | builder | — | Donchitos/Claude-Code-Game-Studios skills/test-setup | a project's test framework and its continuous integration set up |
+| test-helpers | builder | — | Donchitos/Claude-Code-Game-Studios skills/test-helpers | the test helper library an engine's tests need: assertions, factories, mocks |
+| test-evidence-review | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/test-evidence-review | what a test file actually asserts and what evidence it gives, rather than that it exists |
+| soak-test | builder | — | Donchitos/Claude-Code-Game-Studios skills/soak-test | a long-play protocol: what to watch and log for slow leaks, fatigue and late edge cases |
+| smoke-check | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/smoke-check | the critical-path gate before a hand-off to QA: the automated suite run and read |
+| vertical-slice | builder | — | Donchitos/Claude-Code-Game-Studios skills/vertical-slice | the whole loop built end to end, to prove it is achievable before production is committed to |
+| bug-report | builder | — | Donchitos/Claude-Code-Game-Studios skills/bug-report | a structured bug report from a description, or a read of the code for the bugs likely in it |
+| bug-triage | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/bug-triage | open bugs sorted by priority against severity, placed in sprints, and the trends named |
+| day-one-patch | builder | — | Donchitos/Claude-Code-Game-Studios skills/day-one-patch | the focused fix for the known issues found once the master build is signed off |
+| hotfix | builder | — | Donchitos/Claude-Code-Game-Studios skills/hotfix | a fix taken outside the sprint: its branch, approvals, backport and audit trail |
+| next-step | aide | — | Donchitos/Claude-Code-Game-Studios skills/next-step | the one next step named: make a game, change it after play, grow it, or the next studio step |
+| start | aide | — | Donchitos/Claude-Code-Game-Studios skills/start | a first-time user walked into the work, with the workflow to begin with picked |
+| security-audit | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/security-audit | a game's security read: save tampering, cheat vectors, network exploits, exposed data, input checks |
+| setup-engine | builder | — | Donchitos/Claude-Code-Game-Studios skills/setup-engine | a project's engine set up and its version pinned |
+| retrospective | aide | — | Donchitos/Claude-Code-Game-Studios skills/retrospective | a sprint or milestone retrospective from the work done, the velocity and the blockers |
+| launch-checklist | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/launch-checklist | launch readiness across every department, with the go or no-go sign-offs |
+| release-checklist | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/release-checklist | the pre-release checks: the build, certification, store metadata, launch readiness |
+| gdd-authoring | builder | — | Donchitos/Claude-Code-Game-Studios skills/design-system | one system's design document written section by section, its dependencies cross-referenced |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -1401,6 +1441,11 @@ No source yet.
 | post | builder | — | sickn33/agentic-awesome-skills marketing/post | writes and designs a social post or image |
 | screenshots | builder | — | sickn33/agentic-awesome-skills seo utility/screenshots | captures and prepares screenshots for search and social |
 | pptx-deck-creation | builder | — | sickn33/agentic-awesome-skills office-productivity/pptx-deck-creation | makes a slide deck that stays fully editable afterwards |
+| art-bible | builder | — | Donchitos/Claude-Code-Game-Studios skills/art-bible | the art bible: the visual identity every asset is made to |
+| asset-audit | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/asset-audit | assets read against the naming, size and format standards they must hold |
+| asset-spec | builder | — | Donchitos/Claude-Code-Game-Studios skills/asset-spec | one asset's visual spec and its generation prompt, from the design documents and the character profiles |
+| ux-design | builder | — | Donchitos/Claude-Code-Game-Studios skills/ux-design | one screen, flow or HUD spec written section by section |
+| ux-review | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/ux-review | a UX spec, HUD design or pattern library checked for accessibility, fit with the design documents and readiness |
 
 ### 27-2000 Entertainers and Performers, Sports and Related Workers
 
@@ -1847,9 +1892,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 1317 (5 built, 1312 not) |
+| rows | 1362 (5 built, 1357 not) |
 | families with a row | 25 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-1000 Life Scientists; 19-2000 Physical Scientists; 19-3000 Social Scientists and Related Workers; 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 25-3000 Other Teachers and Instructors; 25-4000 Librarians, Curators, and Archivists; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 29-9000 Other Healthcare Practitioners and Technical Occupations; 39-7000 Tour and Travel Guides; 39-9000 Other Personal Care and Service Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks; 43-6000 Secretaries and Administrative Assistants) |
-| sources assessed | 11 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills; 2026-11-12) |
+| sources assessed | 12 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios; 2026-11-13) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.
