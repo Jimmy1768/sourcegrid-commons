@@ -989,6 +989,22 @@ No source yet.
 | product-design | builder | — | sickn33/agentic-awesome-skills business/product-design | designs product visuals, user flows and accessibility |
 | product-inventor | builder | — | sickn33/agentic-awesome-skills business/product-inventor | invents a product across thinking and interface craft |
 | product-design-harness | builder | — | sickn33/agentic-awesome-skills product/product-design-harness | harnesses product design work end to end |
+| 3d-web-experience | builder | — | sickn33/agentic-awesome-skills | building and debugging web 3D scenes with Three.js and React Three Fiber |
+| accessibility-compliance-accessibility-audit | reviewer | — | sickn33/agentic-awesome-skills | reviewer |
+| algorithmic-art | builder | — | sickn33/agentic-awesome-skills | computational aesthetic work expressed through code |
+| better-colors | builder | — | sickn33/agentic-awesome-skills | building and checking colour systems, palettes and semantic tokens |
+| better-layout | builder | — | sickn33/agentic-awesome-skills | grouping, alignment, reading order and responsive structure |
+| better-typography | builder | — | sickn33/agentic-awesome-skills | type scale, spacing, font features, wrapping and truncation |
+| better-writing | builder | — | sickn33/agentic-awesome-skills | writing and reviewing interface copy |
+| build-design | builder | — | sickn33/agentic-awesome-skills | building UI from a design file or image so it matches the design |
+| design-philosophy | builder | — | sickn33/agentic-awesome-skills | visual philosophy and art direction for frontend work |
+| deterministic-design | reviewer | — | sickn33/agentic-awesome-skills | reviewer |
+| diagram-generator | builder | — | sickn33/agentic-awesome-skills | generating, validating and rendering diagrams from language, notes or schemas |
+| interface-review | reviewer | — | sickn33/agentic-awesome-skills | reviewer |
+| teardown | builder | — | sickn33/agentic-awesome-skills | technical illustrations of physical objects and how they work |
+| ui-visual-validator | reviewer | — | sickn33/agentic-awesome-skills | reviewer |
+| ux-audit | reviewer | — | sickn33/agentic-awesome-skills | reviewer |
+| ux-flow | builder | — | sickn33/agentic-awesome-skills | designing user flows and navigation structure |
 
 ### 27-2000 Entertainers and Performers, Sports and Related Workers
 
@@ -1007,6 +1023,25 @@ No source yet.
 | tasteforge-video | builder | — | affaan-m/ECC skills/tasteforge-video | video made with TasteForge's tooling |
 | video-editing | builder | — | affaan-m/ECC skills/video-editing | raw footage cut into a finished video |
 | visa-doc-translate | builder | — | affaan-m/ECC skills/visa-doc-translate | visa documents translated for submission |
+| beautiful-prose | builder | — | sickn33/agentic-awesome-skills | a writing style contract for forceful English prose without AI tics |
+| bluebook-writing | builder | — | sickn33/agentic-awesome-skills | writing design-reading books and articles in plain language |
+| changelog-updates | builder | — | sickn33/agentic-awesome-skills | release notes and product updates developers read |
+| citation-management | builder | — | sickn33/agentic-awesome-skills | managing citations through the research and writing process |
+| devrel-content | builder | — | sickn33/agentic-awesome-skills | technical content for developers: posts, tutorials and documents |
+| docs-generator | builder | — | sickn33/agentic-awesome-skills | generating technical deliverables from completed analysis |
+| docs-guard | reviewer | — | sickn33/agentic-awesome-skills | reviewer |
+| documentation-and-adrs | builder | — | sickn33/agentic-awesome-skills | recording decisions and writing documentation |
+| emotional-arc-designer | builder | — | sickn33/agentic-awesome-skills | mapping the emotional progression of a narrative or campaign |
+| humanize-chinese | builder | — | sickn33/agentic-awesome-skills | detecting and rewriting AI-like Chinese text |
+| internal-comms | builder | — | sickn33/agentic-awesome-skills | status reports, leadership updates, newsletters and FAQs |
+| professional-proofreader | reviewer | — | sickn33/agentic-awesome-skills | reviewer |
+| readme | builder | — | sickn33/agentic-awesome-skills | writing an accurate project README |
+| scientific-writing | builder | — | sickn33/agentic-awesome-skills | drafting and revising scientific manuscripts |
+| search-specialist | builder | — | sickn33/agentic-awesome-skills | focused web research with primary-source verification |
+| story-bible-continuity | reviewer | — | sickn33/agentic-awesome-skills | reviewer |
+| technical-tutorials | builder | — | sickn33/agentic-awesome-skills | step-by-step technical tutorials and code walkthroughs |
+| video-router | builder | — | sickn33/agentic-awesome-skills | routing a video-production brief to generation, composition, editing or a supplied-footage cut |
+| wiki-architect | builder | — | sickn33/agentic-awesome-skills | structured wiki catalogues and onboarding guides from a codebase |
 
 ### 27-4000 Media and Communication Equipment Workers
 
@@ -1342,7 +1377,7 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 821 (5 built, 816 not) |
+| rows | 856 (5 built, 851 not) |
 | families with a row | 16 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-2000 Physical Scientists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
 | sources assessed | 11 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills; 2026-11-12) |
 
