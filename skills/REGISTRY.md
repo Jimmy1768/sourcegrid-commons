@@ -168,6 +168,10 @@ above.
 | chief-product-officer | aide | — | cbrock84/headcount plugins/product/skills/chief-product-officer | owns what gets built and why, from strategy to the measure of success |
 | product-discovery | aide | — | cbrock84/headcount plugins/product/skills/product-discovery | finds whether a problem is real and a solution would work before building |
 | product-requirements | aide | — | cbrock84/headcount plugins/product/skills/product-requirements | writes what is being built so a team can build it and know when done |
+| business-continuity | builder | — | sickn33/agentic-awesome-skills security/business-continuity | develops business-continuity plans and impact analysis, with BCP testing and communication procedures |
+| change-management | builder | — | sickn33/agentic-awesome-skills security/change-management | implements change management with CAB reviews, change windows and rollback procedures |
+| disaster-recovery | builder | — | sickn33/agentic-awesome-skills security/disaster-recovery | implements disaster-recovery strategies and runbooks, with RPO and RTO targets and failover procedures |
+| security-bluebook-builder | builder | — | sickn33/agentic-awesome-skills security/security-bluebook-builder | builds a minimal but real security policy for a sensitive app as one coherent Blue Book |
 
 ### 11-9000 Other Management Occupations
 
@@ -425,6 +429,19 @@ No source yet.
 | word-count-structure-checker | reviewer | — | sickn33/agentic-awesome-skills content seo/word-count-structure-checker | checks word count and structure for search fit |
 | xml-sitemap-visualizer | builder | — | sickn33/agentic-awesome-skills technical seo/xml-sitemap-visualizer | builds or shows an XML sitemap with status |
 | onboard | builder | — | sickn33/agentic-awesome-skills learning/onboard | takes a pile of varied project material and produces a cited summary plus a study route |
+| cyber-audit | reviewer | — | sickn33/agentic-awesome-skills security/cyber-audit | read-only exposure checks for security advisories, written up as a structured local audit report |
+| fedramp-compliance | builder | — | sickn33/agentic-awesome-skills security/fedramp-compliance | implements FedRAMP requirements for federal cloud services with NIST 800-53 controls and continuous monitoring |
+| fsi-compliance-checker | reviewer | — | sickn33/agentic-awesome-skills security/fsi-compliance-checker | maps code, architecture and infrastructure changes to control IDs in PCI-DSS v4.0.1 and MAS TRM |
+| gdpr-compliance | builder | — | sickn33/agentic-awesome-skills security/gdpr-compliance | implements GDPR data-protection requirements with consent management and data-subject rights |
+| gdpr-data-handling | builder | — | sickn33/agentic-awesome-skills security/gdpr-data-handling | a practical guide to GDPR-oriented data-processing design, consent management and privacy controls |
+| iso27001-compliance | builder | — | sickn33/agentic-awesome-skills security/iso27001-compliance | implements an ISO 27001 information security management system with ISMS controls and risk management |
+| launch-check | reviewer | — | sickn33/agentic-awesome-skills security/launch-check | a bounded pre-launch audit of a live URL for AI-built apps: exposed secret keys and open Supabase or Firebase tables |
+| pci-compliance | reviewer | — | sickn33/agentic-awesome-skills security/pci-compliance | reviews payment data flows and engineering control evidence for a scoped PCI assessment |
+| privacy-by-design | builder | — | sickn33/agentic-awesome-skills security/privacy-by-design | builds privacy protection into an app from the start when it collects user data |
+| security-compliance-compliance-check | reviewer | — | sickn33/agentic-awesome-skills security/security-compliance-compliance-check | checks a system against the regulatory requirements that govern it |
+| security-requirement-extraction | builder | — | sickn33/agentic-awesome-skills security/security-requirement-extraction | derives security requirements from threat models and business context |
+| soc2-compliance | builder | — | sickn33/agentic-awesome-skills security/soc2-compliance | implements SOC 2 Trust Services Criteria: security, availability and processing-integrity controls |
+| supply-chain-risk-auditor | reviewer | — | sickn33/agentic-awesome-skills security/supply-chain-risk-auditor | identifies dependencies at heightened risk of exploitation or takeover |
 
 ### 13-2000 Financial Specialists
 
@@ -1242,6 +1259,174 @@ No source yet.
 | launch-checklist | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/launch-checklist | launch readiness across every department, with the go or no-go sign-offs |
 | release-checklist | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/release-checklist | the pre-release checks: the build, certification, store metadata, launch readiness |
 | gdd-authoring | builder | — | Donchitos/Claude-Code-Game-Studios skills/design-system | one system's design document written section by section, its dependencies cross-referenced |
+| 007 | reviewer | — | sickn33/agentic-awesome-skills security/007 | security audit, hardening and threat modeling with STRIDE and PASTA, red- and blue-team work, OWASP checks and code review |
+| access-review | reviewer | — | sickn33/agentic-awesome-skills security/access-review | runs periodic access reviews and certifications, with access governance and recertification workflows |
+| active-directory-attacks | reviewer | — | sickn33/agentic-awesome-skills security/active-directory-attacks | assesses Active Directory attack paths through scoped configuration review and controlled lab validation |
+| ai-agent-security | builder | — | sickn33/agentic-awesome-skills security/ai-agent-security | secures AI agents against prompt injection, tool abuse and data exfiltration with defence in depth |
+| ai-coding-agent-guardrails | builder | — | sickn33/agentic-awesome-skills security/ai-coding-agent-guardrails | secures AI coding agents with permission boundaries and secret protection |
+| ai-red-teaming | reviewer | — | sickn33/agentic-awesome-skills security/ai-red-teaming | runs structured AI red-team exercises for jailbreak resistance, data-exfiltration risk and harmful output |
+| ai-security-hardening | builder | — | sickn33/agentic-awesome-skills security/ai-security-hardening | hardens AI and LLM deployments against prompt injection, data exfiltration, model theft and supply-chain attacks |
+| anti-reversing-techniques | reviewer | — | sickn33/agentic-awesome-skills security/anti-reversing-techniques | analyses anti-debugging, obfuscation and anti-tamper techniques during authorised binary analysis |
+| apk-redteam-pipeline | builder | — | sickn33/agentic-awesome-skills security/apk-redteam-pipeline | an end-to-end red-team pipeline for Android APKs |
+| apk-reverse | builder | — | sickn33/agentic-awesome-skills security/apk-reverse | reverse-engineers Android APKs: unpacking, Java decompilation, smali modification, repacking and signing |
+| asset-inventory | builder | — | sickn33/agentic-awesome-skills security/asset-inventory | maintains the IT asset inventory and configuration management database for hardware, software and cloud |
+| attack-chain | builder | — | sickn33/agentic-awesome-skills security/attack-chain | plans and runs an authorised multi-stage attack path from reconnaissance and initial access onward |
+| attack-tree-construction | builder | — | sickn33/agentic-awesome-skills security/attack-tree-construction | builds attack trees that map threat paths and attack scenarios |
+| audit-logging | builder | — | sickn33/agentic-awesome-skills security/audit-logging | sets up centralised audit logging and SIEM integration, with log retention and security monitoring |
+| auth-implementation-patterns | builder | — | sickn33/agentic-awesome-skills security/auth-implementation-patterns | implements or reviews authentication and authorisation with explicit token, session and resource-access boundaries |
+| bb-methodology | builder | — | sickn33/agentic-awesome-skills security/bb-methodology | the method to open a bug-bounty hunt with, and to return to when the target changes or the hunt loses its way |
+| binary-analysis-patterns | reviewer | — | sickn33/agentic-awesome-skills security/binary-analysis-patterns | patterns and techniques for analysing compiled binaries and their assembly |
+| binary-diff | builder | — | sickn33/agentic-awesome-skills security/binary-diff | diffs binaries across versions and recovers function names without PDBs |
+| bug-bounty | builder | — | sickn33/agentic-awesome-skills security/bug-bounty | a complete bug-bounty workflow |
+| cis-benchmarks | builder | — | sickn33/agentic-awesome-skills security/cis-benchmarks | audits and remediates CIS benchmark violations |
+| client-secret-exposure-audit | reviewer | — | sickn33/agentic-awesome-skills security/client-secret-exposure-audit | audits a deployed web app for secrets exposed to the browser, from hardcoded keys in JavaScript to secrets in HTML |
+| cloud-iam-deep | builder | — | sickn33/agentic-awesome-skills security/cloud-iam-deep | a cloud IAM red-team attack chain across AWS, Azure and GCP |
+| cloud-k8s | reviewer | — | sickn33/agentic-awesome-skills security/cloud-k8s | an authorised cloud, container and Kubernetes assessment covering metadata SSRF and IAM misconfiguration |
+| constant-time-analysis | reviewer | — | sickn33/agentic-awesome-skills security/constant-time-analysis | analyses cryptographic code for operations that leak secrets through execution timing |
+| container-hardening | builder | — | sickn33/agentic-awesome-skills security/container-hardening | secures Docker images and container runtime configuration |
+| container-scanning | reviewer | — | sickn33/agentic-awesome-skills security/container-scanning | scans container images for vulnerabilities with Trivy, Grype and cloud-native tools |
+| darkmoon-pentest | builder | — | sickn33/agentic-awesome-skills security/darkmoon-pentest | starts, follows and triages authorised autonomous AI pentest runs on a self-hosted Darkmoon Pro instance |
+| dast-scanning | reviewer | — | sickn33/agentic-awesome-skills security/dast-scanning | dynamic application security testing with OWASP ZAP, Burp Suite and Nikto |
+| dependency-scanning | reviewer | — | sickn33/agentic-awesome-skills security/dependency-scanning | scans package dependencies for known vulnerabilities with Snyk, Dependabot and OWASP Dependency-Check |
+| differential-review | reviewer | — | sickn33/agentic-awesome-skills security/differential-review | security-focused code review of pull requests, commits and diffs |
+| dotnet-reverse | builder | — | sickn33/agentic-awesome-skills security/dotnet-reverse | .NET and C# binary reverse engineering: managed PE analysis, dnSpyEx debugging and de4dot deobfuscation |
+| dsl-vm-reverse | builder | — | sickn33/agentic-awesome-skills reverse-engineering/dsl-vm-reverse | reverse-engineers JavaScript-based custom DSL and VM interpreters and risk-control engines, starting from IIFE and switch-based operations |
+| edr-bypass-re | reviewer | — | sickn33/agentic-awesome-skills security/edr-bypass-re | reviews EDR telemetry and known defence-evasion classes from offline evidence |
+| email-security | reviewer | — | sickn33/agentic-awesome-skills security/email-security | an authorised email security review: phishing analysis, SPF, DKIM and DMARC header authentication and BEC patterns |
+| enterprise-vpn-attack | builder | — | sickn33/agentic-awesome-skills security/enterprise-vpn-attack | an attack matrix for external SSL VPN and remote-access appliances |
+| ethical-hacking-methodology | builder | — | sickn33/agentic-awesome-skills security/ethical-hacking-methodology | the whole penetration-testing lifecycle, from reconnaissance through reporting |
+| firewall-config | builder | — | sickn33/agentic-awesome-skills security/firewall-config | configures iptables, nftables and cloud firewalls, with network segmentation and traffic filtering |
+| frontend-security-coder | builder | — | sickn33/agentic-awesome-skills security/frontend-security-coder | secure frontend coding practice for XSS prevention and output sanitisation |
+| gha-security-review | reviewer | — | sickn33/agentic-awesome-skills security/gha-security-review | reviews GitHub Actions workflows for exploitable vulnerabilities, with concrete attack paths |
+| hunt-api-misconfig | reviewer | — | sickn33/agentic-awesome-skills security/hunt-api-misconfig | hunts API security misconfiguration |
+| hunt-aspnet | reviewer | — | sickn33/agentic-awesome-skills security/hunt-aspnet | hunts ASP.NET-specific attack surface |
+| hunt-ato | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ato | hunts account takeover, by its taxonomy |
+| hunt-auth-bypass | reviewer | — | sickn33/agentic-awesome-skills security/hunt-auth-bypass | hunts authentication-bypass vulnerabilities |
+| hunt-brute-force | reviewer | — | sickn33/agentic-awesome-skills security/hunt-brute-force | hunts missing or weak rate limiting |
+| hunt-business-logic | reviewer | — | sickn33/agentic-awesome-skills security/hunt-business-logic | hunts business-logic vulnerabilities |
+| hunt-cache-poison | reviewer | — | sickn33/agentic-awesome-skills security/hunt-cache-poison | hunts cache-poisoning vulnerabilities |
+| hunt-captcha-bypass | reviewer | — | sickn33/agentic-awesome-skills security/hunt-captcha-bypass | hunts CAPTCHA bypass |
+| hunt-cicd | reviewer | — | sickn33/agentic-awesome-skills security/hunt-cicd | hunts CI/CD pipeline vulnerabilities |
+| hunt-clickjacking | reviewer | — | sickn33/agentic-awesome-skills security/hunt-clickjacking | hunts clickjacking |
+| hunt-cloud-misconfig | reviewer | — | sickn33/agentic-awesome-skills security/hunt-cloud-misconfig | hunts cloud and infrastructure misconfiguration |
+| hunt-cors | reviewer | — | sickn33/agentic-awesome-skills security/hunt-cors | hunts CORS misconfiguration |
+| hunt-csrf | reviewer | — | sickn33/agentic-awesome-skills security/hunt-csrf | hunts CSRF vulnerabilities |
+| hunt-deserialization | reviewer | — | sickn33/agentic-awesome-skills security/hunt-deserialization | hunts insecure deserialization |
+| hunt-dispatch | builder | — | sickn33/agentic-awesome-skills security/hunt-dispatch | loads the skill set the hunt orchestrator works from |
+| hunt-dom | reviewer | — | sickn33/agentic-awesome-skills security/hunt-dom | hunts client-side DOM vulnerabilities |
+| hunt-exceptional-conditions | reviewer | — | sickn33/agentic-awesome-skills security/hunt-exceptional-conditions | hunts mishandled exceptional conditions |
+| hunt-file-upload | reviewer | — | sickn33/agentic-awesome-skills security/hunt-file-upload | hunts file-upload bugs |
+| hunt-fintech-graphql | reviewer | — | sickn33/agentic-awesome-skills security/hunt-fintech-graphql | hunts fintech-specific GraphQL vulnerabilities |
+| hunt-forgot-password | reviewer | — | sickn33/agentic-awesome-skills security/hunt-forgot-password | hunts flaws in forgot-password and account-recovery authentication |
+| hunt-graphql | reviewer | — | sickn33/agentic-awesome-skills security/hunt-graphql | hunts GraphQL vulnerabilities |
+| hunt-grpc | reviewer | — | sickn33/agentic-awesome-skills security/hunt-grpc | hunts gRPC vulnerabilities |
+| hunt-host-header | reviewer | — | sickn33/agentic-awesome-skills security/hunt-host-header | hunts host-header injection |
+| hunt-html-injection | reviewer | — | sickn33/agentic-awesome-skills security/hunt-html-injection | hunts HTML injection |
+| hunt-http-smuggling | reviewer | — | sickn33/agentic-awesome-skills security/hunt-http-smuggling | hunts HTTP request smuggling across CL.TE, TE.CL, H2.CL and H2.TE |
+| hunt-idor | reviewer | — | sickn33/agentic-awesome-skills security/hunt-idor | hunts IDOR vulnerabilities, built from public bug-bounty reports |
+| hunt-jwt-crypto | reviewer | — | sickn33/agentic-awesome-skills security/hunt-jwt-crypto | hunts JWT cryptographic failures |
+| hunt-k8s | reviewer | — | sickn33/agentic-awesome-skills security/hunt-k8s | hunts Kubernetes and Docker |
+| hunt-laravel | reviewer | — | sickn33/agentic-awesome-skills security/hunt-laravel | hunts Laravel-specific vulnerabilities |
+| hunt-ldap | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ldap | hunts LDAP and XPath injection |
+| hunt-lfi | reviewer | — | sickn33/agentic-awesome-skills security/hunt-lfi | hunts local and remote file inclusion and path traversal |
+| hunt-llm-ai | reviewer | — | sickn33/agentic-awesome-skills security/hunt-llm-ai | hunts LLM and AI feature bugs |
+| hunt-mfa-bypass | reviewer | — | sickn33/agentic-awesome-skills security/hunt-mfa-bypass | hunts MFA and 2FA bypass |
+| hunt-nextjs | reviewer | — | sickn33/agentic-awesome-skills security/hunt-nextjs | hunts Next.js-specific vulnerabilities |
+| hunt-nodejs | reviewer | — | sickn33/agentic-awesome-skills security/hunt-nodejs | hunts Node.js-specific vulnerabilities |
+| hunt-nosqli | reviewer | — | sickn33/agentic-awesome-skills security/hunt-nosqli | hunts NoSQL injection |
+| hunt-ntlm-info | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ntlm-info | hunts NTLM and Negotiate information disclosure on internet-reachable IIS, SharePoint and Exchange |
+| hunt-oauth | reviewer | — | sickn33/agentic-awesome-skills security/hunt-oauth | hunts OAuth vulnerabilities, built from public bug-bounty reports |
+| hunt-open-redirect | reviewer | — | sickn33/agentic-awesome-skills security/hunt-open-redirect | hunts open redirect |
+| hunt-race-condition | reviewer | — | sickn33/agentic-awesome-skills security/hunt-race-condition | hunts race-condition vulnerabilities |
+| hunt-rag-vector | reviewer | — | sickn33/agentic-awesome-skills security/hunt-rag-vector | hunts vector-store and embedding-layer weaknesses in RAG pipelines, OWASP LLM08 |
+| hunt-rce | reviewer | — | sickn33/agentic-awesome-skills security/hunt-rce | hunts remote code execution, built from public bug-bounty reports |
+| hunt-saml | reviewer | — | sickn33/agentic-awesome-skills security/hunt-saml | hunts SAML and SSO attacks |
+| hunt-session | reviewer | — | sickn33/agentic-awesome-skills security/hunt-session | hunts session-management vulnerabilities |
+| hunt-shadow-api | reviewer | — | sickn33/agentic-awesome-skills security/hunt-shadow-api | hunts shadow, zombie and undocumented API surface, OWASP API9 |
+| hunt-sharepoint | reviewer | — | sickn33/agentic-awesome-skills security/hunt-sharepoint | hunts on-premises Microsoft SharePoint farms, 2013, 2016, 2019 and Subscription Edition |
+| hunt-source-leak | reviewer | — | sickn33/agentic-awesome-skills security/hunt-source-leak | hunts source-code and build-artefact leakage |
+| hunt-spa-api | reviewer | — | sickn33/agentic-awesome-skills security/hunt-spa-api | finds a single-page app's hidden backend API in its public JavaScript bundle, then tests that API for broken access control |
+| hunt-springboot | reviewer | — | sickn33/agentic-awesome-skills security/hunt-springboot | hunts Spring Boot-specific vulnerabilities |
+| hunt-sqli | reviewer | — | sickn33/agentic-awesome-skills security/hunt-sqli | hunts SQL injection |
+| hunt-ssrf | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ssrf | hunts server-side request forgery |
+| hunt-ssti | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ssti | hunts server-side template injection across Jinja2, Twig and Freemarker |
+| hunt-subdomain | reviewer | — | sickn33/agentic-awesome-skills security/hunt-subdomain | hunts subdomain-takeover vulnerabilities |
+| hunt-tls-network | reviewer | — | sickn33/agentic-awesome-skills security/hunt-tls-network | hunts TLS, SSL and DNS misconfiguration |
+| hunt-websocket | reviewer | — | sickn33/agentic-awesome-skills security/hunt-websocket | hunts WebSocket vulnerabilities |
+| hunt-xss | reviewer | — | sickn33/agentic-awesome-skills security/hunt-xss | hunts cross-site scripting |
+| hunt-xxe | reviewer | — | sickn33/agentic-awesome-skills security/hunt-xxe | hunts XML external entity vulnerabilities |
+| identity-federation | reviewer | — | sickn33/agentic-awesome-skills security/identity-federation | assesses federated identity systems: SAML, OIDC and OAuth2 flows and SSO misconfiguration |
+| infinity | builder | — | sickn33/agentic-awesome-skills security/infinity | enforces a strict input boundary of detect, classify, filter and verify for untrusted data |
+| ios-redteam-pipeline | builder | — | sickn33/agentic-awesome-skills security/ios-redteam-pipeline | an end-to-end iOS red-team pipeline |
+| js-reverse | builder | — | sickn33/agentic-awesome-skills security/js-reverse | front-end JavaScript reverse engineering: locating signature chains and analysing encrypted request parameters |
+| kubernetes-hardening | builder | — | sickn33/agentic-awesome-skills security/kubernetes-hardening | sets Kubernetes security contexts, Pod Security Standards and network policies |
+| laravel-security-audit | reviewer | — | sickn33/agentic-awesome-skills security/laravel-security-audit | audits Laravel applications for vulnerabilities and misconfiguration |
+| linux-hardening | builder | — | sickn33/agentic-awesome-skills security/linux-hardening | applies CIS benchmarks and hardens Linux servers |
+| linux-privilege-escalation | builder | — | sickn33/agentic-awesome-skills security/linux-privilege-escalation | runs a systematic privilege-escalation assessment on Linux systems, finding and exploiting misconfiguration |
+| llm-app-security | builder | — | sickn33/agentic-awesome-skills security/llm-app-security | secures LLM-powered applications with input validation, output controls, tenant isolation and abuse prevention |
+| macos-reverse | builder | — | sickn33/agentic-awesome-skills security/macos-reverse | authorised macOS and Mach-O reverse engineering: codesign inspection and Objective-C and Swift recovery |
+| malware-analysis | reviewer | — | sickn33/agentic-awesome-skills security/malware-analysis | analyses suspected malware statically, dynamically and behaviourally: IOC extraction and YARA and Sigma rules |
+| marketplace-rbac-audit | reviewer | — | sickn33/agentic-awesome-skills security/marketplace-rbac-audit | audits multi-role marketplace authorisation across roles, resource ownership and tenant boundaries |
+| mcp-dependency-drift-audit | reviewer | — | sickn33/agentic-awesome-skills security/mcp-dependency-drift-audit | statically audits MCP configuration for mutable npm and npx package references before approval or CI, running nothing |
+| mcp-server-security | builder | — | sickn33/agentic-awesome-skills security/mcp-server-security | secures Model Context Protocol servers with transport encryption, tool authorisation and input validation |
+| meme-coin-audit | reviewer | — | sickn33/agentic-awesome-skills security/meme-coin-audit | audits meme coin and token security |
+| mid-engagement-ir-detection | reviewer | — | sickn33/agentic-awesome-skills security/mid-engagement-ir-detection | detects client SOC patches, attacker activity and security-state changes during an engagement |
+| model-supply-chain-security | builder | — | sickn33/agentic-awesome-skills security/model-supply-chain-security | secures the AI model supply chain with artefact signing, provenance attestation and SBOM workflows |
+| mtls-configuration | builder | — | sickn33/agentic-awesome-skills security/mtls-configuration | configures mutual TLS for zero-trust service-to-service communication |
+| offensive-osint | builder | — | sickn33/agentic-awesome-skills security/offensive-osint | an operational arsenal for authorised external red-team and bug-bounty reconnaissance |
+| osint-methodology | builder | — | sickn33/agentic-awesome-skills security/osint-methodology | OSINT method for external red-team operations and authorised attack-surface assessment |
+| ot-ics | reviewer | — | sickn33/agentic-awesome-skills security/ot-ics | an authorised OT and ICS security assessment covering Purdue-model zoning review and PLC and SCADA exposure |
+| patch-diff-exploit | builder | — | sickn33/agentic-awesome-skills security/patch-diff-exploit | finds vulnerability fixes in vendor patches, diffs binaries across versions and builds N-day proofs of concept |
+| penetration-testing | builder | — | sickn33/agentic-awesome-skills security/penetration-testing | basic penetration testing and security assessment |
+| pentest-checklist | builder | — | sickn33/agentic-awesome-skills security/pentest-checklist | a checklist for planning, running and following up a penetration test |
+| permission-manager | builder | — | sickn33/agentic-awesome-skills security/permission-manager | manages opencode permissions: reviews always-allow lists and suggests safe read-only commands |
+| policy-as-code | builder | — | sickn33/agentic-awesome-skills security/policy-as-code | implements policy as code with OPA, Sentinel and Kyverno, and automates enforcement in CI/CD |
+| privacy-mask | builder | — | sickn33/agentic-awesome-skills security/privacy-mask | masks, redacts, anonymises and censors personal data in screenshots and images |
+| privilege-escalation-methods | builder | — | sickn33/agentic-awesome-skills security/privilege-escalation-methods | the techniques for escalating from a low-privileged user to root or administrator |
+| prompt-injection-defense | builder | — | sickn33/agentic-awesome-skills security/prompt-injection-defense | defends AI systems against prompt injection and indirect prompt attacks with input controls and tool permissions |
+| protocol-reverse | builder | — | sickn33/agentic-awesome-skills security/protocol-reverse | authorised reverse engineering of custom binary protocols, Protobuf and gRPC schemas and WebSocket frames |
+| pwn-chain | builder | — | sickn33/agentic-awesome-skills security/pwn-chain | goes from reverse engineering to a working exploit: stack, heap and kernel pwn workflows with pwntools |
+| recon-scope-triage | reviewer | — | sickn33/agentic-awesome-skills security/recon-scope-triage | triages reconnaissance and attack-surface output for ownership before anything is tested |
+| red-team-tactics | builder | — | sickn33/agentic-awesome-skills security/red-team-tactics | red-team tactics from MITRE ATT&CK: attack phases, detection evasion and reporting |
+| redteam-mindset | builder | — | sickn33/agentic-awesome-skills security/redteam-mindset | red-team operator discipline |
+| reverse-engineer | builder | — | sickn33/agentic-awesome-skills security/reverse-engineer | binary analysis, disassembly, decompilation and software analysis |
+| sast-configuration | builder | — | sickn33/agentic-awesome-skills security/sast-configuration | sets up static application security testing tools and writes their custom rules |
+| sast-scanning | reviewer | — | sickn33/agentic-awesome-skills security/sast-scanning | static application security testing with Semgrep, CodeQL and SonarQube |
+| sbom-supply-chain | builder | — | sickn33/agentic-awesome-skills security/sbom-supply-chain | generates, signs and verifies SBOMs and provenance attestations to secure the software supply chain |
+| secrets-management | builder | — | sickn33/agentic-awesome-skills security/secrets-management | secure secrets management for CI/CD pipelines with Vault, AWS Secrets Manager and other tools |
+| security-and-hardening | builder | — | sickn33/agentic-awesome-skills security/security-and-hardening | hardens code against vulnerabilities in user input, authentication and data storage |
+| security-auditor | reviewer | — | sickn33/agentic-awesome-skills security/security-auditor | security audit across DevSecOps, cybersecurity and compliance frameworks |
+| security-automation | builder | — | sickn33/agentic-awesome-skills security/security-automation | automates security workflows and remediation: security pipelines and automated compliance checks |
+| sharp-edges | reviewer | — | sickn33/agentic-awesome-skills security/sharp-edges | reviews misuse-prone security APIs, configuration defaults and cryptographic interfaces |
+| skill-security-audit | reviewer | — | sickn33/agentic-awesome-skills security/skill-security-audit | audits an Agent Skill, MCP server, connector or desktop extension before installation by tracing code and dependencies |
+| smtp-penetration-testing | reviewer | — | sickn33/agentic-awesome-skills security/smtp-penetration-testing | assesses SMTP servers for vulnerabilities |
+| solidity-security | builder | — | sickn33/agentic-awesome-skills security/solidity-security | smart-contract security: best practice, vulnerability prevention and secure Solidity development patterns |
+| src-hunter | builder | — | sickn33/agentic-awesome-skills pentest-tools/src-hunter | a bug-bounty and SRC vulnerability-hunting workflow in five phases, from intake and reconnaissance through enumeration and hunt |
+| ssh-penetration-testing | reviewer | — | sickn33/agentic-awesome-skills security/ssh-penetration-testing | assesses SSH servers: enumeration, credential attacks and vulnerability exploitation |
+| ssl-tls-management | builder | — | sickn33/agentic-awesome-skills security/ssl-tls-management | manages SSL and TLS certificates with Let's Encrypt and internal PKI, including secure HTTPS and certificate renewal |
+| stride-analysis-patterns | reviewer | — | sickn33/agentic-awesome-skills security/stride-analysis-patterns | applies the STRIDE method to identify threats systematically |
+| supply-chain-attack-recon | reviewer | — | sickn33/agentic-awesome-skills security/supply-chain-attack-recon | an authorised read-only review of public software supply-chain exposure |
+| supply-chain-attack-response | builder | — | sickn33/agentic-awesome-skills security/supply-chain-attack-response | detects, responds to and prevents software supply-chain attacks on package registries and container images |
+| supply-chain-security | builder | — | sickn33/agentic-awesome-skills security/supply-chain-security | supply-chain security assessment: SBOM generation, SCA scanning and CI/CD pipeline review |
+| thick-client | reviewer | — | sickn33/agentic-awesome-skills security/thick-client | authorised security testing of desktop thick clients: local storage, update channels, IPC and traffic interception |
+| threat-hunting | builder | — | sickn33/agentic-awesome-skills security/threat-hunting | blue-team threat hunting: detection engineering with Sigma and YARA, and SIEM query design |
+| threat-intelligence | builder | — | sickn33/agentic-awesome-skills security/threat-intelligence | authorised OSINT and cyber threat intelligence: enriching IOCs, campaigns, impersonation and scams |
+| threat-mitigation-mapping | builder | — | sickn33/agentic-awesome-skills security/threat-mitigation-mapping | maps identified threats to the controls and mitigations that answer them |
+| top-web-vulnerabilities | builder | — | sickn33/agentic-awesome-skills security/top-web-vulnerabilities | an overlapping reference of common web-application vulnerability patterns |
+| triage-validation | reviewer | — | sickn33/agentic-awesome-skills security/triage-validation | validates a finding before any report is written |
+| variant-analysis | reviewer | — | sickn33/agentic-awesome-skills security/variant-analysis | finds similar vulnerabilities and bugs across codebases by pattern-based analysis |
+| vpn-setup | builder | — | sickn33/agentic-awesome-skills security/vpn-setup | configures WireGuard, OpenVPN and cloud VPNs for secure remote access and site-to-site connectivity |
+| vulnerability-scanning | reviewer | — | sickn33/agentic-awesome-skills security/vulnerability-scanning | scans systems and dependencies for CVEs and security vulnerabilities |
+| waf-setup | builder | — | sickn33/agentic-awesome-skills security/waf-setup | deploys and tunes Web Application Firewalls with rules for OWASP Top 10 protection |
+| web2-recon | builder | — | sickn33/agentic-awesome-skills security/web2-recon | a Web2 reconnaissance pipeline |
+| web3-audit | reviewer | — | sickn33/agentic-awesome-skills security/web3-audit | smart-contract security audit |
+| wifi-wireless | reviewer | — | sickn33/agentic-awesome-skills security/wifi-wireless | an authorised wireless assessment: Wi-Fi capture, WPA handshake analysis and rogue-AP detection research |
+| windows-ad | reviewer | — | sickn33/agentic-awesome-skills security/windows-ad | authorised Active Directory and Windows identity attacks: Kerberos abuse, AD CS escalation and BloodHound path analysis |
+| windows-hardening | builder | — | sickn33/agentic-awesome-skills security/windows-hardening | hardens Windows servers to security baselines and CIS benchmarks with Group Policy and Windows Defender |
+| windows-privilege-escalation | reviewer | — | sickn33/agentic-awesome-skills security/windows-privilege-escalation | systematic methods for finding and exploiting privilege escalation on Windows |
+| wordpress-penetration-testing | reviewer | — | sickn33/agentic-awesome-skills security/wordpress-penetration-testing | assesses WordPress installations for common vulnerabilities and REST permission boundaries in core and plugins |
+| yes-md | builder | — | sickn33/agentic-awesome-skills security/yes-md | six-layer AI governance with safety gates, evidence-based debugging and anti-slack detection |
+| zero-trust | builder | — | sickn33/agentic-awesome-skills security/zero-trust | implements zero-trust network architecture with identity-based access and micro-segmentation |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -1268,7 +1453,13 @@ No source yet.
 
 ### 17-2000 Engineers
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| firmware-analyst | builder | — | sickn33/agentic-awesome-skills security/firmware-analyst | firmware analysis for embedded systems, IoT security and hardware reverse engineering |
+| firmware-pentest | reviewer | — | sickn33/agentic-awesome-skills security/firmware-pentest | firmware penetration testing along the OWASP FSTM nine-stage flow, from extraction through automated analysis |
+| hardware-security | reviewer | — | sickn33/agentic-awesome-skills security/hardware-security | authorised hardware and embedded-interface security research: UART and JTAG discovery and debug-pad triage |
+| radio-sdr | builder | — | sickn33/agentic-awesome-skills security/radio-sdr | authorised RF and SDR security research: signal identification and replay-feasibility study in a shielded lab |
+| zeroize-audit | reviewer | — | sickn33/agentic-awesome-skills security/zeroize-audit | finds missing zeroisation of sensitive data in source code, and zeroisation removed by the compiler |
 
 ### 17-3000 Drafters, Engineering Technicians, and Mapping Technicians
 
@@ -1522,6 +1713,9 @@ No source yet.
 | i-have-adhd | builder | — | sickn33/agentic-awesome-skills productivity/i-have-adhd | shapes text for readers with ADHD: the next action first, in small steps |
 | mdpr-skill | reviewer | — | sickn33/agentic-awesome-skills productivity/mdpr-skill | proofreads a Markdown slide deck before it is shared |
 | news-sentiment-engine | builder | — | sickn33/agentic-awesome-skills research/news-sentiment-engine | sums up current news on a subject and the mood of the coverage |
+| redteam-report-template | builder | — | sickn33/agentic-awesome-skills security/redteam-report-template | the client-facing format for a red-team deliverable |
+| report-writing | builder | — | sickn33/agentic-awesome-skills security/report-writing | bug-bounty report writing for HackerOne, Bugcrowd, Intigriti and Immunefi |
+| runbook-creation | builder | — | sickn33/agentic-awesome-skills security/runbook-creation | writes operational runbooks and standard operating procedures, with troubleshooting and recovery guides |
 
 ### 27-4000 Media and Communication Equipment Workers
 
@@ -1587,7 +1781,12 @@ No source yet.
 
 ### 33-3000 Law Enforcement Workers
 
-No source yet.
+| Skill | role | status | source | what it is |
+| --- | --- | --- | --- | --- |
+| case-review | reviewer | — | sickn33/agentic-awesome-skills security/case-review | a quality-gate review of a reverse-engineering or assessment case package: scope readiness and evidence-to-finding traceability |
+| digital-forensics | reviewer | — | sickn33/agentic-awesome-skills security/digital-forensics | authorised digital forensics: memory dumps, disk timelines, PCAP investigation and artefact triage |
+| evidence-hygiene | builder | — | sickn33/agentic-awesome-skills security/evidence-hygiene | evidence-capture and proof-of-concept redaction discipline for bug-bounty submissions |
+| memory-forensics | reviewer | — | sickn33/agentic-awesome-skills security/memory-forensics | acquires, analyses and extracts artefacts from memory dumps |
 
 ### 33-9000 Other Protective Service Workers
 
@@ -1892,8 +2091,8 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 1362 (5 built, 1357 not) |
-| families with a row | 25 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-1000 Life Scientists; 19-2000 Physical Scientists; 19-3000 Social Scientists and Related Workers; 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 25-3000 Other Teachers and Instructors; 25-4000 Librarians, Curators, and Archivists; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 29-9000 Other Healthcare Practitioners and Technical Occupations; 39-7000 Tour and Travel Guides; 39-9000 Other Personal Care and Service Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks; 43-6000 Secretaries and Administrative Assistants) |
+| rows | 1559 (5 built, 1554 not) |
+| families with a row | 27 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 17-2000 Engineers; 19-1000 Life Scientists; 19-2000 Physical Scientists; 19-3000 Social Scientists and Related Workers; 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 25-3000 Other Teachers and Instructors; 25-4000 Librarians, Curators, and Archivists; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 29-9000 Other Healthcare Practitioners and Technical Occupations; 33-3000 Law Enforcement Workers; 39-7000 Tour and Travel Guides; 39-9000 Other Personal Care and Service Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks; 43-6000 Secretaries and Administrative Assistants) |
 | sources assessed | 12 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios; 2026-11-13) |
 
 Which rows are built, and in what order, follows his word and the

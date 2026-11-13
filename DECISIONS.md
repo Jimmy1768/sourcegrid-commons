@@ -968,3 +968,10 @@ Date: 2026-11-13.
 Who: Commons Planning, on the Director's handoff of 2026-11-13.
 Decision: the registry's 15-1200 Computer Occupations table gains the 40 rows in section 2, and its 27-1000 Art and Design Workers table the 5 rows in section 3, all not yet built, sourced to `Donchitos/Claude-Code-Game-Studios`. 27-4000 keeps its one row: the catalog's only audio name orchestrates its own agents, which are not taken. Nothing is built or copied, so no `THIRD_PARTY_NOTICES.md` line is needed. Left out, each with its reason written in the spec: the two names the registry already holds word for word, the one whose name another job already holds (listed as `gdd-authoring`), the catalog's three old names, the same work under wording we already list, the two mixes, and the whole jobs and the catalog's own machinery.
 Reason: the Director's handoff of this session: list the catalog's 78 game-development skills as Skills not yet built, each under the job family its work belongs to, skipping repeats, mixes, whole jobs and old names, and taking none of its agents, event hooks or path rules.
+
+## Next. Skills from agentic-awesome-skills' security half join the registry
+
+Date: 2026-11-12.
+Who: Commons Planning, on the Director's handoff of 2026-11-12.
+Decision: the names in the catalog's security list become rows in skills/REGISTRY.md under the SOC 2018 family each one's work belongs to, marked not built, sourced to sickn33/agentic-awesome-skills (MIT at the catalog's top, each skill's own licence checked when it is built); two of those families gain their first table; the names listed under "What is left out, and why" in the spec are not rows, each for the reason given there.
+Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
