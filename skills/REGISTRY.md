@@ -850,6 +850,85 @@ No source yet.
 | weather-data-lifecycle-management | builder | — | sickn33/agentic-awesome-skills | manages weather data from ingest through retention |
 | weather-data-reproducibility | builder | — | sickn33/agentic-awesome-skills | keeps weather data work reproducible and auditable |
 | web3-testing | builder | — | sickn33/agentic-awesome-skills | tests Web3 applications and contracts |
+| architect-review | reviewer | — | sickn33/agentic-awesome-skills | a system's architecture reviewed against its requirements and trade-offs |
+| cqrs-implementation | builder | — | sickn33/agentic-awesome-skills | reads separated from writes, with commands, queries and their handlers |
+| ddd-context-mapping | builder | — | sickn33/agentic-awesome-skills | bounded contexts mapped, with the integration contract between each pair |
+| ddd-strategic-design | builder | — | sickn33/agentic-awesome-skills | subdomains, bounded contexts and one ubiquitous language |
+| ddd-tactical-patterns | builder | — | sickn33/agentic-awesome-skills | entities, value objects, aggregates, repositories and domain events |
+| docs-architect | builder | — | sickn33/agentic-awesome-skills | technical documentation drawn from an existing codebase's architecture and design |
+| event-sourcing-architect | builder | — | sickn33/agentic-awesome-skills | event-sourced systems: the event store, projections and replay |
+| graphql-architect | builder | — | sickn33/agentic-awesome-skills | GraphQL schemas with federation, performance and enterprise security |
+| microservices-patterns | builder | — | sickn33/agentic-awesome-skills | service boundaries, inter-service communication and data ownership |
+| nodejs-best-practices | builder | — | sickn33/agentic-awesome-skills | Node.js framework choice, async patterns, security and performance |
+| software-architecture | builder | — | sickn33/agentic-awesome-skills | quality-focused architecture decisions taken while code is written |
+| billing-automation | builder | — | sickn33/agentic-awesome-skills | recurring billing, invoicing, dunning, proration and plan changes |
+| cicd-automation-workflow-automate | builder | — | sickn33/agentic-awesome-skills | CI/CD pipelines and the workflow files that run them |
+| prompt-engineer | builder | — | sickn33/agentic-awesome-skills | a rough request turned into a prompt a model follows, by a stated framework |
+| andrej-karpathy | builder | — | sickn33/agentic-awesome-skills | behavioural guidelines that cut the common LLM coding mistakes |
+| break-ai-fix-loops | builder | — | sickn33/agentic-awesome-skills | ineffective repair loops stopped with failure fingerprints and an attempt budget |
+| clean-code | builder | — | sickn33/agentic-awesome-skills | clean-code, SOLID, DRY and KISS applied to changed production code |
+| codebase-cleanup-tech-debt | builder | — | sickn33/agentic-awesome-skills | technical debt found in code and history, prioritised into bounded fixes |
+| complexity-cuts | builder | — | sickn33/agentic-awesome-skills | Big-O lowered one transformation at a time, each verified or reverted |
+| constraint-driven-development | builder | — | sickn33/agentic-awesome-skills | the project's quality bar written as constraints that are enforced |
+| doubt-driven-development | builder | — | sickn33/agentic-awesome-skills | every non-trivial decision put to a fresh-context adversarial pass |
+| invariant-guard | builder | — | sickn33/agentic-awesome-skills | the contract, loop invariant, termination argument and edge cases written first |
+| logic-review | builder | — | sickn33/agentic-awesome-skills | logic bugs found by semi-formal execution tracing of a file or function |
+| shellcheck-configuration | builder | — | sickn33/agentic-awesome-skills | ShellCheck configured and used for shell script quality |
+| simplify-code | builder | — | sickn33/agentic-awesome-skills | a diff reviewed for clarity and safe simplifications, then the low-risk ones applied |
+| ui-review | reviewer | — | sickn33/agentic-awesome-skills | UI code checked against a design system and accessibility practice |
+| vibe-code-auditor | reviewer | — | sickn33/agentic-awesome-skills | rapidly generated code audited for structural flaws and production risk |
+| phase-gated-debugging | builder | — | sickn33/agentic-awesome-skills | a phased protocol that blocks edits until the root cause is confirmed |
+| debugging-strategies | builder | — | sickn33/agentic-awesome-skills | debugging turned from guesswork into a systematic method |
+| test-fixing | builder | — | sickn33/agentic-awesome-skills | failing tests grouped and fixed systematically |
+| ai-agent-evaluation-benchmarking | builder | — | sickn33/agentic-awesome-skills | agents evaluated on task completion, planning accuracy and tool use |
+| ai-agent-tool-routing | builder | — | sickn33/agentic-awesome-skills | an agent's tool registry and router designed and reviewed |
+| ai-code-generation-guardrails | builder | — | sickn33/agentic-awesome-skills | AI-written code guarded before merge, from plan checks to isolated behaviour |
+| observability-cloud-planning | builder | — | sickn33/agentic-awesome-skills | monitoring scope, SLOs and incident readiness planned together |
+| ai-agent-development | builder | — | sickn33/agentic-awesome-skills | autonomous agents and multi-agent orchestration built |
+| api-security-testing | builder | — | sickn33/agentic-awesome-skills | API security testing across authentication, authorization and rate limiting |
+| bash-scripting | builder | — | sickn33/agentic-awesome-skills | production-ready shell scripts with defensive patterns and error handling |
+| kubernetes-deployment | builder | — | sickn33/agentic-awesome-skills | container orchestration, charts and production manifests |
+| linux-troubleshooting | builder | — | sickn33/agentic-awesome-skills | Linux performance and system faults diagnosed |
+| postgresql-optimization | builder | — | sickn33/agentic-awesome-skills | query tuning, indexing and performance analysis |
+| rag-implementation | builder | — | sickn33/agentic-awesome-skills | retrieval-augmented generation, from embedding choice to retrieval |
+| react-nextjs-development | builder | — | sickn33/agentic-awesome-skills | React and Next.js apps with the app router and server components |
+| terraform-infrastructure | builder | — | sickn33/agentic-awesome-skills | infrastructure as code with reusable modules |
+| web-security-testing | builder | — | sickn33/agentic-awesome-skills | web application security testing across the OWASP Top 10 classes |
+| dos-verify-done-claims | reviewer | — | sickn33/agentic-awesome-skills | a done claim verified against ground truth before it is accepted |
+| pre-ship-gate | reviewer | — | sickn33/agentic-awesome-skills | the silent failure modes checked before a deploy |
+| browser-automation | builder | — | sickn33/agentic-awesome-skills | reliable browser checks from observed UI state, semantic locators and bounded waits |
+| e2e-testing-patterns | builder | — | sickn33/agentic-awesome-skills | end-to-end suites built fast and maintainable |
+| playwright-skill | builder | — | sickn33/agentic-awesome-skills | Playwright browser automation, screenshots and login flows |
+| ab-testing | builder | — | sickn33/agentic-awesome-skills | an A/B test or growth experiment planned, designed and implemented |
+| agentic-test-audit | reviewer | — | sickn33/agentic-awesome-skills | a test suite audited for mutants, order dependence, flakiness and slowness |
+| agentic-verify | builder | — | sickn33/agentic-awesome-skills | a change proved caught by tests, tests written until it is |
+| bats-testing-patterns | builder | — | sickn33/agentic-awesome-skills | shell scripts tested with the Bash Automated Testing System |
+| k6-load-testing | builder | — | sickn33/agentic-awesome-skills | k6 load scenarios written for API, browser and scaling checks |
+| mock-hunter | reviewer | — | sickn33/agentic-awesome-skills | a live page audited for mock data and hardcoded stand-ins |
+| pypict-skill | builder | — | sickn33/agentic-awesome-skills | pairwise test cases generated |
+| screen-reader-testing | builder | — | sickn33/agentic-awesome-skills | web applications tested with screen readers |
+| test-framework-migration-skill | builder | — | sickn33/agentic-awesome-skills | test suites converted between Selenium, Playwright, Puppeteer and Cypress |
+| test-guard | reviewer | — | sickn33/agentic-awesome-skills | changed test code reviewed against testing rules before it ships |
+| unit-testing-test-generate | builder | — | sickn33/agentic-awesome-skills | unit tests generated across languages with edge cases and coverage in view |
+| avoid-ai-writing | builder | — | sickn33/agentic-awesome-skills | prose audited and rewritten for formulaic or vague wording, meaning preserved |
+| changelog-entry | builder | — | sickn33/agentic-awesome-skills | a changelog entry in Keep a Changelog form from a commit range or a pull request |
+| production-code-audit | reviewer | — | sickn33/agentic-awesome-skills | a scoped codebase audited for evidenced security, correctness and performance issues |
+| requirements-writing | builder | — | sickn33/agentic-awesome-skills | verifiable requirements written and reviewed, with traceability |
+| reverse-engineer-anything | builder | — | sickn33/agentic-awesome-skills | a shipped app, binary or package investigated and its features traced with evidence |
+| unslop-ui | builder | — | sickn33/agentic-awesome-skills | AI-generated interfaces audited and redesigned with a stated visual direction |
+| ai-loop | builder | — | sickn33/agentic-awesome-skills | a bounded spec-build-review loop with explicit scope, stop conditions and approval |
+| airflow-dag-patterns | builder | — | sickn33/agentic-awesome-skills | Apache Airflow DAGs built with operators, sensors, testing and deployment |
+| brainstorming | builder | — | sickn33/agentic-awesome-skills | a vague idea turned into a validated design before creative work starts |
+| build | builder | — | sickn33/agentic-awesome-skills | a major feature researched, planned in phases, and progress tracked |
+| deprecation-and-migration | builder | — | sickn33/agentic-awesome-skills | old systems and APIs removed, their users migrated |
+| executing-plans | builder | — | sickn33/agentic-awesome-skills | a written implementation plan executed with review checkpoints |
+| finishing-a-development-branch | builder | — | sickn33/agentic-awesome-skills | completed work decided on: guided through integration |
+| git-advanced-workflows | builder | — | sickn33/agentic-awesome-skills | advanced Git technique and history recovery |
+| git-hooks-automation | builder | — | sickn33/agentic-awesome-skills | hooks set up with Husky, lint-staged, the pre-commit framework and commitlint |
+| lint-and-validate | builder | — | sickn33/agentic-awesome-skills | configured lint and type checks run, real failures told apart from checks that did not run |
+| ml-pipeline-workflow | builder | — | sickn33/agentic-awesome-skills | an end-to-end MLOps pipeline from data preparation to deployment |
+| repo-maintainer | builder | — | sickn33/agentic-awesome-skills | repository hygiene audited and repaired across artifacts, dependencies, CI, docs and Git state |
+| workflow-orchestration-patterns | builder | — | sickn33/agentic-awesome-skills | durable workflow design: Temporal and the patterns around it |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -1377,7 +1456,7 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 856 (5 built, 851 not) |
+| rows | 935 (5 built, 930 not) |
 | families with a row | 16 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-2000 Physical Scientists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
 | sources assessed | 11 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills; 2026-11-12) |
 
