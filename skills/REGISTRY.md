@@ -119,6 +119,47 @@ above.
 | paid-advertising | builder | — | cbrock84/headcount plugins/demand-generation/skills/paid-advertising | plans and runs paid ads across search, social and display |
 | programmatic-seo | builder | — | cbrock84/headcount plugins/demand-generation/skills/programmatic-seo | builds many search-targeted pages from templates and data |
 | seo-strategy | aide | — | cbrock84/headcount plugins/demand-generation/skills/seo-strategy | audits and improves organic search across site and content |
+| ab-test-setup | builder | — | sickn33/agentic-awesome-skills growth/ab-test-setup | sets up an A/B test with one change, a measure and a pass check |
+| ad-campaign-analyzer | reviewer | — | sickn33/agentic-awesome-skills marketing/ad-campaign-analyzer | reads a paid campaign's numbers and names what to change |
+| awareness-stage-mapper | aide | — | sickn33/agentic-awesome-skills marketing/awareness-stage-mapper | maps buyers by awareness stage and picks the next message |
+| brand-perception-psychologist | aide | — | sickn33/agentic-awesome-skills marketing/brand-perception-psychologist | reads how people see a brand and finds the gaps |
+| churn-prevention | aide | — | sickn33/agentic-awesome-skills growth/churn-prevention | finds why customers leave and designs ways to keep them |
+| co-marketing | builder | — | sickn33/agentic-awesome-skills marketing/co-marketing | plans and runs a campaign with a partner |
+| community-building | builder | — | sickn33/agentic-awesome-skills marketing/community-building | grows and keeps an active community around a product |
+| competitor-analysis | reviewer | — | sickn33/agentic-awesome-skills competitor analysis/competitor-analysis | reads competitors to find their choices and weak spots |
+| competitor-gap-analyzer | reviewer | — | sickn33/agentic-awesome-skills competitor analysis/competitor-gap-analyzer | finds the gaps between a product and its competitors |
+| customer-psychographic-profiler | aide | — | sickn33/agentic-awesome-skills marketing/customer-psychographic-profiler | builds a picture of a customer by values and motives |
+| define-my-content-pillars | aide | — | sickn33/agentic-awesome-skills content seo/define-my-content-pillars | chooses the few content themes a brand should own |
+| developer-audience-context | aide | — | sickn33/agentic-awesome-skills marketing/developer-audience-context | finds what developers care about for a message |
+| developer-churn | aide | — | sickn33/agentic-awesome-skills growth/developer-churn | learns why developers leave a product |
+| developer-listening | aide | — | sickn33/agentic-awesome-skills marketing/developer-listening | reads developer talk for needs and objections |
+| email-marketing-bible | builder | — | sickn33/agentic-awesome-skills marketing/email-marketing-bible | writes and improves marketing emails end to end |
+| form-cro | builder | — | sickn33/agentic-awesome-skills growth/form-cro | finds why a form does not convert and fixes it |
+| free-tier-strategy | aide | — | sickn33/agentic-awesome-skills growth/free-tier-strategy | designs a free tier that lets users reach value and upgrade |
+| free-tool-strategy | aide | — | sickn33/agentic-awesome-skills growth/free-tool-strategy | plans a free tool to pull in the right users |
+| identity-mirror | aide | — | sickn33/agentic-awesome-skills marketing/identity-mirror | reflects a person's written identity back in their voice |
+| jobs-to-be-done-analyst | aide | — | sickn33/agentic-awesome-skills marketing/jobs-to-be-done-analyst | finds the job a customer hires a product to do |
+| launch-strategy | aide | — | sickn33/agentic-awesome-skills growth/launch-strategy | plans a launch's story, audience and sequence |
+| lead-magnets | builder | — | sickn33/agentic-awesome-skills growth/lead-magnets | creates offers that earn a visitor's contact |
+| location-based-content-idea-generator | builder | — | sickn33/agentic-awesome-skills content seo/location-based-content-idea-generator | invents content ideas tied to places people search |
+| marketing-ideas | aide | — | sickn33/agentic-awesome-skills marketing/marketing-ideas | generates marketing campaign and tactic ideas |
+| marketing-mindset | aide | — | sickn33/agentic-awesome-skills marketing/marketing-mindset | coaches a team to think in customer problems |
+| marketing-psychology | aide | — | sickn33/agentic-awesome-skills marketing/marketing-psychology | applies known biases and motives to a message |
+| objection-preemptor | aide | — | sickn33/agentic-awesome-skills marketing/objection-preemptor | finds objections and answers them in the copy |
+| offers | builder | — | sickn33/agentic-awesome-skills growth/offers | designs an offer and its price, bundle and guarantee |
+| onboarding | builder | — | sickn33/agentic-awesome-skills growth/onboarding | designs a first-run path to the product's value |
+| open-source-marketing | builder | — | sickn33/agentic-awesome-skills marketing/open-source-marketing | markets an open-source project to users and contributors |
+| paid-ads | builder | — | sickn33/agentic-awesome-skills marketing/paid-ads | plans, writes and manages paid search and social ads |
+| paywall-upgrade-cro | reviewer | — | sickn33/agentic-awesome-skills growth/paywall-upgrade-cro | finds why users do not upgrade and changes the paywall |
+| pitch-psychologist | aide | — | sickn33/agentic-awesome-skills marketing/pitch-psychologist | finds the mental hooks that make a pitch land |
+| popup-cro | reviewer | — | sickn33/agentic-awesome-skills growth/popup-cro | improves a popup's timing, offer and wording |
+| power-user-cultivation | builder | — | sickn33/agentic-awesome-skills growth/power-user-cultivation | finds and grows the users who drive word of mouth |
+| scarcity-urgency-psychologist | aide | — | sickn33/agentic-awesome-skills marketing/scarcity-urgency-psychologist | adds honest scarcity and urgency that moves buyers |
+| sequence-psychologist | builder | — | sickn33/agentic-awesome-skills growth/sequence-psychologist | writes an email or message sequence by psychology |
+| signup-flow-cro | reviewer | — | sickn33/agentic-awesome-skills growth/signup-flow-cro | finds why signups drop and fixes the flow |
+| social-proof-architect | builder | — | sickn33/agentic-awesome-skills marketing/social-proof-architect | adds proof that fits the buyer's doubt |
+| trust-calibrator | aide | — | sickn33/agentic-awesome-skills marketing/trust-calibrator | finds what trust is missing and how to show it |
+| viral-generator-builder | builder | — | sickn33/agentic-awesome-skills growth/viral-generator-builder | builds a loop that turns users into bringers |
 
 ### 11-3000 Operations Specialties Managers
 
@@ -301,6 +342,88 @@ No source yet.
 | project-skill-audit | reviewer | — | sickn33/agentic-awesome-skills project-management/project-skill-audit | names the skills a project would gain most from |
 | resumable-implementation-contracts | builder | — | sickn33/agentic-awesome-skills project-management/resumable-implementation-contracts | writes execution contracts that survive sessions |
 | understand-project-yylo | builder | — | sickn33/agentic-awesome-skills project-management/understand-project-yylo | reads a YYLO project's architecture before planning |
+| ai-content-detector | reviewer | — | sickn33/agentic-awesome-skills ai-powered seo/ai-content-detector | checks whether text reads as AI-generated and reports the signs |
+| ai-keyword-explainer | aide | — | sickn33/agentic-awesome-skills keyword research/ai-keyword-explainer | explains what a keyword means and why it matters to a search |
+| anchor-text-analyzer | reviewer | — | sickn33/agentic-awesome-skills backlink & link-building/anchor-text-analyzer | reads anchor text across links for relevance and over-optimization |
+| backlink-idea-generator | builder | — | sickn33/agentic-awesome-skills backlink & link-building/backlink-idea-generator | suggests places and ways to earn backlinks |
+| bounce-rate-estimator | reviewer | — | sickn33/agentic-awesome-skills seo performance/bounce-rate-estimator | estimates and explains a page's likely bounce rate |
+| broken-link-finder | reviewer | — | sickn33/agentic-awesome-skills technical seo/broken-link-finder | finds broken links and reports where they point |
+| canonical-tag-checker | reviewer | — | sickn33/agentic-awesome-skills technical seo/canonical-tag-checker | checks canonical tags for conflicts and mistakes |
+| canonical-url-builder | builder | — | sickn33/agentic-awesome-skills technical seo/canonical-url-builder | writes canonical URLs and confirms the right page is chosen |
+| competitor-keyword-overlap-checker | reviewer | — | sickn33/agentic-awesome-skills competitor analysis/competitor-keyword-overlap-checker | finds keywords competitors both target and which one wins |
+| content-freshness-checker | reviewer | — | sickn33/agentic-awesome-skills content seo/content-freshness-checker | checks content for signals it is out of date |
+| content-gap-finder | aide | — | sickn33/agentic-awesome-skills content seo/content-gap-finder | finds topics the site should cover and does not |
+| content-length-comparator | reviewer | — | sickn33/agentic-awesome-skills content seo/content-length-comparator | compares content length against ranking pages |
+| ctr-predictor | reviewer | — | sickn33/agentic-awesome-skills seo performance/ctr-predictor | predicts and explains a page's click-through rate |
+| developer-sandbox | builder | — | sickn33/agentic-awesome-skills seo utility/developer-sandbox | sets up a sandbox for trying SEO changes safely |
+| domain-authority-simulator | reviewer | — | sickn33/agentic-awesome-skills seo performance/domain-authority-simulator | simulates domain authority changes from link scenarios |
+| duplicate-content-checker | reviewer | — | sickn33/agentic-awesome-skills technical seo/duplicate-content-checker | finds duplicate content and near-duplicate pages |
+| email-systems | builder | — | sickn33/agentic-awesome-skills marketing/email-systems | designs and builds marketing email systems and workflows |
+| featured-snippet-optimizer | builder | — | sickn33/agentic-awesome-skills seo/featured-snippet-optimizer | rewrites content to win featured snippets |
+| geo-audit | reviewer | — | sickn33/agentic-awesome-skills local seo/geo-audit | audits content for AI answer-engine readiness |
+| geo-brand-mentions | reviewer | — | sickn33/agentic-awesome-skills local seo/geo-brand-mentions | finds brand mentions relevant to AI answers |
+| geo-citability | reviewer | — | sickn33/agentic-awesome-skills local seo/geo-citability | checks sources and facts that AI engines can cite |
+| geo-compare | reviewer | — | sickn33/agentic-awesome-skills local seo/geo-compare | compares AI engine visibility across pages |
+| geo-content | builder | — | sickn33/agentic-awesome-skills local seo/geo-content | shapes content so AI answer engines cite it |
+| geo-crawlers | reviewer | — | sickn33/agentic-awesome-skills local seo/geo-crawlers | checks whether AI crawlers can reach key content |
+| geo-llmstxt | builder | — | sickn33/agentic-awesome-skills local seo/geo-llmstxt | builds or checks llms.txt for AI crawler access |
+| geo-platform-optimizer | builder | — | sickn33/agentic-awesome-skills local seo/geo-platform-optimizer | optimizes content for a named AI platform |
+| geo-report | builder | — | sickn33/agentic-awesome-skills local seo/geo-report | writes a report on AI answer-engine visibility |
+| gmb-optimization-helper | builder | — | sickn33/agentic-awesome-skills local seo/gmb-optimization-helper | improves a Google Business Profile listing |
+| guest-posting-opportunity-finder | builder | — | sickn33/agentic-awesome-skills backlink & link-building/guest-posting-opportunity-finder | finds sites that accept guest posts and ranks the fit |
+| heading-analyzer | reviewer | — | sickn33/agentic-awesome-skills on-page optimization/heading-analyzer | checks heading structure and wording on a page |
+| http-status-code-tester | reviewer | — | sickn33/agentic-awesome-skills technical seo/http-status-code-tester | tests URLs and reports their HTTP status codes |
+| image-alt-tag-generator | builder | — | sickn33/agentic-awesome-skills on-page optimization/image-alt-tag-generator | writes alt text for images with keyword intent |
+| impression-to-click-ratio-calculator | reviewer | — | sickn33/agentic-awesome-skills seo performance/impression-to-click-ratio-calculator | calculates the impression-to-click ratio and explains it |
+| indexing-issue-auditor | reviewer | — | sickn33/agentic-awesome-skills technical seo/indexing-issue-auditor | finds pages blocked or missing from the index |
+| internal-linking-planner | builder | — | sickn33/agentic-awesome-skills on-page optimization/internal-linking-planner | plans internal links that pass relevance and intent |
+| keyword-clustering-tool | builder | — | sickn33/agentic-awesome-skills keyword research/keyword-clustering-tool | groups keywords by search intent and overlap |
+| keyword-comparison-tool | reviewer | — | sickn33/agentic-awesome-skills keyword research/keyword-comparison-tool | compares keywords side by side for intent and reach |
+| keyword-density-checker | reviewer | — | sickn33/agentic-awesome-skills on-page optimization/keyword-density-checker | measures keyword density and flags stuffing or thinness |
+| keyword-difficulty-estimator | reviewer | — | sickn33/agentic-awesome-skills keyword research/keyword-difficulty-estimator | estimates how hard a keyword is to rank for |
+| keyword-expansion-tool | builder | — | sickn33/agentic-awesome-skills keyword research/keyword-expansion-tool | expands a seed keyword into related terms |
+| keyword-extractor | builder | — | sickn33/agentic-awesome-skills keyword research/keyword-extractor | pulls search terms from a page or brief |
+| keyword-gap-finder | aide | — | sickn33/agentic-awesome-skills keyword research/keyword-gap-finder | finds keywords competitors rank for and the site does not |
+| keyword-intent-identifier | aide | — | sickn33/agentic-awesome-skills keyword research/keyword-intent-identifier | labels a keyword's search intent |
+| keyword-placement-highlighter | builder | — | sickn33/agentic-awesome-skills on-page optimization/keyword-placement-highlighter | shows where keywords belong on a page |
+| keyword-roi-calculator | reviewer | — | sickn33/agentic-awesome-skills seo performance/keyword-roi-calculator | estimates the return of ranking for a keyword |
+| keyword-share-estimator | reviewer | — | sickn33/agentic-awesome-skills seo performance/keyword-share-estimator | estimates a page's share of keyword searches |
+| link-relevance-evaluator | reviewer | — | sickn33/agentic-awesome-skills backlink & link-building/link-relevance-evaluator | judges whether a link is relevant to a page |
+| link-source-categorizer | reviewer | — | sickn33/agentic-awesome-skills backlink & link-building/link-source-categorizer | sorts link sources by type and quality |
+| link-toxicity-checker | reviewer | — | sickn33/agentic-awesome-skills backlink & link-building/link-toxicity-checker | checks backlinks for toxic patterns |
+| local-citation-finder | builder | — | sickn33/agentic-awesome-skills local seo/local-citation-finder | finds local directories and citation opportunities |
+| local-legal-seo-audit | reviewer | — | sickn33/agentic-awesome-skills local seo/local-legal-seo-audit | audits local SEO with legal and compliance checks |
+| meta-tag-comparison-tool | reviewer | — | sickn33/agentic-awesome-skills on-page optimization/meta-tag-comparison-tool | compares title and meta tags against ranking pages |
+| mobile-friendly-test | reviewer | — | sickn33/agentic-awesome-skills technical seo/mobile-friendly-test | tests pages for mobile usability and errors |
+| nap-consistency-checker | reviewer | — | sickn33/agentic-awesome-skills local seo/nap-consistency-checker | checks name, address and phone consistency online |
+| nextjs-seo-indexing | builder | — | sickn33/agentic-awesome-skills technical seo/nextjs-seo-indexing | fixes indexing issues in Next.js sites |
+| og-tag-generator | builder | — | sickn33/agentic-awesome-skills on-page optimization/og-tag-generator | writes Open Graph tags for shared links |
+| on-page-seo-audit-checker | reviewer | — | sickn33/agentic-awesome-skills on-page optimization/on-page-seo-audit-checker | audits a page's on-page SEO and lists fixes |
+| organic-growth-forecast-tool | reviewer | — | sickn33/agentic-awesome-skills seo performance/organic-growth-forecast-tool | forecasts organic traffic growth from planned work |
+| page-speed-score-simulator | reviewer | — | sickn33/agentic-awesome-skills technical seo/page-speed-score-simulator | simulates page-speed scores and what slows a page |
+| ranking-opportunity-finder | aide | — | sickn33/agentic-awesome-skills keyword research/ranking-opportunity-finder | finds keywords the site could rank for soon |
+| ranking-progress-tracker | reviewer | — | sickn33/agentic-awesome-skills seo performance/ranking-progress-tracker | tracks rankings over time and reports movement |
+| redirect-301-generator | builder | — | sickn33/agentic-awesome-skills technical seo/redirect-301-generator | writes 301 redirect rules and maps old to new URLs |
+| redirect-checker | reviewer | — | sickn33/agentic-awesome-skills technical seo/redirect-checker | follows redirect chains and finds loops |
+| robots-txt-creator | builder | — | sickn33/agentic-awesome-skills technical seo/robots-txt-creator | writes robots.txt rules for a site |
+| robots-txt-validator | reviewer | — | sickn33/agentic-awesome-skills technical seo/robots-txt-validator | checks robots.txt for syntax and blocking mistakes |
+| schema-markup | builder | — | sickn33/agentic-awesome-skills schema & structured data/schema-markup | writes and checks Schema.org structured data |
+| search-preview-simulator | builder | — | sickn33/agentic-awesome-skills seo utility/search-preview-simulator | shows how a page will look in search results |
+| seo-content-checker | reviewer | — | sickn33/agentic-awesome-skills content seo/seo-content-checker | checks content against search intent and SEO basics |
+| seo-health-score-calculator | reviewer | — | sickn33/agentic-awesome-skills seo performance/seo-health-score-calculator | scores a site's SEO health from key signals |
+| site-comparison-report-generator | builder | — | sickn33/agentic-awesome-skills competitor analysis/site-comparison-report-generator | builds a site-to-site comparison report |
+| social-metadata-hardening | builder | — | sickn33/agentic-awesome-skills schema & structured data/social-metadata-hardening | adds and checks social sharing metadata |
+| structured-data-validator | reviewer | — | sickn33/agentic-awesome-skills schema & structured data/structured-data-validator | validates structured data against schema rules |
+| text-to-html-converter | builder | — | sickn33/agentic-awesome-skills seo utility/text-to-html-converter | turns plain text into clean HTML |
+| text-translator | builder | — | sickn33/agentic-awesome-skills seo utility/text-translator | translates content with meaning and keywords kept |
+| title-meta-length-counter | reviewer | — | sickn33/agentic-awesome-skills on-page optimization/title-meta-length-counter | measures title and meta lengths against search limits |
+| tools-page-seo-optimizer | builder | — | sickn33/agentic-awesome-skills content seo/tools-page-seo-optimizer | optimizes tool pages for search intent and clicks |
+| traffic-potential-calculator | reviewer | — | sickn33/agentic-awesome-skills keyword research/traffic-potential-calculator | estimates traffic potential for a keyword or page |
+| trending-keyword-visualizer | builder | — | sickn33/agentic-awesome-skills keyword research/trending-keyword-visualizer | shows trending keywords and their movement |
+| url-slug-generator | builder | — | sickn33/agentic-awesome-skills on-page optimization/url-slug-generator | turns page titles into clean, readable URL slugs |
+| visibility-index-calculator | reviewer | — | sickn33/agentic-awesome-skills seo performance/visibility-index-calculator | calculates a visibility index from rankings |
+| word-count-structure-checker | reviewer | — | sickn33/agentic-awesome-skills content seo/word-count-structure-checker | checks word count and structure for search fit |
+| xml-sitemap-visualizer | builder | — | sickn33/agentic-awesome-skills technical seo/xml-sitemap-visualizer | builds or shows an XML sitemap with status |
 
 ### 13-2000 Financial Specialists
 
@@ -1176,6 +1299,9 @@ No source yet.
 | ui-visual-validator | reviewer | — | sickn33/agentic-awesome-skills | reviewer |
 | ux-audit | reviewer | — | sickn33/agentic-awesome-skills | reviewer |
 | ux-flow | builder | — | sickn33/agentic-awesome-skills | designing user flows and navigation structure |
+| ad-creative | builder | — | sickn33/agentic-awesome-skills marketing/ad-creative | writes and designs ad creatives for campaigns |
+| post | builder | — | sickn33/agentic-awesome-skills marketing/post | writes and designs a social post or image |
+| screenshots | builder | — | sickn33/agentic-awesome-skills seo utility/screenshots | captures and prepares screenshots for search and social |
 
 ### 27-2000 Entertainers and Performers, Sports and Related Workers
 
@@ -1213,6 +1339,40 @@ No source yet.
 | technical-tutorials | builder | — | sickn33/agentic-awesome-skills | step-by-step technical tutorials and code walkthroughs |
 | video-router | builder | — | sickn33/agentic-awesome-skills | routing a video-production brief to generation, composition, editing or a supplied-footage cut |
 | wiki-architect | builder | — | sickn33/agentic-awesome-skills | structured wiki catalogues and onboarding guides from a codebase |
+| ai-blog-intro-writer | builder | — | sickn33/agentic-awesome-skills content seo/ai-blog-intro-writer | writes an opening paragraph for a blog post |
+| ai-competitor-title-rewriter | builder | — | sickn33/agentic-awesome-skills content seo/ai-competitor-title-rewriter | rewrites your title using competitor titles as reference |
+| ai-content-improver | builder | — | sickn33/agentic-awesome-skills content seo/ai-content-improver | improves existing content for search and reader |
+| ai-content-outline-generator | builder | — | sickn33/agentic-awesome-skills content seo/ai-content-outline-generator | builds an outline before writing |
+| ai-faq-creator | builder | — | sickn33/agentic-awesome-skills content seo/ai-faq-creator | writes FAQs from content and search questions |
+| alternatives-pages | builder | — | sickn33/agentic-awesome-skills content seo/alternatives-pages | writes comparison and alternatives pages |
+| blog-title-generator | builder | — | sickn33/agentic-awesome-skills content seo/blog-title-generator | invents blog titles around keywords |
+| comment-to-dm-cta | builder | — | sickn33/agentic-awesome-skills marketing/comment-to-dm-cta | turns commenters into direct-message leads |
+| content-creator | builder | — | sickn33/agentic-awesome-skills marketing/content-creator | creates content from brief to finished piece |
+| copy-editing | builder | — | sickn33/agentic-awesome-skills marketing/copy-editing | edits copy for clarity, grammar and style |
+| developer-newsletter | builder | — | sickn33/agentic-awesome-skills marketing/developer-newsletter | writes newsletters for developers |
+| docs-as-marketing | builder | — | sickn33/agentic-awesome-skills marketing/docs-as-marketing | turns docs into marketing content that converts |
+| draft-my-comments | builder | — | sickn33/agentic-awesome-skills marketing/draft-my-comments | drafts social media comments in the writer's voice |
+| email-sequence | builder | — | sickn33/agentic-awesome-skills marketing/email-sequence | writes a sequence of marketing emails |
+| get-seen-in-replies | builder | — | sickn33/agentic-awesome-skills marketing/get-seen-in-replies | writes replies that raise visibility |
+| headline-analyzer | reviewer | — | sickn33/agentic-awesome-skills content seo/headline-analyzer | judges headlines for promise, clarity and click |
+| linkedin-content-generator | builder | — | sickn33/agentic-awesome-skills marketing/linkedin-content-generator | writes LinkedIn posts and articles |
+| linkedin-profile-optimizer | builder | — | sickn33/agentic-awesome-skills marketing/linkedin-profile-optimizer | improves a LinkedIn profile for search and visitors |
+| meta-description-writer | builder | — | sickn33/agentic-awesome-skills on-page optimization/meta-description-writer | writes meta descriptions under search length limits |
+| paragraph-keyword-optimizer | builder | — | sickn33/agentic-awesome-skills on-page optimization/paragraph-keyword-optimizer | rewrites paragraphs to include keywords naturally |
+| postel-writing | builder | — | sickn33/agentic-awesome-skills marketing/postel-writing | writes in the Postel style, plain and precise |
+| product-description-generator | builder | — | sickn33/agentic-awesome-skills content seo/product-description-generator | writes product descriptions for search and buyers |
+| readability-enhancer | builder | — | sickn33/agentic-awesome-skills content seo/readability-enhancer | rewrites content to be easier to read |
+| repurpose-into-a-post | builder | — | sickn33/agentic-awesome-skills marketing/repurpose-into-a-post | turns one piece into a social post |
+| review-response-generator | builder | — | sickn33/agentic-awesome-skills marketing/review-response-generator | writes replies to reviews |
+| same-idea-both-platforms | builder | — | sickn33/agentic-awesome-skills marketing/same-idea-both-platforms | adapts one idea for two platforms without duplicate feel |
+| seo-aeo-landing-page-writer | builder | — | sickn33/agentic-awesome-skills content seo/seo-aeo-landing-page-writer | writes landing pages aimed at search and AI engines |
+| subject-line-psychologist | builder | — | sickn33/agentic-awesome-skills marketing/subject-line-psychologist | writes subject lines that get opens |
+| tone-of-voice-analyzer | aide | — | sickn33/agentic-awesome-skills marketing/tone-of-voice-analyzer | finds and documents a brand's tone of voice |
+| turn-this-into-a-thread | builder | — | sickn33/agentic-awesome-skills marketing/turn-this-into-a-thread | turns a piece into a social thread |
+| wechat-official-account-strategist | aide | — | sickn33/agentic-awesome-skills marketing/wechat-official-account-strategist | plans content for a WeChat official account |
+| why-did-this-post-flop | reviewer | — | sickn33/agentic-awesome-skills marketing/why-did-this-post-flop | reads a failed post and finds likely causes |
+| write-in-my-voice | builder | — | sickn33/agentic-awesome-skills marketing/write-in-my-voice | writes like the person by learning their voice |
+| xiaohongshu-content-strategist | aide | — | sickn33/agentic-awesome-skills marketing/xiaohongshu-content-strategist | plans content for Xiaohongshu |
 
 ### 27-4000 Media and Communication Equipment Workers
 
@@ -1356,6 +1516,7 @@ No source yet.
 | revenue-operations | builder | — | cbrock84/headcount plugins/revenue/skills/revenue-operations | runs lead routing, CRM hygiene and forecasting mechanics |
 | sales-compensation-and-territory | builder | — | cbrock84/headcount plugins/revenue/skills/sales-compensation-and-territory | designs quotas, territories and commission plans that drive the behavior needed |
 | sales-enablement | builder | — | cbrock84/headcount plugins/revenue/skills/sales-enablement | builds pitch decks, battlecards, objections and demo scripts for sales |
+| cold-email | builder | — | sickn33/agentic-awesome-skills marketing/cold-email | writes cold outreach emails that get replies |
 
 ### 41-4000 Sales Representatives, Wholesale and Manufacturing
 
@@ -1390,6 +1551,9 @@ No source yet.
 | self-service-and-knowledge | builder | — | cbrock84/headcount plugins/customer-experience/skills/self-service-and-knowledge | builds help center, in-product guidance and knowledge base |
 | support-operations | builder | — | cbrock84/headcount plugins/customer-experience/skills/support-operations | designs and runs support with channels, queues, levels and honest metrics |
 | voice-of-customer | builder | — | cbrock84/headcount plugins/customer-experience/skills/voice-of-customer | builds the loop from what customers say to what gets changed |
+| backlink-tracking-template-generator | builder | — | sickn33/agentic-awesome-skills backlink & link-building/backlink-tracking-template-generator | makes a template for tracking backlinks and their status |
+| local-seo-audit-checklist | builder | — | sickn33/agentic-awesome-skills local seo/local-seo-audit-checklist | makes a checklist for auditing local SEO |
+| seo-checklist-generator | builder | — | sickn33/agentic-awesome-skills seo utility/seo-checklist-generator | makes an SEO checklist from a site's needs |
 
 ### 43-5000 Material Recording, Scheduling, Dispatching, and Distributing Workers
 
@@ -1548,7 +1712,7 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 1027 (5 built, 1022 not) |
+| rows | 1191 (5 built, 1186 not) |
 | families with a row | 16 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 19-2000 Physical Scientists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks) |
 | sources assessed | 11 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills; 2026-11-12) |
 

@@ -784,3 +784,131 @@ Date: 2026-11-12.
 Who: Commons Planning, on the Director's handoff of 2026-11-12.
 Decision: the catalog's 285 general development skills were read and listed as not-built rows in `skills/REGISTRY.md`, all under `15-1200 Computer Occupations`; 92 of its names became rows, and 193 are left out with the reason for each. The catalog is MIT at its top, with each skill's own licence checked when it is built.
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
+
+## Next. Skills from agentic-awesome-skills' marketing and SEO half join the registry
+
+Date: 2026-11-12
+Who: the Director, in this session's handoff; Commons Planning wrote it down.
+Decision: `skills/REGISTRY.md` gains rows from sickn33/agentic-awesome-skills (MIT at the
+catalog's top; each skill's own licence checked when it is built), all not yet built: 164 rows.
+
+- 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers (41):
+  ab-test-setup, ad-campaign-analyzer, awareness-stage-mapper, brand-perception-psychologist,
+  churn-prevention, co-marketing, community-building, competitor-analysis,
+  competitor-gap-analyzer, customer-psychographic-profiler, define-my-content-pillars,
+  developer-audience-context, developer-churn, developer-listening, email-marketing-bible,
+  form-cro, free-tier-strategy, free-tool-strategy, identity-mirror, jobs-to-be-done-analyst,
+  launch-strategy, lead-magnets, location-based-content-idea-generator, marketing-ideas,
+  marketing-mindset, marketing-psychology, objection-preemptor, offers, onboarding,
+  open-source-marketing, paid-ads, paywall-upgrade-cro, pitch-psychologist, popup-cro,
+  power-user-cultivation, scarcity-urgency-psychologist, sequence-psychologist,
+  signup-flow-cro, social-proof-architect, trust-calibrator, viral-generator-builder.
+
+- 13-1000 Business Operations Specialists (82):
+  ai-content-detector, ai-keyword-explainer, anchor-text-analyzer, backlink-idea-generator,
+  bounce-rate-estimator, broken-link-finder, canonical-tag-checker, canonical-url-builder,
+  competitor-keyword-overlap-checker, content-freshness-checker, content-gap-finder,
+  content-length-comparator, ctr-predictor, developer-sandbox, domain-authority-simulator,
+  duplicate-content-checker, email-systems, featured-snippet-optimizer, geo-audit,
+  geo-brand-mentions, geo-citability, geo-compare, geo-content, geo-crawlers, geo-llmstxt,
+  geo-platform-optimizer, geo-report, gmb-optimization-helper,
+  guest-posting-opportunity-finder, heading-analyzer, http-status-code-tester,
+  image-alt-tag-generator, impression-to-click-ratio-calculator, indexing-issue-auditor,
+  internal-linking-planner, keyword-clustering-tool, keyword-comparison-tool,
+  keyword-density-checker, keyword-difficulty-estimator, keyword-expansion-tool,
+  keyword-extractor, keyword-gap-finder, keyword-intent-identifier,
+  keyword-placement-highlighter, keyword-roi-calculator, keyword-share-estimator,
+  link-relevance-evaluator, link-source-categorizer, link-toxicity-checker,
+  local-citation-finder, local-legal-seo-audit, meta-tag-comparison-tool,
+  mobile-friendly-test, nap-consistency-checker, nextjs-seo-indexing, og-tag-generator,
+  on-page-seo-audit-checker, organic-growth-forecast-tool, page-speed-score-simulator,
+  ranking-opportunity-finder, ranking-progress-tracker, redirect-301-generator,
+  redirect-checker, robots-txt-creator, robots-txt-validator, schema-markup,
+  search-preview-simulator, seo-content-checker, seo-health-score-calculator,
+  site-comparison-report-generator, social-metadata-hardening, structured-data-validator,
+  text-to-html-converter, text-translator, title-meta-length-counter,
+  tools-page-seo-optimizer, traffic-potential-calculator, trending-keyword-visualizer,
+  url-slug-generator, visibility-index-calculator, word-count-structure-checker,
+  xml-sitemap-visualizer.
+
+- 27-1000 Art and Design Workers (3): ad-creative, post, screenshots.
+
+- 27-3000 Media and Communication Workers (34):
+  ai-blog-intro-writer, ai-competitor-title-rewriter, ai-content-improver,
+  ai-content-outline-generator, ai-faq-creator, alternatives-pages, blog-title-generator,
+  comment-to-dm-cta, content-creator, copy-editing, developer-newsletter,
+  docs-as-marketing, draft-my-comments, email-sequence, get-seen-in-replies,
+  headline-analyzer, linkedin-content-generator, linkedin-profile-optimizer,
+  meta-description-writer, paragraph-keyword-optimizer, postel-writing,
+  product-description-generator, readability-enhancer, repurpose-into-a-post,
+  review-response-generator, same-idea-both-platforms, seo-aeo-landing-page-writer,
+  subject-line-psychologist, tone-of-voice-analyzer, turn-this-into-a-thread,
+  wechat-official-account-strategist, why-did-this-post-flop, write-in-my-voice,
+  xiaohongshu-content-strategist.
+
+- 41-3000 Sales Representatives, Services (1): cold-email.
+
+- 43-4000 Information and Record Clerks (3): backlink-tracking-template-generator,
+  local-seo-audit-checklist, seo-checklist-generator.
+
+164 rows in all. Left out:
+
+Already a row, word for word (left out, no new row): app-store-optimization,
+content-strategy, customer-research, programmatic-seo, public-relations,
+seo-competitor-pages, seo-dataforseo, seo-drift, seo-geo, seo-hreflang, seo-images,
+seo-page, seo-programmatic, seo-schema, seo-sitemap.
+
+The same job as a row we already list, under different words (left out, each repeats
+the row named): brand-guidelines, brand-guidelines-anthropic and
+brand-guidelines-community repeat brand-voice; copywriting repeats
+marketing-copywriting; coupler-marketing-analytics repeats marketing-analytics; cro
+and page-cro repeat landing-page-cro-expert; marketing-plan repeats
+marketing-planning; pricing and price-psychology-strategist repeat
+pricing-and-packaging; referral-program repeats referral-programs; social-content
+and social-post-writer-seo repeat social-post-craft; geo-fundamentals repeats
+seo-geo; geo-technical repeats seo-technical; hreflang-tag-generator repeats
+seo-hreflang; sitemap-generator repeats seo-sitemap.
+
+One kind of work between themselves, so one row stands for them (left out; the name
+on the right is the row above): ai-meta-tag-writer, meta-description-optimizer,
+meta-tag-generator and seo-aeo-meta-description-generator are meta-description-writer;
+ai-schema-generator, ai-schema-markup-generator, schema-markup-generator, geo-schema,
+seo-aeo-schema-generator, featured-tool-schema-generator and local-schema-builder are
+schema-markup; ai-snippet-generator is featured-snippet-optimizer;
+competitor-backlink-idea-generator is backlink-idea-generator;
+competitor-ad-intelligence, competitor-profiling, competitor-summary-report-creator
+and competitor-tracking are competitor-analysis; domain-comparison-report-tool is
+site-comparison-report-generator; faq-generator is ai-faq-creator;
+geo-keyword-expansion-tool, keyword-suggestion-tool, long-tail-keyword-generator and
+local-keyword-generator are keyword-expansion-tool; headline-psychologist is
+blog-title-generator; internal-link-suggestion-tool and seo-aeo-internal-linking are
+internal-linking-planner; linkedin-post-writer is linkedin-content-generator;
+readability-score-calculator is readability-enhancer; onboarding-cro and
+onboarding-psychologist are onboarding; developer-signup-flow is signup-flow-cro;
+geo-report-pdf is geo-report; outreach-email-template-generator is cold-email;
+growth-engine is a mix of the search, email and growth rows already listed, with no
+row of its own.
+
+One whole job: operating one named vendor's own account or connection (left out; each
+needs a service, an account or a connection the commons does not have, so it cannot be
+a Skill's work here): activecampaign-automation, brevo-automation,
+convertkit-automation, instagram, instagram-automation, klaviyo-automation,
+linkedin-automation, linkedin-cli, mailchimp-automation, mailtrap-managing-contacts,
+reddit-automation, tiktok-automation, twitter-automation, youtube-automation,
+x-article-publisher-skill, social-orchestrator, socialclaw, taisly-social-media-posting,
+talivia-agent-kit, sequenzy-email-marketing, zhongcao-note-copywriter,
+omentir-linkedin-outreach, outreachagent, lead-signals, lurkapi-ad-research, make-ugc,
+rea-growth, altorank, lognorm, telegram-channel-ads, reverse-image-search.
+
+One whole job: a role or an engagement run end to end (left out): developer-advocacy
+(a role: talks, podcasts, live coding), geo-proposal (an agency's client proposal),
+geo-prospect (an agency's client pipeline), seo-aeo-orchestrator (one engagement from
+discovery through implementation).
+
+No name is left out for any other reason, and every name in the catalog is accounted
+for either as a row above or here. Not taken: the catalog's search, skill picker, CLI,
+MCP server and plugins, and how it arranges its own team or tests its ideas. Nothing is
+copied, so no `THIRD_PARTY_NOTICES.md` line is added.
+Reason: his handoff of this session: list the catalog's marketing and SEO skills as
+Skills not built yet, each under the job family its work belongs to, skipping what we
+already list, what is only a mix of what we have, and what is really one whole job.
