@@ -238,7 +238,7 @@ of a Recipe, never copied as a list.
 
 | id | one line | tier | status | source |
 | --- | --- | --- | --- | --- |
-| video-edit | footage to finished video: ffprobe inventory, word-level transcript (Scribe, paid and keyed, or Whisper, open), edit list, ffmpeg render, grade, subtitles, 30ms fades at cuts | 3 | — | browser-use/video-use helpers/ |
+| video-edit | footage to finished video: ffprobe inventory, word-level transcript (Scribe, paid and keyed, or Whisper, open; editonny transcribes on the machine with no key), edit list, ffmpeg render, grade, subtitles, 30ms fades at cuts | 3 | — | browser-use/video-use helpers/; soumatheusgomes/editonny |
 
 ### B15. Animation (fits static-site)
 

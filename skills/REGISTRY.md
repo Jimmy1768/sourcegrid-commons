@@ -1721,7 +1721,7 @@ No source yet.
 
 | Skill | role | status | source | what it is |
 | --- | --- | --- | --- | --- |
-| edit-video | builder | — | browser-use/video-use SKILL.md | the editor's craft: which take, where to cut, filler and pacing, the grade, subtitle style, fades at cuts; the plan proposed before any cut |
+| edit-video | builder | — | browser-use/video-use SKILL.md; soumatheusgomes/editonny | the editor's craft: which take, where to cut, filler and pacing, the grade, subtitle style, fades at cuts; retake removal, and reframing to 9:16, 16:9, 1:1 and 4:5 with the subject centred; the plan proposed before any cut |
 
 ## 29-0000 Healthcare Practitioners and Technical Occupations
 
@@ -2094,7 +2094,7 @@ No source yet.
 | families | general + 98 minor groups in 23 major groups |
 | rows | 1560 (5 built, 1555 not) |
 | families with a row | 27 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 17-2000 Engineers; 19-1000 Life Scientists; 19-2000 Physical Scientists; 19-3000 Social Scientists and Related Workers; 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 25-3000 Other Teachers and Instructors; 25-4000 Librarians, Curators, and Archivists; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 29-9000 Other Healthcare Practitioners and Technical Occupations; 33-3000 Law Enforcement Workers; 39-7000 Tour and Travel Guides; 39-9000 Other Personal Care and Service Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks; 43-6000 Secretaries and Administrative Assistants) |
-| sources assessed | 13 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios, video-db/call.md; 2026-11-13) |
+| sources assessed | 14 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios, video-db/call.md, soumatheusgomes/editonny; 2026-11-13) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.
