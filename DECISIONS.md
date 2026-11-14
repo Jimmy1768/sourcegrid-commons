@@ -1011,3 +1011,14 @@ Decision:
 - They come from the stack OpenMontage runs on, but each is its own project; nothing of OpenMontage, which is AGPL, is taken.
 - Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
 Reason: the registry is the record of what the commons could use, and the Director's handoff names three tools worth listing before they are run.
+
+## Next. Kronos and the Day Trader Skills join the registries
+
+Date: 2026-11-14.
+Who: the Director, in this branch's handoff ("Two things for the finance Delegate, under Financial Specialists, nothing built or used yet"); Commons Planning wrote it down.
+Decision:
+- Kronos (shiyu-coder/Kronos, MIT, no tagged release, the repository's main branch at commit 67b630e on 2026-04-13, its paper arXiv 2508.02739 accepted at AAAI 2026, open weights on Hugging Face under NeoQuasar) is a tool, entered, with its document at `tools/kronos/README.md`: an open-source foundation model for candlestick price data, trained on more than 45 exchanges, that samples possible future price paths from a ticker's recent candles. Its open sizes are mini (4.1M parameters), small (24.7M) and base (102.3M); the large one is not public. It reads candle data the person supplied, or a market-data source they name. It places no order and gives no advice; it only returns sampled paths.
+- Eight Skills from Jakeschincariol's Day Trader pack (MIT), which paper-trades by default and asks before any order, become rows under `13-2000 Financial Specialists`, marked not built, sourced to `Jakeschincariol/day-trader`: trader-scanner, trader-entry, trader-exit, trader-alerts, trader-timemachine, trader-news, trader-analyst and trader-pelosi.
+- Left out, each for its reason: `trader-broker`, because placing an order is the Gate's step and never the agent's; `trader-budget` and `trader-risk`, because the trading pipeline already holds position sizing under a risk limit and `risk-review` already checks a proposed decision against risk before it goes further.
+- Neither the tool nor the Skills is built or used yet. Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
+Reason: the registries are the record of what the commons could use before it is run, and his handoff names one more tool and a pack of trading Skills worth listing before either is used.

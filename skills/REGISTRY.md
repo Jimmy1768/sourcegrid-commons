@@ -519,6 +519,14 @@ No source yet.
 | yield-intelligence | aide | — | sickn33/agentic-awesome-skills finance/yield-intelligence | dividend, Treasury and REIT income analysis |
 | doom-pay | builder | — | sickn33/agentic-awesome-skills payments/doom-pay | self-custodial checkout links and payment receipt checks |
 | trading-ledger | builder | — | sickn33/agentic-awesome-skills productivity/trading-ledger | keeps a journal of trades noting why each was made, the plan and the trader's mood |
+| trader-scanner | builder | — | Jakeschincariol/day-trader | scans charts for setups such as opening-range breakouts |
+| trader-entry | builder | — | Jakeschincariol/day-trader | watches a setup bar by bar and signals when to enter |
+| trader-exit | builder | — | Jakeschincariol/day-trader | sets the stop and target before entering |
+| trader-alerts | builder | — | Jakeschincariol/day-trader | sets alerts for prices, stops, targets and the market open |
+| trader-timemachine | builder | — | Jakeschincariol/day-trader | simulates how a trade could play out from the stock's recent bars before any money is risked |
+| trader-news | reviewer | — | Jakeschincariol/day-trader | tracks breaking news and filings for the stocks being watched |
+| trader-analyst | reviewer | — | Jakeschincariol/day-trader | reads earnings reports and says what changed |
+| trader-pelosi | reviewer | — | Jakeschincariol/day-trader | reads members of Congress's stock-trade disclosures as they're filed |
 
 ## 15-0000 Computer and Mathematical Occupations
 
@@ -2093,9 +2101,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 1561 (5 built, 1556 not) |
+| rows | 1569 (5 built, 1564 not) |
 | families with a row | 27 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 17-2000 Engineers; 19-1000 Life Scientists; 19-2000 Physical Scientists; 19-3000 Social Scientists and Related Workers; 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 25-3000 Other Teachers and Instructors; 25-4000 Librarians, Curators, and Archivists; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 29-9000 Other Healthcare Practitioners and Technical Occupations; 33-3000 Law Enforcement Workers; 39-7000 Tour and Travel Guides; 39-9000 Other Personal Care and Service Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks; 43-6000 Secretaries and Administrative Assistants) |
-| sources assessed | 15 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios, video-db/call.md, soumatheusgomes/editonny, Tejashmakwana/Motionmaxxing; 2026-11-14) |
+| sources assessed | 16 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios, video-db/call.md, soumatheusgomes/editonny, Tejashmakwana/Motionmaxxing, Jakeschincariol/day-trader; 2026-11-14) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.
