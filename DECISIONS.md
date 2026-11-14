@@ -976,7 +976,7 @@ Who: Commons Planning, on the Director's handoff of 2026-11-12.
 Decision: the names in the catalog's security list become rows in skills/REGISTRY.md under the SOC 2018 family each one's work belongs to, marked not built, sourced to sickn33/agentic-awesome-skills (MIT at the catalog's top, each skill's own licence checked when it is built); two of those families gain their first table; the names listed under "What is left out, and why" in the spec are not rows, each for the reason given there.
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same catalog again.
 
-## Next. Meeting minutes from video-db join the Skill registry
+## 56. Meeting minutes from video-db join the Skill registry
 
 Date: 2026-11-13.
 Who: the Director, in this branch's handoff of 2026-11-13; Commons Planning wrote it down.
