@@ -987,3 +987,14 @@ Decision:
 - The source's instructions are read properly when the Skill itself is built; nothing is built now.
 - Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same source again.
+
+## Next. Postiz joins the tool registry
+
+Date: 2026-11-14.
+Who: the Director, in this branch's handoff ("One more tool to list with its own entry, like REA and XERJ, not used yet"); Commons Planning wrote it down.
+Decision:
+- Postiz (gitroomhq/postiz, AGPL-3.0, latest release v2.26.0, the repository's main branch at commit 132859f on 2026-11-14, its licence file the GNU AGPL version 3) is a tool, entered, with its document at `tools/postiz/README.md`: a self-hosted social media manager that schedules and publishes posts across the accounts a person connects through each platform's own official login, and reads back their analytics. It reaches only those connected accounts, never scrapes, and never touches an account the person did not connect. A post goes out only on the person's word, per post or per campaign, as the Marketing Delegate's rules set.
+- Because it is AGPL-3.0 it is only ever called as a separate service through its API; none of its code goes into the commons or a Recipe. If anyone ever changes it and offers it to others over a network, those changes have to be published; using it unchanged for the person's own posts carries no such condition.
+- It is for the Marketing Delegate's posting, and its analytics feed the experiment Skill: a post is the change, and reach is the measure. It is not built or used yet.
+- Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
+Reason: the registry is the record of what the commons could use, and his handoff names one more tool worth listing before it is run.
