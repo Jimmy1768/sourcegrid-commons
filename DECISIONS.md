@@ -998,3 +998,16 @@ Decision:
 - It is for the Marketing Delegate's posting, and its analytics feed the experiment Skill: a post is the change, and reach is the measure. It is not built or used yet.
 - Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
 Reason: the registry is the record of what the commons could use, and his handoff names one more tool worth listing before it is run.
+
+## Next. WhisperX, Piper and Real-ESRGAN join the tool registry
+
+Date: 2026-11-14.
+Who: the Director, in this branch's handoff; Commons Planning wrote it down.
+Decision:
+- WhisperX (m-bain/whisperX, BSD-2-Clause, latest release v3.8.6, main branch at commit b904f02 on 2026-11-12) is a tool, entered, with its document at `tools/whisperx/README.md`: it transcribes speech locally with a timestamp for every word and tells speakers apart, from an audio or video file the person supplied. Its diarization model is fetched once with a Hugging Face token and offline after that.
+- Piper (OHF-Voice/piper1-gpl, GPL-3.0-or-later, latest release v1.8.0, main branch at commit 6565650 on 2026-11-13) is a tool, entered, with its document at `tools/piper/README.md`: local text-to-speech for narration, listed at its maintained home; its original home rhasspy/piper (MIT, last release v1.2.0) is left behind. Because it is GPL-3.0-or-later it is only ever called as a separate program; none of its code goes into the commons or a Recipe.
+- Real-ESRGAN (xinntao/Real-ESRGAN, BSD-3-Clause, latest release v0.3.0, last changed 2024-04-03) is a tool, entered, with its document at `tools/real-esrgan/README.md`: it upscales images and video locally, on the machine.
+- All three are for the Marketing Delegate's video work, and none is built or used yet.
+- They come from the stack OpenMontage runs on, but each is its own project; nothing of OpenMontage, which is AGPL, is taken.
+- Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
+Reason: the registry is the record of what the commons could use, and the Director's handoff names three tools worth listing before they are run.
