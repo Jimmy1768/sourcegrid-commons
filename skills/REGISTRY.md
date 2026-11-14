@@ -1637,6 +1637,7 @@ No source yet.
 | asset-spec | builder | — | Donchitos/Claude-Code-Game-Studios skills/asset-spec | one asset's visual spec and its generation prompt, from the design documents and the character profiles |
 | ux-design | builder | — | Donchitos/Claude-Code-Game-Studios skills/ux-design | one screen, flow or HUD spec written section by section |
 | ux-review | reviewer | — | Donchitos/Claude-Code-Game-Studios skills/ux-review | a UX spec, HUD design or pattern library checked for accessibility, fit with the design documents and readiness |
+| motionmaxxing | builder | — | Tejashmakwana/Motionmaxxing | the craft of motion design: a brand captured, a visual world built from it, and timing taken frame by frame from professional motion pieces, rendered locally from plain HTML with no outside service |
 
 ### 27-2000 Entertainers and Performers, Sports and Related Workers
 
@@ -2092,9 +2093,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 1560 (5 built, 1555 not) |
+| rows | 1561 (5 built, 1556 not) |
 | families with a row | 27 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 17-2000 Engineers; 19-1000 Life Scientists; 19-2000 Physical Scientists; 19-3000 Social Scientists and Related Workers; 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 25-3000 Other Teachers and Instructors; 25-4000 Librarians, Curators, and Archivists; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 29-9000 Other Healthcare Practitioners and Technical Occupations; 33-3000 Law Enforcement Workers; 39-7000 Tour and Travel Guides; 39-9000 Other Personal Care and Service Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks; 43-6000 Secretaries and Administrative Assistants) |
-| sources assessed | 14 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios, video-db/call.md, soumatheusgomes/editonny; 2026-11-13) |
+| sources assessed | 15 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios, video-db/call.md, soumatheusgomes/editonny, Tejashmakwana/Motionmaxxing; 2026-11-14) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.
