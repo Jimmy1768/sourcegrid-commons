@@ -988,7 +988,7 @@ Decision:
 - Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
 Reason: the registry is the record of what the commons could build and has not; one entry naming what was taken and what was left out means the next reader does not have to assess the same source again.
 
-## Next. Postiz joins the tool registry
+## 57. Postiz joins the tool registry
 
 Date: 2026-11-14.
 Who: the Director, in this branch's handoff ("One more tool to list with its own entry, like REA and XERJ, not used yet"); Commons Planning wrote it down.
@@ -999,7 +999,7 @@ Decision:
 - Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
 Reason: the registry is the record of what the commons could use, and his handoff names one more tool worth listing before it is run.
 
-## Next. WhisperX, Piper and Real-ESRGAN join the tool registry
+## 58. WhisperX, Piper and Real-ESRGAN join the tool registry
 
 Date: 2026-11-14.
 Who: the Director, in this branch's handoff; Commons Planning wrote it down.
@@ -1012,7 +1012,7 @@ Decision:
 - Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
 Reason: the registry is the record of what the commons could use, and the Director's handoff names three tools worth listing before they are run.
 
-## Next. Kronos and the Day Trader Skills join the registries
+## 59. Kronos and the Day Trader Skills join the registries
 
 Date: 2026-11-14.
 Who: the Director, in this branch's handoff ("Two things for the finance Delegate, under Financial Specialists, nothing built or used yet"); Commons Planning wrote it down.
@@ -1023,7 +1023,7 @@ Decision:
 - Neither the tool nor the Skills is built or used yet. Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
 Reason: the registries are the record of what the commons could use before it is run, and his handoff names one more tool and a pack of trading Skills worth listing before either is used.
 
-## Next. ffmpeg-skill joins the tool registry
+## 60. ffmpeg-skill joins the tool registry
 
 Date: 2026-11-15.
 Who: the Director, in this branch's handoff on one more tool for the Marketing Delegate's video editing; Commons Planning wrote it down.
