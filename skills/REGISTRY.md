@@ -566,7 +566,7 @@ No source yet.
 | detection-and-monitoring | builder | — | cbrock84/headcount plugins/security/skills/detection-and-monitoring | builds logging and detections that notice an attack in progress |
 | incident-response | builder | — | cbrock84/headcount plugins/security/skills/incident-response | runs a security incident from triage through closure and review |
 | security-architecture-review | reviewer | — | cbrock84/headcount plugins/security/skills/security-architecture-review | reviews a design for security before it ships |
-| threat-modeling | reviewer | — | cbrock84/headcount plugins/security/skills/threat-modeling | finds the assets, entry points and trust boundaries worth attacking |
+| threat-modeling | reviewer | — | cbrock84/headcount plugins/security/skills/threat-modeling; mukul975/Anthropic-Cybersecurity-Skills skills/performing-threat-modeling-with-owasp-threat-dragon | finds the assets, entry points and trust boundaries worth attacking |
 | vulnerability-management | reviewer | — | cbrock84/headcount plugins/security/skills/vulnerability-management | tracks weaknesses from discovery to confirmed fix by exploitability |
 | backup-and-recovery | builder | — | cbrock84/headcount plugins/it-operations/skills/backup-and-recovery | protects and proves restores with coverage, retention and tests |
 | chief-information-officer | aide | — | cbrock84/headcount plugins/it-operations/skills/chief-information-officer | runs the technology the company works on, its quality and spend |
@@ -908,7 +908,7 @@ No source yet.
 | brendangregg-use-tsa | builder | — | sickn33/agentic-awesome-skills | applies Brendan Gregg's TSA method to a performance problem |
 | cdn-setup | builder | — | sickn33/agentic-awesome-skills | sets up a CDN |
 | ci-cd-and-automation | builder | — | sickn33/agentic-awesome-skills | builds CI/CD pipelines and automation |
-| cloud-penetration-testing | builder | — | sickn33/agentic-awesome-skills | penetration tests a cloud deployment |
+| cloud-penetration-testing | builder | — | sickn33/agentic-awesome-skills; mukul975/Anthropic-Cybersecurity-Skills skills/conducting-cloud-penetration-testing | penetration tests a cloud deployment |
 | container-registries | builder | — | sickn33/agentic-awesome-skills | runs container registries |
 | cost-optimization | builder | — | sickn33/agentic-awesome-skills | finds cost to cut safely |
 | deployment-procedures | builder | — | sickn33/agentic-awesome-skills | defines and runs deployment procedures |
@@ -928,7 +928,7 @@ No source yet.
 | hybrid-cloud-networking | builder | — | sickn33/agentic-awesome-skills | runs networking across hybrid cloud |
 | identity-access-management | builder | — | sickn33/agentic-awesome-skills | runs identity and access management |
 | k8s-manifest-generator | builder | — | sickn33/agentic-awesome-skills | generates Kubernetes manifests |
-| k8s-security-policies | builder | — | sickn33/agentic-awesome-skills | sets Kubernetes security policies |
+| k8s-security-policies | builder | — | sickn33/agentic-awesome-skills; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-network-policies-for-kubernetes | sets Kubernetes security policies |
 | kubernetes-ops | builder | — | sickn33/agentic-awesome-skills | runs Kubernetes operations |
 | linux-administration | builder | — | sickn33/agentic-awesome-skills | administers Linux systems |
 | llm-caching | builder | — | sickn33/agentic-awesome-skills | caches LLM calls where they repeat |
@@ -1277,25 +1277,25 @@ No source yet.
 | anti-reversing-techniques | reviewer | — | sickn33/agentic-awesome-skills security/anti-reversing-techniques | analyses anti-debugging, obfuscation and anti-tamper techniques during authorised binary analysis |
 | apk-redteam-pipeline | builder | — | sickn33/agentic-awesome-skills security/apk-redteam-pipeline | an end-to-end red-team pipeline for Android APKs |
 | apk-reverse | builder | — | sickn33/agentic-awesome-skills security/apk-reverse | reverse-engineers Android APKs: unpacking, Java decompilation, smali modification, repacking and signing |
-| asset-inventory | builder | — | sickn33/agentic-awesome-skills security/asset-inventory | maintains the IT asset inventory and configuration management database for hardware, software and cloud |
+| asset-inventory | builder | — | sickn33/agentic-awesome-skills security/asset-inventory; mukul975/Anthropic-Cybersecurity-Skills skills/performing-cloud-asset-inventory-with-cartography | maintains the IT asset inventory and configuration management database for hardware, software and cloud |
 | attack-chain | builder | — | sickn33/agentic-awesome-skills security/attack-chain | plans and runs an authorised multi-stage attack path from reconnaissance and initial access onward |
 | attack-tree-construction | builder | — | sickn33/agentic-awesome-skills security/attack-tree-construction | builds attack trees that map threat paths and attack scenarios |
-| audit-logging | builder | — | sickn33/agentic-awesome-skills security/audit-logging | sets up centralised audit logging and SIEM integration, with log retention and security monitoring |
+| audit-logging | builder | — | sickn33/agentic-awesome-skills security/audit-logging; mukul975/Anthropic-Cybersecurity-Skills skills/building-cloud-siem-with-sentinel | sets up centralised audit logging and SIEM integration, with log retention and security monitoring |
 | auth-implementation-patterns | builder | — | sickn33/agentic-awesome-skills security/auth-implementation-patterns | implements or reviews authentication and authorisation with explicit token, session and resource-access boundaries |
 | bb-methodology | builder | — | sickn33/agentic-awesome-skills security/bb-methodology | the method to open a bug-bounty hunt with, and to return to when the target changes or the hunt loses its way |
 | binary-analysis-patterns | reviewer | — | sickn33/agentic-awesome-skills security/binary-analysis-patterns | patterns and techniques for analysing compiled binaries and their assembly |
 | binary-diff | builder | — | sickn33/agentic-awesome-skills security/binary-diff | diffs binaries across versions and recovers function names without PDBs |
 | bug-bounty | builder | — | sickn33/agentic-awesome-skills security/bug-bounty | a complete bug-bounty workflow |
-| cis-benchmarks | builder | — | sickn33/agentic-awesome-skills security/cis-benchmarks | audits and remediates CIS benchmark violations |
+| cis-benchmarks | builder | — | sickn33/agentic-awesome-skills security/cis-benchmarks; mukul975/Anthropic-Cybersecurity-Skills skills/auditing-cloud-with-cis-benchmarks | audits and remediates CIS benchmark violations |
 | client-secret-exposure-audit | reviewer | — | sickn33/agentic-awesome-skills security/client-secret-exposure-audit | audits a deployed web app for secrets exposed to the browser, from hardcoded keys in JavaScript to secrets in HTML |
 | cloud-iam-deep | builder | — | sickn33/agentic-awesome-skills security/cloud-iam-deep | a cloud IAM red-team attack chain across AWS, Azure and GCP |
-| cloud-k8s | reviewer | — | sickn33/agentic-awesome-skills security/cloud-k8s | an authorised cloud, container and Kubernetes assessment covering metadata SSRF and IAM misconfiguration |
+| cloud-k8s | reviewer | — | sickn33/agentic-awesome-skills security/cloud-k8s; mukul975/Anthropic-Cybersecurity-Skills skills/performing-kubernetes-penetration-testing | an authorised cloud, container and Kubernetes assessment covering metadata SSRF and IAM misconfiguration |
 | constant-time-analysis | reviewer | — | sickn33/agentic-awesome-skills security/constant-time-analysis | analyses cryptographic code for operations that leak secrets through execution timing |
-| container-hardening | builder | — | sickn33/agentic-awesome-skills security/container-hardening | secures Docker images and container runtime configuration |
-| container-scanning | reviewer | — | sickn33/agentic-awesome-skills security/container-scanning | scans container images for vulnerabilities with Trivy, Grype and cloud-native tools |
+| container-hardening | builder | — | sickn33/agentic-awesome-skills security/container-hardening; mukul975/Anthropic-Cybersecurity-Skills skills/hardening-docker-containers-for-production | secures Docker images and container runtime configuration |
+| container-scanning | reviewer | — | sickn33/agentic-awesome-skills security/container-scanning; mukul975/Anthropic-Cybersecurity-Skills skills/performing-container-security-scanning-with-trivy | scans container images for vulnerabilities with Trivy, Grype and cloud-native tools |
 | darkmoon-pentest | builder | — | sickn33/agentic-awesome-skills security/darkmoon-pentest | starts, follows and triages authorised autonomous AI pentest runs on a self-hosted Darkmoon Pro instance |
-| dast-scanning | reviewer | — | sickn33/agentic-awesome-skills security/dast-scanning | dynamic application security testing with OWASP ZAP, Burp Suite and Nikto |
-| dependency-scanning | reviewer | — | sickn33/agentic-awesome-skills security/dependency-scanning | scans package dependencies for known vulnerabilities with Snyk, Dependabot and OWASP Dependency-Check |
+| dast-scanning | reviewer | — | sickn33/agentic-awesome-skills security/dast-scanning; mukul975/Anthropic-Cybersecurity-Skills skills/integrating-dast-with-owasp-zap-in-pipeline | dynamic application security testing with OWASP ZAP, Burp Suite and Nikto |
+| dependency-scanning | reviewer | — | sickn33/agentic-awesome-skills security/dependency-scanning; mukul975/Anthropic-Cybersecurity-Skills skills/performing-sca-dependency-scanning-with-snyk | scans package dependencies for known vulnerabilities with Snyk, Dependabot and OWASP Dependency-Check |
 | differential-review | reviewer | — | sickn33/agentic-awesome-skills security/differential-review | security-focused code review of pull requests, commits and diffs |
 | dotnet-reverse | builder | — | sickn33/agentic-awesome-skills security/dotnet-reverse | .NET and C# binary reverse engineering: managed PE analysis, dnSpyEx debugging and de4dot deobfuscation |
 | dsl-vm-reverse | builder | — | sickn33/agentic-awesome-skills reverse-engineering/dsl-vm-reverse | reverse-engineers JavaScript-based custom DSL and VM interpreters and risk-control engines, starting from IIFE and switch-based operations |
@@ -1303,9 +1303,9 @@ No source yet.
 | email-security | reviewer | — | sickn33/agentic-awesome-skills security/email-security | an authorised email security review: phishing analysis, SPF, DKIM and DMARC header authentication and BEC patterns |
 | enterprise-vpn-attack | builder | — | sickn33/agentic-awesome-skills security/enterprise-vpn-attack | an attack matrix for external SSL VPN and remote-access appliances |
 | ethical-hacking-methodology | builder | — | sickn33/agentic-awesome-skills security/ethical-hacking-methodology | the whole penetration-testing lifecycle, from reconnaissance through reporting |
-| firewall-config | builder | — | sickn33/agentic-awesome-skills security/firewall-config | configures iptables, nftables and cloud firewalls, with network segmentation and traffic filtering |
+| firewall-config | builder | — | sickn33/agentic-awesome-skills security/firewall-config; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-gcp-vpc-firewall-rules | configures iptables, nftables and cloud firewalls, with network segmentation and traffic filtering |
 | frontend-security-coder | builder | — | sickn33/agentic-awesome-skills security/frontend-security-coder | secure frontend coding practice for XSS prevention and output sanitisation |
-| gha-security-review | reviewer | — | sickn33/agentic-awesome-skills security/gha-security-review | reviews GitHub Actions workflows for exploitable vulnerabilities, with concrete attack paths |
+| gha-security-review | reviewer | — | sickn33/agentic-awesome-skills security/gha-security-review; mukul975/Anthropic-Cybersecurity-Skills skills/securing-github-actions-workflows | reviews GitHub Actions workflows for exploitable vulnerabilities, with concrete attack paths |
 | hunt-api-misconfig | reviewer | — | sickn33/agentic-awesome-skills security/hunt-api-misconfig | hunts API security misconfiguration |
 | hunt-aspnet | reviewer | — | sickn33/agentic-awesome-skills security/hunt-aspnet | hunts ASP.NET-specific attack surface |
 | hunt-ato | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ato | hunts account takeover, by its taxonomy |
@@ -1367,7 +1367,7 @@ No source yet.
 | infinity | builder | — | sickn33/agentic-awesome-skills security/infinity | enforces a strict input boundary of detect, classify, filter and verify for untrusted data |
 | ios-redteam-pipeline | builder | — | sickn33/agentic-awesome-skills security/ios-redteam-pipeline | an end-to-end iOS red-team pipeline |
 | js-reverse | builder | — | sickn33/agentic-awesome-skills security/js-reverse | front-end JavaScript reverse engineering: locating signature chains and analysing encrypted request parameters |
-| kubernetes-hardening | builder | — | sickn33/agentic-awesome-skills security/kubernetes-hardening | sets Kubernetes security contexts, Pod Security Standards and network policies |
+| kubernetes-hardening | builder | — | sickn33/agentic-awesome-skills security/kubernetes-hardening; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-kubernetes-pod-security-standards | sets Kubernetes security contexts, Pod Security Standards and network policies |
 | laravel-security-audit | reviewer | — | sickn33/agentic-awesome-skills security/laravel-security-audit | audits Laravel applications for vulnerabilities and misconfiguration |
 | linux-hardening | builder | — | sickn33/agentic-awesome-skills security/linux-hardening | applies CIS benchmarks and hardens Linux servers |
 | linux-privilege-escalation | builder | — | sickn33/agentic-awesome-skills security/linux-privilege-escalation | runs a systematic privilege-escalation assessment on Linux systems, finding and exploiting misconfiguration |
@@ -1388,7 +1388,7 @@ No source yet.
 | penetration-testing | builder | — | sickn33/agentic-awesome-skills security/penetration-testing | basic penetration testing and security assessment |
 | pentest-checklist | builder | — | sickn33/agentic-awesome-skills security/pentest-checklist | a checklist for planning, running and following up a penetration test |
 | permission-manager | builder | — | sickn33/agentic-awesome-skills security/permission-manager | manages opencode permissions: reviews always-allow lists and suggests safe read-only commands |
-| policy-as-code | builder | — | sickn33/agentic-awesome-skills security/policy-as-code | implements policy as code with OPA, Sentinel and Kyverno, and automates enforcement in CI/CD |
+| policy-as-code | builder | — | sickn33/agentic-awesome-skills security/policy-as-code; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-policy-as-code-with-open-policy-agent | implements policy as code with OPA, Sentinel and Kyverno, and automates enforcement in CI/CD |
 | privacy-mask | builder | — | sickn33/agentic-awesome-skills security/privacy-mask | masks, redacts, anonymises and censors personal data in screenshots and images |
 | privilege-escalation-methods | builder | — | sickn33/agentic-awesome-skills security/privilege-escalation-methods | the techniques for escalating from a low-privileged user to root or administrator |
 | prompt-injection-defense | builder | — | sickn33/agentic-awesome-skills security/prompt-injection-defense | defends AI systems against prompt injection and indirect prompt attacks with input controls and tool permissions |
@@ -1398,10 +1398,10 @@ No source yet.
 | red-team-tactics | builder | — | sickn33/agentic-awesome-skills security/red-team-tactics | red-team tactics from MITRE ATT&CK: attack phases, detection evasion and reporting |
 | redteam-mindset | builder | — | sickn33/agentic-awesome-skills security/redteam-mindset | red-team operator discipline |
 | reverse-engineer | builder | — | sickn33/agentic-awesome-skills security/reverse-engineer | binary analysis, disassembly, decompilation and software analysis |
-| sast-configuration | builder | — | sickn33/agentic-awesome-skills security/sast-configuration | sets up static application security testing tools and writes their custom rules |
-| sast-scanning | reviewer | — | sickn33/agentic-awesome-skills security/sast-scanning | static application security testing with Semgrep, CodeQL and SonarQube |
-| sbom-supply-chain | builder | — | sickn33/agentic-awesome-skills security/sbom-supply-chain | generates, signs and verifies SBOMs and provenance attestations to secure the software supply chain |
-| secrets-management | builder | — | sickn33/agentic-awesome-skills security/secrets-management | secure secrets management for CI/CD pipelines with Vault, AWS Secrets Manager and other tools |
+| sast-configuration | builder | — | sickn33/agentic-awesome-skills security/sast-configuration; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-semgrep-for-custom-sast-rules | sets up static application security testing tools and writes their custom rules |
+| sast-scanning | reviewer | — | sickn33/agentic-awesome-skills security/sast-scanning; mukul975/Anthropic-Cybersecurity-Skills skills/integrating-sast-into-github-actions-pipeline | static application security testing with Semgrep, CodeQL and SonarQube |
+| sbom-supply-chain | builder | — | sickn33/agentic-awesome-skills security/sbom-supply-chain; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-supply-chain-security-with-in-toto | generates, signs and verifies SBOMs and provenance attestations to secure the software supply chain |
+| secrets-management | builder | — | sickn33/agentic-awesome-skills security/secrets-management; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-secrets-management-with-vault | secure secrets management for CI/CD pipelines with Vault, AWS Secrets Manager and other tools |
 | security-and-hardening | builder | — | sickn33/agentic-awesome-skills security/security-and-hardening | hardens code against vulnerabilities in user input, authentication and data storage |
 | security-auditor | reviewer | — | sickn33/agentic-awesome-skills security/security-auditor | security audit across DevSecOps, cybersecurity and compliance frameworks |
 | security-automation | builder | — | sickn33/agentic-awesome-skills security/security-automation | automates security workflows and remediation: security pipelines and automated compliance checks |
@@ -1425,7 +1425,7 @@ No source yet.
 | variant-analysis | reviewer | — | sickn33/agentic-awesome-skills security/variant-analysis | finds similar vulnerabilities and bugs across codebases by pattern-based analysis |
 | vpn-setup | builder | — | sickn33/agentic-awesome-skills security/vpn-setup | configures WireGuard, OpenVPN and cloud VPNs for secure remote access and site-to-site connectivity |
 | vulnerability-scanning | reviewer | — | sickn33/agentic-awesome-skills security/vulnerability-scanning | scans systems and dependencies for CVEs and security vulnerabilities |
-| waf-setup | builder | — | sickn33/agentic-awesome-skills security/waf-setup | deploys and tunes Web Application Firewalls with rules for OWASP Top 10 protection |
+| waf-setup | builder | — | sickn33/agentic-awesome-skills security/waf-setup; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-cloud-waf-rules | deploys and tunes Web Application Firewalls with rules for OWASP Top 10 protection |
 | web2-recon | builder | — | sickn33/agentic-awesome-skills security/web2-recon | a Web2 reconnaissance pipeline |
 | web3-audit | reviewer | — | sickn33/agentic-awesome-skills security/web3-audit | smart-contract security audit |
 | wifi-wireless | reviewer | — | sickn33/agentic-awesome-skills security/wifi-wireless | an authorised wireless assessment: Wi-Fi capture, WPA handshake analysis and rogue-AP detection research |
@@ -1434,7 +1434,73 @@ No source yet.
 | windows-privilege-escalation | reviewer | — | sickn33/agentic-awesome-skills security/windows-privilege-escalation | systematic methods for finding and exploiting privilege escalation on Windows |
 | wordpress-penetration-testing | reviewer | — | sickn33/agentic-awesome-skills security/wordpress-penetration-testing | assesses WordPress installations for common vulnerabilities and REST permission boundaries in core and plugins |
 | yes-md | builder | — | sickn33/agentic-awesome-skills security/yes-md | six-layer AI governance with safety gates, evidence-based debugging and anti-slack detection |
-| zero-trust | builder | — | sickn33/agentic-awesome-skills security/zero-trust | implements zero-trust network architecture with identity-based access and micro-segmentation |
+| zero-trust | builder | — | sickn33/agentic-awesome-skills security/zero-trust; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-zero-trust-in-cloud | implements zero-trust network architecture with identity-based access and micro-segmentation |
+| analyzing-cloud-storage-access-patterns | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/analyzing-cloud-storage-access-patterns | finds abnormal access to S3, GCS and Azure Blob in data-event logs |
+| analyzing-office365-audit-logs-for-compromise | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/analyzing-office365-audit-logs-for-compromise | reads Office 365 audit logs for the forwarding and inbox rules that hide a compromise |
+| auditing-aws-s3-bucket-permissions | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/auditing-aws-s3-bucket-permissions | audits S3 bucket permissions for public access and over-broad grants |
+| auditing-azure-active-directory-configuration | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/auditing-azure-active-directory-configuration | audits Entra ID authentication policy and risky configuration |
+| auditing-gcp-iam-permissions | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/auditing-gcp-iam-permissions | audits GCP IAM bindings for primitive roles and over-permissive grants |
+| auditing-kubernetes-cluster-rbac | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/auditing-kubernetes-cluster-rbac | audits a cluster's RBAC for wildcard permissions and over-broad roles |
+| auditing-terraform-infrastructure-for-security | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/auditing-terraform-infrastructure-for-security | audits Terraform for misconfiguration with Checkov, tfsec and Terrascan |
+| detecting-aws-cloudtrail-anomalies | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-aws-cloudtrail-anomalies | finds unusual API calls in CloudTrail against a statistical baseline |
+| detecting-aws-credential-exposure-with-trufflehog | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-aws-credential-exposure-with-trufflehog | scans repositories, pipelines and configuration for exposed AWS credentials with TruffleHog |
+| detecting-aws-guardduty-findings-automation | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-aws-guardduty-findings-automation | answers GuardDuty findings automatically through EventBridge and Lambda |
+| detecting-aws-iam-privilege-escalation | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-aws-iam-privilege-escalation | finds AWS IAM privilege-escalation paths with Cloudsplaining |
+| detecting-azure-lateral-movement | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-azure-lateral-movement | detects lateral movement in Entra ID from Graph audit logs |
+| detecting-azure-service-principal-abuse | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-azure-service-principal-abuse | detects abused service principals in Entra ID with KQL queries |
+| detecting-azure-storage-account-misconfigurations | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-azure-storage-account-misconfigurations | audits Azure storage for public access, long-lived SAS tokens and missing encryption |
+| detecting-compromised-cloud-credentials | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-compromised-cloud-credentials | notices compromised cloud credentials across AWS, Azure and GCP from anomalous API use |
+| detecting-cryptomining-in-cloud | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-cryptomining-in-cloud | detects and answers unauthorised mining in a cloud account |
+| detecting-oauth-token-theft | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-oauth-token-theft | detects OAuth token theft and replay in Entra ID |
+| detecting-s3-data-exfiltration-attempts | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-s3-data-exfiltration-attempts | detects exfiltration from S3 in CloudTrail data events and flow logs |
+| detecting-serverless-function-injection | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-serverless-function-injection | detects injection against Lambda, Azure Functions and Cloud Functions |
+| detecting-shadow-it-cloud-usage | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-shadow-it-cloud-usage | finds unapproved SaaS and cloud use in proxy and DNS logs |
+| detecting-suspicious-oauth-application-consent | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-suspicious-oauth-application-consent | finds risky OAuth consent grants in Entra ID |
+| emulating-cloud-attacks-with-stratus-red-team | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/emulating-cloud-attacks-with-stratus-red-team | runs Stratus Red Team's mapped attacks across AWS, Azure, GCP and Kubernetes |
+| enumerating-cloud-with-cloudfox | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/enumerating-cloud-with-cloudfox | enumerates a cloud account read-only with CloudFox |
+| exploiting-aws-with-pacu | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-aws-with-pacu | runs the Pacu AWS exploitation framework end to end |
+| implementing-aws-config-rules-for-compliance | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-aws-config-rules-for-compliance | writes AWS Config rules for continuous compliance |
+| implementing-aws-macie-for-data-classification | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-aws-macie-for-data-classification | turns on Macie to find and classify sensitive data in S3 |
+| implementing-aws-nitro-enclave-security | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-aws-nitro-enclave-security | builds Nitro Enclave confidential-computing environments |
+| implementing-aws-security-hub-compliance | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-aws-security-hub-compliance | deploys Security Hub over Config to aggregate findings and hold compliance |
+| implementing-azure-defender-for-cloud | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-azure-defender-for-cloud | turns on Defender for Cloud across VMs, containers, SQL, storage and Key Vault |
+| implementing-cloud-dlp-for-data-protection | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-cloud-dlp-for-data-protection | puts cloud data-loss prevention in place with Macie, Cloud DLP, Purview and Information Protection |
+| implementing-cloud-security-posture-management | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-cloud-security-posture-management | keeps a multi-cloud posture monitored for misconfiguration and drift |
+| implementing-cloud-workload-protection | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-cloud-workload-protection | watches cloud workloads at runtime for threats and process behaviour |
+| implementing-gcp-binary-authorization | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-gcp-binary-authorization | sets GCP Binary Authorization with KMS attestors and Container Analysis |
+| implementing-gcp-organization-policy-constraints | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-gcp-organization-policy-constraints | writes GCP organization policy constraints through gcloud and Terraform |
+| managing-cloud-identity-with-okta | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/managing-cloud-identity-with-okta | runs Okta as the identity provider for AWS, Azure and GCP |
+| performing-aws-account-enumeration-with-scout-suite | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-aws-account-enumeration-with-scout-suite | enumerates an AWS account read-only with ScoutSuite |
+| performing-aws-privilege-escalation-assessment | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-aws-privilege-escalation-assessment | runs an authorised AWS privilege-escalation assessment |
+| performing-cloud-forensics-with-aws-cloudtrail | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-cloud-forensics-with-aws-cloudtrail | investigates an AWS compromise by querying CloudTrail and Athena |
+| performing-cloud-native-threat-hunting-with-aws-detective | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-cloud-native-threat-hunting-with-aws-detective | hunts an AWS incident through Detective's behaviour graphs |
+| performing-gcp-penetration-testing-with-gcpbucketbrute | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-gcp-penetration-testing-with-gcpbucketbrute | tests GCP storage exposure with GCPBucketBrute |
+| performing-gcp-security-assessment-with-forseti | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-gcp-security-assessment-with-forseti | assesses a GCP estate with Forseti |
+| securing-aws-iam-permissions | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/securing-aws-iam-permissions | hardens AWS IAM to least privilege with boundaries and scoping |
+| securing-container-registry-images | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/securing-container-registry-images | scans, signs and admits registry images from ECR, ACR, GCR and Docker Hub |
+| securing-kubernetes-on-cloud | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/securing-kubernetes-on-cloud | hardens EKS, AKS and GKE with pod security, network policy and workload identity |
+| securing-serverless-functions | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/securing-serverless-functions | hardens serverless platforms with least-privilege roles and input limits |
+| analyzing-kubernetes-audit-logs | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/analyzing-kubernetes-audit-logs | reads API-server audit logs for exec-into-pod, secret access and RBAC changes |
+| benchmarking-kubernetes-with-kube-bench | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/benchmarking-kubernetes-with-kube-bench | runs kube-bench against a cluster as a Job, a DaemonSet or a binary |
+| detecting-container-drift-at-runtime | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-container-drift-at-runtime | notices binary, filesystem and configuration drift in a running container |
+| detecting-container-escape-attempts | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-container-escape-attempts | detects escape attempts through namespaces, capabilities and kernel exploits |
+| detecting-container-runtime-threats-with-falco | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-container-runtime-threats-with-falco | runs Falco on the eBPF driver across Kubernetes and Docker |
+| escaping-containers-to-host | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/escaping-containers-to-host | breaks out of a container to the host through privileged pods, host mounts, runC and exposed docker sockets |
+| hardening-docker-daemon-configuration | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/hardening-docker-daemon-configuration | hardens the Docker daemon with user namespaces, TLS, logging and live restore |
+| implementing-container-image-minimal-base-with-distroless | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-container-image-minimal-base-with-distroless | builds images on distroless bases to cut attack surface |
+| implementing-container-network-policies-with-calico | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-container-network-policies-with-calico | writes Calico's own policy kinds beyond the upstream network policy |
+| implementing-image-provenance-verification-with-cosign | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-image-provenance-verification-with-cosign | signs and verifies image provenance with Cosign, keyed and keyless |
+| implementing-rbac-hardening-for-kubernetes | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-rbac-hardening-for-kubernetes | designs least-privilege roles and cluster roles and audits their bindings |
+| implementing-runtime-security-with-tetragon | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-runtime-security-with-tetragon | watches and enforces in the kernel with Cilium Tetragon |
+| performing-kubernetes-etcd-security-assessment | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-kubernetes-etcd-security-assessment | assesses etcd for encryption at rest, TLS peers and clients, and access |
+| scanning-kubernetes-manifests-with-kubesec | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/scanning-kubernetes-manifests-with-kubesec | scores manifests with Kubesec for privilege-escalation risk |
+| securing-container-registry-with-harbor | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/securing-container-registry-with-harbor | configures Harbor's scanning, signing and replication controls |
+| securing-helm-chart-deployments | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/securing-helm-chart-deployments | verifies chart signatures and provenance and lints rendered templates |
+| building-devsecops-pipeline-with-gitlab-ci | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/building-devsecops-pipeline-with-gitlab-ci | builds a GitLab pipeline that embeds static, dynamic, container and secret scanning |
+| implementing-code-signing-for-artifacts | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-code-signing-for-artifacts | signs build artefacts with GPG, Sigstore and platform signing |
+| implementing-fuzz-testing-in-cicd-with-aflplusplus | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-fuzz-testing-in-cicd-with-aflplusplus | puts coverage-guided fuzzing with AFL++ into a pipeline |
+| implementing-infrastructure-as-code-security-scanning | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-infrastructure-as-code-security-scanning | scans infrastructure as code with Checkov, tfsec and KICS in the pipeline |
+| implementing-secrets-scanning-in-ci-cd | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-secrets-scanning-in-ci-cd | scans a pipeline for leaked secrets with gitleaks and trufflehog |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -2101,9 +2167,9 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 1569 (5 built, 1564 not) |
+| rows | 1635 (5 built, 1630 not) |
 | families with a row | 27 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 17-2000 Engineers; 19-1000 Life Scientists; 19-2000 Physical Scientists; 19-3000 Social Scientists and Related Workers; 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 25-3000 Other Teachers and Instructors; 25-4000 Librarians, Curators, and Archivists; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 29-9000 Other Healthcare Practitioners and Technical Occupations; 33-3000 Law Enforcement Workers; 39-7000 Tour and Travel Guides; 39-9000 Other Personal Care and Service Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks; 43-6000 Secretaries and Administrative Assistants) |
-| sources assessed | 16 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios, video-db/call.md, soumatheusgomes/editonny, Tejashmakwana/Motionmaxxing, Jakeschincariol/day-trader; 2026-11-14) |
+| sources assessed | 17 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios, video-db/call.md, soumatheusgomes/editonny, Tejashmakwana/Motionmaxxing, Jakeschincariol/day-trader, mukul975/Anthropic-Cybersecurity-Skills; 2026-11-15) |
 
 Which rows are built, and in what order, follows his word and the
 Blueprints being built; the registry only says what exists and what does not.
