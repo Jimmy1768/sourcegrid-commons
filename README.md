@@ -75,7 +75,12 @@ interview, spec), in the industry's SKILL.md form unchanged: a `name` and a
 one-line `description`, then its instructions, with supporting files beside
 it. Each sits at `skills/<role>/<name>/SKILL.md`. The role folder, one of
 the kernel's (aide, builder, reviewer, scribe, triager), is how the kernel
-knows which role loads it; a folder named for no role is refused. The five
+knows which role loads it; a folder named for no role is refused. A Skill
+built from someone else's work records in its header the source repository,
+commit and paths, a `source_fingerprint` of the source text at that commit,
+and `adaptation` — `rewritten` or `pointed`; a source under AGPL or with
+mixed or unclear licensing is pointed at only, and
+`THIRD_PARTY_NOTICES.md` holds the rule in full. The five
 adapted from mattpocock/skills (MIT) were received from the Operator
 Blueprint on 2026-10-12, content-identical, with `THIRD_PARTY_NOTICES.md`
 beside them; the kernel reads them from here once its commons reader lands

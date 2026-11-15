@@ -1,5 +1,21 @@
 # Third-party notices
 
+## How a built Skill records its source
+
+A Skill built from someone else's work records in its own header:
+
+- `source_fingerprint: sha256:<64 hex digits>` — the SHA-256 of the source's
+  files at `source_commit`: the files named in `source_paths`, taken in the
+  order `source_paths` lists them, each file's bytes followed by one NUL byte
+  (`0x00`), joined in that order.
+- `adaptation: rewritten` or `adaptation: pointed` — `rewritten` means the
+  Skill keeps the source's judgment in our own words; `pointed` means the
+  Skill only points at the source and reproduces none of its text.
+
+A source under AGPL, or under mixed or unclear licensing, is only ever pointed at: none of its text is copied or rewritten into a Skill.
+
+A Skill's own values live in its own header; this file states the rule.
+
 ## mattpocock/skills
 
 - Source: https://github.com/mattpocock/skills
