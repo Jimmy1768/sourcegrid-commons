@@ -1022,3 +1022,26 @@ Decision:
 - Left out, each for its reason: `trader-broker`, because placing an order is the Gate's step and never the agent's; `trader-budget` and `trader-risk`, because the trading pipeline already holds position sizing under a risk limit and `risk-review` already checks a proposed decision against risk before it goes further.
 - Neither the tool nor the Skills is built or used yet. Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
 Reason: the registries are the record of what the commons could use before it is run, and his handoff names one more tool and a pack of trading Skills worth listing before either is used.
+
+## Next. ffmpeg-skill joins the tool registry
+
+Date: 2026-11-15.
+Who: the Director, in this branch's handoff on one more tool for the Marketing Delegate's video editing; Commons Planning wrote it down.
+Decision:
+- ffmpeg-skill (kajisho5/ffmpeg-skill, MIT, latest release v3.8.20, npm package
+  `ffmpeg-skill`) is a tool, entered, with its document at `tools/ffmpeg-skill/README.md`:
+  42 local FFmpeg tools with a machine-readable contract and an MCP server — probing a
+  file, cutting it by segments, captions, reframing to an aspect and duration, loudness,
+  exports for each platform, checking a finished file against a platform's rules, and a
+  contact sheet. It reads the video and audio files the person supplied and writes its
+  output to a folder they name; there is no cloud service and no API key, and nothing
+  leaves the machine; only its optional speech engines download their model weights once,
+  the first time they run.
+- It needs only Python's standard library and FFmpeg 6.1 or later, and is tested on 6.1,
+  7.1, 8 and 9.
+- It is for the Marketing Delegate's video editing: a Delegate whose finished work is a
+  video calls these tools, alongside WhisperX for transcription and the edit-video Skill.
+  It is not built or used yet.
+- Nothing is copied, so no `THIRD_PARTY_NOTICES.md` line is added.
+Reason: the registry is the record of what the commons could use, and his handoff names one
+more tool worth listing before it is run.
