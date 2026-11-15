@@ -1058,3 +1058,17 @@ Decision:
 - No framework mapping is taken, and no Skill is built.
 - The Director's rule for this library: a match gains a second source instead of being dropped.
 Reason: a specialist security library adds depth the registry lacks, and his rule keeps one row per job rather than one row per source.
+
+## Next. Skills from Anthropic-Cybersecurity-Skills join the registry as threat hunting, threat intelligence and detection rows
+
+Date: 2026-11-15.
+Who: the Director, in this branch's handoff on the threat hunting, threat intelligence and detection security Skills; written down on this branch.
+Decision:
+- mukul975/Anthropic-Cybersecurity-Skills (Apache 2.0, at commit 54a7988) was read for its threat-hunting, threat-intelligence and threat-detection subdomains: 117 Skills.
+- 65 of them join the 15-1200 Computer Occupations table as not-built rows, each sourced to mukul975/Anthropic-Cybersecurity-Skills skills/<name>.
+- 6 rows the registry already held, doing the same job, gain this library as a second source after the source they hold today, and are not dropped.
+- 46 of its names are left out, each because it repeats a skill of the same library kept here, mixes jobs the registry already lists, or is one whole occupation.
+- No framework mapping is taken, and no Skill is built.
+- The Director's rule for this library: a match gains a second source instead of being dropped.
+Reason: a specialist security library adds depth the registry lacks, and his rule keeps one row per job rather than one row per source.
+
