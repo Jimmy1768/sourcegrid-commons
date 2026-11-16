@@ -564,10 +564,10 @@ No source yet.
 | chief-information-security-officer | aide | — | cbrock84/headcount plugins/security/skills/chief-information-security-officer | owns the security posture and the authority to stop work at risk |
 | data-protection-and-encryption | reviewer | — | cbrock84/headcount plugins/security/skills/data-protection-and-encryption | reviews how data is classified, encrypted in transit and at rest |
 | detection-and-monitoring | builder | — | cbrock84/headcount plugins/security/skills/detection-and-monitoring | builds logging and detections that notice an attack in progress |
-| incident-response | builder | — | cbrock84/headcount plugins/security/skills/incident-response | runs a security incident from triage through closure and review |
+| incident-response | builder | — | cbrock84/headcount plugins/security/skills/incident-response; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-ot-incident-response-playbook | runs a security incident from triage through closure and review |
 | security-architecture-review | reviewer | — | cbrock84/headcount plugins/security/skills/security-architecture-review | reviews a design for security before it ships |
 | threat-modeling | reviewer | — | cbrock84/headcount plugins/security/skills/threat-modeling; mukul975/Anthropic-Cybersecurity-Skills skills/performing-threat-modeling-with-owasp-threat-dragon | finds the assets, entry points and trust boundaries worth attacking |
-| vulnerability-management | reviewer | — | cbrock84/headcount plugins/security/skills/vulnerability-management | tracks weaknesses from discovery to confirmed fix by exploitability |
+| vulnerability-management | reviewer | — | cbrock84/headcount plugins/security/skills/vulnerability-management; mukul975/Anthropic-Cybersecurity-Skills skills/performing-ot-vulnerability-assessment-with-claroty | tracks weaknesses from discovery to confirmed fix by exploitability |
 | backup-and-recovery | builder | — | cbrock84/headcount plugins/it-operations/skills/backup-and-recovery | protects and proves restores with coverage, retention and tests |
 | chief-information-officer | aide | — | cbrock84/headcount plugins/it-operations/skills/chief-information-officer | runs the technology the company works on, its quality and spend |
 | cloud-administration | builder | — | cbrock84/headcount plugins/it-operations/skills/cloud-administration | administers tenants, the SaaS estate and who owns each app |
@@ -955,7 +955,7 @@ No source yet.
 | rag-infrastructure | builder | — | sickn33/agentic-awesome-skills | runs the RAG infrastructure |
 | redis | builder | — | sickn33/agentic-awesome-skills | runs Redis |
 | reverse-proxy | builder | — | sickn33/agentic-awesome-skills | runs a reverse proxy |
-| saas-security-posture | reviewer | — | sickn33/agentic-awesome-skills | reviews a SaaS security posture |
+| saas-security-posture | reviewer | — | sickn33/agentic-awesome-skills; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-zero-trust-for-saas-applications | reviews a SaaS security posture |
 | semantic-versioning | builder | — | sickn33/agentic-awesome-skills | applies semantic versioning to releases |
 | service-mesh | builder | — | sickn33/agentic-awesome-skills | runs a service mesh |
 | slo-implementation | builder | — | sickn33/agentic-awesome-skills | implements SLOs |
@@ -1359,7 +1359,7 @@ No source yet.
 | hunt-ssrf | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ssrf | hunts server-side request forgery |
 | hunt-ssti | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ssti | hunts server-side template injection across Jinja2, Twig and Freemarker |
 | hunt-subdomain | reviewer | — | sickn33/agentic-awesome-skills security/hunt-subdomain | hunts subdomain-takeover vulnerabilities |
-| hunt-tls-network | reviewer | — | sickn33/agentic-awesome-skills security/hunt-tls-network | hunts TLS, SSL and DNS misconfiguration |
+| hunt-tls-network | reviewer | — | sickn33/agentic-awesome-skills security/hunt-tls-network; mukul975/Anthropic-Cybersecurity-Skills skills/performing-ssl-tls-security-assessment | hunts TLS, SSL and DNS misconfiguration |
 | hunt-websocket | reviewer | — | sickn33/agentic-awesome-skills security/hunt-websocket | hunts WebSocket vulnerabilities |
 | hunt-xss | reviewer | — | sickn33/agentic-awesome-skills security/hunt-xss | hunts cross-site scripting |
 | hunt-xxe | reviewer | — | sickn33/agentic-awesome-skills security/hunt-xxe | hunts XML external entity vulnerabilities |
@@ -1423,12 +1423,12 @@ No source yet.
 | top-web-vulnerabilities | builder | — | sickn33/agentic-awesome-skills security/top-web-vulnerabilities | an overlapping reference of common web-application vulnerability patterns |
 | triage-validation | reviewer | — | sickn33/agentic-awesome-skills security/triage-validation | validates a finding before any report is written |
 | variant-analysis | reviewer | — | sickn33/agentic-awesome-skills security/variant-analysis | finds similar vulnerabilities and bugs across codebases by pattern-based analysis |
-| vpn-setup | builder | — | sickn33/agentic-awesome-skills security/vpn-setup | configures WireGuard, OpenVPN and cloud VPNs for secure remote access and site-to-site connectivity |
+| vpn-setup | builder | — | sickn33/agentic-awesome-skills security/vpn-setup; mukul975/Anthropic-Cybersecurity-Skills skills/deploying-tailscale-for-zero-trust-vpn | configures WireGuard, OpenVPN and cloud VPNs for secure remote access and site-to-site connectivity |
 | vulnerability-scanning | reviewer | — | sickn33/agentic-awesome-skills security/vulnerability-scanning | scans systems and dependencies for CVEs and security vulnerabilities |
 | waf-setup | builder | — | sickn33/agentic-awesome-skills security/waf-setup; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-cloud-waf-rules | deploys and tunes Web Application Firewalls with rules for OWASP Top 10 protection |
-| web2-recon | builder | — | sickn33/agentic-awesome-skills security/web2-recon | a Web2 reconnaissance pipeline |
+| web2-recon | builder | — | sickn33/agentic-awesome-skills security/web2-recon; mukul975/Anthropic-Cybersecurity-Skills skills/performing-dns-enumeration-and-zone-transfer | a Web2 reconnaissance pipeline |
 | web3-audit | reviewer | — | sickn33/agentic-awesome-skills security/web3-audit | smart-contract security audit |
-| wifi-wireless | reviewer | — | sickn33/agentic-awesome-skills security/wifi-wireless | an authorised wireless assessment: Wi-Fi capture, WPA handshake analysis and rogue-AP detection research |
+| wifi-wireless | reviewer | — | sickn33/agentic-awesome-skills security/wifi-wireless; mukul975/Anthropic-Cybersecurity-Skills skills/performing-wireless-security-assessment-with-kismet | an authorised wireless assessment: Wi-Fi capture, WPA handshake analysis and rogue-AP detection research |
 | windows-ad | reviewer | — | sickn33/agentic-awesome-skills security/windows-ad | authorised Active Directory and Windows identity attacks: Kerberos abuse, AD CS escalation and BloodHound path analysis |
 | windows-hardening | builder | — | sickn33/agentic-awesome-skills security/windows-hardening | hardens Windows servers to security baselines and CIS benchmarks with Group Policy and Windows Defender |
 | windows-privilege-escalation | reviewer | — | sickn33/agentic-awesome-skills security/windows-privilege-escalation | systematic methods for finding and exploiting privilege escalation on Windows |
@@ -1566,6 +1566,52 @@ No source yet.
 | detecting-insider-threat-with-ueba | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-insider-threat-with-ueba | builds user and entity behaviour analytics that notices insider threat |
 | detecting-pass-the-ticket-attacks | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-pass-the-ticket-attacks | detects Kerberos pass-the-ticket from ticket-request event patterns |
 | detecting-rdp-brute-force-attacks | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-rdp-brute-force-attacks | detects RDP brute force from failed logon records |
+| analyzing-network-flow-data-with-netflow | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/analyzing-network-flow-data-with-netflow | reads NetFlow and IPFIX records to spot volumetric anomalies, port scanning, exfiltration and command-and-control |
+| analyzing-network-packets-with-scapy | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/analyzing-network-packets-with-scapy | crafts, sniffs and dissects packets with Scapy to read a capture or test a filter |
+| analyzing-network-traffic-with-wireshark | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/analyzing-network-traffic-with-wireshark | reads packet captures in Wireshark and tshark to find malicious traffic |
+| conducting-man-in-the-middle-attack-simulation | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/conducting-man-in-the-middle-attack-simulation | simulates a man-in-the-middle attack in an authorised lab with Ettercap, mitmproxy and Bettercap |
+| configuring-network-segmentation-with-vlans | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/configuring-network-segmentation-with-vlans | segments a network with 802.1Q VLANs on managed switches |
+| configuring-snort-ids-for-intrusion-detection | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/configuring-snort-ids-for-intrusion-detection | installs and tunes Snort 3 with custom and community rules |
+| detecting-arp-poisoning-in-network-traffic | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-arp-poisoning-in-network-traffic | detects Layer 2 ARP spoofing with ARPWatch, dynamic ARP inspection and packet capture |
+| detecting-command-and-control-over-dns | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-command-and-control-over-dns | detects command-and-control tunnelled over DNS by Iodine, dnscat2 and dns2tcp |
+| detecting-lateral-movement-in-network | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-lateral-movement-in-network | finds lateral movement in authentication logs, network flows and endpoint telemetry |
+| detecting-network-anomalies-with-zeek | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-network-anomalies-with-zeek | deploys Zeek as a passive monitor and reads its structured connection logs |
+| exploiting-bgp-hijacking-vulnerabilities | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-bgp-hijacking-vulnerabilities | simulates BGP hijacking in an authorised lab and tests route origin validation |
+| exploiting-ipv6-vulnerabilities | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-ipv6-vulnerabilities | finds and exploits IPv6-specific weaknesses: SLAAC spoofing, router advertisement flooding and more |
+| exploiting-smb-vulnerabilities-with-metasploit | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-smb-vulnerabilities-with-metasploit | exploits SMB weaknesses with Metasploit during an authorised test |
+| implementing-bgp-security-with-rpki | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-bgp-security-with-rpki | secures BGP with RPKI route origin authorisations and validation |
+| implementing-browser-isolation-for-zero-trust | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-browser-isolation-for-zero-trust | deploys remote browser isolation as part of a zero trust architecture |
+| implementing-network-access-control | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-network-access-control | enforces 802.1X port-based access control with RADIUS and PacketFence |
+| implementing-network-segmentation-with-firewall-zones | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-network-segmentation-with-firewall-zones | segments a network with firewall security zones, inter-zone ACLs and VLANs |
+| implementing-network-traffic-analysis-with-arkime | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-network-traffic-analysis-with-arkime | queries Arkime full packet capture to search sessions and pull pcaps |
+| performing-ssl-tls-inspection-configuration | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-ssl-tls-inspection-configuration | configures break-and-inspect TLS on firewalls and forward proxies |
+| scanning-network-with-nmap-advanced | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/scanning-network-with-nmap-advanced | runs advanced Nmap reconnaissance with the scripting engine and evasion controls |
+| configuring-microsegmentation-for-zero-trust | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/configuring-microsegmentation-for-zero-trust | enforces least-privilege workload-to-workload access with microsegmentation |
+| deploying-software-defined-perimeter | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/deploying-software-defined-perimeter | deploys a software-defined perimeter with single packet authorisation |
+| implementing-cisa-zero-trust-maturity-model | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-cisa-zero-trust-maturity-model | assesses and progressively implements the CISA Zero Trust Maturity Model across its pillars |
+| implementing-device-posture-assessment-in-zero-trust | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-device-posture-assessment-in-zero-trust | gates zero trust access on device posture and endpoint health |
+| detecting-bluetooth-low-energy-attacks | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-bluetooth-low-energy-attacks | detects and analyses Bluetooth Low Energy attacks: sniffing, replay and GATT exposure |
+| deploying-active-directory-honeytokens | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/deploying-active-directory-honeytokens | plants honeytokens in Active Directory, including decoy privileged accounts |
+| deploying-cloud-deception-with-decoy-resources | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/deploying-cloud-deception-with-decoy-resources | deploys cloud-native decoy resources across AWS, Azure and GCP |
+| designing-adversary-engagement-with-mitre-engage | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/designing-adversary-engagement-with-mitre-engage | plans and measures an adversary engagement operation with MITRE Engage |
+| implementing-deception-based-detection-with-canarytoken | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-deception-based-detection-with-canarytoken | deploys and monitors Canary Tokens through the Thinkst Canary API |
+| implementing-network-deception-with-honeypots | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-network-deception-with-honeypots | runs network honeypots with OpenCanary, T-Pot or Cowrie |
+| detecting-anomalies-in-industrial-control-systems | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-anomalies-in-industrial-control-systems | detects OT anomalies with machine learning on OT baselines and physics-based rules |
+| detecting-attacks-on-historian-servers | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-attacks-on-historian-servers | detects attacks on OT historian servers from their logs and behaviour |
+| detecting-dnp3-protocol-anomalies | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-dnp3-protocol-anomalies | detects DNP3 anomalies by watching for unauthorised control commands |
+| detecting-modbus-command-injection-attacks | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-modbus-command-injection-attacks | detects command injection against Modbus TCP/RTU by unauthorised register writes |
+| implementing-dragos-platform-for-ot-monitoring | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-dragos-platform-for-ot-monitoring | deploys Dragos Platform sensors and detection analytics for OT |
+| implementing-iec-62443-security-zones | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-iec-62443-security-zones | designs IEC 62443 security zones and conduits for industrial control systems |
+| implementing-nerc-cip-compliance-controls | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-nerc-cip-compliance-controls | implements NERC CIP controls from asset categorisation through to recovery |
+| implementing-ot-network-traffic-analysis-with-nozomi | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-ot-network-traffic-analysis-with-nozomi | deploys Nozomi Guardian sensors for passive OT traffic analysis |
+| implementing-patch-management-for-ot-systems | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-patch-management-for-ot-systems | runs a patch programme for OT where IT-style patching breaks things |
+| implementing-purdue-model-network-segmentation | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-purdue-model-network-segmentation | segments an OT network along the Purdue model |
+| performing-ot-network-security-assessment | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-ot-network-security-assessment | assesses an OT network from outside and inside |
+| performing-plc-firmware-security-analysis | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-plc-firmware-security-analysis | analyses PLC firmware for exploitable weaknesses |
+| performing-power-grid-cybersecurity-assessment | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-power-grid-cybersecurity-assessment | assesses power grid generation, transmission and distribution security |
+| performing-s7comm-protocol-security-analysis | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-s7comm-protocol-security-analysis | analyses Siemens S7comm and S7CommPlus security |
+| performing-scada-hmi-security-assessment | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-scada-hmi-security-assessment | assesses SCADA human-machine interfaces for weakness |
+| securing-remote-access-to-ot-environment | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/securing-remote-access-to-ot-environment | designs secure vendor and engineer remote access to an OT environment |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -2232,7 +2278,7 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 1700 (5 built, 1695 not) |
+| rows | 1746 (5 built, 1741 not) |
 | families with a row | 27 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 17-2000 Engineers; 19-1000 Life Scientists; 19-2000 Physical Scientists; 19-3000 Social Scientists and Related Workers; 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 25-3000 Other Teachers and Instructors; 25-4000 Librarians, Curators, and Archivists; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 29-9000 Other Healthcare Practitioners and Technical Occupations; 33-3000 Law Enforcement Workers; 39-7000 Tour and Travel Guides; 39-9000 Other Personal Care and Service Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks; 43-6000 Secretaries and Administrative Assistants) |
 | sources assessed | 17 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios, video-db/call.md, soumatheusgomes/editonny, Tejashmakwana/Motionmaxxing, Jakeschincariol/day-trader, mukul975/Anthropic-Cybersecurity-Skills; 2026-11-15) |
 

@@ -1072,3 +1072,13 @@ Decision:
 - The Director's rule for this library: a match gains a second source instead of being dropped.
 Reason: a specialist security library adds depth the registry lacks, and his rule keeps one row per job rather than one row per source.
 
+## Next. Skills from Anthropic-Cybersecurity-Skills join the registry as network, zero trust, wireless, deception and OT rows
+
+Date: 2026-11-16.
+Who: the owner of the commons' Skill registry.
+Decision:
+- a Skill of ours that does the same job as one in mukul975/Anthropic-Cybersecurity-Skills gains that repository as a second source on its row, and the library's copy is not listed as a row of its own;
+- a Skill of the library that does a job no row of ours does becomes a Skill under Computer Occupations, not built, with mukul975/Anthropic-Cybersecurity-Skills skills/<name> as its source;
+- a Skill of the library that only mixes jobs we already list, or that is one whole engagement, is left out.
+Reason: the library is the specialist source for security, so it is listed beside what we hold rather than replacing or repeating it.
+
