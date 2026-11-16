@@ -1082,3 +1082,13 @@ Decision:
 - a Skill of the library that only mixes jobs we already list, or that is one whole engagement, is left out.
 Reason: the library is the specialist source for security, so it is listed beside what we hold rather than replacing or repeating it.
 
+## Next. Skills from Anthropic-Cybersecurity-Skills join the registry as web, API, mobile, AI and blockchain security rows
+
+Date: 2026-11-16.
+Who: the Director.
+Decision:
+- mukul975/Anthropic-Cybersecurity-Skills is listed in the commons' Skill registry under Computer Occupations for the web application, API, mobile, AI and blockchain security work it holds, each row sourced to the library's own path and marked not built.
+- Where a Skill in the library does the same job as a security row the registry already holds, that row gains the library as a second source, after the source it holds today, instead of being dropped.
+- The library's own framework mappings are not taken.
+Reason: the library is one person's (Apache 2.0), and the same job should be found once; a second source on the row that does the job says where else it can be read.
+

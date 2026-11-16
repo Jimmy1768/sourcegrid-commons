@@ -1035,7 +1035,7 @@ No source yet.
 | ai-code-generation-guardrails | builder | — | sickn33/agentic-awesome-skills | AI-written code guarded before merge, from plan checks to isolated behaviour |
 | observability-cloud-planning | builder | — | sickn33/agentic-awesome-skills | monitoring scope, SLOs and incident readiness planned together |
 | ai-agent-development | builder | — | sickn33/agentic-awesome-skills | autonomous agents and multi-agent orchestration built |
-| api-security-testing | builder | — | sickn33/agentic-awesome-skills | API security testing across authentication, authorization and rate limiting |
+| api-security-testing | builder | — | sickn33/agentic-awesome-skills; mukul975/Anthropic-Cybersecurity-Skills skills/testing-api-security-with-owasp-top-10 | API security testing across authentication, authorization and rate limiting |
 | bash-scripting | builder | — | sickn33/agentic-awesome-skills | production-ready shell scripts with defensive patterns and error handling |
 | kubernetes-deployment | builder | — | sickn33/agentic-awesome-skills | container orchestration, charts and production manifests |
 | linux-troubleshooting | builder | — | sickn33/agentic-awesome-skills | Linux performance and system faults diagnosed |
@@ -1270,13 +1270,13 @@ No source yet.
 | 007 | reviewer | — | sickn33/agentic-awesome-skills security/007 | security audit, hardening and threat modeling with STRIDE and PASTA, red- and blue-team work, OWASP checks and code review |
 | access-review | reviewer | — | sickn33/agentic-awesome-skills security/access-review | runs periodic access reviews and certifications, with access governance and recertification workflows |
 | active-directory-attacks | reviewer | — | sickn33/agentic-awesome-skills security/active-directory-attacks | assesses Active Directory attack paths through scoped configuration review and controlled lab validation |
-| ai-agent-security | builder | — | sickn33/agentic-awesome-skills security/ai-agent-security | secures AI agents against prompt injection, tool abuse and data exfiltration with defence in depth |
+| ai-agent-security | builder | — | sickn33/agentic-awesome-skills security/ai-agent-security; mukul975/Anthropic-Cybersecurity-Skills skills/securing-agentic-ai-tool-invocation | secures AI agents against prompt injection, tool abuse and data exfiltration with defence in depth |
 | ai-coding-agent-guardrails | builder | — | sickn33/agentic-awesome-skills security/ai-coding-agent-guardrails | secures AI coding agents with permission boundaries and secret protection |
-| ai-red-teaming | reviewer | — | sickn33/agentic-awesome-skills security/ai-red-teaming | runs structured AI red-team exercises for jailbreak resistance, data-exfiltration risk and harmful output |
+| ai-red-teaming | reviewer | — | sickn33/agentic-awesome-skills security/ai-red-teaming; mukul975/Anthropic-Cybersecurity-Skills skills/red-teaming-llms-with-garak | runs structured AI red-team exercises for jailbreak resistance, data-exfiltration risk and harmful output |
 | ai-security-hardening | builder | — | sickn33/agentic-awesome-skills security/ai-security-hardening | hardens AI and LLM deployments against prompt injection, data exfiltration, model theft and supply-chain attacks |
 | anti-reversing-techniques | reviewer | — | sickn33/agentic-awesome-skills security/anti-reversing-techniques | analyses anti-debugging, obfuscation and anti-tamper techniques during authorised binary analysis |
-| apk-redteam-pipeline | builder | — | sickn33/agentic-awesome-skills security/apk-redteam-pipeline | an end-to-end red-team pipeline for Android APKs |
-| apk-reverse | builder | — | sickn33/agentic-awesome-skills security/apk-reverse | reverse-engineers Android APKs: unpacking, Java decompilation, smali modification, repacking and signing |
+| apk-redteam-pipeline | builder | — | sickn33/agentic-awesome-skills security/apk-redteam-pipeline; mukul975/Anthropic-Cybersecurity-Skills skills/performing-dynamic-analysis-of-android-app | an end-to-end red-team pipeline for Android APKs |
+| apk-reverse | builder | — | sickn33/agentic-awesome-skills security/apk-reverse; mukul975/Anthropic-Cybersecurity-Skills skills/performing-android-app-static-analysis-with-mobsf | reverse-engineers Android APKs: unpacking, Java decompilation, smali modification, repacking and signing |
 | asset-inventory | builder | — | sickn33/agentic-awesome-skills security/asset-inventory; mukul975/Anthropic-Cybersecurity-Skills skills/performing-cloud-asset-inventory-with-cartography | maintains the IT asset inventory and configuration management database for hardware, software and cloud |
 | attack-chain | builder | — | sickn33/agentic-awesome-skills security/attack-chain | plans and runs an authorised multi-stage attack path from reconnaissance and initial access onward |
 | attack-tree-construction | builder | — | sickn33/agentic-awesome-skills security/attack-tree-construction | builds attack trees that map threat paths and attack scenarios |
@@ -1309,63 +1309,63 @@ No source yet.
 | hunt-api-misconfig | reviewer | — | sickn33/agentic-awesome-skills security/hunt-api-misconfig | hunts API security misconfiguration |
 | hunt-aspnet | reviewer | — | sickn33/agentic-awesome-skills security/hunt-aspnet | hunts ASP.NET-specific attack surface |
 | hunt-ato | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ato | hunts account takeover, by its taxonomy |
-| hunt-auth-bypass | reviewer | — | sickn33/agentic-awesome-skills security/hunt-auth-bypass | hunts authentication-bypass vulnerabilities |
+| hunt-auth-bypass | reviewer | — | sickn33/agentic-awesome-skills security/hunt-auth-bypass; mukul975/Anthropic-Cybersecurity-Skills skills/bypassing-authentication-with-forced-browsing | hunts authentication-bypass vulnerabilities |
 | hunt-brute-force | reviewer | — | sickn33/agentic-awesome-skills security/hunt-brute-force | hunts missing or weak rate limiting |
-| hunt-business-logic | reviewer | — | sickn33/agentic-awesome-skills security/hunt-business-logic | hunts business-logic vulnerabilities |
-| hunt-cache-poison | reviewer | — | sickn33/agentic-awesome-skills security/hunt-cache-poison | hunts cache-poisoning vulnerabilities |
+| hunt-business-logic | reviewer | — | sickn33/agentic-awesome-skills security/hunt-business-logic; mukul975/Anthropic-Cybersecurity-Skills skills/testing-for-business-logic-vulnerabilities | hunts business-logic vulnerabilities |
+| hunt-cache-poison | reviewer | — | sickn33/agentic-awesome-skills security/hunt-cache-poison; mukul975/Anthropic-Cybersecurity-Skills skills/performing-web-cache-poisoning-attack | hunts cache-poisoning vulnerabilities |
 | hunt-captcha-bypass | reviewer | — | sickn33/agentic-awesome-skills security/hunt-captcha-bypass | hunts CAPTCHA bypass |
 | hunt-cicd | reviewer | — | sickn33/agentic-awesome-skills security/hunt-cicd | hunts CI/CD pipeline vulnerabilities |
-| hunt-clickjacking | reviewer | — | sickn33/agentic-awesome-skills security/hunt-clickjacking | hunts clickjacking |
+| hunt-clickjacking | reviewer | — | sickn33/agentic-awesome-skills security/hunt-clickjacking; mukul975/Anthropic-Cybersecurity-Skills skills/performing-clickjacking-attack-test | hunts clickjacking |
 | hunt-cloud-misconfig | reviewer | — | sickn33/agentic-awesome-skills security/hunt-cloud-misconfig | hunts cloud and infrastructure misconfiguration |
-| hunt-cors | reviewer | — | sickn33/agentic-awesome-skills security/hunt-cors | hunts CORS misconfiguration |
-| hunt-csrf | reviewer | — | sickn33/agentic-awesome-skills security/hunt-csrf | hunts CSRF vulnerabilities |
-| hunt-deserialization | reviewer | — | sickn33/agentic-awesome-skills security/hunt-deserialization | hunts insecure deserialization |
+| hunt-cors | reviewer | — | sickn33/agentic-awesome-skills security/hunt-cors; mukul975/Anthropic-Cybersecurity-Skills skills/testing-cors-misconfiguration | hunts CORS misconfiguration |
+| hunt-csrf | reviewer | — | sickn33/agentic-awesome-skills security/hunt-csrf; mukul975/Anthropic-Cybersecurity-Skills skills/performing-csrf-attack-simulation | hunts CSRF vulnerabilities |
+| hunt-deserialization | reviewer | — | sickn33/agentic-awesome-skills security/hunt-deserialization; mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-insecure-deserialization | hunts insecure deserialization |
 | hunt-dispatch | builder | — | sickn33/agentic-awesome-skills security/hunt-dispatch | loads the skill set the hunt orchestrator works from |
 | hunt-dom | reviewer | — | sickn33/agentic-awesome-skills security/hunt-dom | hunts client-side DOM vulnerabilities |
 | hunt-exceptional-conditions | reviewer | — | sickn33/agentic-awesome-skills security/hunt-exceptional-conditions | hunts mishandled exceptional conditions |
 | hunt-file-upload | reviewer | — | sickn33/agentic-awesome-skills security/hunt-file-upload | hunts file-upload bugs |
 | hunt-fintech-graphql | reviewer | — | sickn33/agentic-awesome-skills security/hunt-fintech-graphql | hunts fintech-specific GraphQL vulnerabilities |
 | hunt-forgot-password | reviewer | — | sickn33/agentic-awesome-skills security/hunt-forgot-password | hunts flaws in forgot-password and account-recovery authentication |
-| hunt-graphql | reviewer | — | sickn33/agentic-awesome-skills security/hunt-graphql | hunts GraphQL vulnerabilities |
+| hunt-graphql | reviewer | — | sickn33/agentic-awesome-skills security/hunt-graphql; mukul975/Anthropic-Cybersecurity-Skills skills/performing-graphql-security-assessment | hunts GraphQL vulnerabilities |
 | hunt-grpc | reviewer | — | sickn33/agentic-awesome-skills security/hunt-grpc | hunts gRPC vulnerabilities |
-| hunt-host-header | reviewer | — | sickn33/agentic-awesome-skills security/hunt-host-header | hunts host-header injection |
+| hunt-host-header | reviewer | — | sickn33/agentic-awesome-skills security/hunt-host-header; mukul975/Anthropic-Cybersecurity-Skills skills/testing-for-host-header-injection | hunts host-header injection |
 | hunt-html-injection | reviewer | — | sickn33/agentic-awesome-skills security/hunt-html-injection | hunts HTML injection |
-| hunt-http-smuggling | reviewer | — | sickn33/agentic-awesome-skills security/hunt-http-smuggling | hunts HTTP request smuggling across CL.TE, TE.CL, H2.CL and H2.TE |
-| hunt-idor | reviewer | — | sickn33/agentic-awesome-skills security/hunt-idor | hunts IDOR vulnerabilities, built from public bug-bounty reports |
-| hunt-jwt-crypto | reviewer | — | sickn33/agentic-awesome-skills security/hunt-jwt-crypto | hunts JWT cryptographic failures |
+| hunt-http-smuggling | reviewer | — | sickn33/agentic-awesome-skills security/hunt-http-smuggling; mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-http-request-smuggling | hunts HTTP request smuggling across CL.TE, TE.CL, H2.CL and H2.TE |
+| hunt-idor | reviewer | — | sickn33/agentic-awesome-skills security/hunt-idor; mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-idor-vulnerabilities | hunts IDOR vulnerabilities, built from public bug-bounty reports |
+| hunt-jwt-crypto | reviewer | — | sickn33/agentic-awesome-skills security/hunt-jwt-crypto; mukul975/Anthropic-Cybersecurity-Skills skills/testing-for-json-web-token-vulnerabilities | hunts JWT cryptographic failures |
 | hunt-k8s | reviewer | — | sickn33/agentic-awesome-skills security/hunt-k8s | hunts Kubernetes and Docker |
 | hunt-laravel | reviewer | — | sickn33/agentic-awesome-skills security/hunt-laravel | hunts Laravel-specific vulnerabilities |
 | hunt-ldap | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ldap | hunts LDAP and XPath injection |
-| hunt-lfi | reviewer | — | sickn33/agentic-awesome-skills security/hunt-lfi | hunts local and remote file inclusion and path traversal |
-| hunt-llm-ai | reviewer | — | sickn33/agentic-awesome-skills security/hunt-llm-ai | hunts LLM and AI feature bugs |
+| hunt-lfi | reviewer | — | sickn33/agentic-awesome-skills security/hunt-lfi; mukul975/Anthropic-Cybersecurity-Skills skills/performing-directory-traversal-testing | hunts local and remote file inclusion and path traversal |
+| hunt-llm-ai | reviewer | — | sickn33/agentic-awesome-skills security/hunt-llm-ai; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-llm-guardrails-for-security | hunts LLM and AI feature bugs |
 | hunt-mfa-bypass | reviewer | — | sickn33/agentic-awesome-skills security/hunt-mfa-bypass | hunts MFA and 2FA bypass |
 | hunt-nextjs | reviewer | — | sickn33/agentic-awesome-skills security/hunt-nextjs | hunts Next.js-specific vulnerabilities |
 | hunt-nodejs | reviewer | — | sickn33/agentic-awesome-skills security/hunt-nodejs | hunts Node.js-specific vulnerabilities |
-| hunt-nosqli | reviewer | — | sickn33/agentic-awesome-skills security/hunt-nosqli | hunts NoSQL injection |
+| hunt-nosqli | reviewer | — | sickn33/agentic-awesome-skills security/hunt-nosqli; mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-nosql-injection-vulnerabilities | hunts NoSQL injection |
 | hunt-ntlm-info | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ntlm-info | hunts NTLM and Negotiate information disclosure on internet-reachable IIS, SharePoint and Exchange |
-| hunt-oauth | reviewer | — | sickn33/agentic-awesome-skills security/hunt-oauth | hunts OAuth vulnerabilities, built from public bug-bounty reports |
-| hunt-open-redirect | reviewer | — | sickn33/agentic-awesome-skills security/hunt-open-redirect | hunts open redirect |
-| hunt-race-condition | reviewer | — | sickn33/agentic-awesome-skills security/hunt-race-condition | hunts race-condition vulnerabilities |
-| hunt-rag-vector | reviewer | — | sickn33/agentic-awesome-skills security/hunt-rag-vector | hunts vector-store and embedding-layer weaknesses in RAG pipelines, OWASP LLM08 |
+| hunt-oauth | reviewer | — | sickn33/agentic-awesome-skills security/hunt-oauth; mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-oauth-misconfiguration | hunts OAuth vulnerabilities, built from public bug-bounty reports |
+| hunt-open-redirect | reviewer | — | sickn33/agentic-awesome-skills security/hunt-open-redirect; mukul975/Anthropic-Cybersecurity-Skills skills/testing-for-open-redirect-vulnerabilities | hunts open redirect |
+| hunt-race-condition | reviewer | — | sickn33/agentic-awesome-skills security/hunt-race-condition; mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-race-condition-vulnerabilities | hunts race-condition vulnerabilities |
+| hunt-rag-vector | reviewer | — | sickn33/agentic-awesome-skills security/hunt-rag-vector; mukul975/Anthropic-Cybersecurity-Skills skills/assessing-vector-and-embedding-weaknesses | hunts vector-store and embedding-layer weaknesses in RAG pipelines, OWASP LLM08 |
 | hunt-rce | reviewer | — | sickn33/agentic-awesome-skills security/hunt-rce | hunts remote code execution, built from public bug-bounty reports |
 | hunt-saml | reviewer | — | sickn33/agentic-awesome-skills security/hunt-saml | hunts SAML and SSO attacks |
 | hunt-session | reviewer | — | sickn33/agentic-awesome-skills security/hunt-session | hunts session-management vulnerabilities |
-| hunt-shadow-api | reviewer | — | sickn33/agentic-awesome-skills security/hunt-shadow-api | hunts shadow, zombie and undocumented API surface, OWASP API9 |
+| hunt-shadow-api | reviewer | — | sickn33/agentic-awesome-skills security/hunt-shadow-api; mukul975/Anthropic-Cybersecurity-Skills skills/detecting-shadow-api-endpoints | hunts shadow, zombie and undocumented API surface, OWASP API9 |
 | hunt-sharepoint | reviewer | — | sickn33/agentic-awesome-skills security/hunt-sharepoint | hunts on-premises Microsoft SharePoint farms, 2013, 2016, 2019 and Subscription Edition |
 | hunt-source-leak | reviewer | — | sickn33/agentic-awesome-skills security/hunt-source-leak | hunts source-code and build-artefact leakage |
 | hunt-spa-api | reviewer | — | sickn33/agentic-awesome-skills security/hunt-spa-api | finds a single-page app's hidden backend API in its public JavaScript bundle, then tests that API for broken access control |
 | hunt-springboot | reviewer | — | sickn33/agentic-awesome-skills security/hunt-springboot | hunts Spring Boot-specific vulnerabilities |
-| hunt-sqli | reviewer | — | sickn33/agentic-awesome-skills security/hunt-sqli | hunts SQL injection |
-| hunt-ssrf | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ssrf | hunts server-side request forgery |
-| hunt-ssti | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ssti | hunts server-side template injection across Jinja2, Twig and Freemarker |
-| hunt-subdomain | reviewer | — | sickn33/agentic-awesome-skills security/hunt-subdomain | hunts subdomain-takeover vulnerabilities |
+| hunt-sqli | reviewer | — | sickn33/agentic-awesome-skills security/hunt-sqli; mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-sql-injection-with-sqlmap | hunts SQL injection |
+| hunt-ssrf | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ssrf; mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-server-side-request-forgery | hunts server-side request forgery |
+| hunt-ssti | reviewer | — | sickn33/agentic-awesome-skills security/hunt-ssti; mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-template-injection-vulnerabilities | hunts server-side template injection across Jinja2, Twig and Freemarker |
+| hunt-subdomain | reviewer | — | sickn33/agentic-awesome-skills security/hunt-subdomain; mukul975/Anthropic-Cybersecurity-Skills skills/performing-subdomain-enumeration-with-subfinder | hunts subdomain-takeover vulnerabilities |
 | hunt-tls-network | reviewer | — | sickn33/agentic-awesome-skills security/hunt-tls-network; mukul975/Anthropic-Cybersecurity-Skills skills/performing-ssl-tls-security-assessment | hunts TLS, SSL and DNS misconfiguration |
-| hunt-websocket | reviewer | — | sickn33/agentic-awesome-skills security/hunt-websocket | hunts WebSocket vulnerabilities |
-| hunt-xss | reviewer | — | sickn33/agentic-awesome-skills security/hunt-xss | hunts cross-site scripting |
-| hunt-xxe | reviewer | — | sickn33/agentic-awesome-skills security/hunt-xxe | hunts XML external entity vulnerabilities |
+| hunt-websocket | reviewer | — | sickn33/agentic-awesome-skills security/hunt-websocket; mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-websocket-vulnerabilities | hunts WebSocket vulnerabilities |
+| hunt-xss | reviewer | — | sickn33/agentic-awesome-skills security/hunt-xss; mukul975/Anthropic-Cybersecurity-Skills skills/testing-for-xss-vulnerabilities-with-burpsuite | hunts cross-site scripting |
+| hunt-xxe | reviewer | — | sickn33/agentic-awesome-skills security/hunt-xxe; mukul975/Anthropic-Cybersecurity-Skills skills/testing-for-xml-injection-vulnerabilities | hunts XML external entity vulnerabilities |
 | identity-federation | reviewer | — | sickn33/agentic-awesome-skills security/identity-federation | assesses federated identity systems: SAML, OIDC and OAuth2 flows and SSO misconfiguration |
 | infinity | builder | — | sickn33/agentic-awesome-skills security/infinity | enforces a strict input boundary of detect, classify, filter and verify for untrusted data |
-| ios-redteam-pipeline | builder | — | sickn33/agentic-awesome-skills security/ios-redteam-pipeline | an end-to-end iOS red-team pipeline |
+| ios-redteam-pipeline | builder | — | sickn33/agentic-awesome-skills security/ios-redteam-pipeline; mukul975/Anthropic-Cybersecurity-Skills skills/analyzing-ios-app-security-with-objection | an end-to-end iOS red-team pipeline |
 | js-reverse | builder | — | sickn33/agentic-awesome-skills security/js-reverse | front-end JavaScript reverse engineering: locating signature chains and analysing encrypted request parameters |
 | kubernetes-hardening | builder | — | sickn33/agentic-awesome-skills security/kubernetes-hardening; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-kubernetes-pod-security-standards | sets Kubernetes security contexts, Pod Security Standards and network policies |
 | laravel-security-audit | reviewer | — | sickn33/agentic-awesome-skills security/laravel-security-audit | audits Laravel applications for vulnerabilities and misconfiguration |
@@ -1376,7 +1376,7 @@ No source yet.
 | malware-analysis | reviewer | — | sickn33/agentic-awesome-skills security/malware-analysis; mukul975/Anthropic-Cybersecurity-Skills skills/performing-malware-ioc-extraction | analyses suspected malware statically, dynamically and behaviourally: IOC extraction and YARA and Sigma rules |
 | marketplace-rbac-audit | reviewer | — | sickn33/agentic-awesome-skills security/marketplace-rbac-audit | audits multi-role marketplace authorisation across roles, resource ownership and tenant boundaries |
 | mcp-dependency-drift-audit | reviewer | — | sickn33/agentic-awesome-skills security/mcp-dependency-drift-audit | statically audits MCP configuration for mutable npm and npx package references before approval or CI, running nothing |
-| mcp-server-security | builder | — | sickn33/agentic-awesome-skills security/mcp-server-security | secures Model Context Protocol servers with transport encryption, tool authorisation and input validation |
+| mcp-server-security | builder | — | sickn33/agentic-awesome-skills security/mcp-server-security; mukul975/Anthropic-Cybersecurity-Skills skills/auditing-mcp-servers-for-tool-poisoning | secures Model Context Protocol servers with transport encryption, tool authorisation and input validation |
 | meme-coin-audit | reviewer | — | sickn33/agentic-awesome-skills security/meme-coin-audit | audits meme coin and token security |
 | mid-engagement-ir-detection | reviewer | — | sickn33/agentic-awesome-skills security/mid-engagement-ir-detection | detects client SOC patches, attacker activity and security-state changes during an engagement |
 | model-supply-chain-security | builder | — | sickn33/agentic-awesome-skills security/model-supply-chain-security | secures the AI model supply chain with artefact signing, provenance attestation and SBOM workflows |
@@ -1391,7 +1391,7 @@ No source yet.
 | policy-as-code | builder | — | sickn33/agentic-awesome-skills security/policy-as-code; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-policy-as-code-with-open-policy-agent | implements policy as code with OPA, Sentinel and Kyverno, and automates enforcement in CI/CD |
 | privacy-mask | builder | — | sickn33/agentic-awesome-skills security/privacy-mask | masks, redacts, anonymises and censors personal data in screenshots and images |
 | privilege-escalation-methods | builder | — | sickn33/agentic-awesome-skills security/privilege-escalation-methods | the techniques for escalating from a low-privileged user to root or administrator |
-| prompt-injection-defense | builder | — | sickn33/agentic-awesome-skills security/prompt-injection-defense | defends AI systems against prompt injection and indirect prompt attacks with input controls and tool permissions |
+| prompt-injection-defense | builder | — | sickn33/agentic-awesome-skills security/prompt-injection-defense; mukul975/Anthropic-Cybersecurity-Skills skills/detecting-ai-model-prompt-injection-attacks | defends AI systems against prompt injection and indirect prompt attacks with input controls and tool permissions |
 | protocol-reverse | builder | — | sickn33/agentic-awesome-skills security/protocol-reverse | authorised reverse engineering of custom binary protocols, Protobuf and gRPC schemas and WebSocket frames |
 | pwn-chain | builder | — | sickn33/agentic-awesome-skills security/pwn-chain | goes from reverse engineering to a working exploit: stack, heap and kernel pwn workflows with pwntools |
 | recon-scope-triage | reviewer | — | sickn33/agentic-awesome-skills security/recon-scope-triage | triages reconnaissance and attack-surface output for ownership before anything is tested |
@@ -1408,7 +1408,7 @@ No source yet.
 | sharp-edges | reviewer | — | sickn33/agentic-awesome-skills security/sharp-edges | reviews misuse-prone security APIs, configuration defaults and cryptographic interfaces |
 | skill-security-audit | reviewer | — | sickn33/agentic-awesome-skills security/skill-security-audit | audits an Agent Skill, MCP server, connector or desktop extension before installation by tracing code and dependencies |
 | smtp-penetration-testing | reviewer | — | sickn33/agentic-awesome-skills security/smtp-penetration-testing | assesses SMTP servers for vulnerabilities |
-| solidity-security | builder | — | sickn33/agentic-awesome-skills security/solidity-security | smart-contract security: best practice, vulnerability prevention and secure Solidity development patterns |
+| solidity-security | builder | — | sickn33/agentic-awesome-skills security/solidity-security; mukul975/Anthropic-Cybersecurity-Skills skills/analyzing-ethereum-smart-contract-vulnerabilities | smart-contract security: best practice, vulnerability prevention and secure Solidity development patterns |
 | src-hunter | builder | — | sickn33/agentic-awesome-skills pentest-tools/src-hunter | a bug-bounty and SRC vulnerability-hunting workflow in five phases, from intake and reconnaissance through enumeration and hunt |
 | ssh-penetration-testing | reviewer | — | sickn33/agentic-awesome-skills security/ssh-penetration-testing | assesses SSH servers: enumeration, credential attacks and vulnerability exploitation |
 | ssl-tls-management | builder | — | sickn33/agentic-awesome-skills security/ssl-tls-management | manages SSL and TLS certificates with Let's Encrypt and internal PKI, including secure HTTPS and certificate renewal |
@@ -1427,7 +1427,7 @@ No source yet.
 | vulnerability-scanning | reviewer | — | sickn33/agentic-awesome-skills security/vulnerability-scanning | scans systems and dependencies for CVEs and security vulnerabilities |
 | waf-setup | builder | — | sickn33/agentic-awesome-skills security/waf-setup; mukul975/Anthropic-Cybersecurity-Skills skills/implementing-cloud-waf-rules | deploys and tunes Web Application Firewalls with rules for OWASP Top 10 protection |
 | web2-recon | builder | — | sickn33/agentic-awesome-skills security/web2-recon; mukul975/Anthropic-Cybersecurity-Skills skills/performing-dns-enumeration-and-zone-transfer | a Web2 reconnaissance pipeline |
-| web3-audit | reviewer | — | sickn33/agentic-awesome-skills security/web3-audit | smart-contract security audit |
+| web3-audit | reviewer | — | sickn33/agentic-awesome-skills security/web3-audit; mukul975/Anthropic-Cybersecurity-Skills skills/auditing-foundry-smart-contract-security | smart-contract security audit |
 | wifi-wireless | reviewer | — | sickn33/agentic-awesome-skills security/wifi-wireless; mukul975/Anthropic-Cybersecurity-Skills skills/performing-wireless-security-assessment-with-kismet | an authorised wireless assessment: Wi-Fi capture, WPA handshake analysis and rogue-AP detection research |
 | windows-ad | reviewer | — | sickn33/agentic-awesome-skills security/windows-ad | authorised Active Directory and Windows identity attacks: Kerberos abuse, AD CS escalation and BloodHound path analysis |
 | windows-hardening | builder | — | sickn33/agentic-awesome-skills security/windows-hardening | hardens Windows servers to security baselines and CIS benchmarks with Group Policy and Windows Defender |
@@ -1612,6 +1612,39 @@ No source yet.
 | performing-s7comm-protocol-security-analysis | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-s7comm-protocol-security-analysis | analyses Siemens S7comm and S7CommPlus security |
 | performing-scada-hmi-security-assessment | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-scada-hmi-security-assessment | assesses SCADA human-machine interfaces for weakness |
 | securing-remote-access-to-ot-environment | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/securing-remote-access-to-ot-environment | designs secure vendor and engineer remote access to an OT environment |
+| exploiting-broken-link-hijacking | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-broken-link-hijacking | claims expired or dangling links to a third-party service that someone else could take over |
+| exploiting-prototype-pollution-in-javascript | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-prototype-pollution-in-javascript | probes JavaScript object prototypes for pollution that changes what the program does |
+| exploiting-type-juggling-vulnerabilities | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-type-juggling-vulnerabilities | tests loose type comparison in PHP and JavaScript for an authentication bypass |
+| implementing-web-application-logging-with-modsecurity | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-web-application-logging-with-modsecurity | deploys ModSecurity with the OWASP Core Rule Set and tunes what it logs |
+| performing-content-security-policy-bypass | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-content-security-policy-bypass | looks for Content-Security-Policy directives weak enough to allow script execution |
+| performing-http-parameter-pollution-attack | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-http-parameter-pollution-attack | tests where a server and a proxy disagree over repeated parameters |
+| performing-security-headers-audit | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-security-headers-audit | audits a site's security headers and what each leaves open |
+| testing-for-broken-access-control | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/testing-for-broken-access-control | tests the access checks on each role and each object for gaps |
+| testing-for-email-header-injection | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/testing-for-email-header-injection | tests contact forms and mail paths for injected headers and relay abuse |
+| testing-for-sensitive-data-exposure | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/testing-for-sensitive-data-exposure | checks responses, caches and logs for personal data left in the open |
+| detecting-api-enumeration-attacks | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-api-enumeration-attacks | detects systematic endpoint and identifier probing in API access logs |
+| exploiting-api-injection-vulnerabilities | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-api-injection-vulnerabilities | injects into API parameters, headers and bodies to reach backend commands and queries |
+| exploiting-excessive-data-exposure-in-api | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-excessive-data-exposure-in-api | reads API responses for more fields than the caller is entitled to |
+| implementing-api-gateway-security-controls | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-api-gateway-security-controls | puts authentication, quotas and schema checks on an API gateway |
+| implementing-api-key-security-controls | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-api-key-security-controls | issues, scopes, rotates and revokes API keys |
+| implementing-api-rate-limiting-and-throttling | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-api-rate-limiting-and-throttling | applies rate limits and quotas per client and per route |
+| implementing-api-schema-validation-security | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-api-schema-validation-security | validates request and response bodies against a schema as a security control |
+| implementing-api-security-posture-management | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-api-security-posture-management | inventories API posture findings and drives them to closure |
+| performing-api-fuzzing-with-restler | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-api-fuzzing-with-restler | fuzzes a REST API with RESTler and reads what breaks |
+| performing-api-rate-limiting-bypass | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-api-rate-limiting-bypass | tries to slip past rate limits by header, address and timing tricks |
+| performing-soap-web-service-security-testing | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-soap-web-service-security-testing | tests SOAP services for XML attacks, weak WS-Security and exposed methods |
+| testing-api-authentication-weaknesses | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/testing-api-authentication-weaknesses | tests API authentication for weak tokens, missing expiry and replay |
+| testing-api-for-mass-assignment-vulnerability | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/testing-api-for-mass-assignment-vulnerability | tries to write the fields an API never meant a client to set |
+| implementing-runtime-application-self-protection | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-runtime-application-self-protection | runs a runtime self-protection agent and tunes its blocking rules |
+| detecting-mobile-malware-behavior | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-mobile-malware-behavior | detects malicious behaviour in a mobile app's runtime activity |
+| exploiting-deeplink-vulnerabilities | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-deeplink-vulnerabilities | tests app deep links for hijack and for actions the link should not reach |
+| exploiting-insecure-data-storage-in-mobile | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/exploiting-insecure-data-storage-in-mobile | checks what a mobile app writes to disk, keychain and backups |
+| implementing-mobile-application-management | builder | — | mukul975/Anthropic-Cybersecurity-Skills skills/implementing-mobile-application-management | enrolls devices and applies a management policy to managed apps |
+| intercepting-mobile-traffic-with-burpsuite | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/intercepting-mobile-traffic-with-burpsuite | intercepts a mobile app's traffic through a proxy the app trusts |
+| performing-mobile-app-certificate-pinning-bypass | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/performing-mobile-app-certificate-pinning-bypass | defeats certificate pinning to read a mobile app's traffic |
+| testing-android-intents-for-vulnerabilities | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/testing-android-intents-for-vulnerabilities | tests exported activities, services and receivers for intent abuse |
+| detecting-data-and-model-poisoning | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-data-and-model-poisoning | detects poisoned training data and tampered model artefacts |
+| detecting-model-extraction-attacks | reviewer | — | mukul975/Anthropic-Cybersecurity-Skills skills/detecting-model-extraction-attacks | detects repeated queries that reconstruct a model or its training data |
 
 ### 15-2000 Mathematical Science Occupations
 
@@ -2278,7 +2311,7 @@ No source yet.
 | | |
 | --- | --- |
 | families | general + 98 minor groups in 23 major groups |
-| rows | 1746 (5 built, 1741 not) |
+| rows | 1779 (5 built, 1774 not) |
 | families with a row | 27 of 99 (general; 11-1000 Top Executives; 11-2000 Advertising, Marketing, Promotions, Public Relations, and Sales Managers; 11-3000 Operations Specialties Managers; 13-1000 Business Operations Specialists; 13-2000 Financial Specialists; 15-1200 Computer Occupations; 15-2000 Mathematical Science Occupations; 17-2000 Engineers; 19-1000 Life Scientists; 19-2000 Physical Scientists; 19-3000 Social Scientists and Related Workers; 21-1000 Counselors, Social Workers, and Other Community and Social Service Specialists; 23-1000 Lawyers, Judges, and Related Workers; 23-2000 Legal Support Workers; 25-3000 Other Teachers and Instructors; 25-4000 Librarians, Curators, and Archivists; 27-1000 Art and Design Workers; 27-3000 Media and Communication Workers; 27-4000 Media and Communication Equipment Workers; 29-9000 Other Healthcare Practitioners and Technical Occupations; 33-3000 Law Enforcement Workers; 39-7000 Tour and Travel Guides; 39-9000 Other Personal Care and Service Workers; 41-3000 Sales Representatives, Services; 43-4000 Information and Record Clerks; 43-6000 Secretaries and Administrative Assistants) |
 | sources assessed | 17 (mattpocock/skills, karpathy/autoresearch, morluto/rea, cbrock84/headcount, The-Swarm-Corporation/AutoHedge, wheresryan22/anatomy, affaan-m/ECC, browser-use/video-use, AgriciDaniel/claude-seo, TauricResearch/TradingAgents, sickn33/agentic-awesome-skills, Donchitos/Claude-Code-Game-Studios, video-db/call.md, soumatheusgomes/editonny, Tejashmakwana/Motionmaxxing, Jakeschincariol/day-trader, mukul975/Anthropic-Cybersecurity-Skills; 2026-11-15) |
 
