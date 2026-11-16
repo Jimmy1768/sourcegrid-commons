@@ -1092,3 +1092,12 @@ Decision:
 - The library's own framework mappings are not taken.
 Reason: the library is one person's (Apache 2.0), and the same job should be found once; a second source on the row that does the job says where else it can be read.
 
+## Next. Skills from Anthropic-Cybersecurity-Skills join the registry as digital forensics, malware analysis, incident response and ransomware rows
+
+The library's digital forensics, malware analysis, incident response and ransomware security Skills are
+compared against the security Skills the registry already holds, and against nothing else. A Skill that
+does the same job as one of ours gives that row the library as a second source instead of being
+dropped; a Skill that does a job no row of ours does is listed as a Skill not built, with the library's
+own path as its source; a Skill that repeats another Skill of the same list is left out. Nothing is
+built and the library's framework mappings are not taken.
+
