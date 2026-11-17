@@ -1101,3 +1101,14 @@ dropped; a Skill that does a job no row of ours does is listed as a Skill not bu
 own path as its source; a Skill that repeats another Skill of the same list is left out. Nothing is
 built and the library's framework mappings are not taken.
 
+## Next. Reading a PDF is a tool: pdftotext joins the tool registry
+
+Date: 2026-11-17.
+Who: the Director, in Workspace Recovery's session, sent as ADVICE 710; placed by Commons Planning.
+Decision:
+- A role reads a PDF through a tool of the commons, never by a session's hand. The tool turns a named PDF into text, and the Gate decides which PDF it may read, from the Mandate's reads.
+- The tool is Poppler's pdftotext, GPL-2.0-or-later, called as a separate program and never copied in. It is entered, with its document at tools/pdftotext/README.md.
+- Considered and not taken: pdfminer.six, pdfplumber, pypdf, PyMuPDF, Apache Tika and docling. OCRmyPDF is named as the later answer for scanned PDFs.
+- Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
+Reason: his word. A PDF is not text, and a role's read returns text only. Pdftotext is the reference extractor and already did the Gridpath extraction.
+
