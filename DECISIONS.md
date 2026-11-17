@@ -1046,7 +1046,7 @@ Decision:
 Reason: the registry is the record of what the commons could use, and his handoff names one
 more tool worth listing before it is run.
 
-## Next. Skills from Anthropic-Cybersecurity-Skills join the Skill registry as rows
+## 61. Skills from Anthropic-Cybersecurity-Skills join the Skill registry as rows
 
 Date: 2026-11-15.
 Who: the Director, in this branch's handoff on the cloud, container and DevSecOps security Skills; written down on this branch.
@@ -1059,7 +1059,7 @@ Decision:
 - The Director's rule for this library: a match gains a second source instead of being dropped.
 Reason: a specialist security library adds depth the registry lacks, and his rule keeps one row per job rather than one row per source.
 
-## Next. Skills from Anthropic-Cybersecurity-Skills join the registry as threat hunting, threat intelligence and detection rows
+## 62. Skills from Anthropic-Cybersecurity-Skills join the registry as threat hunting, threat intelligence and detection rows
 
 Date: 2026-11-15.
 Who: the Director, in this branch's handoff on the threat hunting, threat intelligence and detection security Skills; written down on this branch.
@@ -1072,7 +1072,7 @@ Decision:
 - The Director's rule for this library: a match gains a second source instead of being dropped.
 Reason: a specialist security library adds depth the registry lacks, and his rule keeps one row per job rather than one row per source.
 
-## Next. Skills from Anthropic-Cybersecurity-Skills join the registry as network, zero trust, wireless, deception and OT rows
+## 63. Skills from Anthropic-Cybersecurity-Skills join the registry as network, zero trust, wireless, deception and OT rows
 
 Date: 2026-11-16.
 Who: the owner of the commons' Skill registry.
@@ -1082,7 +1082,7 @@ Decision:
 - a Skill of the library that only mixes jobs we already list, or that is one whole engagement, is left out.
 Reason: the library is the specialist source for security, so it is listed beside what we hold rather than replacing or repeating it.
 
-## Next. Skills from Anthropic-Cybersecurity-Skills join the registry as web, API, mobile, AI and blockchain security rows
+## 64. Skills from Anthropic-Cybersecurity-Skills join the registry as web, API, mobile, AI and blockchain security rows
 
 Date: 2026-11-16.
 Who: the Director.
@@ -1092,7 +1092,7 @@ Decision:
 - The library's own framework mappings are not taken.
 Reason: the library is one person's (Apache 2.0), and the same job should be found once; a second source on the row that does the job says where else it can be read.
 
-## Next. Skills from Anthropic-Cybersecurity-Skills join the registry as digital forensics, malware analysis, incident response and ransomware rows
+## 65. Skills from Anthropic-Cybersecurity-Skills join the registry as digital forensics, malware analysis, incident response and ransomware rows
 
 The library's digital forensics, malware analysis, incident response and ransomware security Skills are
 compared against the security Skills the registry already holds, and against nothing else. A Skill that
@@ -1101,7 +1101,7 @@ dropped; a Skill that does a job no row of ours does is listed as a Skill not bu
 own path as its source; a Skill that repeats another Skill of the same list is left out. Nothing is
 built and the library's framework mappings are not taken.
 
-## Next. Reading a PDF is a tool: pdftotext joins the tool registry
+## 66. Reading a PDF is a tool: pdftotext joins the tool registry
 
 Date: 2026-11-17.
 Who: the Director, in Workspace Recovery's session, sent as ADVICE 710; placed by Commons Planning.
@@ -1111,4 +1111,18 @@ Decision:
 - Considered and not taken: pdfminer.six, pdfplumber, pypdf, PyMuPDF, Apache Tika and docling. OCRmyPDF is named as the later answer for scanned PDFs.
 - Nothing is copied, so no THIRD_PARTY_NOTICES line is added.
 Reason: his word. A PDF is not text, and a role's read returns text only. Pdftotext is the reference extractor and already did the Gridpath extraction.
+
+## 67. Two histories: the Floor's main and the public branch
+
+Date: 2026-11-16.
+Who: the Director, choosing C of the two ways Workspace Recovery gave him; placed by Commons Planning.
+Decision:
+- The Floor's `main` stays as the kernel left it, every commit and test file, because the kernel's record names those commits by hash. It is never pushed.
+- GitHub's `main` is built on a local branch `public`, one commit per accepted piece with its decision, the Mandates' own tests left out. It is pushed only on the Director's word.
+- The first publication squashes the Floor's commits after 9c04dc7 into one landing commit per piece. In the Floor's history, seven of those commits had poor titles, and none of the seven reaches the public history.
+- Every decision is numbered before a publication, so none reaches GitHub headed "Next".
+- `.base-check`, a stray gitlink the Floor carries, stays off `public` as well.
+Reason: Decision 28 keeps the public history to the library's changes, and the Floor's merge had been moving `main` directly.
+
+This entry is numbered where it is written rather than left headed "Next", because the decision it records is that every decision is numbered before a publication. On today's code it is 67.
 
